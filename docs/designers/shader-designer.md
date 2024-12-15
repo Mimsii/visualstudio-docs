@@ -8,12 +8,10 @@ f1_keywords:
 - vs.graphics.shaderdesigner
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-designers
+manager: mijacobs
+ms.subservice: ui-designers
 ---
 # Shader Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This document describes how to work with the Visual Studio **Shader Designer** to create, modify, and export custom visual effects that are known as *shaders*.
 

@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccCloseProject function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccCloseProject function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function closes a project, marking the end of a particular session.
 
 ## Syntax

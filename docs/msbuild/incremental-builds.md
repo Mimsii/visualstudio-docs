@@ -7,8 +7,8 @@ helpviewer_keywords:
 - msbuild, incremental builds
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Incremental builds
 

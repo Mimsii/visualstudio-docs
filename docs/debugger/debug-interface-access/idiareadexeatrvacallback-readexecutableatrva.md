@@ -1,5 +1,5 @@
 ---
-description: "Reads the specified number of bytes starting at the specified relative virtual address (RVA) from the executable file."
+description: Reads the specified number of bytes starting at the specified relative virtual address (RVA) from the executable file.
 title: "IDiaReadExeAtRVACallback::ReadExecutableAtRVA"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaReadExeAtRVACallback::ReadExecutableAtRVA method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Reads the specified number of bytes starting at the specified relative virtual address (RVA) from the executable file.
 
 ## Syntax
 
 ```C++
-HRESULT ReadExecutableAtRVA ( 
+HRESULT ReadExecutableAtRVA ( 
    DWORD  relativeVirtualAddress,
    DWORD  cbData,
    DWORD* pcbData,

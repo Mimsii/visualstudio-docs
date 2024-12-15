@@ -29,12 +29,11 @@ helpviewer_keywords:
   - "Word [Office development in Visual Studio], host controls"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatic limitations of host items and host controls
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Each host item and host control is designed to behave like a corresponding native Microsoft Office Word or Microsoft Office Excel object, with additional functionality. However, there are some fundamental differences between the behavior of host items and host controls and native Office objects at run time.
 
  For general information about host items and host controls, see [Host items and host controls overview](../vsto/host-items-and-host-controls-overview.md).

@@ -1,8 +1,8 @@
 ---
 title: Manage assembly and manifest signing
 description: Explore how to manage an assembly and the advantages of strong-name signing, which gives a software component a globally unique identity. 
-ms.date: 02/17/2017
-ms.technology: vs-ide-deployment
+ms.date: 07/18/2024
+ms.subservice: deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -11,11 +11,9 @@ helpviewer_keywords:
 - assemblies [Visual Studio], signing
 author: ghogen
 ms.author: ghogen
-manager: jmartens
+manager: mijacobs
 ---
 # Manage assembly and manifest signing
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Strong-name signing gives a software component a globally unique identity. Strong names are used to guarantee that the assembly cannot be spoofed by someone else, and to make sure that component dependencies and configuration statements map to the correct component and component version.
 
@@ -52,9 +50,21 @@ In general, you should not sign executables. A strongly named component cannot r
 
 ## How to sign an assembly in Visual Studio
 
-You sign an application or component by using the **Signing** tab of the project properties window (right-click the project node in **Solution Explorer** and select **Properties**). Select the **Signing** tab, then select the **Sign the assembly**  check box.
+The procedure to sign an assembly depends on which version of the Project Designer your project uses.
 
-Specify a key file. If you choose to create a new key file, new key files are always created in the *.pfx* format. You need a name and password for the new file.
+For .NET Core (and .NET 5 and later) C# projects in Visual Studio 2022:
+
+1. Open the project properties window (right-click the project node in **Solution Explorer** and select **Properties**).
+1. Under **Build**, look for **Strong naming**, and select the **Sign the assembly** checkbox. Additional options for the key file and delay signing appear when you check the box.
+1. Specify a key file.
+
+If you don't have a key file, you can use the command line to [create an `.snk` file](/dotnet/standard/assembly/create-public-private-key-pair). You can also use or generate a certificate in a `.pfx` file using the **Publish** process, and in the **Sign manifests** step, you can create a test certificate to use only during development and testing, or for production, use a certificate issued by your IT department or by an authorized source. See [Deploy a .NET Windows Desktop app with ClickOnce](../deployment/quickstart-deploy-using-clickonce-folder.md).
+
+For .NET Framework and Visual Basic projects in Visual Studio 2022, or in Visual Studio 2019:
+
+1. Open the **Signing** tab of the project properties window (right-click the project node in **Solution Explorer** and select **Properties**). Select the **Signing** tab.
+1. Select the **Sign the assembly**  check box.
+1. Specify a key file. If you choose to create a new key file, new key files are always created in the *.pfx* format. You need a name and password for the new file.
 
 > [!WARNING]
 > You should always protect your key file with a password to prevent someone else from using it. You can also secure your keys by using providers or certificate stores.

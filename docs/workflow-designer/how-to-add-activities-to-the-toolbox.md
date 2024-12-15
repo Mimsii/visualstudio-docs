@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Add Activities to the Toolbox
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Activities can be added to the **Toolbox** in your solution in several different ways. You can add them from within your current project, reference them from a different project, or reference them from a different assembly.
 

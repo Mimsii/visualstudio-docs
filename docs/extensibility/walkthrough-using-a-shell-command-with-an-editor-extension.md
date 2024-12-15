@@ -7,12 +7,11 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Walkthrough: Use a shell command with an editor extension
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 From a VSPackage, you can add features such as menu commands to the editor. This walkthrough shows how to add an adornment to a text view in the editor by invoking a menu command.
 
  This walkthrough demonstrates the use of a VSPackage together with a Managed Extensibility Framework (MEF) component part. You must use a VSPackage to register the menu command with the Visual Studio shell. And, you can use the command to access the MEF component part.

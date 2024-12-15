@@ -7,12 +7,11 @@ helpviewer_keywords:
 - IDebugTypeFieldBuilder2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugTypeFieldBuilder2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Extends the **IDebugTypeFieldBuilder** to be able to create array types.
 
 ## Syntax

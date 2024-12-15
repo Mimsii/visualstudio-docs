@@ -14,12 +14,11 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Define a Domain-Specific Language
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 To define a domain-specific language (DSL), you create a Visual Studio solution from a template. The key part of the solution is the DSL Definition diagram, which is stored in DslDefinition.dsl. The DSL Definition defines the classes and shapes of the DSL. After you modify and adding to these elements, you can add program code to customize the DSL in more detail.
 
 If you are new to DSLs, we recommend that you work through the **DSL Tools Lab**, which you can find in this site: [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
@@ -66,7 +65,7 @@ To create a new domain-specific language, you create a new Visual Studio solutio
 
    - Choose a file name extension that is not associated with any application in your computer, or in any computer where you want to install the DSL. For example, **docx** and **htm** would be unacceptable file name extensions.
 
-   - The wizard will warn you if the extension that you have entered is being used as a DSL. Consider using a different file name extension. You can also reset the Visual Studio SDK Experimental instance to clear out old experimental designers. Click **Start**, click **All Programs**, **Microsoft Visual Studio 2010 SDK**, **Tools**, and then **Reset the Microsoft Visual Studio 2010 Experimental instance**.
+   - The wizard will warn you if the extension that you have entered is being used as a DSL. Consider using a different file name extension. You can also reset the Visual Studio SDK Experimental instance to clear out old experimental designers. In the Windows **Start** menu, type **reset the Visual Studio**, and then run the **Reset the Microsoft Visual Studio Experimental Instance** command matching your version of Visual Studio.
 
 4. You can either adjust the settings on the other pages, or leave the default values.
 
@@ -504,7 +503,7 @@ To create a new domain-specific language, you create a new Visual Studio solutio
 
  For example, we could add a second compartment to AlbumShape that displays a list of the Artists that are linked to the Album.
 
- In this case, the compartment should display the link, instead of the referenced element. This is because when the user selects the item in the compartment and presses DELETE, you want the link to be deleted, not the referenced element.
+ In this case, the compartment should display the link, instead of the referenced element. This is because when the user selects the item in the compartment and presses `DELETE`, you want the link to be deleted, not the referenced element.
 
  Nevertheless, you can have the name of the referenced element appear in the compartment.
 

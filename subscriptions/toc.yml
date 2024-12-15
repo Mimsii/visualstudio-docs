@@ -2,14 +2,14 @@
   href: index.yml
 - name: What are Visual Studio subscriptions?
   href: what-are-subscriptions.md
-- name: What's New
-  href: whats-new-in-subscriptions.md
 - name: Subscriptions
   items:
   - name: Buy subscriptions
     items:
     - name: Retail
       href: buy-activate-retail.md
+    - name: Volume Licensing
+      href: buy-activate-volume-license.md
     - name: Cloud
       items:
       - name: Overview
@@ -28,7 +28,7 @@
       href: program-startups.md
   - name: Get started with a new subscription
     href: new-subscriber.md
-  - name: Sign in to subscriber portal
+  - name: Sign in to subscription portal
     items:
     - name: Sign in with Microsoft Accounts
       href: sign-in-msa.md
@@ -40,6 +40,8 @@
       href: use-connected-identities.md
     - name: Sign in problems
       href: sign-in-issues.md
+    - name: Access your subscription
+      href: find-my-subscription.md     
   - name: Subscriptions portal overview
     href: using-the-subscriber-portal.md
   - name: Manage your subscriptions
@@ -92,8 +94,6 @@
       href: vs-windows-dev.md
     - name: Windows Virtual Desktop
       href: vs-windows-virtual-desktop.md  
-    - name: Microsoft Dev Box
-      href: microsoft-dev-box.md
   - name: Professional development
     items:
     - name: CODE Magazine

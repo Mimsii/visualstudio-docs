@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the virtual address (VA) of the contribution."
+description: Retrieves the virtual address (VA) of the contribution.
 title: "IDiaSectionContrib::get_virtualAddress"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_virtualAddress method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_virtualAddress
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the virtual address (VA) of the contribution.
 
 ## Syntax
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProcess2::GetAttachedSessionName
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProcess2::GetAttachedSessionName
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the name of the session that is debugging this process. An IDE can display this information to a user who is debugging a particular process on a particular machine.
 
 > [!NOTE]

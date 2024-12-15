@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackWalkFrame::put_registerValue method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackWalkFrame::put_registerValue
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Sets the value of a register.
 
 ## Syntax
 
 ```C++
-HRESULT put_registerValue ( 
+HRESULT put_registerValue ( 
    DWORD     index,
    ULONGLONG NewVal
 );

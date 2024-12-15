@@ -16,12 +16,11 @@ helpviewer_keywords:
 - multiple tier applications
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Work with datasets in n-tier applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Work with datasets in n-tier applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -36,7 +35,7 @@ N-tier support in typed datasets enables iterative development of the applicatio
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>
 
-## See also
+## Related content
 
 - [N-Tier data applications overview](../data-tools/n-tier-data-applications-overview.md)
 - [Walkthrough: Creating an n-tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

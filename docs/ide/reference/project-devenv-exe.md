@@ -13,12 +13,10 @@ helpviewer_keywords:
 - projects [Visual Studio], cleaning
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Project (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Identifies a single project within the specified solution configuration to build, clean, rebuild, or deploy.
 

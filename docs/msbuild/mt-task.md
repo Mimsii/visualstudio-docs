@@ -17,10 +17,12 @@ helpviewer_keywords:
 - MT task (MSBuild (C++))
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # MT task
+
+[!INCLUDE [C++-specific task](./includes/cpp-task.md)]
 
 Wraps the Microsoft Manifest Tool, *mt.exe*. For more information, see [Mt.exe](/windows/desktop/SbsCs/mt-exe).
 

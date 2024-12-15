@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates whether the segment can be read."
+description: Retrieves a flag that indicates whether the segment can be read.
 title: "IDiaSegment::get_read"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSegment::get_read method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSegment::get_read
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the segment can be read.
 
 ## Syntax
 
 ```C++
-HRESULT get_read ( 
+HRESULT get_read ( 
    BOOL* pRetVal
 );
 ```

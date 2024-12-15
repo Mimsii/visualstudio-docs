@@ -5,16 +5,16 @@ ms.date: 07/05/2021
 ms.topic: conceptual
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Add a Language Server Protocol extension
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Language Server Protocol (LSP) is a common protocol, in the form of JSON RPC v2.0, used to provide language service features to various code editors. Using the protocol, developers can write a single language server to provide language service features like IntelliSense, error diagnostics, find all references, and so on, to various code editors that support the LSP. Traditionally, language services in Visual Studio can be added by using TextMate grammar files to provide basic functionalities such as syntax highlighting or by writing custom language services that use the full set of Visual Studio extensibility APIs to provide richer data. With Visual Studio support for LSP, there's a third option.
 
 ![language server protocol service in Visual Studio](media/lsp-service-in-VS.png)
+
+To ensure the best possible user experience, consider also implementing [Language Configuration](language-configuration.md), which provides local processing of many of the same operations, and can therefore improve the performance of many of the language-specific editor operations supported by the LSP.
 
 ## Language Server Protocol
 
@@ -368,7 +368,6 @@ When tracing is turned on the content is written to a file in the *%temp%\Visual
 
 ### Custom messages
 
-
 There are APIs in place to facilitate passing messages to and receiving messages from the language server that are not part of the standard Language Server Protocol. To handle custom messages, implement [ILanguageClientCustomMessage2](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage2) interface in your language client class. [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) library is used to transmit custom messages between your language client and language server. Since your LSP language client extension is just like any other Visual Studio extension, you can decide to add additional features (that are not supported by the LSP) to Visual Studio (using other Visual Studio APIs) in your extension through custom messages.
 
 #### Receive custom messages
@@ -509,4 +508,6 @@ See the Marketplace instructions [here](walkthrough-publishing-a-visual-studio-e
 
 ## Related content
 
-- [Add Visual Studio editor support for other languages](../ide/adding-visual-studio-editor-support-for-other-languages.md)
+* [Add Visual Studio editor support for other languages](../ide/adding-visual-studio-editor-support-for-other-languages.md)
+
+* [Customizing editor behavior by using Language Configuration](language-configuration.md)

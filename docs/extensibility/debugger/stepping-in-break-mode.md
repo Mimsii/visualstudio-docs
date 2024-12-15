@@ -9,12 +9,11 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stepping in break mode
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Stepping in break mode
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following section describes the process that occurs when the debugger is in break mode and must step through code:
 
 ## Stepping process

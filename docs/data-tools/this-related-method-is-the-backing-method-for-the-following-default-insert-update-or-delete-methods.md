@@ -5,12 +5,11 @@ ms.date: 11/04/2016
 ms.topic: error-reference
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# This related method is the backing method for the following default insert, update, or delete methods
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# This related method is the backing method for the following default insert, update, or delete methods
 
 This related method is the backing method for the following default `Insert`, `Update`, or `Delete` methods. If it is deleted, these methods will be deleted as well. Do you wish to continue?
 

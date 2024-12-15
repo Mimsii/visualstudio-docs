@@ -7,12 +7,10 @@ f1_keywords:
   - "System.Activities.Statements.PickBranch.UI"
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # PickBranch Activity Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The <xref:System.Activities.Statements.PickBranch> provides an event-based path of execution within a <xref:System.Activities.Statements.Pick> activity that can be triggered by an incoming event.
 

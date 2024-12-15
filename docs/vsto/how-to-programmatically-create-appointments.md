@@ -11,12 +11,11 @@ helpviewer_keywords:
   - "Outlook calendars [Office development in Visual Studio], creating appointments"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically create appointments
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This example creates an appointment and adds recipients to the appointment meeting request.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

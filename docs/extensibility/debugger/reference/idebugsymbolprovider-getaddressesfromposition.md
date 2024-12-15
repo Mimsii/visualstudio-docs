@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSymbolProvider::GetAddressesFromPosition
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method maps a document position into an array of debug addresses.
 
 ## Syntax

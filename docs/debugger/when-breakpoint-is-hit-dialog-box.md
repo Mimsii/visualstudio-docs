@@ -14,12 +14,11 @@ dev_langs:
   - "SQL"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # When Breakpoint Is Hit Dialog Box
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 With this dialog box, you can customize the action that occurs when a breakpoint is hit.
 
 ## UIElement List

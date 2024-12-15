@@ -1,5 +1,5 @@
 ---
-description: "Retrieves corresponding string names for given property identifiers."
+description: Retrieves corresponding string names for given property identifiers.
 title: "IDiaPropertyStorage::ReadPropertyNames"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaPropertyStorage::ReadPropertyNames"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaPropertyStorage::ReadPropertyNames
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves corresponding string names for given property identifiers.
 
 ## Syntax

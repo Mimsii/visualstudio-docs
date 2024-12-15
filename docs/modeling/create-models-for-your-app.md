@@ -19,12 +19,10 @@ helpviewer_keywords:
 - software, modeling
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Create models for your app
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Modeling diagrams help you understand, clarify, and communicate ideas about your code and the user requirements that your software system must support.
 

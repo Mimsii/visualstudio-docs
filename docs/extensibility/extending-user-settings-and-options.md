@@ -10,25 +10,19 @@ helpviewer_keywords:
 - VSPackages, user preferences
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Extend user settings and options
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 In Visual Studio there are two main ways to maintain user preferences. The **Tools** > **Options** pages allow users to set their own values for many different kinds of settings, both general and language-specific. User settings allow users to specify general Visual Studio configuration properties. For more information about options pages, see [Options and options pages](../extensibility/internals/options-and-options-pages.md). For more information about user settings, see [Support for user settings](../extensibility/internals/support-for-user-settings.md).
 
-- [Create an options page](../extensibility/creating-an-options-page.md)
- Explains how to create an options page.
+- [Create an options page](../extensibility/creating-an-options-page.md) explains how to create an options page.
 
-- [Create a settings category](../extensibility/creating-a-settings-category.md)
- Explains how to create a settings category.
+- [Create a settings category](../extensibility/creating-a-settings-category.md) explains how to create a settings category.
 
-- [Use the settings store](../extensibility/using-the-settings-store.md)
- Explains how to use the settings store.
+- [Use the settings store](../extensibility/using-the-settings-store.md) explains how to use the settings store.
 
-- [Get service information from the settings store](../extensibility/getting-service-information-from-the-settings-store.md)
- Explains how to get the available services from the settings store.
+- [Get service information from the settings store](../extensibility/getting-service-information-from-the-settings-store.md) explains how to get the available services from the settings store.
 
-- [Write to the user settings store](../extensibility/writing-to-the-user-settings-store.md)
- Explains how to write to the user settings store.
+- [Write to the user settings store](../extensibility/writing-to-the-user-settings-store.md) explains how to write to the user settings store.

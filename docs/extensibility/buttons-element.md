@@ -8,12 +8,11 @@ helpviewer_keywords:
 - VSCT XML schema elements, Buttons
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Buttons element
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Groups [Button](../extensibility/button-element.md) elements, which represent individual commands.
 
 ## Syntax

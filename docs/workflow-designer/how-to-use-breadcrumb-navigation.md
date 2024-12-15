@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Use Breadcrumb Navigation
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 There are three main ways to change the set of activities that are displayed in Workflow Designer:
 

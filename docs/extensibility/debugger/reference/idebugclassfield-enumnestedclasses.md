@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugClassField::EnumNestedClasses method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugClassField::EnumNestedClasses
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creates an enumerator for the classes nested in this class.
 
 ## Syntax

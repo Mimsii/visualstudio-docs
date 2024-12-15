@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "User Notifications tool window"
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 monikerRange: ">=vs-2019"
 ---
 # Notifications tool window

@@ -30,12 +30,11 @@ helpviewer_keywords:
   - "ThisAddIn_Shutdown"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Events in Office projects
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Each Office project template automatically generates several event handlers. The event handlers for document-level customizations are slightly different from event handlers for VSTO Add-ins.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]

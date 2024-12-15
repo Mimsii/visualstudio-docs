@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProgram2::Continue
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProgram2::Continue
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Continues running this program from a stopped state. Any previous execution state (such as a step) is preserved, and the program starts executing again.
 
 > [!NOTE]

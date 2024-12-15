@@ -8,12 +8,11 @@ helpviewer_keywords:
 - VSCT XML schema elements, UsedCommands
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # UsedCommand Element
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enables a VSPackage to access a command that is defined in another .vsct file. For example, if your VSPackage uses the standard **Copy** command, which is defined by the Visual Studio shell, you can add the command to a menu or toolbar without re-implementing it.
 
 ## Syntax

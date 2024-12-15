@@ -9,19 +9,18 @@ f1_keywords:
   - "VC.Project.VCResourceCompilerTool.SuppressStartupBanner"
   - "VC.Project.VCResourceCompilerTool.NullTerminateStrings"
 dev_langs:
-  - "VB"
-  - "CSharp"
-  - "C++"
   - "C++"
 helpviewer_keywords:
   - "RC task (MSBuild (C++))"
   - "MSBuild (C++), RC task"
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # RC task
+
+[!INCLUDE [C++-specific task](./includes/cpp-task.md)]
 
 Wraps the Microsoft Windows Resource Compiler tool, *rc.exe*. The **RC** task compiles resources, such as cursors, icons, bitmaps, dialog boxes, and fonts, into a resource (*.res*) file. For more information, see [Resource Compiler](/windows/desktop/menurc/resource-compiler).
 

@@ -8,12 +8,11 @@ helpviewer_keywords:
 - VSPackages, managed package file location
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Specifying VSPackage File Location to the VS Shell
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Visual Studio must be able to locate the assembly DLL to load the VSPackage. You can locate it in various ways, as described in the following table.
 
 | Method | Description |

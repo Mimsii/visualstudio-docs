@@ -1,8 +1,8 @@
 ---
 title: F1 help no-match fallback
 description: "Oops! No F1 match found."
-ms.prod: visual-studio
-ms.technology: 
+ms.service: visual-studio
+ms.subservice: 
 ms.date: 10/19/2021
 ms.topic: error-reference
 recommendations: false
@@ -1450,13 +1450,11 @@ f1_keywords:
 - MSB6009
 - MSBuild.DebugPathTooLong
 - MSB6012
-manager: jmartens
+manager: mijacobs
 author: mikejo5000
 ms.author: mikejo
 ---
 # Oops! No `F1` help match was found
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ## Now what?
 
@@ -1491,4 +1489,3 @@ If you still have questions after you try the other resources,
 
 * [Troubleshoot network-related or proxy errors](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Troubleshooting (Visual Studio for Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)
-* [Troubleshooting (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

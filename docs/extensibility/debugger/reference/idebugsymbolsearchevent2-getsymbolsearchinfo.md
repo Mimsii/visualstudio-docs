@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Called by an event handler to retrieve results about a symbol load process.
 
 ## Syntax
@@ -57,7 +56,7 @@ HRESULT GetSymbolSearchInfo(
  If successful, returns `S_OK`; otherwise returns an error code.
 
 ## Remarks
- When a handler receives the [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) event after an attempt is made to load debugging symbols for a module, the handler can call thismethod to determine the results of that load.
+ When a handler receives the [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) event after an attempt is made to load debugging symbols for a module, the handler can call this method to determine the results of that load.
 
 ## See also
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "<assemblyIdentity> element [ClickOnce application manifest]"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;assemblyIdentity&gt; element (ClickOnce application)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Identifies the application deployed in a ClickOnce deployment.
 
 ## Syntax

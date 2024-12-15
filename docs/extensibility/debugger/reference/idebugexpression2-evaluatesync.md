@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExpression2::EvaluateSync
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method evaluates the expression synchronously.
 
 ## Syntax

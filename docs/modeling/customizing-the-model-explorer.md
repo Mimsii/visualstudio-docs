@@ -9,12 +9,11 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Customizing the Model Explorer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can change the appearance and behavior of the explorer for your domain-specific language designer as follows:
 
 - Change the window title.

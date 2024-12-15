@@ -8,15 +8,14 @@ helpviewer_keywords:
 - IDebugArrayObject2::HasBaseIndices
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugArrayObject2::HasBaseIndices
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Determines if the array has base indices (lower bounds) defined.
 
 ## Syntax

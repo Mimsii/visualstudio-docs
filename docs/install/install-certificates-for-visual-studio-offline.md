@@ -8,13 +8,11 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.prod: visual-studio-windows
-ms.technology: vs-installation
+manager: mijacobs
+
+ms.subservice: installation
 ---
 # Install certificates required for Visual Studio offline installation
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio is primarily designed to be installed on an internet-connected machine, since many components are updated regularly. However, with some extra steps, it's possible to deploy Visual Studio in an environment where a working internet connection is unavailable.
 

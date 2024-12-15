@@ -10,8 +10,8 @@ helpviewer_keywords:
 - Hello World example [Visual Studio]
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Build the same source files with different options
 

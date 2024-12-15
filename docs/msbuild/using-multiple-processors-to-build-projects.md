@@ -8,8 +8,8 @@ helpviewer_keywords:
 - MSBuild, multiple processor systems
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Use multiple processors to build projects
 

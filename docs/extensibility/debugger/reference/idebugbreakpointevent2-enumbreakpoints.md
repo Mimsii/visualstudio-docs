@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugBreakpointEvent2::EnumBreakpoints
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creates an enumerator for all the breakpoints that fired at the current code location.
 
 ## Syntax

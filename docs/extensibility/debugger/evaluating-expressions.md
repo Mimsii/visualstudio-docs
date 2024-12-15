@@ -9,12 +9,11 @@ helpviewer_keywords:
 - expression evaluation
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Evaluate expressions
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Expressions are created from strings passed down from the **Autos**, **Watch**, **QuickWatch**, or **Immediate** windows. When an expression is evaluated, it generates a printable string that contains the name and type of variable or argument and its value. This string is displayed in the corresponding IDE window.
 
 ## Implementation

@@ -2,21 +2,20 @@
 title: Develop apps for the Universal Windows Platform (UWP)
 description: Learn about creating apps using Visual Studio and the Universal Windows Platform development tools.
 ms.date: 10/24/2017
-ms.technology: vs-ide-general
+ms.subservice: general-ide
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jmartens
+manager: mijacobs
 ---
+
 # Develop apps for the Universal Windows Platform (UWP)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-With the Universal Windows Platform and our one Windows core, you can run the same app on any Windows 10 device, from phones to desktops. Create these Universal Windows apps with Visual Studio and the Universal Windows App development tools.
+With the Universal Windows Platform (UWP) and our one Windows core, you can run the same app on any Windows 10 device, from phones to desktops. Create these Universal Windows apps with Visual Studio and the Universal Windows App development tools.
 
 ![Universal Windows Platform](../cross-platform/media/uwp_coreextensions.png)
 
-Run your app on a Windows 10 phone, a Windows 10 desktop, or an Xbox. It's the same app package! With the introduction of the Windows 10 single, unified core, one app package can run across all platforms. Several platforms have extension SDKs that you can add to your app to take advantage of platform-specific behaviors. For example, an extension SDK for mobile handles the back button being pressed on a Windows phone. If you reference an extension SDK in your project, then just add runtime checks to test if that SDK is available on that platform. That's how you can have the same app package for each platform!
+Run your app on a Windows 10 phone, a Windows 10 desktop, or Xbox. It's the same app package! With the introduction of the Windows 10 single, unified core, one app package can run across all platforms. Several platforms have extension SDKs that you can add to your app to take advantage of platform-specific behaviors. For example, an extension SDK for mobile handles the back button being pressed on a Windows phone. If you reference an extension SDK in your project, then just add runtime checks to test if that SDK is available on that platform. That's how you can have the same app package for each platform!
 
 **What is the Windows core?**
 

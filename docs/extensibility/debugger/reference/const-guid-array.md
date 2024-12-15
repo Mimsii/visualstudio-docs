@@ -1,6 +1,6 @@
 ---
-description: "A structure that holds a list of GUID`s."
 title: CONST_GUID_ARRAY
+description: "A structure that holds a list of `GUID`s."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,15 +9,14 @@ helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # CONST_GUID_ARRAY
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 A structure that holds a list of `GUID`s.
 
 ## Syntax

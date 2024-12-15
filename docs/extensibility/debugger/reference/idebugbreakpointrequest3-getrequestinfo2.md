@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugBreakpointRequest3::GetRequestInfo2
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugBreakpointRequest3::GetRequestInfo2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method gets the breakpoint request information that describes this breakpoint request.
 
 ## Syntax

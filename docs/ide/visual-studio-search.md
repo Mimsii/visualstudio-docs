@@ -1,7 +1,7 @@
 ---
 title: Use Visual Studio search to find code & do queries
 description: Explore the Visual Studio search feature and discover how to find settings, menus, code, and work with filters, queries, and more.
-ms.date: 08/08/2023
+ms.date: 11/1/2024
 ms.topic: how-to
 helpviewer_keywords:
 - environments [Visual Studio], navigation
@@ -15,12 +15,10 @@ helpviewer_keywords:
 monikerRange: ">=vs-2019"
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Use Visual Studio search
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Visual Studio integrated development environment (IDE) has many menus, options, and features, which can be difficult to remember. The Visual Studio search feature is a single search box that helps developers find IDE menus and options, while also searching your code. Whether you're new to Visual Studio or an experienced developer, this feature offers a quick way to search across IDE features and your code.
 
@@ -28,19 +26,18 @@ The Visual Studio integrated development environment (IDE) has many menus, optio
 
 ## Search in Visual Studio 2022 version 17.6 or later
 
-If you're using Visual Studio 2022 [version 17.6](/visualstudio/releases/2022/release-notes-v17.6) or later, you have access to a new search experience: **All-In-One Search**. 
+If you're using Visual Studio 2022 [version 17.6](/visualstudio/releases/2022/release-notes-v17.6) or later, the search experience is **All-In-One Search**. 
+
+> [!TIP]
+> To learn more about the new search experience, see both the [Better search in Visual Studio](https://devblogs.microsoft.com/visualstudio/new-better-search-in-visual-studio/) and [All-In-One Search available in 17.6](https://devblogs.microsoft.com/visualstudio/all-in-one-search-available-in-17-6/) blog posts.
 
 ### About the All-In-One Search experience
 
-With **All-In-One Search**, not only can you search for features, but now you can search your code elements, too.
+With **All-In-One Search**, not only can you search for features, but you can also search your code elements, such as files and symbols.
 
-:::image type="content" source="media/vs-2022/all-one-search.png" alt-text="Screenshot of the All-In-One Search experience in Visual Studio 2022 version 17.6 or later."::: 
+:::image type="content" source="media/vs-2022/all-in-one-search-member-filter.png" alt-text="Screenshot of the All-In-One Search experience in Visual Studio 2022 version 17.6 or later."::: 
 
-To enable this feature, go to **Tools** > **Options** > **Environment** > **Preview Features** > **New Visual Studio Search experience**.
-
-:::image type="content" source="media/vs-2022/all-one-search-tools-options.png" alt-text="Screenshot of the Tools Options menu in Visual Studio 2022 that shows how to toggle the All-In-One Search experience.":::
-
-After you enable **All-In-One Search** and restart Visual Studio, the new search experience appears as an option next to the menu bar. 
+The new search experience appears as an option next to the menu bar. 
 
 :::image type="content" source="media/vs-2022/all-one-search-from-menu-bar.png" alt-text="Screenshot of the All-In-One Search experience from the Visual Studio menu bar.":::
 
@@ -48,7 +45,7 @@ After you enable **All-In-One Search** and restart Visual Studio, the new search
 
 You can use the **Ctrl**+**Q** keyboard shortcut for feature searches, and the **Ctrl**+**T** keyboard shortcut for code searches. 
 
-#### Filters for queries
+#### Filters for Code Search queries
 
 To quickly get a filtered experience, you can type the corresponding prefixes before your query or use the corresponding keyboard shortcuts to open the search with the filter you want.
 
@@ -57,9 +54,43 @@ To quickly get a filtered experience, you can type the corresponding prefixes be
 |files    |`f:`     | **Ctrl**+**Shift**+**T**       |     
 |types    |`t:`     | **Ctrl**+**1**, **Ctrl**+**T** |
 |members  |`m:`     | **Alt**+**\\**                 |
+|text     |`x:`     | **Shift**+**Alt**+**F**        |
 
-> [!TIP]
-> To learn more about the new search experience, see both the [Better search in Visual Studio](https://devblogs.microsoft.com/visualstudio/new-better-search-in-visual-studio/) and [All-In-One Search available in 17.6](https://devblogs.microsoft.com/visualstudio/all-in-one-search-available-in-17-6/) blog posts.
+In Visual Studio 17.11 and later, you can set the scope of code search to the current document, current project, the entire solution, or external files that are referenced in your solution, such as header files or files open from locations outside your solution. You can set different scopes for different filters. For example, the default experience can be set to look through *Entire solution* and `members` can be set to look through only the current document. Your selections will be remembered the next time you use code search.
+
+:::image type="content" alt-text="Screenshot of code search scope options." source="./media/vs-2022/search-code-scope.png" :::
+
+The text filter (**Shift**+**Alt**+**F**) in Code Search is available in preview in Visual Studio 17.9 and later. See [17.9 Preview 3 brings exciting changes to Code Search](https://devblogs.microsoft.com/visualstudio/17-9-preview-3-brings-exciting-changes-to-code-search/). Search for a text string, with options to match the case, match whole words, or use a regular expression. The regular expression format is described at [Regular expressions](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
+:::image type="content" alt-text="Screenshot of text search with various options." source="./media/vs-2022/search-text-search-text-options-highlighted.png" :::
+
+#### Navigate to a specific line in Code Search
+
+With Visual Studio 17.12 and later, you can now navigate to a specific line in the current document or other specified document.
+
+To go to a line in the *current* document, type colon (`:`) followed by the line number. For example, `:39` navigates to line 39 in the active file.
+
+![Screenshot showing Go to line in current document.](./media/vs-2022/all-in-one-search-go-to-line-same-document.png)
+
+You can also go to a line in a different document by typing the filename, colon, and then the line number. For example, `Order:43` navigates to line 43 in *Order.cs*. If you don't specify the exact file name, then the search will try to find the best match.
+
+![Screenshot showing Go to line in different document.](./media/vs-2022/all-in-one-search-go-to-line-different-document.png)
+
+#### Dock as a tool window
+
+With Visual Studio 17.12 or later, you can dock the search window instead of having it floating in front. This can be helpful to avoid interrupting your code editing. Use the icon near the top right of the window to enable docking as a tool window.
+
+![Screenshot showing docking icon on the search window.](./media/vs-2022/all-in-one-search-docking-icon.png)
+
+You can use a similar icon on the tool window to revert back to the floating window.
+
+#### Toggle preview pane
+
+With Visual Studio 17.12 or later, you can toggle the preview pane. Use the eye icon to disable or enable the preview pane.
+
+![Screenshot showing the icon to toggle the preview pane in the search window.](./media/vs-2022/all-in-one-search-toggle-preview.png)
+
+Also new with Visual Studio 17.12, the preview panel's position automatically adjusts based on the dimensions of the search window.
 
 ::: moniker-end
 

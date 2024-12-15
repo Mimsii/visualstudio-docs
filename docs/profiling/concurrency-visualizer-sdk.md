@@ -7,12 +7,11 @@ f1_keywords:
   - "vs.cv.sdk.about"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Concurrency Visualizer SDK
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can instrument your source code by using the Concurrency Visualizer SDK to display additional information in the Concurrency Visualizer. You can associate the additional data with phases and events in your code. These additional visualizations are known as *markers*.  For an introductory walkthrough, see [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
 
 ## Properties
@@ -62,7 +61,7 @@ You can instrument your source code by using the Concurrency Visualizer SDK to d
 
 5. Create a `marker_series` object and pass it to the `span` constructor.
 
-    ```C++
+    ```cpp
 
     marker_series mySeries;
     span s(mySeries, _T("Span description"));
@@ -114,7 +113,7 @@ You can instrument your source code by using the Concurrency Visualizer SDK to d
 
 1. Use the `CvCreateMarkerSeries` function to create a PCV_MARKERSERIES.
 
-    ```C++
+    ```cpp
     PCV_MARKERSERIES series;
     CvCreatemarkerSeries(myProvider, _T("My Series"), &series);
     CvWriteFlag(series, _T("Writing a flag"));

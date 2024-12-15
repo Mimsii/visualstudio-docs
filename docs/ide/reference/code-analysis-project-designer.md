@@ -10,12 +10,11 @@ helpviewer_keywords:
 - Project Designer, Code Analysis page
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
+monikerRange: 'vs-2019'
 ---
 # Code Analysis, Project Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Contains the code analysis tool that you can opt to run on your code. The tool reports information about your assemblies, such as violations of the programming and design rules set forth in the Microsoft .NET Design Guidelines.
 

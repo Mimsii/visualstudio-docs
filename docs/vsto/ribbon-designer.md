@@ -24,12 +24,11 @@ helpviewer_keywords:
   - "Ribbon [Office development in Visual Studio], shortcut keys"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Ribbon Designer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The Ribbon Designer is a visual design canvas. Use the Ribbon Designer to add custom tabs, groups, and controls to the ribbon of a Microsoft Office application.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]

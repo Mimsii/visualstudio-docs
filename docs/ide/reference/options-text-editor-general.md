@@ -30,12 +30,10 @@ helpviewer_keywords:
 - editors, global settings
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Options dialog box: Text Editor \> General
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This dialog box lets you change global settings for the Visual Studio code and text editor. To display this dialog box, select **Options** on the **Tools** menu, expand the **Text Editor** folder, and then select **General**.
 

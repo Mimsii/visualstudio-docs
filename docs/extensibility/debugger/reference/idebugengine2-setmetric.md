@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugEngine2:::SetMetric
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngine2::SetMetric
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method sets a registry value known as a metric.
 
 ## Syntax

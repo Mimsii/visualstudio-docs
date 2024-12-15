@@ -1,30 +1,29 @@
 ---
 title: Report a problem with Visual Studio
 description: Report a problem in Visual Studio by using the product installer or the built-in Feedback Tool, which allows you to easily add diagnostic information.
-ms.date: 10/07/2021
+ms.date: 3/14/2024
 ms.topic: how-to
-author: madskristensen
-ms.author: madsk
-manager: jmartens
-ms.technology: vs-ide-general
+author: jasonchlus
+ms.author: jasonchlus
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Report a problem with the Visual Studio product or installer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-> [!NOTE]
-> For Visual Studio for Mac, see [How to report a problem in Visual Studio for Mac](/visualstudio/mac/report-a-problem).
 
 You can report a problem from either Visual Studio or its installer. The built-in Feedback Tool allows you to easily add diagnostic information that helps the Visual Studio teams diagnose and fix the issues. 
 
 Here are the steps to report a problem.
 
 1. **In Visual Studio**, select the feedback icon in the upper-right corner and select Report a Problem. You can also access the feedback tool  from the menu **Help** > **Send Feedback** > **Report a Problem**.
-![Screenshot showing the feedback icon selected in the upper right corner of the Visual Studio window and Report a Problem selected on the context menu.](media/feedback-button.png)
-Alternatively, report a problem in **Visual Studio Installer** if you can't install Visual Studio or are unable to access the feedback tool within Visual Studio.  In the Installer, select the feedback icon in the upper-right corner and select Report a Problem.
-![Screenshot showing the feedback icon selected in the upper right corner of the Visual Studio Installer and Report a Problem selected on the context menu.](media/installer.png)
+    ![Screenshot showing the feedback icon selected in the upper right corner of the Visual Studio window and Report a Problem selected on the context menu.](media/feedback-button.png)
 
-1. Clicking **Report a Problem** will open your default browser and sign you in using the same account you use to sign in to Visual Studio
+    Alternatively, if you can't install Visual Studio or are unable to access the feedback tool within Visual Studio you can report a problem in the **Visual Studio Installer**.  If you have Visual Studio open, go to **Tools > Get Tools > Features...** to launch the installer, or launch it from the Start menu. In the installer, select the feedback icon in the upper-right corner and select **Report a Problem**.
+
+    ![Screenshot showing the feedback icon selected in the upper right corner of the Visual Studio Installer and Report a Problem selected on the context menu.](./media/report-a-problem-selected.png)
+
+1. Selecting **Report a Problem** will open [Developer Community](https://developercommunity.microsoft.com/VisualStudio) in your default browser and sign you in using the same account you're signed in to Visual Studio with.
+
+   Note: If you are using an ad-blocker you may experience issues during sign-in. Disable the ad-blocker and try to sign in again.
 
    ![Sign in to report a problem](../ide/media/feedback-browser-top.png)
 
@@ -47,7 +46,7 @@ Alternatively, report a problem in **Visual Studio Installer** if you can't inst
     ![Take a screenshot](../ide/media/feedback-screenshot.png)
     *Only Microsoft engineers can see the screenshot*
 
-1. <a name="trace"/>Record your actions to reproduce the issue.
+1. <a name="trace"></a> Record your actions to reproduce the issue.
 
    One of the best ways to help the Visual Studio engineering team solve the problem is to provide a trace and heap dump files for them to look through. You can do that by recording the steps that resulted in the bug. A screenshot will be captured every time the mouse is clicked, but keyboard entry will not record screenshots.
    1. Click **Start recording**. Wait a moment for the permissions prompt.
@@ -60,13 +59,12 @@ Alternatively, report a problem in **Visual Studio Installer** if you can't inst
    > [!Warning]
    > There may be a several seconds delay between clicking **Start recording** and the prompt where Windows asks for permission to start a program with elevated permissions.
 
-
-5. Review the attached files and upload additional files if you believe it would help diagnose the issue.
+1. Review the attached files and upload additional files if you believe it would help diagnose the issue.
 
     ![Attached files](../ide/media/feedback-attachments.png)
     *Only Microsoft engineers can see the attached files*
 
-6. The last step is to hit the **Submit** button. Submitting the report will send it directly into the internal Visual Studio bug reporting system awaiting triage.
+1. The last step is to hit the **Submit** button. Submitting the report will send it directly into the internal Visual Studio bug reporting system awaiting triage.
 
 Each one of your problem reports becomes a work item in our core engineering system, empowering you to engage directly with our product teams to help us identify and resolve impactful issues. Your feedback submitted with rich diagnostic information is critical to improving the Visual Studio product family. We really appreciate you taking the time to report problems.
 
@@ -74,17 +72,21 @@ In addition, you can vote on feedback from other community members to bring more
 
 ## When further information is needed
 
-When an issue is missing important information, we assign the **Needs More Info** state. We comment on the issue with the specific information we need, and you'll receive an email notification. If we don't receive the information within seven days, then we send you a reminder. After that, we close the ticket after 14 days of inactivity.
+When an issue is missing important information, we assign the **Needs More Info** state. We comment on the issue with the specific information we need, and you'll receive an email notification. You can provide more information by adding comments, attachments, log/dump files, or recording steps. If we don't receive the information within 7 days, then we send you a reminder. After that, we close the ticket after 14 days of inactivity.
 
-1. Follow the link in the email to the problem report or go to the home page to see all reports in the **Needs More Info** state.
+If you need to leave a comment or add attachments, navigate to the issue from the email and comment/add attachments directly.
 
-    ![Screenshot of the Home page of the Visual Studio Feedback window. One feedback item is listed, and it's marked with a "Need More Info" label in red.](../ide/media/feedback-my-feedback.png)
+To add log/dump files or record steps:
+
+1. Open Visual Studio and navigate to the feedback ticket via **Help > Send feedback > My feedback**
+
+   ![Screenshot of the Home page of the Visual Studio Feedback window. One feedback item is listed, and it's marked with a "Need More Info" label in red.](../ide/media/feedback-my-feedback.png)
 
 1. Selecting the Provide More Info link on the problem report navigates you to a new screen. From here, you can see what info is being requested.
 
    ![Screenshot of the Visual Studio Feedback window showing the information being requested by Microsoft for resolution of the issue.](../ide/media/feedback-need-more-info.png)
 
-1. You can provide more information by adding comments, attachments, or recording steps. This experience is similar to reporting a new problem or providing additional information when voting on a problem.
+1. Attach your dump/log files or record steps, and then submit.
 
     ![Screenshot of Developer Community attach system logs and recordings checkbox being checked and showing the option to attach more files.](https://user-images.githubusercontent.com/79461015/153265681-3696f046-b5c7-41c4-ad78-668951578bdd.png)
 
@@ -144,8 +146,8 @@ If you don't have a problem to report but want to suggest a feature, there's a p
 
 ## Related content
 
-* [Developer Community Guidelines](./developer-community-guidelines.md)
-* [Report a problem with Visual Studio for Mac](/visualstudio/mac/report-a-problem)
-* [Report a problem with C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/home)
-* [Developer Community data privacy](developer-community-privacy.md)
+* [Report a problem with .NET](https://developercommunity.microsoft.com/dotnet/report)
+* [Report a problem with C++](https://developercommunity.microsoft.com/cpp/report)
+* [Developer Community Guidelines](/visualstudio/ide/developer-community-guidelines)
+* [Developer Community data privacy](/visualstudio/ide/developer-community-privacy)

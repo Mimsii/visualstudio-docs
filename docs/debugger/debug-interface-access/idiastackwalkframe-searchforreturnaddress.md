@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackWalkFrame::searchForReturnAddress method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackWalkFrame::searchForReturnAddress
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Searches the specified stack frame for the nearest function return address.
 
 ## Syntax
 
 ```C++
-HRESULT searchForReturnAddress ( 
+HRESULT searchForReturnAddress ( 
    IDiaFrameData* frame,
    ULONGLONG*     returnAddress
 );

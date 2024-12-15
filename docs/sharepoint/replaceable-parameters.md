@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, replaceable parameters"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Replaceable parameters
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Replaceable parameters, or *tokens*, can be used inside project files to provide values for SharePoint solution items whose actual values aren't known at design time. They're similar in function to the standard Visual Studio template tokens. For more information, see [Template Parameters](../ide/template-parameters.md).
 
 ## Token format

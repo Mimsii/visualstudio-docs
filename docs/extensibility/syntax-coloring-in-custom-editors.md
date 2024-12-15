@@ -7,12 +7,11 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Syntax Coloring in Custom Editors
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Visual Studio Environment SDK editors, including the core editor, use language services to identify specific syntactical items and display them with specified colors for a given document view.
 
 ## Colorization Requirements

@@ -4,13 +4,15 @@ description: Use Bridge to Kubernetes with Visual Studio to connect to a cluster
 keywords: "Bridge to Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, containers"
 ms.author: ghogen
 author: ghogen
-manager: jmartens
-ms.technology: bridge
+manager: mijacobs
+ms.subservice: bridge
 ms.topic: tutorial 
-ms.date: 08/11/2022
+ms.date: 06/20/2024
 ---
 
 # Tutorial: Run and debug locally with Bridge to Kubernetes on Visual Studio
+
+[!INCLUDE [Bridge to Kubernetes deprecation note](./includes/deprecation.md)]
 
 In this tutorial, you'll learn how to redirect traffic between your Kubernetes cluster and your development computer.
 This tutorial uses Bridge to Kubernetes and Visual Studio for debugging a service.
@@ -31,7 +33,6 @@ In this tutorial, you learn how to:
 - The [kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/) executable installed on your system.
 - [Visual Studio 2019](https://www.visualstudio.com/vs/) version 16.7 or later running on Windows 10 or later or [Visual Studio 2022](https://www.visualstudio.com/vs/).
 - The [Bridge to Kubernetes extension for Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro) or [Bridge to Kubernetes extension for Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro2022).
-- An application to troubleshoot, such as this [TODO App sample application](https://github.com/Azure/Bridge-To-Kubernetes/tree/main/samples/todo-app).
 
 ## Set up a service
 
@@ -50,10 +51,10 @@ The sample application has a frontend to interact and a backend that provides pe
 1. Clone the sample repo.
 
    ```bash
-   git clone https://github.com/Azure/Bridge-To-Kubernetes
+   git clone https://github.com/hsubramanianaks/b2k-samples
    ```
 
-1. Change directory to *samples/todo-app* and then create a namespace for the sample.
+1. Change directory to *todo-app* and then create a namespace for the sample.
 
    ```cmd
    kubectl create namespace todo-app
@@ -84,7 +85,7 @@ The sample application has a frontend to interact and a backend that provides pe
 
 1. Open Visual Studio. In the **Get started** window, select **Continue without code**.
 
-1. Select **Open** > **Project/Solution**, then find the *samples\todo-app\database-api\databaseApi.csproj* project and select **Open**.
+1. Select **Open** > **Project/Solution**, then find the *todo-app\database-api\databaseApi.csproj* project and select **Open**.
 
 1. In the project, select **Bridge to Kubernetes** from the launch settings as shown here:
 
@@ -166,11 +167,17 @@ In this section, you set a breakpoint in your service.
 
 If you need to change how Bridge to Kubernetes connects to your cluster, in this section, you'll edit the launch profile settings.
 
-1. Click on the arrow next to the **Bridge to Kubernetes** button, then click on **databaseApi Debug Properties**.
+1. In the Visual Studio command bar, click on the arrow next to the start button (green triangle or "play" icon) to open the dropdown, then click on **databaseApi Debug Properties**.
  ![Screenshot shows the Bridge to Kubernetes drop down menu.](media/bridge-to-kubernetes-vs/change-bridge-properties.png)
 
 1. Click on the **Edit profile for Bridge to Kubernetes** link in the **Launch Profiles** dialog.
  ![Screenshot shows Launch Profiles dialog with a link to edit the Bridge to Kubernetes profile](media/bridge-to-kubernetes-vs/bridge-launch-profiles.png)
+
+Another way to get to this screen:
+
+1. Right-click on the project node in Solution Explorer, and choose **Properties** (or press **Alt**+**Enter**).
+
+1. Scroll down to **Debug**, and choose **Open debug launch profiles UI**.
 
 ## Clean up resources
 
@@ -180,8 +187,6 @@ If you cloned that repo locally, you can delete it manually.
 ## Next steps
 
 Learn more about Bridge to Kubernetes at [How Bridge to Kubernetes works](overview-bridge-to-kubernetes.md).
-
-For information about supported features and a roadmap for Bridge to Kubernetes, see [Bridge to Kubernetes roadmap](https://github.com/microsoft/mindaro/projects/1).
 
 To learn how to connect your development computer to a cluster by using Visual Studio Code, check out this article:
 > [!div class="nextstepaction"]

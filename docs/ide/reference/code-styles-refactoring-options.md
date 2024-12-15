@@ -8,8 +8,8 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 
 # .NET code refactoring options

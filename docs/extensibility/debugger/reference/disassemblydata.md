@@ -9,15 +9,14 @@ helpviewer_keywords:
 - DisassemblyData structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # DisassemblyData
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Describes one disassembly instruction for the integrated development environment (IDE) to display.
 
 ## Syntax

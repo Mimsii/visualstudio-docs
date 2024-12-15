@@ -11,12 +11,11 @@ helpviewer_keywords:
 - data [Visual Studio], searching
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Create a .NET Framework Windows Form to search data with ADO.NET
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Create a .NET Framework Windows Form to search data with ADO.NET
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -75,13 +74,13 @@ This step creates a data source from a database using the **Data Source Configur
 
 1. In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.
 
-1. Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.
+1. Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
 
-1. On the **Choose a Database Model** screen, choose **Dataset**, and then click **Next**.
+1. On the **Choose a Database Model** screen, choose **Dataset**, and then select **Next**.
 
 1. On the **Choose your Data Connection** page do one of the following:
 
-    - If a data connection to the Northwind sample database is available in the drop-down list, select it.
+    - If a data connection to the Northwind sample database is available in the dropdown list, select it.
 
     - Select **New Connection** to launch the **Add/Modify Connection** dialog box.
 
@@ -89,7 +88,7 @@ This step creates a data source from a database using the **Data Source Configur
 
 1. On the **Choose your Database Objects** page, expand the **Tables** node.
 
-1. Select the **Customers** table, and then click **Finish**.
+1. Select the **Customers** table, and then select **Finish**.
 
      The **NorthwindDataSet** is added to your project, and the **Customers** table appears in the **Data Sources** window.
 
@@ -107,9 +106,9 @@ You can create the data-bound controls by dragging items from the **Data Sources
 
 ## Add parameterization (search functionality) to the query
 
-You can add a WHERE clause to the original query using the **Search Criteria Builder** dialog box:
+You can add a `WHERE` clause to the original query using the **Search Criteria Builder** dialog box:
 
-1. Just below the design surface for your form, select the **customersTableAdapter** button, and then  in the **Properties** window, choose **Add Query...**.
+1. Just below the design surface for your form, select the **customersTableAdapter** button, and then in the **Properties** window, choose **Add Query...**.
 
 2. Type **FillByCity** in the **New query name** area on the **Search Criteria Builder** dialog box.
 
@@ -125,7 +124,7 @@ You can add a WHERE clause to the original query using the **Search Criteria Bui
      ```
 
     > [!NOTE]
-    > Access and OLE DB data sources use the question mark ('?') to denote parameters, so the WHERE clause would look like this: `WHERE City = ?`.
+    > Access and OLE DB data sources use the question mark ('?') to denote parameters, so the `WHERE` clause would look like this: `WHERE City = ?`.
 
 4. Click **OK** to close the **Search Criteria Builder** dialog box.
 
@@ -137,18 +136,18 @@ Running the application opens your form and makes it ready to take the parameter
 
 1. Press **F5** to run the application.
 
-2. Type **London** into the **City** text box, and then click **FillByCity**.
+2. Type **London** into the **City** text box, and then select **FillByCity**.
 
      The data grid is populated with customers that meet the criteria. In this example, the data grid only displays customers that have a value of **London** in their **City** column.
 
 ## Next steps
 
-Depending on your application requirements, there are several steps you may want to perform after creating a parameterized form. Some enhancements you could make to this walkthrough include:
+Depending on your application requirements, there are several steps you might want to perform after creating a parameterized form. Some enhancements you could make to this walkthrough include:
 
 - Adding controls that display related data. For more information, see [Relationships in Datasets](relationships-in-datasets.md).
 
 - Editing the dataset to add or remove database objects. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## See also
+## Related content
 
 - [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

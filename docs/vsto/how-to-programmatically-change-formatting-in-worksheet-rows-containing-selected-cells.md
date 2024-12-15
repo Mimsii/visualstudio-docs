@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "worksheets, changing formatting"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically change formatting in worksheet rows containing selected cells
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   You can change the font of an entire row that contains a selected cell so that the text is bold.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

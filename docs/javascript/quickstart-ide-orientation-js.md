@@ -6,12 +6,10 @@ ms.date: 11/03/2023
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-javascript
+manager: mijacobs
+ms.subservice: javascript-typescript
 ---
 # First look at the Visual Studio IDE
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this 5-10 minute introduction to the Visual Studio integrated development environment (IDE), we take a tour of some of the windows, menus, and other UI features.
 
@@ -172,4 +170,4 @@ We've looked at just a few of the features of Visual Studio to get acquainted wi
 
 - [Overview of the Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [More features of Visual Studio 2017](../ide/advanced-feature-overview.md)
-- [Change theme and font colors](../ide/quickstart-personalize-the-ide.md)
+- [Change theme and font colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

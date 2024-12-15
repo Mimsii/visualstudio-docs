@@ -9,16 +9,18 @@ helpviewer_keywords:
 - Assembly Information dialog box
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
+monikerRange: 'vs-2019'
 ---
 # Assembly Information dialog box
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Assembly Information dialog box is used to specify the values of the .NET Framework global assembly attributes, which are stored in the AssemblyInfo file created automatically with your project. In Solution Explorer, the AssemblyInfo file is located in the **My Project** node for Visual Basic projects (click **Show All files** to view it). For C# projects, it's located under **Properties**. For more information, see [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
 To access this dialog box, select a project node in **Solution Explorer**, and then, on the **Project** menu, select **Properties**. On the **Application** page, select the **Assembly Information** button.
+
+> [!NOTE]
+> The information in this topic only applies to .NET Framework projects, not .NET Core or .NET 5 and later projects. For those projects, edit the AssemblyInfo file directly.
 
 ## UIElement list
 

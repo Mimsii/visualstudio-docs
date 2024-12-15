@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaTable::get_name method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaTable::get_name
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the name of the table.
 
 ## Syntax

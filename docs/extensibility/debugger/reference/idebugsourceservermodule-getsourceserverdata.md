@@ -7,15 +7,14 @@ helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSourceServerModule::GetSourceServerData
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves an array of source server information.
 
 ## Syntax

@@ -5,13 +5,11 @@ ms.date: 06/24/2022
 ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 
 # Integrate models by using Visual Studio ModelBus
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio ModelBus provides a method for creating links between models and from other tools into models. For example, you could link domain-specific language (DSL) models and UML models. You can create an integrated set of DSLs.
 
@@ -191,7 +189,7 @@ using System.Linq;
 
 ### To create a reference to a model
 
-To create a model reference, you access the AdapterManager for the exposed DSL, and use it to create a reference to the model. You can specify either a file path, or a `EnvDTE.ProjectItem`.
+To create a model reference, you access the AdapterManager for the exposed DSL, and use it to create a reference to the model. You can specify either a file path, or an `EnvDTE.ProjectItem`.
 
 From the AdapterManager, you can obtain an Adapter, which provides access to individual elements in the model.
 
@@ -317,7 +315,7 @@ Typically, you access a target DSL using a Model Bus Reference (MBR) stored in a
    <#@ import namespace="Company.CompartmentDragDrop.ModelBusAdapters" #>
    <# // Get source root from directive processor:
      ExampleModel source = this.ExampleModel;
-     // This DSL has a MBR in its root:
+     // This DSL has an MBR in its root:
    using (ModelBusAdapter adapter = this.ModelBus.CreateAdapter(source.ModelReference) as ModelBusAdapter)
      {
      ModelBusAdapterManager manager = this.ModelBus.FindAdapterManagers(this.Host.ResolvePath("Sample.compDD1")).FirstOrDefault();
@@ -470,7 +468,7 @@ public void ValidateModelBusReferences(ValidationContext context)
     });
 }
 private const string INVALID_REF_FORMAT =
-    "The '{0}' domain property of ths ReferenceState instance "
+    "The '{0}' domain property of this ReferenceState instance "
   + "named '{1}' contains reference value '{2}' which is invalid";
 ```
 

@@ -9,12 +9,11 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], plug-ins
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Best practices for implementing a source control plug-in
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following technical details can help you reliably implement a source control plug-in in Visual Studio.
 
 ## Memory management issues

@@ -7,12 +7,10 @@ helpviewer_keywords:
 - roslyn package versions
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # .NET compiler platform package version reference
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The following table shows which [.NET compiler platform (Roslyn) package](https://www.nuget.org/packages/Microsoft.Net.Compilers/) versions are supported for different versions of Visual Studio.
 
@@ -20,7 +18,9 @@ As an example, to ensure that your custom analyzer works on all versions of Visu
 
 | Roslyn package version | Minimum supported Visual Studio version |
 | - | - |
-| 4.8.0 | Visual Studio 2022 version 17.8 (Preview) |
+| 4.10.0 | Visual Studio 2022 version 17.10 |
+| 4.9.2 | Visual Studio 2022 version 17.9 |
+| 4.8.0 | Visual Studio 2022 version 17.8 |
 | 4.7.0 | Visual Studio 2022 version 17.7 |
 | 4.6.0 | Visual Studio 2022 version 17.6 |
 | 4.5.0 | Visual Studio 2022 version 17.5 |

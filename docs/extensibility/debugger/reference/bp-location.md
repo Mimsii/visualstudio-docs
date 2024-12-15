@@ -9,15 +9,14 @@ helpviewer_keywords:
 - BP_LOCATION union
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # BP_LOCATION
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies the type of structure used to describe the location of the breakpoint.
 
 ## Syntax

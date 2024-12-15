@@ -1,5 +1,5 @@
 ---
-title: C++ Library Reference
+title: C++ Library Reference for Concurrency Visualizer
 description: See this section for Concurrency Visualizer SDK reference information.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +7,10 @@ helpviewer_keywords:
   - Concurrency Visualizer SDK, C++ Library Reference
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
-# C++ library reference
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# C++ library reference for Concurrency Visualizer
 
 This section contains reference information for the Concurrency Visualizer SDK.
 

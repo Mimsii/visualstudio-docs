@@ -9,12 +9,11 @@ helpviewer_keywords:
 - Concurrency, diagnostic::marker_series constructor
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # marker_series::marker_series constructor
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Initializes a new instance of the `marker_series` class.
 
 ## Syntax

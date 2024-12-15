@@ -6,12 +6,10 @@ ms.topic: overview
 author: madskristensen
 ms.author: madsk
 manager: pchapman
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-sdk
+
+ms.subservice: extensibility-integration
 ---
 # Visual Studio Community Toolkit
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This toolkit will help you write successful Visual Studio extensions and there's something for absolute beginners to experts alike.
 

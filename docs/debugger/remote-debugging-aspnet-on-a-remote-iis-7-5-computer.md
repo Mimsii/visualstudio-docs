@@ -1,16 +1,14 @@
 ---
 title: "Remote debug ASP.NET on an IIS computer"
 description: Learn how to set up and configure a Visual Studio ASP.NET MVC 4.8 application, deploy it to IIS, and attach the remote debugger from Visual Studio. 
-ms.date: 11/21/2023
+ms.date: 04/23/2024
 ms.topic: "conceptual"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Remote Debug ASP.NET on a Remote IIS Computer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 To debug an ASP.NET application that has been deployed to IIS, install and run the remote tools on the computer where you deployed your app, and then attach to your running app from Visual Studio.
 
@@ -63,7 +61,7 @@ This article includes steps on setting up a basic configuration of IIS on Window
 
 ## Update browser security settings on Windows Server
 
-If you're using Internet Explorer in an older version of Windows Server, the Enhanced Security Configuration is enabled by default. You might need to add some domains as trusted sites to enable you to download some of the web server components. Add the trusted sites by going to **Internet Options > Security > Trusted Sites > Sites**. Add the following domains.
+If you're using an older version of Windows Server, you might need to add some domains as trusted sites to enable you to download some of the web server components. Add the trusted sites by going to **Internet Options > Security > Trusted Sites > Sites**. Add the following domains.
 
 - microsoft.com
 - go.microsoft.com
@@ -119,7 +117,7 @@ You can use this option to create a publish settings file and import it into Vis
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-After the app deploys successfully, it should start automatically. If the app doesn't start from Visual Studio, start the app in IIS to verify that it runs correctly. 
+After the app deploys successfully, it should start automatically. If the app doesn't start after deployment, start the app in IIS to verify that it runs correctly. 
 
 When you're ready, switch to a debug configuration.
 
@@ -137,6 +135,9 @@ When you're ready, switch to a debug configuration.
 1. Select a **Debug** configuration, and then select **Remove additional files at destination** under the **File Publish** options.
 1. Select **Save** and then republish the app.
 ::: moniker-end
+
+> [!WARNING]
+> Using username and password credentials (basic authentication) is not the most secure method of authentication. Whenever possible, use alternative methods. For example, consider publishing to a package from Visual Studio, and then use *WebDeploy.exe* from a command line to deploy the package. With that method, you can use IIS Manager to configure authorized Windows users who can publish to the web server, and run *WebDeploy.exe* under that Windows user account. See [Installing and Configuring Web Deploy on IIS 8.0 or Later](/iis/install/installing-publishing-technologies/installing-and-configuring-web-deploy-on-iis-80-or-later). If you do use password credentials, be sure to use a strong password, and secure the password from being leaked or shared.
 
 ## (Optional) Deploy by publishing to a local folder
 
@@ -158,7 +159,12 @@ You can use this option to deploy your app if you want to copy the app to IIS us
 
 7. Under **Connections**, select **Application Pools**. Open **DefaultAppPool** and set the Application pool field to **ASP.NET v4.0** (ASP.NET 4.5 isn't an option for the Application pool).
 
-8. With the site selected in the IIS Manager, choose **Edit Permissions**, and make sure that IUSR, IIS_IUSRS, or the user configured for the Application Pool is an authorized user with Read & Execute rights. If none of these users are present, add IUSR as a user with Read & Execute rights.
+8. With the site selected in the IIS Manager, choose **Edit Permissions**, and make sure that IUSR, IIS_IUSRS, or the user configured for the Application Pool is an authorized user with Read & Execute rights.
+
+   If you don't see one of these users with access, go through steps to add IUSR as a user with Read & Execute rights.
+
+> [!IMPORTANT]
+> For security information related to the built-in accounts, see [Understanding Built-In User and Group Accounts in IIS 7](/iis/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
 
 ### Publish and Deploy the app by publishing to a local folder from Visual Studio
 
@@ -201,49 +207,78 @@ For information on running the remote debugger as a service, see [Run the remote
 
 ## <a name="BKMK_attach"></a> Attach to the ASP.NET application from the Visual Studio computer
 
-1. On the Visual Studio computer, open the solution that you're trying to debug (**MyASPApp** if you're following the steps in this article).
+::: moniker range=">=vs-2022"
+
+Starting in Visual Studio 2022 version 17.10 Preview 2, the Attach to Process dialog box has changed. If you need instructions that match the older dialog box, switch to the Visual Studio 2019 view (upper left version selector in the article).
+
+1. On the Visual Studio computer, open the solution that you're trying to debug (**MyASPApp** if you're following all the steps in this article).
+
 2. In Visual Studio, select **Debug > Attach to Process** (Ctrl + Alt + P).
 
-    > [!TIP]
-    > In Visual Studio 2017 and later versions, you can reattach to the same process you previously attached to by using **Debug > Reattach to Process...** (Shift+Alt+P).
+   > [!TIP]
+   > In Visual Studio 2017 and later versions, you can reattach to the same process you previously attached to by using **Debug > Reattach to Process...** (Shift + Alt + P).
+
+3. Set the **Connection Type** to **Remote (Windows)**.
+
+   The **Connection Target** option appears.
+
+   Set the **Connection Target** to **\<remote computer name>** and press **Enter**.
+
+   Verify that Visual Studio adds the required port to the computer name, which appears in the format: **\<remote computer name>:port**
+
+   On Visual Studio 2022, you should see **\<remote computer name>:4026**
+
+   The port is required. If you don't see the port number, add it manually.
+::: moniker-end
+
+::: moniker range="vs-2019"
+1. On the Visual Studio computer, open the solution that you're trying to debug (**MyASPApp** if you're following all the steps in this article).
+
+2. In Visual Studio, select **Debug > Attach to Process** (Ctrl + Alt + P).
+
+   > [!TIP]
+   > In Visual Studio 2017 and later versions, you can reattach to the same process you previously attached to by using **Debug > Reattach to Process...** (Shift + Alt + P).
 
 3. Set the Qualifier field to **\<remote computer name>** and press **Enter**.
 
-    Verify that Visual Studio adds the required port to the computer name, which appears in the format: **\<remote computer name>:port**
+   Verify that Visual Studio adds the required port to the computer name, which appears in the format: **\<remote computer name>:port**
 
-    ::: moniker range=">=vs-2022"
-    On Visual Studio 2022, you should see **\<remote computer name>:4026**
-    ::: moniker-end
-    ::: moniker range="vs-2019"
-    On Visual Studio 2019, you should see **\<remote computer name>:4024**
-    ::: moniker-end
+   On Visual Studio 2019, you should see **\<remote computer name>:4024**
 
-    The port is required. If you don't see the port number, add it manually.
-
+   The port is required. If you don't see the port number, add it manually.
+::: moniker-end
 4. Select **Refresh**.
-    You should see some processes appear in the **Available Processes** window.
 
-    If you don't see any processes, try using the IP address instead of the remote computer name (the port is required). You can use `ipconfig` in a command line to get the IPv4 address.
+   You should see some processes appear in the **Available Processes** window.
+
+   If you don't see any processes, try using the IP address instead of the remote computer name (the port is required). You can use `ipconfig` in a command line to get the IPv4 address.
+
+   If you want to use the **Find** button, you might need to [open outbound UDP port 3702](#bkmk_openports) on the server.
 
 5. Check  **Show processes from all users**.
 
-6. Type the first letter of a process name to quickly find **w3wp.exe** for ASP.NET 4.5.
+6. Type the first letter of a process name to quickly find *w3wp.exe* for ASP.NET 4.5.
 
-    If you have multiple processes showing **w3wp.exe**, check the **User Name** column. In some scenarios, the **User Name** column shows your app pool name, such as **IIS APPPOOL\DefaultAppPool**. If you see the App Pool, an easy way to identify the correct process is to create a new named App Pool for the app instance you want to debug, and then you can find it easily in the **User Name** column.
+   If you have multiple processes showing w3wp.exe, check the User Name column. In some scenarios, the User Name column shows your app pool name, such as IIS APPPOOL\DefaultAppPool. If you see the App Pool, an easy way to identify the correct process is to create a new named App Pool for the app instance you want to debug, and then you can find it easily in the User Name column.
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+   ::: moniker range=">=vs-2022"
+   ![Screenshot of Attach to Process dialog.](../debugger/media/vs-2022/remote-debug-attach-to-process-aspnet-core.png "RemoteDBG_AttachToProcess")
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   ![Screenshot of Attach to Process dialog.](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+   ::: moniker-end
 
-7. Select **Attach**
+7. Select **Attach**.
 
 8. Open the remote computer's website. In a browser, go to **http://\<remote computer name>**.
 
-    You should see the ASP.NET web page.
+   You should see the ASP.NET web page.
 
 9. In the running ASP.NET application, select the link to the **Privacy** page.
 
-    The breakpoint should be hit in Visual Studio.
+   The breakpoint should be hit in Visual Studio.
 
-    If you're unable to attach or hit the breakpoint, see [Troubleshoot remote debugging](../debugger/troubleshooting-remote-debugging.md).
+   If you're unable to attach or hit the breakpoint, see [Troubleshoot remote debugging](../debugger/troubleshooting-remote-debugging.md).
 
 ## Troubleshooting IIS deployment
 
@@ -251,7 +286,7 @@ For information on running the remote debugger as a service, see [Run the remote
 - Make sure the required ports are open on the remote server.
 - Verify that the version of ASP.NET used in your app is the same as the version you installed on the server. For your app, you can view and set the version in the **Properties** page. To set the app to a different version, that version must be installed.
 - If the app tried to open, but you see a certificate warning, choose to trust the site. If you already closed the warning, you can edit the publishing profile, a *.pubxml file, in your project and add the following element (for test only): `<AllowUntrustedCertificate>true</AllowUntrustedCertificate>`
-- If the app doesn't start from Visual Studio, start the app in IIS to test that it deployed correctly.
+- After it's deployed, start the app in IIS to test that it deployed correctly.
 - Check the Output window in Visual Studio for status information, and check your error messages.
 
 ## <a name="bkmk_openports"></a> Open required ports on Windows Server
@@ -279,7 +314,9 @@ In addition, these ports should already be opened by the ASP.NET installation:
 
 ### Open a port
 
-1. To open a port on Windows Server, open the **Start** menu, search for **Windows Firewall with Advanced Security**.
+1. To open a port on Windows Server, open the **Start** menu, search for **Windows Defender Firewall** or **Windows Firewall with Advanced Security**.
+
+   For **Windows Defender Firewall**, choose **Advanced settings**.
 
 1. Then choose **Inbound Rules > New Rule > Port**. Choose **Next** and under **Specific local ports**, enter the port number, select **Next**, then **Allow the Connection**, select Next, and add the name (**IIS**, **Web Deploy**, or **msvsmon**) for the Inbound Rule.
 

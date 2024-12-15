@@ -2,17 +2,16 @@
 title: Event Descriptions
 description: Learn about the types of events and the reasons for their use. Each type of event has a specific purpose.
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Event descriptions
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Each type of event has a specific purpose.
 
 ## Events and the reasons for their use

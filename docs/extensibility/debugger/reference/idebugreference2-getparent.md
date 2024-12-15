@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugReference2::GetParent
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugReference2::GetParent
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the parent reference of a reference. Reserved for future use.
 
 ## Syntax

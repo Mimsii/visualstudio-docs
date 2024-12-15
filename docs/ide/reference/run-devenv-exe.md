@@ -12,12 +12,10 @@ helpviewer_keywords:
 - R Devenv switch (/R)
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Run (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Compiles and runs the specified project or solution.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackFrame::get_lengthSavedRegisters method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackFrame::get_lengthSavedRegisters
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the number of bytes of saved registers pushed on the stack.
 
 ## Syntax
 
 ```C++
-HRESULT get_lengthSavedRegisters ( 
+HRESULT get_lengthSavedRegisters ( 
    DWORD* pRetVal
 );
 ```

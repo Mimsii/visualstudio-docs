@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "documents [Office development in Visual Studio], displaying in print preview"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically display documents in Print Preview
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   If your solution generates a report, you might want to display the report to the user in Print Preview mode.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]

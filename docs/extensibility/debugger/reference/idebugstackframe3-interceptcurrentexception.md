@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugStackFrame3::InterceptCurrentException
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugStackFrame3::InterceptCurrentException
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Called by the debugger on the current stack frame when it wants to intercept the current exception.
 
 ## Syntax

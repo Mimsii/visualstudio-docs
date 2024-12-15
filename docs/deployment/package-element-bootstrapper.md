@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "<package> element [bootstrapper]"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;Package&gt; element (bootstrapper)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The `Package` element is the top-level XML element inside of a package file.
 
 ## Syntax

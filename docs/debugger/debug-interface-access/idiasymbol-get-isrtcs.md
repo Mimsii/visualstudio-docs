@@ -9,19 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_isRTCs method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
-# IDiaSymbol::get_isRTCs
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# IDiaSymbol::get_isRTCs
 
 Returns a value that tells whether the function was compiled with stack frame run-time error checking. This is the /RTCs flag.
 
 ## Syntax
 
 ```C++
-HRESULT get_isRTCs ( 
+HRESULT get_isRTCs ( 
    DWORD* pRetVal
 );
 ```

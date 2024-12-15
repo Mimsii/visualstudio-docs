@@ -5,8 +5,8 @@ ms.date: 06/28/2023
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Troubleshoot profiling errors and fix issues
 
@@ -16,12 +16,12 @@ This article provides solutions for some of the most common errors that can prev
 
 Error: "There is no data in the current set of filters"
 
-When opening a *diagsession* file, certain filters are applied such as hiding native code, or hiding non-user code to make the trace easier to understand. Additionally, there are other filters that can be applied such as **time selection** and **thread**, which further narrow down the data shown. If these filters are applied in a way that there's no data remaining to show, then you'll see this warning.
+When opening a *diagsession* file, certain filters are applied such as hiding native code, or hiding non-user code to make the trace easier to understand. Additionally, there are other filters that can be applied such as **time selection** and **thread**, which further narrow down the data shown. If these filters are applied in a way that there's no data remaining to show, then you see this warning.
 
 **How to fix** 
-- Ensure that your time selection has data in it. If you’ve changed your time selection in the graph above the data, select **Clear Selection** to reset it.
+- Ensure that your time selection has data in it. If you changed your time selection in the graph above the data, select **Clear Selection** to reset it.
 - Next, if there's still no data, ensure that all categories and threads are enabled in their respective dropdowns.
-- If the application you are profiling is native code, then be sure to enable the **Show Native Code** option in the **Settings** drop-down. 
+- If the application you're profiling is native code, then be sure to enable the **Show Native Code** option in the **Settings** drop-down. 
 - If you still have no data, then the trace you collected likely was too short for any data to be present. Make sure the program you're collecting data for doesn't complete too quickly (less than a second).
 
 See also: [Show External Code](../profiling/optimize-profiler-settings.md)
@@ -62,10 +62,10 @@ reg delete HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\DiagnosticsHub /f 
 
 ## Error: "Source information not available."
 In order to view source information, you need to have PDBs available from the time of collection. So, for example, if you collect a CPU usage 
-*diagsession* file, make some changes to your code, recompile (which replaces the old PBD), then open the *.diagsession* again, you wouldn't likely be able to see source information for the modules of your code that you've updated. 
+*diagsession* file, make some changes to your code, recompile (which replaces the old PBD), then open the *.diagsession* again, you wouldn't likely be able to see source information for the modules of your code that you updated. 
 
 **How to fix**
-The easiest workaround for this issue is to collect a new *diagsession* after making changes. This way you can be sure your PDBs will be up to date. 
+The easiest workaround for this issue is to collect a new *diagsession* after making changes. This way you can be sure your PDBs are up to date. 
 
 ## Error: "Memory analysis failed due to an internal error."
 
@@ -106,7 +106,22 @@ The Visual Studio profiler uses Event Tracing for Windows (ETW) to collect its p
 
 The Visual Studio profiler uses Event Tracing for Windows (ETW) to collect its performance information. Currently, collecting profile samples using ETW is unsupported on Windows for ARM64 when running in a Virtual Machine (VM). To work around this limitation, you can either use the CPU Usage tool on an actual ARM64 device or use the Instrumentation tool to capture timing information.
 
+## Error: Memory Usage tool doesn't work on .NET 7 and .NET Runtime 8.0.0-8.0.1 with Server GC enabled
+
+Due to an issue introduced with the .NET 7 runtime and propagated to .NET 8 runtime versions 8.0.0 and 8.0.1, it isn't possible to enumerate objects when using server garbage collection. Server garbage collection is enabled by default for ASP.NET Core applications.
+
+**How to fix**
+
+To work around this issue:
+- Disable server garbage collection when taking a snapshot or collecting a dump of your application.
+- Use an unaffected version of the .NET Runtime.
+
+See also:
+- [Workstation and server garbage collection](/dotnet/standard/garbage-collection/workstation-server-gc)
+- [Runtime configuration options for garbage collection](/dotnet/core/runtime-config/garbage-collector)
+- [DAC fails to enumerate heap objects on .NET 7+ due to GC Regions](https://github.com/dotnet/runtime/issues/96568)
+
 ## Related content
 
-- [Analyze CPU usage](../profiling/cpu-usage.md)
+- [Analyze performance by using CPU profiling](../profiling/cpu-usage.md)
 - [Identify hot paths with Flame Graph](../profiling/flame-graph.md)

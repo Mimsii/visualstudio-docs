@@ -7,13 +7,11 @@ helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 author: mikejo5000
 ---
 # First look at testing tools in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio testing tools can help you and your team develop and sustain high standards of code excellence.
 

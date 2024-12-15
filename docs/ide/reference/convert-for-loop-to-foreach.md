@@ -5,15 +5,13 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
 - CSharp
 - VB
 ---
 # Refactoring to convert between a for loop and a foreach statement
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This article describes the Quick Actions refactorings that convert between two looping structures. It includes some reasons why you might want to switch between a [for](/dotnet/csharp/language-reference/keywords/for) loop and a [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) statement in your code.
 

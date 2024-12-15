@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodLocationProperty method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExpressionEvaluator::GetMethodLocationProperty
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method converts a method location and offset into a memory address.
 
 ## Syntax

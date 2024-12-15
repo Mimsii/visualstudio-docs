@@ -1,7 +1,7 @@
 ---
 title: "Use dump files in the debugger"
 description: A dump file is a snapshot of an executing app and loaded modules. Consider creating a dump file for situations where you don't have debug access to the app.
-ms.date: "06/26/2023"
+ms.date: "06/27/2024"
 ms.topic: "conceptual"
 f1_keywords:
   - "vs.debug.crashdump"
@@ -18,12 +18,10 @@ helpviewer_keywords:
   - "dumps"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Dump files in the Visual Studio debugger
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 <a name="BKMK_What_is_a_dump_file_"></a>
 A *dump file* is a snapshot that shows the process that was executing and modules that were loaded for an app at a point in time. A dump with heap information also includes a snapshot of the app's memory at that point.
@@ -76,11 +74,18 @@ With [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studi
 
    The **Minidump File Summary** window shows summary and module information for the dump file, and actions you can take.
 
+   ::: moniker range=">=vs-2022"
+   :::image type="content" source="../debugger/media/vs-2022/dbg-dump-summary-page.png" alt-text="Screenshot showing Minidump summary page.":::
+   ::: moniker-end
+   ::: moniker range="vs-2019"
    :::image type="content" source="../debugger/media/dbg_dump_summarypage.png" alt-text="Screenshot showing Minidump summary page.":::
+   ::: moniker-end
 
 1. Under **Actions**:
+  
    - To set symbol loading locations, select **Set symbol paths**.
-   - To start debugging, select **Debug with Managed Only**, **Debug with Native Only**, **Debug with Mixed**, or **Debug with Managed Memory**.
+   - To start debugging, select **Debug with Managed Only**, **Debug with Mixed**, **Debug with Native Only**, or **Debug Managed Memory**. To analyze managed memory, see [Managed type reports](../profiling/memory-usage-without-debugging2.md#managed-types-reports).
+   - To get memory analysis on the dump, select **Run Diagnostic Analysis** and see [Debug a managed memory dump with .NET Diagnostic Analyzers](../debugger/how-to-debug-managed-memory-dump.md).
 
 ## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Find .exe, .pdb, and source files
 
@@ -99,13 +104,13 @@ Visual Studio automatically searches these locations for *.exe* files that aren'
 
 1. The folder that contains the dump file.
 2. The module path the dump file specifies, which is the module path on the machine that collected the dump.
-3. The symbol paths specified in **Tools** (or **Debug**) > **Options** > **Debugging** > **Symbols**. You can also open the **Symbols** page from the **Actions** pane of the **Dump File Summary** window. On this page, you can add more locations to search.
+3. The symbol paths specified in **Tools** (or **Debug**) > **Options** > **Debugging** > **Symbols**. You can also open the **Symbols** page from the **Actions** panel of the **Dump File Summary** window. On this page, you can add more locations to search.
 
 ### Use the No Binary, No Symbols, or No Source Found pages
 
 If Visual Studio can't find the files it needs to debug a module in the dump, it shows a **No Binary Found**, **No Symbols Found**, or **No Source Found** page. These pages provide detailed information about the cause of the issue, and provide action links that can help you locate the files. See [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## See also
+## Related content
 
 - [How to debug a managed memory dump with .NET Diagnostic Analyzers](../debugger/how-to-debug-managed-memory-dump.md)
 - [Just-In-Time debugging](../debugger/just-in-time-debugging-in-visual-studio.md)

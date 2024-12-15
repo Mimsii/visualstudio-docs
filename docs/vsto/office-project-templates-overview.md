@@ -28,12 +28,11 @@ helpviewer_keywords:
   - "Outlook [Office development in Visual Studio], project templates"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Office project templates overview
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The Microsoft Office developer tools in Visual Studio include project templates for creating the following types of Office solutions:
 
 - [Document-level customizations](#DocLevel)

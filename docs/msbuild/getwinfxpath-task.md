@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "obtaining the path to the current .NET Framework runtime [WPF MSBuild]"
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # GetWinFXPath task
 

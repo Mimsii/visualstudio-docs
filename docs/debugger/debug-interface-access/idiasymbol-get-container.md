@@ -1,5 +1,5 @@
 ---
-description: "This function retrieves a pointer to a symbol representing the parent/container of this symbol."
+description: This function retrieves a pointer to a symbol representing the parent/container of this symbol.
 title: "IDiaSymbol::get_container"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_container method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_container
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function retrieves a pointer to a symbol representing the parent/container of this symbol.
 
 ## Syntax

@@ -5,12 +5,10 @@ ms.date: 01/02/2018
 ms.topic: how-to
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Troubleshooting template installation
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 If you run into problems deploying your project or item templates, you can enable diagnostic logging.
 

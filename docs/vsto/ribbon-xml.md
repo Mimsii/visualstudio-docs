@@ -21,12 +21,11 @@ helpviewer_keywords:
   - "customizing the Ribbon, displaying"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Ribbon XML
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The Ribbon (XML) item enables you to customize a ribbon by using XML. Use the Ribbon (XML) item if you want to customize the ribbon in a way that is not supported by the Ribbon (Visual Designer) item. For a comparison of what you can do with each item, see [Ribbon overview](../vsto/Ribbon-overview.md).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]

@@ -1,17 +1,15 @@
 ---
 title: "Browse repos, compare branches & commits"
 description: Browse any Git repository in Visual Studio by using the Git Repository window to view local and remote branches and multiple branches at the same time.
-ms.date: 08/08/2023
+ms.date: 08/13/2024
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-ms.manager: jmartens
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
+ms.manager: mijacobs
+
+ms.subservice: general-ide
 ---
 # Browse Git repositories and compare branches in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **Git Changes** window provides a seamless way to interact with Git while coding without having to switch away from your code. But there are times when it makes more sense to focus on your Git repository. For example, you might need to get a good picture of what your team has been working on or maybe [compare two commits](#compare-commits) to investigate a bug.
 
@@ -32,7 +30,7 @@ The **Git Repository** window contains three main sections, as numbered in the p
    - **Outgoing** shows your local commits that you still haven't pushed.
    - **Local History** shows the rest of commits tracked by your local repository. 
 
-1. **Commit**: Selecting any commit in the **Graph** section opens its details. You can check the changes that a commit has introduced by selecting them, which shows a difference. For example, the previous screenshot shows the changes that one commit introduced to the *Resize.cs* file.
+1. **Commit**: To open this section, select any commit in the **Graph** section. You can check the changes that a commit has introduced by selecting them, which shows a difference. For example, the previous screenshot shows the changes that one commit introduced to the *Resize.cs* file.
 
 The **Alt**+**Up arrow** or **Alt**+**Down arrow** keyboard shortcuts allow you to jump between these sections.
 
@@ -54,8 +52,6 @@ You can browse through any local or remote branch without having to switch your 
 :::image type="content" source="media/vs-2022/git-repository-multigraph-branch-view.png" alt-text="Screenshot of the multi-graph branch view in Visual Studio." lightbox="media/vs-2022/git-repository-multigraph-branch-view.png":::
 
 There's both line coloring and branch labels on the left side of the **Local History** view that help make it easier to trace which commits belong to each branch. You can use the list of branches at the top of the table to scroll between branches more easily and know immediately which branches appear in the graph.
-
-<a name="compare-commits"/>
 
 ## Compare commits
 

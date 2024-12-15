@@ -1,6 +1,6 @@
 ---
-description: "Describes the count and conditions upon which a conditional breakpoint is fired."
 title: BP_PASSCOUNT
+description: "Describes the count and conditions upon which a conditional breakpoint is fired."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,15 +9,14 @@ helpviewer_keywords:
 - BP_PASSCOUNT structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # BP_PASSCOUNT
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Describes the count and conditions upon which a conditional breakpoint is fired.
 
 ## Syntax
@@ -48,7 +47,7 @@ A value from the [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/
 ## Remarks
 This structure is a member of the [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure.
 
-This structure is also passed as a parameter to the[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) and[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) methods.
+This structure is also passed as a parameter to the [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) and [SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) methods.
 
 ## Requirements
 Header: msdbg.h

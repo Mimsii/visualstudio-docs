@@ -5,8 +5,8 @@ ms.date: 04/26/2022
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 monikerRange: '>= vs-2022'
 ---
 # View file read and write information to help improve performance

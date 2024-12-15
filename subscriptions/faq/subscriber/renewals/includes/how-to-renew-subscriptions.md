@@ -1,13 +1,13 @@
 ---
 title: How do I renew Visual Studio subscriptions?
 description: Learn how to renew retail, cloud, and Volume License subscriptions
-comment:  As of August 2023 this include is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Evan Windom and Larissa Crawford of Red Door Collaborative and Sharvari Dighe.
+comment:  As of August 2023 this include is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Jose Becerra and Larissa Crawford of Red Door Collaborative and Angela Cao-Hong.
 ms.topic: include
 ms.assetid: 00b82d16-6a80-42d1-8b71-e12047c6b50c
-ms.technology: 
-author: evanwindom
+ms.subservice: 
+author: joseb-rdc
 ms.author: amast
-ms.date: 08/14/2023
+ms.date: 09/30/2024
 ms.faqid: q4_2
 ---
 
@@ -19,9 +19,8 @@ You can acquire Visual Studio subscriptions in several ways, and the process for
 
 If you currently have a retail subscription, there are two ways to renew: 
 
-+ Connect to the [Subscriptions page](https://my.visualstudio.com/subscriptions) on the [Subscriptions Portal](https://my.visualstudio.com/benefits) and select on the 'Renew' link. 
-+ Visit the [Microsoft Store](https://www.microsoft.com/store) and search for 'Visual Studio subscription' to see the available renewal opportunities. Here are some quick links: 
-
++ Connect to the [Subscriptions page](https://my.visualstudio.com/subscriptions) on the [Subscriptions Portal](https://my.visualstudio.com/benefits) and select on the 'Renew' link. 
++ Visit the [Microsoft Store](https://www.microsoft.com/store) and search for 'Visual Studio subscription' to see the available renewal opportunities. Here are some quick links: 
 
     + [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
     + [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)

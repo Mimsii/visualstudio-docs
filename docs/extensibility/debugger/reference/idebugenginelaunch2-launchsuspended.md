@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngineLaunch2::LaunchSuspended
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method launches a process by means of the debug engine (DE).
 
 ## Syntax

@@ -14,12 +14,11 @@ helpviewer_keywords:
 - Windows Forms, walkthroughs
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Pass data between forms
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Pass data between forms
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -82,23 +81,23 @@ This tutorial uses SQL Server Express LocalDB and the Northwind sample database.
 
 2. In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.
 
-3. Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.
+3. Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
 
-4. On the **Choose a database model** page, verify that **Dataset** is specified, and then click **Next**.
+4. On the **Choose a database model** page, verify that **Dataset** is specified, and then select **Next**.
 
 5. On the **Choose your Data Connection** page, do one of the following:
 
-    - If a data connection to the Northwind sample database is available in the drop-down list, select it.
+    - If a data connection to the Northwind sample database is available in the dropdown list, select it.
 
     - Select **New Connection** to launch the **Add/Modify Connection** dialog box.
 
-6. If your database requires a password and if the option to include sensitive data is enabled, select the option and then click **Next**.
+6. If your database requires a password and if the option to include sensitive data is enabled, select the option, and then select **Next**.
 
 7. On the **Save connection string to the Application Configuration file** page, click **Next**.
 
 8. On the **Choose your Database Objects** page, expand the **Tables** node.
 
-9. Select the **Customers** and **Orders** tables, and then click **Finish**.
+9. Select the **Customers** and **Orders** tables, and then select **Finish**.
 
      The **NorthwindDataSet** is added to your project, and the **Customers** and **Orders** tables appear in the **Data Sources** window.
 
@@ -136,11 +135,11 @@ Add a TableAdapter query to Form2 to load orders for the selected customer on Fo
 
 2. Right-click the **OrdersTableAdapter**, and select **Add Query**.
 
-3. Leave the default option of **Use SQL statements**, and then click **Next**.
+3. Leave the default option of **Use SQL statements**, and then select **Next**.
 
-4. Leave the default option of **SELECT which returns rows**, and then click **Next**.
+4. Leave the default option of **SELECT which returns rows**, and then select **Next**.
 
-5. Add a WHERE clause to the query, to return `Orders` based on the `CustomerID`. The query should be similar to the following:
+5. Add a `WHERE` clause to the query, to return `Orders` based on the `CustomerID`. The query should be similar to the following:
 
     ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
@@ -149,13 +148,13 @@ Add a TableAdapter query to Form2 to load orders for the selected customer on Fo
     ```
 
     > [!NOTE]
-    > Verify the correct parameter syntax for your database. For example, in Microsoft Access, the WHERE clause would look like: `WHERE CustomerID = ?`.
+    > Verify the correct parameter syntax for your database. For example, in Microsoft Access, the `WHERE` clause would look like: `WHERE CustomerID = ?`.
 
 6. Click **Next**.
 
 7. For the **Fill a DataTableMethod Name**, type `FillByCustomerID`.
 
-8. Clear the **Return a DataTable** option, and then click **Next**.
+8. Clear the **Return a DataTable** option, and then select **Next**.
 
 9. Click **Finish**.
 
@@ -166,15 +165,17 @@ Add a TableAdapter query to Form2 to load orders for the selected customer on Fo
 2. Add the following code to **Form2** after the `Form2_Load` method:
 
 ### [C#](#tab/csharp)
+
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs" id="Snippet1":::
 
 ### [VB](#tab/vb)
+
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb" id="Snippet1":::
 ---
 
 ## Create a method on Form1 to pass data and display Form2
 
-1. In **Form1**, right-click the Customer data grid, and then click **Properties**.
+1. In **Form1**, right-click the Customer data grid, and then select **Properties**.
 
 2. In the **Properties** window, click **Events**.
 
@@ -185,9 +186,11 @@ Add a TableAdapter query to Form2 to load orders for the selected customer on Fo
 4. Update the method definition to match the following sample:
 
 ### [C#](#tab/csharp)
+
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs" id="Snippet2":::
 
 ### [VB](#tab/vb)
+
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb" id="Snippet2":::
 ---
 
@@ -205,6 +208,6 @@ Depending on your application requirements, there are several steps you might wa
 
 - Adding functionality to save data back to the database. For more information, see [Save data back to the database](../data-tools/save-data-back-to-the-database.md).
 
-## See also
+## Related content
 
 - [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

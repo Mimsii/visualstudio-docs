@@ -9,8 +9,6 @@ manager: "viveis"
 ---
 # Workspace indexing
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 In a solution, project systems are responsible for providing functionality for build, debug, **GoTo** symbol searching, and more. Project systems can do this work because they understand the relation and capabilities of files within a project. An [Open Folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) workspace needs the same insight to provide rich IDE features as well. The collection and persistent storage of this data is a process called workspace indexing. This indexed data can be queried through a set of asynchronous APIs. Extenders can participate in the indexing process by providing <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScanner>s that know how to handle certain types of files.
 
 ## Types of indexed data
@@ -54,7 +52,7 @@ Workspace indexing roughly follows the following sequence:
 1. Per file, the matching provider with the highest priority is asked to scan for `SymbolDefinition`s.
 1. Per file, all providers are asked for `FileDataValue`s.
 
-Extensions can export a scanner by implementing `IWorkspaceProviderFactory<IFileScanner>` and exporting the type with <xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute>. The `SupportedTypes` attribute argument should be one or more values from <xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants>. For an example scanner, see the VS SDK [sample](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs).
+Extensions can export a scanner by implementing `IWorkspaceProviderFactory<IFileScanner>` and exporting the type with <xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute>. The `SupportedTypes` attribute argument should be one or more values from <xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants>. For an example scanner, see the VSSDK [sample](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs).
 
 > [!WARNING]
 > Do not export a file scanner that supports the `FileScannerTypeConstants.FileScannerContentType` type. It is used for Microsoft internal purposes, only.

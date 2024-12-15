@@ -8,12 +8,11 @@ helpviewer_keywords:
 - breakpoints, hitting
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Hit a breakpoint
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following section describes the process when the debug engine (DE) hits a breakpoint while running or stepping:
 
 ## Troubleshoot a hit breakpoint

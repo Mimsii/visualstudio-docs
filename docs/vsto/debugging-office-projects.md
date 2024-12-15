@@ -15,12 +15,11 @@ helpviewer_keywords:
   - "Outlook [Office development in Visual Studio], projects"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Debug Office projects
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   You can debug Office projects by using the same Microsoft Visual Studio tools you use for other Visual Studio projects. Visual Studio debugger features, such as the ability to insert breakpoints and view variables in the **Locals** window, are also available when you debug Office projects. For more information about Visual Studio debugging tools, see [Debug in Visual Studio](../debugger/debugger-feature-tour.md).
 
 > [!TIP]

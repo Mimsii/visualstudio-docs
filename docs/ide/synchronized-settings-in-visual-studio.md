@@ -5,12 +5,10 @@ ms.date: 05/20/2022
 ms.topic: conceptual
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Synchronize Visual Studio settings across multiple computers
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 When you sign in to Visual Studio on multiple computers using the same personalization account, your settings can be synchronized across the computers.
 
@@ -18,7 +16,7 @@ When you sign in to Visual Studio on multiple computers using the same personali
 
 By default, the following settings are synchronized:
 
-- Development settings. You select a collection of settings the first time you open Visual Studio, but you can change the selection anytime. For more information, see [Environment settings](../ide/environment-settings.md).
+- Development settings. You select a collection of settings the first time you open Visual Studio, but you can change the selection anytime. For more information, see [Environment settings](../ide/personalizing-the-visual-studio-ide.md).
 
 - User-defined command aliases. For more information about how to define command aliases, see [Visual Studio command aliases](../ide/reference/visual-studio-command-aliases.md).
 
@@ -48,7 +46,7 @@ Synchronized settings for Visual Studio are turned on by default. You can turn o
 
 In earlier versions of Visual Studio 2022, this checkbox controlled only the synchronization of settings across devices. When you cleared the checkbox, it prevented the current device from synchronizing with other devices. (Although if the checkbox was selected on other devices, those devices continued to synchronize with each other. Conversely, multiple installations of Visual Studio on the same device continued to synchronize their settings even if the checkbox was cleared.)
 
-Starting with Visual Studio 2022 [**version 17.2**](/visualstudio/releases/2022/release-notes), this checkbox also controls how Visual Studio synchronizes its installations on the same device. Clearing the checkbox prevents the current Visual Studio installation from synchronizing its settings with Visual Studio installations on the same device or on other devices.  Visual Studio installations on other devices that have the checkbox selected continue to synchronize with each other, as will devices with earlier (pre-17.2) versions of Visual Studio 2022 installed.
+Starting with Visual Studio 2022 [**version 17.2**](/visualstudio/releases/2022/release-notes), this checkbox also controls how Visual Studio synchronizes its installations on the same device. Clearing the checkbox prevents the current Visual Studio installation from synchronizing its settings with Visual Studio installations on the same device or on other devices.  Visual Studio installations on other devices that have the checkbox selected continue to synchronize with each other, as will devices with earlier (pre-17.2) versions of Visual Studio 2022 installed.
 
 If you have multiple installations of Visual Studio, the following table describes how your settings are synchronized when you select or clear the **Synchronize Visual Studio settings across devices and installs on this machine** checkbox.
 
@@ -91,6 +89,6 @@ To reset all settings to their defaults, sign in to Visual Studio, and then sele
 ## Related content
 
 - [Personalize the IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Environment settings](../ide/environment-settings.md)
+- [Environment settings](../ide/personalizing-the-visual-studio-ide.md)
 - [Environment > Accounts Options dialog box](reference/accounts-environment-options-dialog-box.md)
 - [Install Visual Studio versions side-by-side](../install/install-visual-studio-versions-side-by-side.md)

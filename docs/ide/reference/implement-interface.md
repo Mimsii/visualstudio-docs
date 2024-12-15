@@ -5,12 +5,10 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Implement an interface in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This code generation applies to:
 

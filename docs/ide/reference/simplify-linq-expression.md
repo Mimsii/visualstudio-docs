@@ -5,14 +5,12 @@ ms.date: 07/05/2021
 ms.topic: reference
 author: m-redding
 ms.author: midumont
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
   - CSharp
 ---
 # Simplify LINQ expression
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This refactoring applies to:
 

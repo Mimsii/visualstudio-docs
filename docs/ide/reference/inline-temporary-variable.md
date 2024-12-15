@@ -5,15 +5,13 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
 - CSharp
 - VB
 ---
 # Inline a temporary variable refactoring
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This refactoring applies to:
 

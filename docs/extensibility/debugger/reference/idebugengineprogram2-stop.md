@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugEngineProgram2::Stop
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngineProgram2::Stop
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Stops all threads running in this program.
 
 ## Syntax

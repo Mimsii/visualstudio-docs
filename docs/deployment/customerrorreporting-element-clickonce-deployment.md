@@ -11,12 +11,11 @@ helpviewer_keywords:
   - "<customErrorReporting> element [ClickOnce deployment manifest]"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;customErrorReporting&gt; element (ClickOnce deployment)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies a URI to show when an error occurs.
 
 ## Syntax

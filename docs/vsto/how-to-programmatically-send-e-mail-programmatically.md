@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "e-mail [Office development in Visual Studio], sending"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically send email
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This example sends an email message to contacts that have the domain name **example.com** in their email addresses.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

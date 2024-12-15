@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackFrame::get_functionStart"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackFrame::get_functionStart
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the block contains the entry point of a function.
 
 ## Syntax
 
 ```C++
-HRESULT get_functionStart ( 
+HRESULT get_functionStart ( 
    BOOL* pRetVal
 );
 ```

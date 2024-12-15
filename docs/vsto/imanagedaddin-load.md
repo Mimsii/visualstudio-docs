@@ -3,18 +3,22 @@ title: "IManagedAddin::Load"
 description: "Called when a managed VSTO Add-in is loaded."
 ms.date: "02/02/2017"
 ms.topic: "reference"
+ms.devlang: cpp
 dev_langs:
-  - "VB"
-  - "CSharp"
+  - C++
+f1_keywords:
+  - "IMANAGEDADDIN/IManagedAddIn::Load"
+  - "IManagedAddIn::Load"
+  - "IManagedAddIn.Load"
+  - "Load"
 helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # IManagedAddin::Load
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Called when a managed VSTO Add-in is loaded.
 
 ## Syntax

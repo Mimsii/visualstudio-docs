@@ -8,12 +8,10 @@ helpviewer_keywords:
 - web controls, publishing
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Walkthrough: Publish a Visual Studio extension
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This walkthrough shows you how to publish a Visual Studio extension to Visual Studio Marketplace. When you add your extension to Visual Studio Marketplace, developers can use **Extensions and Updates** to browse for new and updated extensions.
 

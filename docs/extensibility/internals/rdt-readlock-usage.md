@@ -10,12 +10,10 @@ helpviewer_keywords:
 - invisible
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # RDT_ReadLock Usage
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 [_VSRDTFLAGS.RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) is a flag that provides logic for locking a document in the Running Document Table (RDT), which is the list of all the documents that are currently open in the Visual Studio IDE. This flag determines when documents are opened, and whether a document is visible in the user interface or held invisibly in memory.
 
@@ -27,7 +25,7 @@ Generally, you use [_VSRDTFLAGS.RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell
 
 ## How to Manage Visible and Invisible Documents
 
-When a user opens a document in the UI, an <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> owner for the document must be established and an [_VSRDTFLAGS.RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) flag must be set. If no <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> owner can be established, then the document will not be saved when the user clicks **Save All** or closes the IDE. This means if a document is open invisibly where it is modified in memory, and the user is prompted to save the document on shutdown or saved if **Save All** is chosen, then an `RDT_ReadLock` cannot be used. Instead, you must use an `RDT_EditLock` and register a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> when an [__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) flag.
+When a user opens a document in the UI, an <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> owner for the document must be established and a [_VSRDTFLAGS.RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) flag must be set. If no <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> owner can be established, then the document will not be saved when the user clicks **Save All** or closes the IDE. This means if a document is open invisibly where it is modified in memory, and the user is prompted to save the document on shutdown or saved if **Save All** is chosen, then an `RDT_ReadLock` cannot be used. Instead, you must use an `RDT_EditLock` and register a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> when a [__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) flag.
 
 ## RDT_EditLock and Document Modification
 

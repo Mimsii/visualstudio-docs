@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates whether the section contains initialized data."
+description: Retrieves a flag that indicates whether the section contains initialized data.
 title: "IDiaSectionContrib::get_initializedData"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_initializedData method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_initializedData
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the section contains initialized data.
 
 ## Syntax
 
 ```C++
-HRESULT get_initializedData ( 
+HRESULT get_initializedData ( 
    BOOL* pRetVal
 );
 ```

@@ -1,7 +1,7 @@
 ---
 title: Find and replace text, and multi-caret selection
 description: Explore the Find and Replace feature in Visual Studio and discover how to use the feature to find and replace instances of a pattern.
-ms.date: 01/12/2023
+ms.date: 01/11/2024
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -28,12 +28,10 @@ helpviewer_keywords:
 - multi-caret selection
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Find and replace text in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this article, you learn how to find and replace text in the Visual Studio editor by using [the single file find-and-replace](#control) (**Ctrl**+**F** or **Ctrl**+**H**) or [multi-file find-and-replace](#multifile) (**Ctrl**+**Shift**+**F** or **Ctrl**+**Shift**+**H**). You can also find and replace *some* instances of a pattern by using *[multi-caret selection](#multi-caret-selection)*.  In addition to the editor, you can also find and replace text in certain other text-based windows such as the **Find Results** windows, in designer windows such as the XAML designer and Windows Forms designer, and in tool windows.
 
@@ -47,7 +45,6 @@ You can scope searches to the current document, the current solution, or a custo
 
 > [!TIP]
 > The [Find/Command](../ide/find-command-box.md) box is available as a toolbar control, but isn't visible by default. To display the **Find/Command** box, select **Add or Remove Buttons** on the **Standard** toolbar, and then select **Find**.
-
 
 ## <a name="control"></a>Find and Replace within a single file
 
@@ -105,7 +102,10 @@ Open the **Find and Replace** dialog box by pressing **Ctrl**+**Shift**+**F**, o
 
 :::moniker-end
 
-Limit the scope of your search to:
+To expose the **Replace** text box, use the down arrow to the left of the **Find** text.
+
+Set the scope of your search and replace operation to:
+
 - The currently open file
 - All open documents
 - The entire solution
@@ -115,7 +115,7 @@ Limit the scope of your search to:
   
 The **Find and Replace** tool does not search directories with the `Hidden` or `System` attribute.
 
-To cancel a Find operation, press **Ctrl**+**Break**.
+To cancel a Find or Replace operation, press **Ctrl**+**Break**.
 
 ### Find Results
 
@@ -193,4 +193,3 @@ Some of the commands are also available on the **Edit** menu, under **Multiple C
 
 - [Use regular expressions in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refactor code in Visual Studio](../ide/refactoring-in-visual-studio.md)
-- [Block selection (Visual Studio for Mac)](/visualstudio/mac/block-selection)

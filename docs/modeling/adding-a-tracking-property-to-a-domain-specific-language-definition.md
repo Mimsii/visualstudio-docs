@@ -9,12 +9,10 @@ helpviewer_keywords:
   - "walkthroughs [Domain-Specific Language Tools]"
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Add a Tracking Property to a Domain-Specific Language Definition
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This walkthrough shows how to add a tracking property to a domain model.
 
@@ -427,7 +425,7 @@ Also, add storage for, and methods to get and set, the Namespace custom storage 
 
     namespace CompanyName.ProductName.TrackingPropertyDSL
     {
-        // To the domain class that has the tracking property, add the caluclation
+        // To the domain class that has the tracking property, add the calculation
         // for when the property is tracking.
         public partial class ExampleElement
         {

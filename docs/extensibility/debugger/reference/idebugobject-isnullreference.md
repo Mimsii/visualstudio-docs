@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugObject::IsNullReference method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugObject::IsNullReference
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Tests whether this object is a null reference.
 
 ## Syntax

@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: dzsquared
 ms.author: drskwier
-manager: jmartens
-ms.technology: vs-xml-tools
+manager: mijacobs
+ms.subservice: xml-tools
 ---
 # Graph view
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Graph View provides a graphic representation of global schema nodes and the relationships between the nodes. Note that the Graph View does not allow you to alter the layout of the schema set on the design surface. The Graph View also includes the XML Schema Designer toolbar and the breadcrumb bar.
 
@@ -78,7 +76,7 @@ In addition to the common options described above, the context menu for global g
 |**Add All References**|Adds all nodes that refer to the group and draws arrows to indicate relationships between them.|
 |**Add All Members**|Adds all members of the group and draws arrows to indicate relationships between them.|
 
-In addtion to the common options described above, the context menu for global attributes also has the following options:
+In addition to the common options described above, the context menu for global attributes also has the following options:
 
 |Option|Description|
 |-|-----------------|

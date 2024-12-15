@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "<product> element [bootstrapper]"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;Product&gt; element (bootstrapper)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The `Product` element is the top-level XML element inside of a product file.
 
 ## Syntax

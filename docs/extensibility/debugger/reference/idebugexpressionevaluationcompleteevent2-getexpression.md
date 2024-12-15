@@ -10,15 +10,14 @@ helpviewer_keywords:
 - IDebugExpressionEvaluationCompleteEvent2::GetExpression
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExpressionEvaluationCompleteEvent2::GetExpression
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the original expression.
 
 ## Syntax

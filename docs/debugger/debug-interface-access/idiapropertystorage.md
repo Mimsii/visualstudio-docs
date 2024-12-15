@@ -1,6 +1,6 @@
 ---
-description: "Allows you to read the persistent properties of a DIA property set."
-title: "IDiaPropertyStorage"
+description: Allows you to read the persistent properties of a DIA property set.
+title: IDiaPropertyStorage
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -9,19 +9,17 @@ helpviewer_keywords:
   - "IDiaPropertyStorage interface"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaPropertyStorage
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-Allows you to read the persistent properties of a DIA property set.
+Allows you to read the persistent properties of a Debug Interface Access (DIA) property set.
 
 ## Syntax
 
-```
-IDiaPropertyStorage : IUnknown
-```
+`IDiaPropertyStorage : IUnknown`
 
 ## Methods in Vtable Order
 The following table shows the methods of `IDiaPropertyStorage`.

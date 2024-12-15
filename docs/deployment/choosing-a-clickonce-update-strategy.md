@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "ClickOnce deployment, update strategies"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # Choose a ClickOnce update strategy
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 ClickOnce can provide automatic application updates. A ClickOnce application periodically reads its deployment manifest file to see whether updates to the application are available. If available, the new version of the application is downloaded and run. For efficiency, only those files that have changed are downloaded.
 
  When designing a ClickOnce application, you have to determine which strategy the application will use to check for available updates. There are three basic strategies that you can use: checking for updates on application startup, checking for updates after application startup (running in a background thread), or providing a user interface for updates.
@@ -33,7 +32,7 @@ ClickOnce can provide automatic application updates. A ClickOnce application per
 
 ## Check for updates after application startup
 
- By using this strategy, the application will attempt to locate and read the deployment manifest file in the background while the application is running. If an update is available, the next time that the user runs the application, he will be prompted to download and install the update.
+ By using this strategy, the application will attempt to locate and read the deployment manifest file in the background while the application is running. If an update is available, the next time that the user runs the application, they will be prompted to download and install the update.
 
  This strategy works best for low-bandwidth network connections or for larger applications that might require lengthy downloads.
 
@@ -120,7 +119,7 @@ ClickOnce can provide automatic application updates. A ClickOnce application per
 
 ## Permission elevation and updates
 
- If a new version of a ClickOnce application requires a higher level of trust to run than the previous version, ClickOnce will prompt the user, asking him if he wants the application to be granted this higher level of trust. If the user declines to grant the higher trust level, the update will not install. ClickOnce will prompt the user to install the application again when it is next restarted. If the user declines to grant the higher level of trust at this point, and the update is not marked as required, the old version of the application will run. However, if the update is required, the application will not run again until the user accepts the higher trust level.
+ If a new version of a ClickOnce application requires a higher level of trust to run than the previous version, ClickOnce will prompt the user, asking them if they want the application to be granted this higher level of trust. If the user declines to grant the higher trust level, the update will not install. ClickOnce will prompt the user to install the application again when it is next restarted. If the user declines to grant the higher level of trust at this point, and the update is not marked as required, the old version of the application will run. However, if the update is required, the application will not run again until the user accepts the higher trust level.
 
  No prompting for trust levels will occur if you use Trusted Application Deployment. For more information, see [Trusted application deployment overview](../deployment/trusted-application-deployment-overview.md).
 

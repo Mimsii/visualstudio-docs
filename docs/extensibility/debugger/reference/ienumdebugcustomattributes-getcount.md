@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IEnumDebugCustomAttributes::GetCount
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IEnumDebugCustomAttributes::GetCount
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the number of custom attributes in an enumerator.
 
 ## Syntax

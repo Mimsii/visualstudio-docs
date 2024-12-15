@@ -7,8 +7,8 @@ helpviewer_keywords:
 - MSBuild, solve build race conditions
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Fix intermittent build failures
 

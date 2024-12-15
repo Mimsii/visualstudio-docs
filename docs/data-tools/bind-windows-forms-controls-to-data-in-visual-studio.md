@@ -14,12 +14,11 @@ helpviewer_keywords:
 - data [Windows Forms], displaying
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Bind Windows Forms controls to data in .NET Framework applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Bind Windows Forms controls to data in .NET Framework applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -30,7 +29,7 @@ You can display data to users of your application by binding data to Windows For
 > [!TIP]
 > If the **Data Sources** window is not visible, you can open it by choosing **View** > **Other Windows** > **Data Sources**, or by pressing **Shift**+**Alt**+**D**. You must have a project open in Visual Studio to see the **Data Sources** window.
 
-Before you drag items, you can set the type of control you want to bind to. Different values appear depending on whether you choose the table itself, or an individual column.  You can also set custom values. For a table, **Details** means that each column is bound to a separate control.
+Before you drag items, you can set the type of control you want to bind to. Different values appear depending on whether you choose the table itself, or an individual column. You can also set custom values. For a table, **Details** means that each column is bound to a separate control.
 
 ![Bind data source to DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 

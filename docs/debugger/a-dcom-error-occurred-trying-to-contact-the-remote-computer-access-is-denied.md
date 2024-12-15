@@ -1,9 +1,9 @@
 ---
-title: "A DCOM error occurred trying to contact the remote computer. Access is denied."
+title: A DCOM error occurred trying to contact the remote computer. Access is denied.
 titleSuffix: ""
-description: "'A DCOM error occurred trying to contact the remote computer. Access is denied.' View information about this Visual Studio remote debugging error reference."
+description: A DCOM error occurred trying to contact the remote computer. Access is denied. View information about this Visual Studio remote debugging error reference.
 ms.date: "11/04/2016"
-ms.topic: "reference"
+ms.topic: "error-reference"
 f1_keywords:
   - "vs.debug.remote.dcom_access_denied"
 dev_langs:
@@ -18,27 +18,27 @@ helpviewer_keywords:
   - "DCOM, access errors"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # A DCOM error occurred trying to contact the remote computer. Access is denied.
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-Remote debugging uses DCOM to communicate between the local and remote computers in the following situations:
+Remote debugging uses Distributed Component Object Model (DCOM) to communicate between the local and remote computers in the following situations:
 
 - The debugger is set to **Native Compatibility Mode** or **Managed Compatibility Mode** is checked in the **Tools > Options > Debugging** page
 
 - You are debugging managed C++ (C++/CLI) code.
 
-- In Visual Studio 2013, when **Enable native Edit and Continue** is checked in the **Tools > Options > Debugging** page
+- In older versions of Visual Studio, when **Enable native Edit and Continue** is checked in the **Tools > Options > Debugging** page
 
 - Some third party debugging scenarios
 
   This error occurs when the Visual Studio process cannot authenticate itself (or the supplied credentials were deemed insufficient) to the remote debugger process over DCOM. One or more of the following workarounds might resolve the issue:
 
-- Turn off  **Native Compatibility Mode** and **Managed Compatibility Mode**.
+- Turn off **Native Compatibility Mode** and **Managed Compatibility Mode**.
 
-- In Visual Studio 2013, turn off **Enable native Edit and Continue**.
+- In older versions of Visual Studio, turn off **Enable native Edit and Continue**.
 
 - Reboot both computers.
 

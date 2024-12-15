@@ -12,8 +12,8 @@ helpviewer_keywords:
 - MSBuild, CallTarget task
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # CallTarget task
 

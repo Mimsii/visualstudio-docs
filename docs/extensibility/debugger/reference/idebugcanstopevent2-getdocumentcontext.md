@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugCanStopEvent2::GetDocumentContext
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugCanStopEvent2::GetDocumentContext
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the document context that describes the location of this event.
 
 ## Syntax

@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the children of the symbol that are valid at a specified relative virtual address (RVA)."
+description: Retrieves the children of the symbol that are valid at a specified relative virtual address (RVA).
 title: "IDiaSymbol::findChildrenExByRVA"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::findChildrenExByRVA"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::findChildrenExByRVA
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the children of the symbol that are valid at a specified relative virtual address (RVA).
 
 ## Syntax
 
 ```C++
-HRESULT findChildrenExByRVA ( 
+HRESULT findChildrenExByRVA ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,

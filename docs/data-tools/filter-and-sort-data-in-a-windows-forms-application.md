@@ -16,12 +16,11 @@ helpviewer_keywords:
 - dataset filtering, using data views
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Filter and sort data in a .NET Framework Windows Forms application
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Filter and sort data in a .NET Framework Windows Forms application
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 

@@ -3,7 +3,7 @@ title: 'Command-line shells & prompt for developers'
 description:  Start from the Tools > Command Line menu. Select the Visual Studio Developer Command Prompt, Developer PowerShell, or terminal to use .NET and C++ tools more easily.
 author: Mikejo5000
 ms.author: mikejo
-ms.date: 08/11/2023
+ms.date: 08/23/2024
 ms.topic: conceptual
 helpviewer_keywords:
   - "Visual Studio command prompt"
@@ -13,15 +13,13 @@ helpviewer_keywords:
   - "Visual Studio terminal"
 no-loc: cmdlet
 monikerRange: ">=vs-2019"
-ms.technology: vs-ide-general
+ms.subservice: general-ide
 ---
 # Visual Studio Developer Command Prompt and Developer PowerShell
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 Visual Studio includes two command-line shells for developers, a command prompt and an instance of PowerShell, as follows:
 
-- **Visual Studio Developer Command Prompt** - A standard command prompt with certain environment variables set to make using command-line developer tools easier. Available since Visual Studio 2015.
+- **Visual Studio Developer Command Prompt** - A standard command prompt with certain environment variables set to make using command-line developer tools easier.
 
     ::: moniker range="vs-2019"
     :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="Screenshot of the Developer Command Prompt for Visual Studio 2019 showing clrver tool.":::
@@ -57,10 +55,10 @@ Both shells have specific environment variables set that enable you to use comma
 |Popular commands|Description|
 |--|--|
 |[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|Build a project or solution|
-|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| A [.NET Framework tool](/dotnet/framework/tools/index) for CLR|
-|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|A [.NET Framework tool](/dotnet/framework/tools/index) for disassembler|
 |[`dotnet`](/dotnet/core/tools/dotnet)|A [.NET CLI command](/dotnet/core/tools/index)|
 |[`dotnet run`](/dotnet/core/tools/dotnet-run)|A [.NET CLI command](/dotnet/core/tools/index)|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| A [.NET Framework tool](/dotnet/framework/tools/index) for CLR|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|A [.NET Framework tool](/dotnet/framework/tools/index) for disassembler|
 |[`CL`](/cpp/build/reference/compiler-command-line-syntax)|C/C++ compile tool|
 |[`NMAKE`](/cpp/build/reference/running-nmake)|C/C++ compile tool|
 |[`LIB`](/cpp/build/reference/lib-reference)| C/C++ build tool|
@@ -78,10 +76,10 @@ Follow these steps to open Developer Command Prompt or Developer PowerShell from
     :::image type="content" source="media/developer-command-prompt-for-vs/visual-studio-2022-command-line-menu.png" alt-text="Screenshot of the Command Line menu in Visual Studio 2022.":::
     ::: moniker-end
 
-    ::: moniker range="vs-2019"
-   ![Screenshot of the Command Line menu in Visual Studio 2019.](./media/developer-command-prompt-for-vs/vs-menu.png)
-    ::: moniker-end
-
+    ::: moniker range="vs-2019" 
+    ![Screenshot of the Command Line menu in Visual Studio 2019.](./media/developer-command-prompt-for-vs/vs-menu.png)
+   ::: moniker-end
+   
 ## Start from Windows menu
 
 Another way to start the shells is from the Start menu. You may have multiple command prompts, depending on the version of Visual Studio and any additional SDKs and workloads you've installed.
@@ -103,7 +101,7 @@ Another way to start the shells is from the Start menu. You may have multiple co
    Alternatively, you can start typing the name of the shell in the search box on the taskbar, and select the result you want as the result list starts to display the search matches.
 
    ![An animation that shows the search behavior in Windows 10.](./media/developer-command-prompt-for-vs/windows-10-search.gif)
-
+   
 ### Windows 8.1
 
 1. Go to the **Start** screen, by pressing the Windows logo key ![Screenshot of the Windows logo key on the keyboard.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) on your keyboard for example.
@@ -111,16 +109,6 @@ Another way to start the shells is from the Start menu. You may have multiple co
 1. On the **Start** screen, press **Ctrl**+**Tab** to open the **Apps** list, and then press **V**. This brings up a list that includes all installed Visual Studio command prompts.
 
 1. If you're running Visual Studio 2019, select either **Developer Command Prompt for VS 2019** or **Developer PowerShell for VS 2019**. If you're running Visual Studio 2022, select **Developer Command Prompt for VS 2022** or **Developer PowerShell for VS 2022**.
-
-### Windows 7
-
-1. Select **Start** and then expand **All Programs**.
-
-1. Select **Visual Studio 2019** > **Visual Studio Tools** > **Developer Command Prompt for VS 2019** or **Developer PowerShell for VS 2019**. (If you're running Visual Studio 2022, look for the same items that include "2022" instead of "2019".)
-
-   ![Screenshot of the Windows 7 Start menu with the command prompt highlighted.](./media/developer-command-prompt-for-vs/windows-7-menu.png)
-
-If you have other SDKs installed, such as the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) or [previous versions](https://developer.microsoft.com/windows/downloads/sdk-archive), you may see additional command prompts. Check the documentation for the individual tools to determine which version of the command prompt you should use.
 
 ## Start from file browser
 
@@ -158,7 +146,9 @@ Or enter the following command in the Windows **Run** dialog box:
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"
 ```
 
-::: moniker-end
+::: moniker-end  
+
+Since Visual Studio 2015, the Developer Command Prompt sets the `VSCMD_VER` environment variable which contains the version information for Visual Studio (ex: `17.9.0`). If you need to detect whether the Developer Command Prompt has already been run in your console, it is recommended to check whether `VSCMD_VER` has been defined or not.
 
 > [!TIP]
 > Make sure to edit the path to match the version or edition of Visual Studio that you're using.
@@ -167,16 +157,18 @@ Or enter the following command in the Windows **Run** dialog box:
 
 Search for a PowerShell script file named *Launch-VsDevShell.ps1*, or go to the Tools folder for Visual Studio, such as *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools*. (The path changes according to your Visual Studio version, edition, and installation location.) Once you've located the PowerShell file, run it by entering the following command at a Windows PowerShell or PowerShell 6 prompt.
 
-For Visual Studio 2019:
-
-```powershell
-& 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\Launch-VsDevShell.ps1'
-```
-
+::: moniker range="vs-2022"
 For Visual Studio 2022:
 
 ```powershell
 & 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1'
+```
+::: moniker-end
+
+For Visual Studio 2019:
+
+```powershell
+& 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\Launch-VsDevShell.ps1'
 ```
 
 By default, the Developer PowerShell that launches is configured for the Visual Studio installation whose install path the *Launch-VsDevShell.ps1* file is located in.
@@ -240,7 +232,13 @@ Start the Developer PowerShell for the Community Edition of [Visual Studio 2022 
 
 For Developer PowerShell, the starting directory of the shell is the Visual Studio Project Location. This default locale overrides any other paths, such as working directory. This behavior can be turned off by using the command-line argument `-SkipAutomaticLocation`. This can be useful if you want the shell to stay in the current directory after initialization.
 
+::: moniker range="vs-2019"
 The Project Location can be adjusted in **Tools** > **Options** > **Projects &amp; Solutions** > **Project Location**.
+::: moniker-end
+
+::: moniker range="vs-2022"
+The Project Location can be adjusted in **Tools** > **Options** > **Projects &amp; Solutions** > **Locations**.
+::: moniker-end
 
 > [!TIP]
 > The command-line arguments `-Arch`, `-HostArch`, and `-SkipAutomaticLocation` are supported by both the `Launch-VsDevShell.ps1` script and the `Enter-VsDevShell` cmdlet.

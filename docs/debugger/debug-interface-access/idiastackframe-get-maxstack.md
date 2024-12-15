@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackFrame::get_maxStack method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackFrame::get_maxStack
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the maximum number of bytes pushed on the stack in the frame.
 
 ## Syntax
 
 ```C++
-HRESULT get_maxStack ( 
+HRESULT get_maxStack ( 
    DWORD* pRetVal
 );
 ```

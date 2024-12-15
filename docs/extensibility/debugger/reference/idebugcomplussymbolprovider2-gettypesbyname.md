@@ -8,15 +8,14 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypesByName
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugComPlusSymbolProvider2::GetTypesByName
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a type given its name.
 
 ## Syntax

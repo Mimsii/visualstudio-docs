@@ -1,7 +1,7 @@
 ---
 title: "View threads in the Parallel Stacks window"
 description: Use Parallel Stacks to help debug multithreaded applications. You can view stack information for all threads, and task-centered call stack information.
-ms.date: "11/20/2018"
+ms.date: "03/05/2024"
 ms.topic: "conceptual"
 f1_keywords:
   - "vs.debug.parallelstacks"
@@ -14,12 +14,10 @@ helpviewer_keywords:
   - "debugger, parallel tasks window"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # View threads and tasks in the Parallel Stacks window (C#, Visual Basic, C++)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **Parallel Stacks** window is useful for debugging multithreaded applications. It has several views:
 
@@ -53,10 +51,10 @@ The **Parallel Stacks** window has the following toolbar controls:
 ::: moniker range=">=vs-2022"
 ![Screenshot of Toolbar in Parallel Stacks window 2022.](../debugger/media/vs-2022/parallel-stacks-toolbar.png "Parallel Stacks toolbar.")
 
-
 |Icon|Control|Description|
 |-|-|-|
 |![Threads/Tasks combo box](media/vs-2022/parallel-stacks-toolbar-threads.png "Threads/Tasks combo box")|**Threads**/**Tasks** combo box|Switches the view between call stacks of threads and call stacks of tasks. For more information, see [Tasks view](#tasks-view) and [Threads view](#threads-view).|
+|![Filter icon](media/vs-2022/parallel-stacks-toolbar-filter.png "Filter icon")|**Filter** Control|Shows call stacks only for the specific set of threads that you're interested in.|
 |![Show Only Flagged icon](media/vs-2022/parallel-stacks-toolbar-flag.png "Show Only Flagged icon")|Show Only Flagged|Shows call stacks only for the threads that are flagged in other debugger windows, such as the **GPU Threads** window and the **Parallel Watch** window.|
 |![Toggle Method View icon](media/vs-2022/parallel-stacks-toolbar-method-toggle.png  "Toggle Method View icon")|Toggle **Method View**|Switches between call stack views and **Method View**. For more information, see [Method View](#method-view).|
 |![Auto Scroll to Current icon](media/vs-2022/parallel-stacks-toolbar-autoscroll.png   "Auto Scroll to Current icon")|Auto Scroll To Current Stack Frame|Autoscrolls the graph so that the current stack frame is in view. This feature is useful when you change the current stack frame from other windows, or when you hit a new breakpoint in large graphs.|
@@ -91,7 +89,6 @@ Icon|Description|
 |![Status Running](media/vs-2022/icon-status-running.png)|Indicates that the currently running task.|
 
 ::: moniker-end
-
 
 ### Context menu items
 The following shortcut menu items are available when you right-click a method in **Threads** view or **Tasks** view. The last six items are the same as in the [Call Stack window](how-to-use-the-call-stack-window.md).
@@ -203,7 +200,6 @@ The following illustration shows the **Threads** view at the top and the corresp
 
 ::: moniker-end
 
-
 ::: moniker range=">=vs-2022"
 [![Screenshot of Tasks view in Parallel Stacks window.](../debugger/media/vs-2022/parallel-stacks-toolbar-threads-tasks-view.png "Tasks view in Parallel Stacks window.")](../debugger/media/vs-2022/parallel-stacks-toolbar-threads-tasks-view.png#lightbox)
 ::: moniker-end
@@ -243,8 +239,7 @@ These video tutorials demonstrate how you can use the Threads and Tasks views of
 - [Debugging threads with the Parallel Stacks window](/shows/visual-studio-toolbox/debugging-threads-with-the-parallel-stacks-window)
 
 
-
-## See also
+## Related content
 - [Get started debugging a multithreaded application](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Walkthrough: Debug a parallel application](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Switch to Another Thread While Debugging in Visual Studio](../debugger/how-to-switch-to-another-thread-while-debugging.md)

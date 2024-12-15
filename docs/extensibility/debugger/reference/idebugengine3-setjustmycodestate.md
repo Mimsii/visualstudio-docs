@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngine3::SetJustMyCodeState
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method tells the debug engine about the JustMyCode state information.
 
 ## Syntax

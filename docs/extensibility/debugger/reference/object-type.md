@@ -9,15 +9,14 @@ helpviewer_keywords:
 - OBJECT_TYPE enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # OBJECT_TYPE
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies the type of an object from the expression evaluator.
 
 ## Syntax

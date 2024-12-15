@@ -9,12 +9,11 @@ helpviewer_keywords:
 - symbol handler, evaluating variables
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Symbol Provider Interfaces
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following are the Symbol Handling Interfaces for the Visual Studio SDK.
 
 ## Discussion

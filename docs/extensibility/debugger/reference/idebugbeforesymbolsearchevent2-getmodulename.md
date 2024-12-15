@@ -8,15 +8,14 @@ helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugBeforeSymbolSearchEvent2::GetModuleName
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the name of the module currently being debugged.
 
 ## Syntax

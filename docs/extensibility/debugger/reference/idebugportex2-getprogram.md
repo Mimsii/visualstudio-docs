@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugPortEx2::GetProgram
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the program associated with a program node.
 
 ## Syntax

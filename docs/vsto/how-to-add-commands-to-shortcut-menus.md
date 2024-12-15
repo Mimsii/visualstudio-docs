@@ -11,12 +11,11 @@ helpviewer_keywords:
   - "Office development in Visual Studio, context menus"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Add commands to shortcut menus
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This topic demonstrates how to add commands to a shortcut menu in an Office application by using a VSTO Add-in.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -74,7 +73,7 @@ ms.technology: office-development
 
 9. Add a callback method to the `Ribbon1` class for each control that you want to handle.
 
-     The following callback method handles the **My Button** button. This code adds a string to the active document at the current location of the curser.
+     The following callback method handles the **My Button** button. This code adds a string to the active document at the current location of the cursor.
 
      ### [C#](#tab/csharp)
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs" id="Snippet2":::

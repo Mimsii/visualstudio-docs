@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a specified number of tables in the enumeration sequence."
+description: Retrieves a specified number of tables in the enumeration sequence.
 title: "IDiaEnumTables::Next"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaEnumTables::Next method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaEnumTables::Next
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a specified number of tables in the enumeration sequence.
 
 ## Syntax
 
-```C++
-HRESULT Next ( 
+```c++
+HRESULT Next ( 
    ULONG       celt,
    IDiaTable** rgelt,
    ULONG*      pceltFetched
@@ -28,6 +28,7 @@ HRESULT Next ( 
 ```
 
 #### Parameters
+
  `celt`
 
 [in] The number of tables in the enumerator to be retrieved.
@@ -41,8 +42,10 @@ HRESULT Next ( 
 [out] Returns the number of tables in the fetched enumerator.
 
 ## Return Value
- If successful, returns `S_OK`. Returns `S_FALSE` if there are no more tables. Otherwise, returns an error code.
+
+If successful, returns `S_OK`. Returns `S_FALSE` if there are no more tables. Otherwise, returns an error code.
 
 ## See also
+
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

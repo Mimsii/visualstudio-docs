@@ -2,11 +2,11 @@
 title: Update Visual Studio installation to recent release
 titleSuffix: ''
 description: Update your Visual Studio installation to the most recent release to access the latest feature changes and fixes for known issues. 
-ms.date: 8/29/2023
+ms.date: 5/22/2024
 ms.custom: vs-acquisition
 ms.topic: how-to
-ms.prod: visual-studio-windows
-ms.technology: vs-installation
+
+ms.subservice: installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
@@ -14,13 +14,9 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
+manager: mijacobs
 ---
 # Update Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-This topic discusses how to update a client installation of Visual Studio on Windows. For Visual Studio for Mac, see [Update Visual Studio for Mac](/visualstudio/mac/update).
 
 Visual Studio must first be [installed on the machine](../install/install-visual-studio.md) before you can update it. 
 
@@ -213,9 +209,9 @@ There are two ways to bring up the Update Settings dialog, which allows you to m
 
   ![Screenshot showing the Updates settings in the Update available dialog in the IDE.](media/vs-2022/invoke-update-settings-in-the-ide.png)
     
-The **Update settings** dialog will look something like this. In this example, the Visual studio instance is using the LTSC 17.0 channel.
+The **Update Settings** dialog will look something like this. In this example, the Visual studio instance is using the LTSC 17.8 channel.
 
-   ![Screenshot showing the Updates settings dialog in the Visual Studio 2022 IDE.](media/vs-2022/update-settings.png)
+   ![Screenshot showing the Updates settings dialog in the Visual Studio 2022 IDE.](media/vs-2022/update-setting-dialog-one.png)
 
 By choosing the correct value in the **Update channel** dropdown, you can control the source location of future updates for this instance of Visual Studio. Additional things to keep in mind are:
  * The Preview and Current channels are available for all editions of Visual Studio, and the LTSC channels are only available for Professional and Enterprise customers. 
@@ -227,7 +223,6 @@ By choosing the correct value in the **Update channel** dropdown, you can contro
  * Each instance of Visual Studio has the ability to independently configure its source for updates. So, if you have two instances of Visual Studio 2022 installed, each can update from a different channel. 
  * IT Administrators can control the text in the **Update channel** dropdown. For example, they can add network layout locations as update sources. They can also suppress Microsoft hosted locations from being available as update source options. This functionality works for Visual Studio 2019 installs too. For information on how to configure these update locations, refer to the [Set defaults for enterprise deployments](/visualstudio/install/set-defaults-for-enterprise-deployments?#configuring-source-location-for-updates) page.
 
-
 ::: moniker-end
 
 ## Programmatically update Visual Studio
@@ -236,7 +231,7 @@ You can use either the bootstrapper or the installer to programmatically update 
 
 ## Administrator updates
 
-If you are part of an organization that centralizes management of software installations, then your enterprise administrator might control how Visual Studio updates your machine. For more about how to control or configure the types of updates your machine can accept, see [Using Configuration Manager to deploy Visual Studio updates](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates).
+If you are part of an organization that centralizes management of software installations, then your enterprise administrator might control how Visual Studio updates your machine. For more about how to control or configure the types of updates your machine can accept, see [Using Configuration Manager to deploy Visual Studio updates](../install/applying-administrator-updates.md#configuring-the-client-machine-to-receive-administrator-updates).
 
 ## Remove out-of-support components
 
@@ -251,9 +246,9 @@ To bulk remove out-of-support components manually through the UI you can
    
 All components with an out-of-support label will be deselected and get uninstalled.
 
-You can also configure a specific Visual Studio instance to _persistently_ remove all components that transition to an out-of-support state by selecting the option **More**> **Update Settings**> **Remove all out-of-support components during future updates** in the Visual Studio Installer. Once this setting is configured, any component that transitions to an out-of-support state in the future will be removed during the next Visual Studio update for that instance of Visual Studio.
+You can also configure a specific Visual Studio instance to *persistently* remove all components that transition to an out-of-support state by selecting the option **More**> **Update Settings**> **Remove all out-of-support components during future updates** in the Visual Studio Installer. Once this setting is configured, any component that transitions to an out-of-support state in the future will be removed during the next Visual Studio update for that instance of Visual Studio.
 
-   :::image type="content" source="media/vs-2022/remove-all-out-support-components-during-future-updates.png" alt-text="Screenshot of Remove all out-of-state components during future updates option in the Update Settings dialog.":::
+ ![Screenshot showing the Remove out of support checkbox in update setting dialog.](media/vs-2022/update-setting-dialog-two.png)
    
 ## Use the latest and greatest installer
 
@@ -272,7 +267,6 @@ The most current release of the installer in the latest version of Visual Studio
 ## Update from the Microsoft Catalog
 
 You can download an Administrator Update from the [Microsoft Update Catalog](https://catalog.update.microsoft.com) into the installation directory on your machine, and use it to update your installation by just double-clicking on it to apply the update. 
-
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

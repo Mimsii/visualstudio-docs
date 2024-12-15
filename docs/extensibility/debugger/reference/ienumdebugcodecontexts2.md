@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IEnumDebugCodeContexts2
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IEnumDebugCodeContexts2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface enumerates the code contexts associated with the debug session, or with a particular program or document.
 
 ## Syntax

@@ -8,12 +8,11 @@ helpviewer_keywords:
 - file name extensions
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # About file name extensions
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 When you register a file extension of a VSPackage, you associate it with a version of Visual Studio. This is important if more than one version of Visual Studio is installed on a computer.
 
  File extensions for VSPackages are registered under **HKEY_CLASSES_ROOT** key with a default value that points to the associated programmatic identifier (ProgID).

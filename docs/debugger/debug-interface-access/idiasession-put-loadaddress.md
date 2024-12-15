@@ -1,5 +1,5 @@
 ---
-description: "Sets the load address for the executable file that corresponds to the symbols in this symbol store."
+description: Sets the load address for the executable file that corresponds to the symbols in this symbol store.
 title: "IDiaSession::put_loadAddress"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::put_loadAddress method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::put_loadAddress
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Sets the load address for the executable file that corresponds to the symbols in this symbol store.
 
 ## Syntax
 
 ```C++
-HRESULT put_loadAddress ( 
+HRESULT put_loadAddress ( 
    ULONGLONG NewVal
 );
 ```

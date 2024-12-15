@@ -14,12 +14,10 @@ helpviewer_keywords:
   - "C/C++, Edit and Continue"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Edit and Continue (C++)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ::: moniker range=">=vs-2022"
 You can use Hot Reload, previously called Edit and Continue, in C++ projects. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.
@@ -29,9 +27,7 @@ You can use Hot Reload, previously called Edit and Continue, in C++ projects. Se
 You can use Edit and Continue in C++ projects. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.
 ::: moniker-end
 
-For more information about Visual Studio 2015 Update 3 improvements, see [C++ Edit and Continue in Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
-
- The [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging) compiler option that was introduced in Visual Studio 2013 Update 3 adds additional information to .pdb (symbol) files for binaries compiled without the [/Od (Disable (Debug))](/cpp/build/reference/od-disable-debug) option.
+ The [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging) compiler option adds additional information to .pdb (symbol) files for binaries compiled without the [/Od (Disable (Debug))](/cpp/build/reference/od-disable-debug) option.
 
  **/Zo** disables Edit and Continue. See [How to: Debug Optimized Code](../debugger/how-to-debug-optimized-code.md).
 
@@ -102,6 +98,6 @@ For more information about Visual Studio 2015 Update 3 improvements, see [C++ Ed
 
  In such cases, the debugger continues executing the original code until the changes can be applied. The stale code appears as a temporary source file window in a separate source window, with a title such as `enc25.tmp`. The edited source continues to appear in the original source window. If you try to edit the stale code, a warning message appears.
 
-## See also
+## Related content
 
 - [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md)

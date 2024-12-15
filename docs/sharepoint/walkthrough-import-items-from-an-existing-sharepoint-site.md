@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "importing items [SharePoint development in Visual Studio]"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Walkthrough: Import items from an existing SharePoint site
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This walkthrough demonstrates how to import items from an existing SharePoint site into a Visual Studio SharePoint project.
 
  This walkthrough demonstrates the following tasks:

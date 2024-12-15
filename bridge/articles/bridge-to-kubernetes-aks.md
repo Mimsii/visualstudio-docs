@@ -2,8 +2,8 @@
 ms.topic: quickstart
 ms.author: ghogen
 author: ghogen
-manager: jmartens
-ms.technology: bridge
+manager: mijacobs
+ms.subservice: bridge
 title: Debug locally with Bridge to Kubernetes and AKS clusters
 ms.date: 08/15/2022
 description: Use Bridge to Kubernetes to run and debug locally in a single pod with Kubernetes with Azure Kubernetes Service (AKS) cluster in Azure.
@@ -11,11 +11,13 @@ description: Use Bridge to Kubernetes to run and debug locally in a single pod w
 
 # Use Bridge to Kubernetes with AKS
 
+[!INCLUDE [Bridge to Kubernetes deprecation note](./includes/deprecation.md)]
+
 In this tutorial, you use a specific AKS sample microservices web app to learn how to use Bridge to Kubernetes to debug locally in a single pod that's part of an Azure Kubernetes Service (AKS) cluster.
 
 ## Before you begin
 
-This guide uses the [Todo App sample application](https://github.com/Azure/Bridge-To-Kubernetes/tree/main/samples/todo-app) to demonstrate connecting your development computer to a Kubernetes cluster running in AKS. If you already have your own application running on a Kubernetes cluster, see [Develop with Kubernetes](bridge-to-kubernetes-vs-code.md). If you are using another cluster, such as MiniKube running locally, see [Use Bridge to Kubernetes with a sample](bridge-to-kubernetes-sample.md).
+This guide uses the Todo App sample application to demonstrate connecting your development computer to a Kubernetes cluster running in AKS. If you already have your own application running on a Kubernetes cluster, see [Develop with Kubernetes](bridge-to-kubernetes-vs-code.md). If you are using another cluster, such as MiniKube running locally, see [Use Bridge to Kubernetes with a sample](bridge-to-kubernetes-sample.md).
 
 ### Prerequisites
 
@@ -45,8 +47,8 @@ az aks create \
 Download the code and install dependencies
 
 ```azurecli-interactive
-git clone https://github.com/Azure/Bridge-To-Kubernetes
-cd Bridge-To-Kubernetes/samples/todo-app
+git clone https://github.com/hsubramanianaks/b2k-samples
+cd b2k-samples/todo-app
 npm install stats-api\
 ```
 
@@ -82,7 +84,7 @@ code ./stats-api
 
 First, place a breakpoint on line 17 of `server.js`.
 
-Then, make sure todo-app namespace in MYAKS cluster is set as default (if it has * next to it). If it is not set as default, right-click the **todo-app** node, and choose **Use Namespace**.
+Then, make sure the `todo-app` namespace in the `MyAKS` cluster is set as default (if it has * next to it). If it is not set as default, right-click the **todo-app** node, and choose **Use Namespace**.
 
 ![Screenshot showing the Bridge to Kubernetes Namespace.](media/bridge-to-kubernetes-sample/bridge-to-kubernetes-namespace.png)
 
@@ -127,7 +129,7 @@ Your development computer is connected when the VS Code status bar turns orange 
 
 ![Screenshot showing the choose the debugging with Bridge to Kubernetes window.](media/bridge-to-kubernetes-sample/debugging.png)
 
-Navigate to the frontend entry point of your todo-app. Using that external IP you found earlier `{your external IP from get services command}.nip.io`. Note, if you selected isolation mode, you need to use `{your prefix - can be found in task.json}.{your external IP from get services command}.nip.io`.
+Navigate to the frontend entry point of your application via the external IP you found earlier, `{your external IP from get services command}.nip.io`. Note that if you selected isolation mode, you need to use `{your prefix - can be found in task.json}.{your external IP from get services command}.nip.io`.
 
 Make a request to the stats-api by choosing the **stats** link.
 

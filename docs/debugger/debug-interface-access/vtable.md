@@ -10,12 +10,11 @@ helpviewer_keywords:
   - "virtual tables"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # VTable
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The virtual table is identified by the `SymTagVTable` symbol.
 
 ## Properties

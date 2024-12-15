@@ -9,14 +9,13 @@ helpviewer_keywords:
 - BP_LOCATION_RESOLUTION structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 ---
 # BP_LOCATION_RESOLUTION
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Describes the resolution of a breakpoint at a specific location.
 
 ## Syntax

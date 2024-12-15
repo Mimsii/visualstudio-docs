@@ -7,8 +7,8 @@ helpviewer_keywords:
 - MSBuild, Items
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # MSBuild items
 
@@ -387,7 +387,7 @@ Output:
 -->
 ```
 
-Because the `KeepDuplicates` attribute considers the metadata of items in addition to the item values, it's important to know what's happening with the metadata. For example, see [Detecting duplicates when using the Metadata item function](./item-functions.md#detecting-duplicate-items-when-using-the-metadata-item-function).
+Because the `KeepDuplicates` attribute considers the metadata of items in addition to the item values, it's important to know what's happening with the metadata. For example, see [Detecting duplicates when using the Metadata item function](./item-functions.md#detecting-duplicates-when-using-the-metadata-item-function).
 
 ## Updating metadata on items in an ItemGroup outside of a Target
 

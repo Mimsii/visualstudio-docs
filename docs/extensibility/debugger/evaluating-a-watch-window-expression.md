@@ -9,12 +9,11 @@ helpviewer_keywords:
 - expression evaluation, Watch window expressions
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Evaluate a watch window expression
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 > [!IMPORTANT]
 > In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, see [CLR expression evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
@@ -28,7 +27,7 @@ ms.technology: vs-ide-debug
 
 3. `IDebugExpressionContext2::ParseText` calls [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) to do the actual work of parsing the text and produce an [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) object.
 
-4. `IDebugExpressionContext2::ParseText` creates an [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) object and puts the `IDebugParsedExpression` object into it. This I`DebugExpression2` object is then returned to Visual Studio.
+4. `IDebugExpressionContext2::ParseText` creates an [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) object and puts the `IDebugParsedExpression` object into it. This `IDebugExpression2` object is then returned to Visual Studio.
 
 5. Visual Studio calls [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) to evaluate the parsed expression.
 
@@ -43,11 +42,10 @@ ms.technology: vs-ide-debug
 > It is not necessary for an EE to adhere to this two-step process even though Visual Studio assumes this; the EE can parse and evaluate in the same step when [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) is called (this is how the MyCEE sample works, for example). If your language can form complex expressions, you may want to separate the parse step from the evaluation step. This can increase performance in the Visual Studio debugger when many watch expressions are being shown.
 
 ## In this section
- [Sample implementation of expression evaluation](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
- Uses the MyCEE sample to step through the process of expression evaluation.
 
- [Evaluating a watch expression](../../extensibility/debugger/evaluating-a-watch-expression.md)
- Explains what happens after a successful expression parse.
+[Sample implementation of expression evaluation](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) uses the MyCEE sample to step through the process of expression evaluation.
+
+ [Evaluating a watch expression](../../extensibility/debugger/evaluating-a-watch-expression.md) explains what happens after a successful expression parse.
 
 ## Related content
 - [Evaluation context](../../extensibility/debugger/evaluation-context.md) provides the arguments that are passed when the debug engine (DE) calls the expression evaluator (EE).

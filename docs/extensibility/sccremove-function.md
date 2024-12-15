@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccRemove function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccRemove Function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function deletes files from the source control system.
 
 ## Syntax

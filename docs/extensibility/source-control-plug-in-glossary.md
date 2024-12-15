@@ -8,12 +8,11 @@ helpviewer_keywords:
 - source control plug-ins, glossary
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Source Control Plug-in Glossary
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following helpful terms and definitions pertain to the Source Control Plug-in SDK documentation.
 
 ## Definitions

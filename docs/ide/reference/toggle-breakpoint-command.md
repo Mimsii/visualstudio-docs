@@ -11,12 +11,11 @@ helpviewer_keywords:
 - Toggle Breakpoint command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Toggle Breakpoint Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Turns the breakpoint either on or off, depending on its current state, at the current location in the file.
 
 ## Syntax

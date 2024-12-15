@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProgramEx2::Attach
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProgramEx2::Attach
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Attach a session to a program.
 
 ## Syntax

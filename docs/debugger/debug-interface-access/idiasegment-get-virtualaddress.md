@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the virtual address (VA) of the beginning of the section."
+description: Retrieves the virtual address (VA) of the beginning of the section.
 title: "IDiaSegment::get_virtualAddress"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSegment::get_virtualAddress method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSegment::get_virtualAddress
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the virtual address (VA) of the beginning of the section.
 
 ## Syntax
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```

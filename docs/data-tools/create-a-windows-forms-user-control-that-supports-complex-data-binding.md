@@ -12,12 +12,11 @@ helpviewer_keywords:
 - user controls [Visual Studio], complex data binding
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Create a .NET Framework Windows Forms user control that supports complex data binding with ADO.NET
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Create a .NET Framework Windows Forms user control that supports complex data binding with ADO.NET
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -45,7 +44,7 @@ During this walkthrough, you'll learn how to:
 
 - Create a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
 
-- Set the **Customers** table in the [Data Sources window](add-new-data-sources.md#data-sources-window) to use the new complex control.
+- Set the **Customers** table in the [Data Sources window](add-new-data-sources.md#work-with-data-sources-and-windows-forms) to use the new complex control.
 
 - Add the new control by dragging it from the **Data Sources** window onto **Form1**.
 
@@ -79,7 +78,7 @@ Because this walkthrough creates a complex data-bindable control from a **User C
 
 1. From the **Project** menu, choose **Add User Control**.
 
-1. Type **ComplexDataGridView** in the **Name** area, and then click **Add**.
+1. Type **ComplexDataGridView** in the **Name** area, and then select **Add**.
 
     The **ComplexDataGridView** control is added to **Solution Explorer**, and opens in the designer.
 
@@ -112,21 +111,21 @@ Use the **Data Source Configuration** wizard to create a data source based on th
 
 2. In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.
 
-3. Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.
+3. Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
 
 4. On the **Choose your Data Connection** page do one of the following:
 
-   - If a data connection to the Northwind sample database is available in the drop-down list, select it.
+   - If a data connection to the Northwind sample database is available in the dropdown list, select it.
 
    - Select **New Connection** to launch the **Add/Modify Connection** dialog box.
 
-5. If your database requires a password, select the option to include sensitive data, and then click **Next**.
+5. If your database requires a password, select the option to include sensitive data, and then select **Next**.
 
 6. On the **Save connection string to the Application Configuration file** page, click **Next**.
 
 7. On the **Choose your Database Objects** page, expand the **Tables** node.
 
-8. Select the `Customers` table, and then click **Finish**.
+8. Select the `Customers` table, and then select **Finish**.
 
    The **NorthwindDataSet** is added to your project, and the `Customers` table appears in the **Data Sources** window.
 
@@ -138,11 +137,11 @@ Within the **Data Sources** window, you can set the control to be created prior 
 
 1. Expand the **Customers** node in the **Data Sources** window.
 
-1. Click the drop-down arrow on the **Customers** node, and choose **Customize**.
+1. Click the dropdown list arrow on the **Customers** node, and choose **Customize**.
 
 1. Select the **ComplexDataGridView** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.
 
-1. Click the drop-down arrow on the `Customers` table, and choose **ComplexDataGridView** from the control list.
+1. Click the dropdown list arrow on the `Customers` table, and choose **ComplexDataGridView** from the control list.
 
 ## Add controls to the form
 
@@ -160,7 +159,7 @@ Depending on your application requirements, there are several steps you might wa
 
 - Creating controls that support lookup scenarios. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## See also
+## Related content
 
 - [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

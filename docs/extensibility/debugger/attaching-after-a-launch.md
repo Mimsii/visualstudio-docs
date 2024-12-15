@@ -7,12 +7,11 @@ helpviewer_keywords:
 - debug engines, attaching to programs
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Attach after a launch
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 After a program launches, the debug session is ready to attach the debug engine (DE) to said program.
 
 ## Design decisions

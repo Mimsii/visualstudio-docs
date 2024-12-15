@@ -9,12 +9,10 @@ helpviewer_keywords:
 - automation object model
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Extend the object model of the base project
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 A project subtype may extend the automation object model of the base project in the following places:
 

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # DISASSEMBLY_STREAM_SCOPE
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies the scope of the disassembly stream.
 
 ## Syntax

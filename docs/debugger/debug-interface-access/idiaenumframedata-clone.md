@@ -1,5 +1,5 @@
 ---
-description: "Creates an enumerator that contains the same enumeration state as the current frame data enumerator."
+description: Creates an enumerator that contains the same enumeration state as the current frame data enumerator.
 title: "IDiaEnumFrameData::Clone"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,29 +9,32 @@ helpviewer_keywords:
   - "IDiaEnumFrameData::Clone Method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaEnumFrameData::Clone
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creates an enumerator that contains the same enumeration state as the current enumerator.
 
 ## Syntax
 
-```C++
-HRESULT Clone( 
+```c++
+HRESULT Clone( 
    IDiaEnumFrameData** ppenum
 );
 ```
 
 #### Parameters
- ppenum
 
-[out] Returns an [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) object that contains a duplicate  of the enumerator. The frame data is not duplicated, only the enumerator.
+ppenum
+
+[out] Returns an [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) object that contains a duplicate of the enumerator. The frame data is not duplicated, only the enumerator.
 
 ## Return Value
- If successful, returns `S_OK`; otherwise, returns an error code.
+
+If successful, returns `S_OK`; otherwise, returns an error code.
 
 ## See also
+
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

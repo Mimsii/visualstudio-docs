@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugReference2::GetDerivedMostReference
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugReference2::GetDerivedMostReference
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the derived-most reference of a reference. Reserved for future use.
 
 ## Syntax

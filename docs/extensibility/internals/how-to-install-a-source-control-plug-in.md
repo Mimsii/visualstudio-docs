@@ -8,12 +8,11 @@ helpviewer_keywords:
 - source control plug-ins, installing
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Install a source control plug-in
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creating a source-control plug-in involves three steps:
 
 1. Create a DLL with the functions defined in the Source Control Plug-in API reference section of this documentation.

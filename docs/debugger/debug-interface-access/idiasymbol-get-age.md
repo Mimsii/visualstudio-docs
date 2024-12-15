@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the age value of a .pdb file."
+description: Retrieves the age value of a .pdb file.
 title: "IDiaSymbol::get_age"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_age method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_age
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the age value of a .pdb file.
 
 ## Syntax
 
 ```C++
-HRESULT get_age ( 
+HRESULT get_age ( 
    DWORD* pRetVal
 );
 ```

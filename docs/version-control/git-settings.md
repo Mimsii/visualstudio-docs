@@ -2,18 +2,15 @@
 title: Git settings in Visual Studio
 titleSuffix: ""
 description: Explore how Visual Studio uses .gitconfig files and Git settings to manage your project and solution preferences, such as your preferred diff and merge tools.
-ms.date: 11/29/2022
+ms.date: 04/04/2024
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-ms.manager: jmartens
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
+ms.manager: mijacobs
+ms.subservice: general-ide
 monikerRange: ">=vs-2019"
 ---
 # Git settings and preferences in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In Visual Studio, you can configure and view common Git settings and preferences, such as your name and email address, your preferred diff and merge tools, and more. These settings and preferences can be viewed and configured in the **Options dialog box** on either the **Git Global Settings** page (applies to all your repositories) or the **Git Repository Settings** page (applies to the current repository).
 

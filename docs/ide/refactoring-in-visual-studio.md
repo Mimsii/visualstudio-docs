@@ -7,15 +7,13 @@ helpviewer_keywords:
 - refactoring [Visual Studio]
 f1_keywords:
 - vs.csharp.refactoring.preview
-ms.devlang: CSharp
+ms.devlang: csharp
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Refactor code
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Refactoring is the process of modifying code in order to make it easier to maintain, understand, and extend, but without changing its behavior.
 
@@ -35,4 +33,3 @@ Different refactoring operations are available for different programming languag
 - [Quick Actions](../ide/quick-actions.md)
 - [Visual Studio IDE overview](../get-started/visual-studio-ide.md)
 - [Features of the code editor](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Refactoring in Visual Studio for Mac](/visualstudio/mac/refactoring)

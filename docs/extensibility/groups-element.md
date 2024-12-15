@@ -8,12 +8,11 @@ helpviewer_keywords:
 - Groups element (VSCT XML schema)
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Groups element
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Contains entries that define the command groups of a VSPackage.
 
 ## Syntax

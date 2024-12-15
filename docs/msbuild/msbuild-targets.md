@@ -7,8 +7,8 @@ helpviewer_keywords:
 - MSBuild, targets
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # MSBuild targets
 
@@ -116,13 +116,13 @@ Reference: 4.0
 Some build targets depend on the SDK you're referencing, if any. To get all targets available for a project file, use the `-targets` or `-ts` command-line option. See [MSBuild command line reference](msbuild-command-line-reference.md). The build system contains a large number of targets that are for internal use by the build, which are usually indicated with an underscore (_) at the beginning of the target name. To get a list of the public targets only, try piping the output to something that filters out the underscores. For example, in bash when working with `dotnet build`, you can do the following:
 
 ```cli
-dotnet build -ts | grep -v '_'
+dotnet build -targets path/to/project.csproj | grep -v '_'
 ```
 
 In PowerShell, you can filter with:
 
 ```powershell
- dotnet build -ts | select-string -pattern '_' -NotMatch
+ dotnet build -targets path\to\project.csproj | select-string -pattern '_' -NotMatch
 ```
 
 If you're not using .NET, use `MSBuild.exe -ts` in place of `dotnet build -ts`, followed by the same piping and filtering operations.
@@ -237,7 +237,7 @@ Get the paths for the .NET Framework installation directory
 These paths are not used directly by this .targets file but are available for pre and
 post build steps.
 
-This is a generally overriden target, for example it is overriden in the Microsoft.NETFramework.targets file
+This is a generally overridden target. For example, it's overridden in the Microsoft.NETFramework.targets file.
 ===================================================
 <Target Name="GetFrameworkPaths"/>
 
@@ -438,7 +438,7 @@ creates a list of invalid references to be unresolved. It issues a warning for e
 
 ===================================================
 ExpandSDKReferences
-After we have resolved the sdk refrence we need to make sure that we automatically include the references which are part of the SDK (both winmd and dll)
+After we have resolved the sdk reference we need to make sure that we automatically include the references which are part of the SDK (both winmd and dll)
 as part of the assemblies passed to the compiler.
 
 Project systems or project which do not want to reference all dlls or winmd files should override this target to do nothing.
@@ -668,7 +668,7 @@ An application manifest specifies declarative application identity, dependency a
 ===================================================
 GenerateDeploymentManifest
 Generates a ClickOnce deployment manifest.
-An deployment manifest specifies declarative application identity and application update information.
+A deployment manifest specifies declarative application identity and application update information.
 ===================================================
 <Target Name="GenerateDeploymentManifest"
         DependsOnTargets="GenerateApplicationManifest"

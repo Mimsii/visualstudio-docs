@@ -1,7 +1,7 @@
 ---
-description: "A complete reference to all of the interfaces and supporting enumerations and structures in the DIA SDK."
-title: "Debug Interface Access SDK Reference"
-ms.date: "11/04/2016"
+description: A complete reference to all of the interfaces and supporting enumerations and structures in the DIA SDK.
+title: Debug Interface Access SDK Reference
+ms.date: "07/22/2024"
 ms.topic: "reference"
 dev_langs:
   - "C++"
@@ -11,14 +11,13 @@ helpviewer_keywords:
   - "DIA SDK, reference"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # Debug Interface Access SDK Reference
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-A complete reference to all of the interfaces and supporting enumerations and structures in the DIA SDK.
+A complete reference to all of the interfaces and supporting enumerations and structures in the Debug Interface Access (DIA) SDK.
 
 ## In This Section
 
@@ -33,6 +32,10 @@ A complete reference to all of the enumerations and structures required by the i
 [Constants (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 Describes a number of strings and their labels that can be used with the interfaces.
+
+[Common HRESULT Values (Debug Interface Access SDK)](../../debugger/debug-interface-access/common-hresult-values.md)
+
+Describes a number of HRESULT values that can be return with the interfaces.
 
 ## Related Sections
 

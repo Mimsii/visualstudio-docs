@@ -8,12 +8,11 @@ helpviewer_keywords:
 - Set Current Process command
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Set Current Process
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Sets the specified process as the active process in the debugger.
 
 ## Syntax

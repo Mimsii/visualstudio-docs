@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugBinder3::GetTypeArguments method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugBinder3::GetTypeArguments
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method retrieves a list of argument types associated with this object.
 
 ## Syntax

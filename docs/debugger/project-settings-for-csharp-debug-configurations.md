@@ -2,7 +2,7 @@
 title: "Project Settings for a C# debug config"
 description: Understand how to change the project settings for a C# debug configuration in Visual Studio, using the Debug tab and Build tab of the project property pages.
 ms.date: "01/13/2022"
-ms.topic: "reference"
+ms.topic: "ui-reference"
 dev_langs:
   - "CSharp"
   - "VB"
@@ -17,12 +17,10 @@ helpviewer_keywords:
   - "debugging [C#], debugger settings"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Project settings for C# debug configurations
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can change C# project debug settings in the [Debug tab](#debug-tab) and [Build tab](#build-tab) of the project property pages.
 

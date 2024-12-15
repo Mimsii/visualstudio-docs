@@ -1,22 +1,21 @@
 ---
 title: Add Azure Cosmos DB by using Connected Services
 description: Connect Azure Cosmos DB support to your application by using Connected Services in Visual Studio on Windows and add a connected service.
-author: AngelosP
-manager: jmartens
-ms.technology: vs-azure
+author: ghogen
+manager: mijacobs
+ms.subservice: azure-development
 ms.topic: conceptual
-ms.date: 05/15/2023
-ms.author: angelpe
+ms.date: 02/15/2024
+ms.author: ghogen
 monikerRange: ">= vs-2019"
 ---
-# Add Azure Cosmos DB to your app by using Visual Studio Connected Services
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Add Azure Cosmos DB to your app by using Visual Studio Connected Services
 
 With Visual Studio, you can connect any of the following to Azure Cosmos DB by using the **Connected Services** feature:
 
 - .NET Framework console app
-- ASP.NET MVC (.NET Framework) 
+- ASP.NET Model-View-Controller (MVC) (.NET Framework)
 - ASP.NET Core
 - .NET Core (including console app, WPF, Windows Forms, class library)
 - .NET Core Worker Role
@@ -27,8 +26,6 @@ With Visual Studio, you can connect any of the following to Azure Cosmos DB by u
 
 The connected service functionality adds all the needed references and connection code to your project, and modifies your configuration files appropriately.
 
-> [!NOTE]
-> This topic applies to Visual Studio on Windows. For Visual Studio for Mac, see [Connected services in Visual Studio for Mac](/visualstudio/mac/connected-services).
 ## Prerequisites
 
 - Visual Studio with the Azure workload installed.
@@ -36,10 +33,13 @@ The connected service functionality adds all the needed references and connectio
 - [!INCLUDE [prerequisites-azure-subscription](includes/prerequisites-azure-subscription.md)]
 
 ## Connect to Azure Cosmos DB using Connected Services
+
 :::moniker range="vs-2019"
 1. Open your project in Visual Studio.
 
 1. In **Solution Explorer**, right-click the **Connected Services** node, and, from the context menu, select **Add Connected Service**.
+
+   If you don't see the **Connected Services** node, choose **Project** > **Connected Services** > **Add**.
 
 1. In the **Connected Services** tab, select the + icon for **Service Dependencies**.
 
@@ -49,7 +49,7 @@ The connected service functionality adds all the needed references and connectio
 
     ![Screenshot showing "Add Dependency" screen, selecting the "Add Azure Cosmos DB" option.](./media/azure-cosmosdb-add-connected-service/azure-cosmos-db.png)
 
-    If you aren't signed in already, sign into your Azure account. If you don't have an Azure account, you can sign up for a [free trial](https://azure.microsoft.com/free/).
+    If you aren't signed in already, sign in to your Azure account. If you don't have an Azure account, you can sign up for a [free trial](https://azure.microsoft.com/free/).
 
 1. In the **Azure Cosmos DB** screen, select an existing Azure Cosmos DB, and select **Next**.
 
@@ -91,13 +91,15 @@ The connected service functionality adds all the needed references and connectio
 
    ![Screenshot showing Connected Services context menu options.](./media/azure-cosmosdb-add-connected-service/vs-2022/add-connected-service-context-menu-2.png)
 
+   If you don't see the **Connected Services** node, choose **Project** > **Connected Services** > **Add**.
+
 1. Choose **Azure Cosmos DB**. The **Connect to dependency** page appears. You should see two options, one for a local emulator, **Azure Cosmos DB Emulator on container (Local)**, and one for connecting to the live Azure Cosmos DB service. You can reduce cost and simplify early development by starting with the local emulator. You can migrate to the live service later by repeating these steps and choosing the other option.
 
    ![Screenshot showing Azure Cosmos DB choices.](./media/azure-cosmosdb-add-connected-service/vs-2022/azure-cosmos-db-choices-2.png)
 
    If you choose to use the Azure Cosmos DB Emulator, click **Next** to see the **Summary of changes** screen, which shows how your project is being modified. A NuGet package reference is added to your project and the connection code for the local emulator is added to your project. Once you click **Finish** on the last screen, the container for the emulator is created; you'll see the image download status in the output window.
 
-   If you want to connect to the Azure service, continue to the next step, or if you aren't signed in already, sign into your Azure account before continuing. If you don't have an Azure account, you can sign up for a [free trial](https://azure.microsoft.com/free/).
+   If you want to connect to the Azure service, continue to the next step, or if you aren't signed in already, sign in to your Azure account before continuing. If you don't have an Azure account, you can sign up for a [free trial](https://azure.microsoft.com/free/).
 
 1. In the **Azure Cosmos DB** screen, select an existing Azure Cosmos DB, and select **Next**.
 
@@ -130,7 +132,19 @@ The connected service functionality adds all the needed references and connectio
    ![Screenshot showing "Service Dependencies" after adding the connected service.](./media/azure-cosmosdb-add-connected-service/service-dependencies-after.png)
 
    If you click on the three dots next to the dependency you added, you can see various options such as **Connect** to reopen the wizard and change the connection. You can also click the three dots at the top right of the window to see options to start local dependencies, change settings, and more.
+
+1. By default, the memory limit in the container is set to 2G, but normally, more memory is required to run Azure Cosmos DB. To fix this, navigate to the `.vs/sd/<GUID>/local` folder under your solution folder. In Windows Explorer, you might have to enable hidden files to see the `.vs` folder. Find and open the file *cosmosdb1.docker-compose.yml*. Set a 4G or higher memory limit.
+
+   ```yml
+   mem_limit = 4G
+   ```
+
+    To restart the container with the new setting, in the **Service Dependencies** section of the **Connected Services** tab, click on the three dots, and choose **Start local dependencies**.
+
 :::moniker-end
+
+> [!NOTE]
+> The local emulator for Azure Cosmos DB might reference a base image that uses a temporary license for Azure Cosmos DB. If the container doesn't start, check the **Logs** tab in the **Containers*** window for the Azure Cosmos DB container. If it mentions a PAL expiration issue, you need to get the latest base image for the local container. Run the following command from the console prompt: `docker pull mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator:latest`. The license is periodically updated, and when it expires, refreshing to the newest container should solve the issue. You can view and report issues for the Azure Cosmos DB emulator at the [Azure Cosmos DB emulator GitHub repo](https://github.com/Azure/azure-cosmos-db-emulator-docker/issues).
 
 ## Next steps
 
@@ -143,11 +157,10 @@ using CosmosClient client = new(
 );
 ```
 
-The `CosmosClient` provides access to Cosmos DB functionality through its various methods. Once you have an instance of `CosmosClient`, you can create a NoSQL database by following this guide: [Create a database in Azure Cosmos DB for NoSQL using .NET](/azure/cosmos-db/nosql/how-to-dotnet-create-database).
+The `CosmosClient` provides access to Azure Cosmos DB functionality through its various methods. Once you have an instance of `CosmosClient`, you can create a NoSQL database by following this guide: [Create a database in Azure Cosmos DB for NoSQL using .NET](/azure/cosmos-db/nosql/how-to-dotnet-create-database).
 
-## See also
+## Related content
 
 - [Azure Cosmos DB product page](https://azure.microsoft.com/services/cosmos-db/)
 - [Azure Cosmos DB documentation](/azure/cosmos-db/)
-- [Connected services (Visual Studio for Mac)](/visualstudio/mac/connected-services)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

@@ -1,7 +1,7 @@
 ---
 title: Create database, add tables in .NET Framework apps
 description: Create a database with tables and foreign keys in a .NET Framework application by using Table Designer in Visual Studio.
-ms.date: 02/28/2023
+ms.date: 02/01/2024
 ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
@@ -9,12 +9,11 @@ helpviewer_keywords:
 - table designer
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Create a database and add tables in .NET Framework applications using Visual Studio
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Create a database and add tables in .NET Framework applications using Visual Studio
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -42,7 +41,7 @@ To complete this walkthrough, you need the **.NET desktop development** and **Da
    ![Add New item > Service-based database](media/raddata-vsitemtemplates.png)
    :::moniker-end
 
-4. Name the database **SampleDatabase.mdf**, and then click **Add**.
+4. Name the database **SampleDatabase.mdf**, and then select **Add**.
 
 ### Add a data source
 
@@ -63,22 +62,35 @@ To complete this walkthrough, you need the **.NET desktop development** and **Da
 
 1. On the **Choose a Database Model** page, choose **Next** to accept the default (Dataset).
 
-1. On the **Choose Your Data Connection** page, select the **SampleDatabase.mdf** file in the drop-down list, and then choose **Next**.
+1. On the **Choose Your Data Connection** page, select the **SampleDatabase.mdf** file in the dropdown list, and then choose **Next**.
 
 1. On the **Save the Connection String to the Application Configuration File** page, choose **Next**.
 
 1. On the **Choose your Database Objects** page, you see a message that says the database doesn't contain any objects. Choose **Finish**.
 
+> [!CAUTION]
+> In a real application, you should store the connection string securely, as described in [Connection strings and configuration files](/dotnet/framework/data/adonet/connection-strings-and-configuration-files). For best security, use an authentication method that doesn't rely on storing a password in the connection string, such as Windows Authentication for an on-premises SQL Server database. See [Save and edit connection strings](how-to-save-and-edit-connection-strings.md).
+
 ### View properties of the data connection
 
-You can view the connection string for the *SampleDatabase.mdf* file by opening the Properties window of the data connection:
+You can view some of the properties of the *SampleDatabase.mdf* file by opening the **Properties** window of the data connection:
 
-- Select **View** > **SQL Server Object Explorer** to open the **SQL Server Object Explorer** window. Expand **(localdb)\MSSQLLocalDB** > **Databases**, and then right-click on *SampleDatabase.mdf* (it might be listed as a full path) and select **Properties**.
+- Select **View** > **SQL Server Object Explorer** (or **Ctrl**+**\\**, **Ctrl**+**S**) to open the **SQL Server Object Explorer** window. Expand **(localdb)\MSSQLLocalDB** > **Databases**, and then right-click on *SampleDatabase.mdf* (it might be listed as a full path) and select **Properties**.
 
 - Alternatively, you can select **View** > **Server Explorer**, if that window isn't already open. Open the Properties window by expanding the **Data Connections** node, right-clicking on *SampleDatabase.mdf*, and then selecting **Properties**.
 
   > [!TIP]
   > If you can't expand the Data Connections node, or the SampleDatabase.mdf connection is not listed, select the **Connect to Database** button in the Server Explorer toolbar. In the **Add Connection** dialog box, make sure that **Microsoft SQL Server Database File** is selected under **Data source**, and then browse to and select the SampleDatabase.mdf file. Finish adding the connection by selecting **OK**.
+
+To view the connection string, you can open the *App.config* file in Solution Explorer. You should see an entry under the `connectionStrings` element that resembles the following code:
+
+```xml
+    <connectionStrings>
+        <add name="SampleDatabaseWalkthrough.Properties.Settings.SampleDatabaseConnectionString"
+            connectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\SampleDatabase.mdf;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+```
 
 ## Create tables and keys by using Table Designer
 

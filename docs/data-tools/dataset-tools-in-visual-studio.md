@@ -44,12 +44,11 @@ helpviewer_keywords:
 - data adapters, populating datasets
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Visual Studio dataset tools for developing .NET Framework applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Visual Studio dataset tools for developing .NET Framework applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -63,7 +62,7 @@ If your application needs to only read data from a database, and not perform upd
 
 Visual Studio provides tooling to simplify working with datasets. The basic end-to-end workflow is:
 
-- Use the [Data Sources window](add-new-data-sources.md#data-sources-window) to create a new dataset from one or more data sources. Use the **Dataset Designer** to configure the dataset and set its properties. For example, you need to specify which tables from the data source to include, and which columns from each table. Choose carefully to conserve the amount of memory that the dataset requires. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Use the [Data Sources window](add-new-data-sources.md#work-with-data-sources-and-windows-forms) to create a new dataset from one or more data sources. Use the **Dataset Designer** to configure the dataset and set its properties. For example, you need to specify which tables from the data source to include, and which columns from each table. Choose carefully to conserve the amount of memory that the dataset requires. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Specify the relationships between the tables so that foreign keys are handled correctly. For more information, see [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -77,9 +76,9 @@ Visual Studio provides tooling to simplify working with datasets. The basic end-
 
   - [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
 
-- Query and search the data in the dataset. For more information, see [Query datasets](../data-tools/query-datasets.md). LINQ to DataSet enables [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) over data in a <xref:System.Data.DataSet> object. For more information, see [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+- Query and search the data in the dataset. For more information, see [Query datasets](../data-tools/query-datasets.md). LINQ to DataSet enables [LINQ (Language Integrated Query)](/dotnet/csharp/linq/) over data in a <xref:System.Data.DataSet> object. For more information, see [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 
-- Use the **Data Sources** window to bind user-interface controls to the dataset or its individual columns, and to specify which columns are user-editable. For more information, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Use the **Data Sources** window to bind user interface controls to the dataset or its individual columns, and to specify which columns are user-editable. For more information, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## Datasets and N-tier architecture
 

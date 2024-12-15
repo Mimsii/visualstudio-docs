@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the data bytes of an OEM symbol."
+description: Retrieves the data bytes of an OEM symbol.
 title: "IDiaSymbol::get_dataBytes"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_dataBytes method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_dataBytes
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the data bytes of an OEM symbol.
 
 ## Syntax
 
 ```C++
-HRESULT get_dataBytes ( 
+HRESULT get_dataBytes ( 
    DWORD  cbData,
    DWORD* pcbData,
    BYTE   data[]

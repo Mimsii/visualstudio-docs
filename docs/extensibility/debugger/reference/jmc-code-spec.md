@@ -9,15 +9,14 @@ helpviewer_keywords:
 - JMC_CODE_SPEC structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # JMC_CODE_SPEC
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This structure is used to set the JustMyCode information for a module.
 
 ## Syntax

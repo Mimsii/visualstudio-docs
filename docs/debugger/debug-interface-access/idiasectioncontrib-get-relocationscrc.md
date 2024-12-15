@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the cyclic redundancy check (CRC) of the relocation information for the section."
+description: Retrieves the cyclic redundancy check (CRC) of the relocation information for the section.
 title: "IDiaSectionContrib::get_relocationsCrc"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_relocationsCrc method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_relocationsCrc
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the cyclic redundancy check (CRC) of the relocation information for the section.
 
 ## Syntax
 
 ```C++
-HRESULT get_relocationsCrc ( 
+HRESULT get_relocationsCrc ( 
    DWORD* pRetVal
 );
 ```

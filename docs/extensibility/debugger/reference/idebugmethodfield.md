@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugMethodField interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugMethodField
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface describes a method.
 
 ## Syntax

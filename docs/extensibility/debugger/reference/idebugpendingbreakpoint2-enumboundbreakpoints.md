@@ -10,15 +10,14 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::EnumBoundBreakpoints method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugPendingBreakpoint2::EnumBoundBreakpoints
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enumerates all breakpoints bound from this pending breakpoint.
 
 ## Syntax

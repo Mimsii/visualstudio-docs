@@ -9,12 +9,10 @@ helpviewer_keywords:
 - /Edit Devenv switch
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Edit (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Opens the specified file in an existing instance of Visual Studio.
 

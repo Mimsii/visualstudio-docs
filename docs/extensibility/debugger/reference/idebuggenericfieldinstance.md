@@ -7,12 +7,11 @@ helpviewer_keywords:
 - IDebugGenericFieldInstance interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugGenericFieldInstance
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Represents an instance of a field for a managed code generic type.
 
 ## Syntax

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugDocumentTextEvents2::onInsertText
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugDocumentTextEvents2::onInsertText
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Notifies the debug package that text has been inserted into the document.
 
 ## Syntax

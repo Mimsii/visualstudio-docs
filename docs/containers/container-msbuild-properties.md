@@ -3,13 +3,12 @@ title: Visual Studio Container Tools build properties
 author: ghogen
 description: Learn how to edit the Container Tools build properties to customize how Visual Studio builds and runs a container project.
 ms.author: ghogen
-ms.date: 06/06/2019
-ms.technology: vs-container-tools
+ms.date: 05/21/2024
+ms.subservice: container-tools
 ms.topic: reference
 ---
-# Container Tools build properties
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Container Tools build properties
 
 You can customize how Visual Studio builds your container projects by setting the properties that MSBuild uses to build your project. For example, you can change the name of the Dockerfile, specify tags and labels for your images, provide additional arguments passed to Docker commands, and control whether Visual Studio does certain performance optimizations such as building outside of the container environment. You can also set debugging properties such as the name of the executable to launch, and the command line arguments to provide.
 
@@ -23,14 +22,33 @@ To set the value of a property, edit the project file. For example, suppose your
 
 You can add the property setting to an existing `PropertyGroup` element, or if there isn't one, create a new `PropertyGroup` element.
 
-The following table shows the MSBuild properties available for container projects. The NuGet package version applies to [Microsoft.VisualStudio.Azure.Containers.Tools.Targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
+::: moniker range=">=vs-2022"
+
+## Properties for .NET SDK projects
+
+This section describes the MSBuild properties that apply when you choose the .NET SDK container build type.
+
+There is just one property, `EnableSdkContainerDebugging`, in the project file that is needed for .NET SDK containerized projects. It must be set to `True` for .NET SDK projects to enable debugging.
+
+```xml
+<PropertyGroup>
+   <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
+</PropertyGroup>
+```
+
+## Properties for Dockerfile projects
+
+This section describes the MSBuild properties that apply when you choose the Dockerfile container build type.
+::: moniker-end
+
+The following table shows the MSBuild properties available for Dockerfile projects. The NuGet package version applies to [Microsoft.VisualStudio.Azure.Containers.Tools.Targets](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/).
 
 | Property name | Description | Default value  | NuGet package version|
 |---------------|-------------|----------------|----------------------|
-| ContainerDevelopmentMode | Controls whether "build-on-host" optimization ("Fast Mode" debugging) is enabled.  Allowed values are **Fast** and **Regular**. | Fast |1.0.1872750 or newer|
+| ContainerDevelopmentMode | Controls whether "build-on-host" optimization ("Fast Mode" debugging) is enabled. Allowed values are **Fast** and **Regular**. | Fast |1.0.1872750 or newer|
 | ContainerVsDbgPath | The path for VSDBG debugger. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 or newer|
 | DockerDebuggeeArguments | When debugging, the debugger is instructed to pass these arguments to the launched executable. | Not applicable to ASP.NET .NET Framework projects |1.7.8 or newer|
-| DockerDebuggeeProgram | When debugging, the debugger is instructed to launch this executable. | For .NET Core and .NET 5 and later projects: dotnet, ASP.NET .NET Framework projects: Not applicable (IIS is always used) |1.7.8 or newer|
+| DockerDebuggeeProgram | When debugging, the debugger is instructed to launch this executable. | For .NET Core and .NET 5 and later projects: dotnet, ASP.NET .NET Framework projects: Not applicable (Internet Information Services (IIS) is always used) |1.7.8 or newer|
 | DockerDebuggeeKillProgram | This command is used to kill the running process in a container. | Not applicable to ASP.NET .NET Framework projects |1.7.8 or newer|
 | DockerDebuggeeWorkingDirectory | When debugging, the debugger is instructed to use this path as the working directory. | C:\app (Windows) or /app (Linux) |1.7.8 or newer|
 | DockerDefaultTargetOS | The default target operating system used when building the Docker image. | Set by Visual Studio. |1.0.1985401 or newer|
@@ -52,8 +70,10 @@ The following project file shows examples of some of these settings.
  <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>feae72bf-2368-4487-b6c6-546c19338cb1</UserSecretsId>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>8c7ab9a5-d578-4c40-8b6d-54d174002229</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <!-- In CI/CD scenarios, you might need to change the context. By default, Visual Studio uses the
          folder above the Dockerfile. The path is relative to the Dockerfile, so here the context is
@@ -66,7 +86,7 @@ The following project file shows examples of some of these settings.
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
   </ItemGroup>
 
 </Project>

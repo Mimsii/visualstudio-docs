@@ -6,16 +6,20 @@ ms.topic: "reference"
 dev_langs:
   - "VB"
   - "CSharp"
+  - C++
+f1_keywords:
+  - "IMANAGEDADDIN/IManagedAddIn::Unload"
+  - "IManagedAddin::Unload"
+  - "IManagedAddin.Unload"
 helpviewer_keywords:
   - "Unload method"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # IManagedAddin::Unload
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Called just before a managed VSTO Add-in is unloaded.
 
 ## Syntax

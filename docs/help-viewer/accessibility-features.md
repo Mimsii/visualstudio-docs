@@ -8,12 +8,10 @@ helpviewer_keywords:
   - "Help Viewer, accessibility features"
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-help-viewer
+manager: mijacobs
+ms.subservice: help-viewer
 ---
 # Accessibility features of the Help Viewer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Microsoft is committed to making its products and services easy for everyone to use. Several features help make Microsoft Help Viewer accessible for people with a wide range of abilities.
 

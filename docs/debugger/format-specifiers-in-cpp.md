@@ -19,12 +19,10 @@ helpviewer_keywords:
   - "debugger, format specifiers recognized by"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Format specifiers for C++ in the Visual Studio debugger
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can change the format in which a value is displayed in the **Watch**, **Autos**, and **Locals** windows by using format specifiers.
 
@@ -37,7 +35,7 @@ You can also use format specifiers in the **Immediate** window, the **Command** 
 
 We'll use the following example code:
 
-```C++
+```cpp
 int main() {
     int my_var1 = 0x0065;
     int my_var2 = 0x0066;

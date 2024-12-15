@@ -2,7 +2,7 @@
 title: "Debugging User Interface Reference"
 description: Review links to reference information about the various dialog boxes you might encounter in the debugging user interface of Visual Studio.
 ms.date: "11/04/2016"
-ms.topic: "reference"
+ms.topic: "ui-reference"
 f1_keywords:
   - "vs.debug.uiref"
 dev_langs:
@@ -15,12 +15,11 @@ helpviewer_keywords:
   - "debugger, user interface reference"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Debugging User Interface Reference
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You may encounter the following dialog boxes as you debug your application.
 
  You can automate many debugger features by using the Visual Studio extensibility model. For more information, see the Visual Studio Debugging SDK.

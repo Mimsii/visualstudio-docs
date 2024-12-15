@@ -5,14 +5,12 @@ ms.date: 06/08/2021
 ms.topic: conceptual
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 monikerRange: "vs-2022"
-feedback_system: GitHub
+
 ---
 # Update a Visual Studio extension for Visual Studio 2022
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 > [!IMPORTANT]
 > The advice in this article can guide developers in migrating extensions that require major changes to work in both Visual Studio 2019 and Visual Studio 2022. In those cases, we recommend that you have two VSIX projects and conditional compilation.
@@ -316,8 +314,7 @@ You can share your extension over a LAN or any other way. If you target Visual S
 If your VSIX specifies other VSIXs as dependencies via the
 `<dependency>` element, each referenced VSIX needs to be installed in the same targets and product architectures as your VSIX. If a dependent VSIX does not support the targeted installation of Visual Studio, your VSIX will fail. 
 
-It's OK for the dependent VSIX to support more targets and architectures than yours, just not less. This restriction means that the deployment and distribution approach of a VSIX with dependencies should
-mirror that of its dependents.
+It's OK for the dependent VSIX to support more targets and architectures than yours, just not less. This restriction means that the deployment and distribution approach of a VSIX with dependencies should mirror that of its dependents.
 
 ## Q & A
 

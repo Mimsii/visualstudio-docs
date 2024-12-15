@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugEngine3::SetSymbolPath
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngine3::SetSymbolPath
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Sets the path or paths that are searched for debugging symbols.
 
 ## Syntax

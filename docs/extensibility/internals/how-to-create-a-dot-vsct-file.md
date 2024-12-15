@@ -7,12 +7,10 @@ helpviewer_keywords:
 - VSCT files, creating
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Create a .vsct file
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 There are several ways to create an XML-based Visual Studio command table configuration (*.vsct*) file.
 

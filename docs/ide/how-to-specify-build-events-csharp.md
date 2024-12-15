@@ -1,8 +1,8 @@
 ---
 title: 'Specify build events (C#)'
 description: Use build events in Visual Studio to specify commands that run before the build starts or after the build finishes for C# programs.
-ms.date: 02/15/2023
-ms.technology: vs-ide-compile
+ms.date: 02/01/2024
+ms.subservice: compile-build
 ms.topic: how-to
 helpviewer_keywords:
 - pre-build events
@@ -12,11 +12,9 @@ helpviewer_keywords:
 - builds [Visual Studio], events
 author: ghogen
 ms.author: ghogen
-manager: jmartens
+manager: mijacobs
 ---
 # Specify build events (C#)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Use build events to specify commands that run before the build starts or after the build finishes.
 
@@ -38,7 +36,7 @@ Use build events to specify commands that run before the build starts or after t
 5. In the **Post-build event command line** box, specify the syntax of the build event.
 
    > [!NOTE]
-   > Add a `call` statement before all post-build commands that run *.bat* files. For example, `call MyFile.bat` or `call MyFile.bat call MyFile2.bat`. Paths can be absolute, or relative to the project folder.
+   > Add a `call` statement before all post-build commands that run *.bat* files. For example, `call MyFile.bat` or `call MyFile.bat call MyFile2.bat`. Paths can be absolute, or relative to the output folder.
 
 6. In the **Run the post-build event** box, specify under what conditions to run the post-build event.
 
@@ -72,7 +70,7 @@ Use build events to specify commands that run before the build starts or after t
 
 ## Create the build event commands
 
-The build event commands can include any command that is valid at a command prompt or in a *.bat* file. The name of a batch file should be preceded by `call` to ensure that all subsequent commands are executed. The batch file itself runs from the output folder, for example, `bin/Debug`. If you need the same batch file for all configurations, you could put it in the same folder as the project file and use a relative path to it, for example, `call ../../prebuild.bat`.
+The build event commands can include any command that is valid at a command prompt or in a *.bat* file. Available commands are documented in the [Windows command reference](/windows-server/administration/windows-commands/windows-commands). The name of a batch file should be preceded by `call` to ensure that all subsequent commands are executed. The batch file itself runs from the output folder, for example, `bin/Debug`. If you need the same batch file for all configurations, you could put it in the same folder as the project file and use a relative path to it, for example, `call ../../prebuild.bat`.
 
 You can execute [PowerShell](/powershell/scripting/overview) scripts by entering a command like `PowerShell MyPowerShellScript.ps1`. The path to the PowerShell script may be absolute, or may be relative to the project directory. You would need to make sure that the execution policy for PowerShell scripts on your operating system is set appropriately in order to run the script. See [About execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
@@ -92,16 +90,24 @@ When you perform the previous steps, Visual Studio modifies your project file by
 </Target>
 ```
 
+The `Exec` element refers to the MSBuild `Exec` task. See [Exec task](../msbuild/exec-task.md) for information on what other parameters you can use to customize the execution. For example, you can use `WorkingDirectory` to set the folder from which the executable is run. The default is the directory that contains the project file.
+
+```xml
+<Exec Command="call prebuild.bat" WorkingDirectory="$(OutDir)">
+```
+
+You can use MSBuild properties (macros), such as `OutDir` in the previous example, as discussed later in this article at [Macros](#macros).
+
 ## Errors and other output
 
 The output of your build events is written to the **Build** section of the **Output Window**. To open it, choose **View** > **Other Windows**, **Output Window**, or press **Ctrl**+**Alt**+**O**. In the dropdown next to **Show output from**, choose **Build**.
 
-If your pre-build or post-build event does not complete successfully, you can terminate the build by having your event action exit with a code other than zero (0). A zero exit code indicates a successful action; any other exit code is considered an error.
+If your pre-build or post-build event doesn't complete successfully, you can terminate the build by having your event action exit with a code other than zero (0). A zero exit code indicates a successful action; any other exit code is considered an error.
 
 If your pre-build event fails, you might see an error like this in the **Error List** window:
 
 ```output
-MSB3073	The command "call c:\source\repos\prebuild.bat" exited with code 1.
+MSB3073    The command "call c:\source\repos\prebuild.bat" exited with code 1.
 ```
 
 If there's not enough information in the **Error List** window, you can try using the **Output Window** to view the full build output, including any output from batch files.
@@ -131,7 +137,7 @@ That pre-build event results in the following entry, called a `Target` in your p
 
 The build event appears as a target that includes the [Exec task](../msbuild/exec-task.md) with the input you specified as the `Command`. Newlines are encoded in the XML.
 
-When you build the project in this example, the pre-build event prints the values of some properties. In this example, `$(CscToolPath)` doesn't produce any output, because it's not defined. It is an optional property that you can define in your project file to give the path to a customized instance of the C# compiler (for example, if you were testing a different version of *csc.exe*, or an experimental compiler).
+When you build the project in this example, the pre-build event prints the values of some properties. In this example, `$(CscToolPath)` doesn't produce any output, because it's not defined. It's an optional property that you can define in your project file to give the path to a customized instance of the C# compiler (for example, if you were testing a different version of *csc.exe*, or an experimental compiler).
 
 Output from your build events is written to the build output, which can be found in the **Output** window. In the **Show output from** dropdown, choose **Build**.
 

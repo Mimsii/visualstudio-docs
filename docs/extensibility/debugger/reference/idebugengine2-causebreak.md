@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugEngine2::CauseBreak
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngine2::CauseBreak
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Requests that all programs being debugged by this debug engine (DE) to stop execution the next time one of their threads attempts to run.
 
 ## Syntax

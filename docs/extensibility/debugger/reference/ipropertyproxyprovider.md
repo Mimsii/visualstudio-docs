@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IPropertyProxyProvider interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IPropertyProxyProvider
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface supplies a proxy interface to view and change an object's data.
 
 ## Syntax

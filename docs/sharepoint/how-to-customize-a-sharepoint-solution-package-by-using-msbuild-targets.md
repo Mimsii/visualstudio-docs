@@ -11,12 +11,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, packages"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Customize a SharePoint Solution package by using MSBuild targets
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   By using MSBuild targets at a command prompt, you can customize how Visual Studio creates SharePoint package files (*.wsp*). For example, you can customize the MSBuild properties to change the packaging intermediate directory and the MSBuild item groups that specify the enumerated files.
 
 ## Customize and run MSBuild targets

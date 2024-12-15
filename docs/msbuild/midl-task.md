@@ -22,8 +22,8 @@ helpviewer_keywords:
 - MIDL task (MSBuild (C++))
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # MIDL task
 

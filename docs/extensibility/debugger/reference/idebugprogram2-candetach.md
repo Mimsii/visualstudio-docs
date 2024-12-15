@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProgram2::CanDetach
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProgram2::CanDetach
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Determines if a debug engine (DE) can detach from the program.
 
 ## Syntax

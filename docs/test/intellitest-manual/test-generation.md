@@ -6,13 +6,11 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 author: mikejo5000
 ---
 # Test generation
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In traditional unit testing, a test consists of several things:
 

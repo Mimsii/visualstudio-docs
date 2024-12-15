@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugDisassemblyStream2::GetScope
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugDisassemblyStream2::GetScope
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the scope of the disassembly stream.
 
 ## Syntax

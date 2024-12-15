@@ -5,8 +5,8 @@ ms.date: 10/19/2021
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Configure tasks
 

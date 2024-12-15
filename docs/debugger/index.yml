@@ -8,11 +8,11 @@ metadata:
   titleSuffix: ""
   description: Explore documentation to help you use Visual Studio to debug applications and code, observe application run-time behavior, and find and fix problems in the code.
   ms.topic: landing-page
-  ms.technology: vs-ide-debug
+  ms.subservice: debug-diagnostics
   author: mikejo5000
   ms.author: mikejo
-  manager: jmartens
-  ms.date: 06/13/2023
+  manager: mijacobs
+  ms.date: 12/06/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -93,7 +93,7 @@ landingContent:
           - text: Get started measuring memory usage
             url: ../profiling/memory-usage.md
           - text: AI-assisted CPU usage auto insights with Copilot
-            url: debug-with-copilot.md#ai-assisted-auto-insights
+            url: debug-with-copilot.md#get-ai-assistance-for-auto-insights
       - linkListType: overview
         links:
           - text: First look at profiling tools

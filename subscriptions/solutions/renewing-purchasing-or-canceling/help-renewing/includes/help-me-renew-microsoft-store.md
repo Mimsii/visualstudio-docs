@@ -1,10 +1,10 @@
 ---
 title: Renew retail Visual Studio subscriptions through the Microsoft store
 description: Renew retail Visual Studio subscriptions purchased from the Microsoft store.
-comment:  As of August 2023 this include is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Evan Windom and Larissa Crawford of Red Door Collaborative and Sharvari Dighe.
+comment:  As of August 2023 this include is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Jose Becerra and Larissa Crawford of Red Door Collaborative and Angela Cao-Hong.
 ms.topic: include
 ms.assetid: 3b36270b-aa3b-4c05-b12e-4df8d6f823c1
-author: larissacrawford
+author: joseb-rdc
 ms.author: amast
 ms.date: 08/17/2023
 user.type: subscriber
@@ -31,7 +31,7 @@ Each of these subscriptions offers the option to make an initial purchase or to 
 
 ## How to renew 
 
-If you have a standard retail subscription, it was purchased from the [Microsoft Store](https://www.microsoft.com/store) and should be renewed there.  
+If you have a standard retail subscription, it was purchased from the [Microsoft Store](https://www.microsoft.com/store) and should be renewed there.  
 
 1. Visit the store and find the subscription level you currently have (you can only renew the same subscription level). 
 1. Select “Download – Renewal” and add to cart. If you want to change your subscription level, select “Download – New.”  

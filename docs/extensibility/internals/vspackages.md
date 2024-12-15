@@ -7,12 +7,11 @@ helpviewer_keywords:
 - VSPackages
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # VSPackages
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 VSPackages are software modules that extend the Visual Studio integrated development environment (IDE) by providing UI elements, services, projects, editors, and designers.
 
 ## In This Section

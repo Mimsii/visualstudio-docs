@@ -16,12 +16,11 @@ helpviewer_keywords:
   - "Value2 property"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Properties in Office projects
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   There are several important properties that are available to Office projects in Visual Studio. These properties can be accessed in the **Properties** window.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]

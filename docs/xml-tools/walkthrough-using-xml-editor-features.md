@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: dzsquared
 ms.author: drskwier
-manager: jmartens
-ms.technology: vs-xml-tools
+manager: mijacobs
+ms.subservice: xml-tools
 ---
 # Walkthrough: Use XML editor features
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The steps in this walkthrough show you how to create a new XML document. The walkthrough also uses some of the features of the XML editor that make it valuable for XML authoring.
 

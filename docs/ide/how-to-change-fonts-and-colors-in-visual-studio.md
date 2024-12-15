@@ -2,19 +2,17 @@
 title: Change themes, fonts, text, & accessibility options in Visual Studio
 description: Learn how to change Visual Studio color themes, font colors, text sizes, extra-contrast colors, and more for ease of use and accessibility concerns.
 titleSuffix: ''
-ms.date: 04/21/2023
+ms.date: 11/12/2024
 ms.topic: how-to
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Change fonts, colors, and themes in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ::: moniker range=">=vs-2022"
 
@@ -50,8 +48,10 @@ Here's how to change the color theme of the IDE frame and the tool windows in Vi
    > [!NOTE]
    > When you change a color theme, text in the IDE reverts to the default or previously customized fonts and sizes for that theme.
 
-    > [!TIP]
-    > Want even more themes to choose from? Check out the wide range of custom themes on the [**Visual Studio Marketplace**](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Themes&sortBy=Installs). And to see examples of new Visual Studio 2022 custom themes based on VS Code, take a look at the [**Introducing a collection of new Visual Studio themes**](https://devblogs.microsoft.com/visualstudio/custom-themes/) blog post.
+   > [!TIP]
+   > Want even more themes to choose from? Check out the wide range of custom themes on the [**Visual Studio Marketplace**](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Themes&sortBy=Installs). And to see examples of new Visual Studio 2022 custom themes based on VS Code, take a look at the [**Introducing a collection of new Visual Studio themes**](https://devblogs.microsoft.com/visualstudio/custom-themes/) blog post. 
+
+If you download themes from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Themes&sortBy=Installs), restart your Visual Studio instance to view them. Then, navigate to **Tools -> Theme**. The list will now include your newly installed themes. Select the desired theme to apply it.
 
 ::: moniker-end
 
@@ -135,6 +135,14 @@ You can change the font and text size for all the IDE frame and tool windows, or
 
 1. Select the appropriate item in **Display items**, and then modify the **Item foreground** and **Item background** options.
 
+### Preserve font settings across theme changes
+
+With Visual Studio 2022 version 17.12, you can now preserve your font and font size preferences across theme changes. This functionality is enabled by default. When you switch themes in Visual Studio, your custom font face and size settings remain unchanged, while the font color updates with the new theme.
+
+If you prefer to have font selections change with the theme, select **Tools** > **Manage Preview Features** and uncheck **Separate font settings from color themes selection (requires restart)**. 
+
+:::image type="content" source="media/vs-2022/preserve-font-settings-across-themes.png" alt-text="Screenshot of the setting that enables preserving font settings across themes.":::
+
 ::: moniker-end
 
 ::: moniker range="<=vs-2019"
@@ -152,6 +160,8 @@ You can change the font and text size for all the IDE frame and tool windows, or
 1. Select the appropriate item in **Display items**, and then modify the **Item foreground** and **Item background** options.
 
 ::: moniker-end
+
+Changes to font settings for Printer affect the appearance of text in printed documents. To modify the font for printing, in the **Show settings for** list, select **Printer and Cut/Copy**. If you're getting garbage characters when printing, please refer to the [Dev Community ticket ](https://developercommunity.visualstudio.com/t/Printing-problem-for-listings-Visual-Stu/10314328) on the issue.
 
 For more information about how to change fonts and colors for accessibility, see the [Set accessibility options](#set-accessibility-options) section of this page. And, for details about all the user interface (UI) elements where you can change font and color schemes, see the [Fonts and Colors, Environment, Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) page.
 
@@ -235,7 +245,7 @@ Visual Studio also includes autocompletion for methods and parameters; for more 
 There are more ways to customize Visual Studio to be more accessible to you. For example, you can change the behavior of pop-up windows, text-based tool windows, toolbar buttons, margin indicators, and more.
 
 > [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described here, which can vary depending on your active settings or edition. To change your settings, select **Import and Export Settings** on the **Tools** menu. For more information, see [Reset settings](environment-settings.md#reset-settings).
+> The dialog boxes and menu commands you see might differ from those described here, which can vary depending on your active settings or edition. To change your settings, select **Import and Export Settings** on the **Tools** menu. For more information, see [Reset settings](personalizing-the-visual-studio-ide.md#reset-all-settings).
 
 #### Change the behavior of pop-up windows
 
@@ -294,11 +304,13 @@ You can choose to change the default colors for text, margin indicators, white s
 
 1. In **Show settings for**, select **Text Editor**.
 
-1. From **Display items**, select an item whose display you need to change, such as **Plain Text**, **Indicator Margin**, **Visible White Space**, **HTML Attribute Name**, or **XML Attribute**.
+1. From **Display items**, select an item whose display you need to change, such as **Plain Text**, **Line Number**, **Indicator Margin**, **Visible White Space**, **HTML Attribute Name**, or **XML Attribute**.
 
 1. Select display settings from the following options: **Item foreground**, **Item background**, and **Bold**.
 
 1. Select **OK**.
+
+Some languages have their own specific fonts and colors settings. If you're a C++ developer and you want to change the color used for functions, for example, you can look for **C++ Functions** in the **Display items** list. 
 
 > [!TIP]
 > To use high contrast colors for all application windows on your operating system, press **Left Alt**+**Left Shift**+**PrtScn**. If Visual Studio is open, close and then reopen it to fully implement high contrast colors.
@@ -329,11 +341,13 @@ To improve toolbar usability and accessibility, you can add text to toolbar butt
 
 ### Accessibility support
 
-For more information about features, products, and services that make Windows more accessible for people with disabilities, see [Accessibility products and services from Microsoft](reference/accessibility-products-and-services-from-microsoft.md). And, for more information about how to obtain more accessible formats of documentation for Microsoft products, see the [Documentation in alternative formats](reference/accessibility-products-and-services-from-microsoft.md#documentation-in-alternative-formats) section of the [Accessibility products and services from Microsoft](reference/accessibility-products-and-services-from-microsoft.md) page.
+For more information about features, products, and services that make Windows more accessible for people with disabilities, see [Accessibility products and services from Microsoft](https://www.microsoft.com/accessibility). And, for more information about how to obtain more accessible formats of documentation for Microsoft products, you can view an index of accessible product documentation on the [Microsoft Accessibility](https://www.microsoft.com/accessibility) website.
 
 The accessibility information included on this page might apply only to users who license Microsoft products in the United States. If you obtained this product outside of the United States, visit the [Microsoft Accessibility](https://www.microsoft.com/accessibility/) website for a list of Microsoft support services telephone numbers and addresses. You can contact your subsidiary to find out whether the type of products and services described on this page are available in your area. Information about accessibility is also available in other languages.
 
 ## Related content
 
-- [Features of the code editor in Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Personalize the Visual Studio IDE and the editor](../ide/quickstart-personalize-the-ide.md)
+- [Features of the code editor in Visual Studio](writing-code-in-the-code-and-text-editor.md)
+- [Fonts and Colors, Environment, Options dialog box](./reference/fonts-and-colors-environment-options-dialog-box.md)
+- [Change text case in the editor](how-to-change-text-case-in-the-editor.md)
+- [Customize window layouts and personalize tabs](customizing-window-layouts-in-visual-studio.md)

@@ -5,8 +5,8 @@ ms.date: 09/14/2023
 ms.topic: language-reference
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # MSBuild target framework and target platform
 

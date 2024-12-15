@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugProgramPublisher2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface allows a debug engine (DE) or custom port suppliers to register programs for debugging.
 
 ## Syntax

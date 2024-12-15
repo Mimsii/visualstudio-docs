@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodProperty method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExpressionEvaluator::GetMethodProperty
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method gets a property object that contains the locals, arguments, and other properties of a method.
 
 ## Syntax

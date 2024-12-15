@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates whether the section can be discarded."
+description: Retrieves a flag that indicates whether the section can be discarded.
 title: "IDiaSectionContrib::get_discardable"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_discardable method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_discardable
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the section can be discarded.
 
 ## Syntax
 
 ```C++
-HRESULT get_discardable ( 
+HRESULT get_discardable ( 
    BOOL* pRetVal
 );
 ```

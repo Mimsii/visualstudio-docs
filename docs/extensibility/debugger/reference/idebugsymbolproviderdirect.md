@@ -7,12 +7,11 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugSymbolProviderDirect
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Represents a symbol provider that has direct access to metadata and core symbol interfaces.
 
 ## Syntax

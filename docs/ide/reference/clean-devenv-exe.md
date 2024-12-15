@@ -10,12 +10,10 @@ helpviewer_keywords:
 - Devenv, /Clean switch
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Clean (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Cleans all intermediary files and output directories.
 

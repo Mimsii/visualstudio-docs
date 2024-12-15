@@ -1,7 +1,7 @@
 ---
 title: Send messages to the Output window
 description: Write run-time messages to the Output window in Visual Studio using the Debug class or the Trace class, which are part of the System.Diagnostics class library.
-ms.date: 11/08/2018
+ms.date: 10/03/2024
 ms.topic: how-to
 helpviewer_keywords: 
   - diagnostic messages [C#]
@@ -18,19 +18,17 @@ helpviewer_keywords:
   - Debug class
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Send messages to the Output window
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can write run-time messages to the **Output** window using the <xref:System.Diagnostics.Debug> class or the <xref:System.Diagnostics.Trace> class, which are part of the <xref:System.Diagnostics> class library. Use the <xref:System.Diagnostics.Debug> class if you only want output in the *Debug* version of your program. Use the <xref:System.Diagnostics.Trace> class if you want output in both the *Debug* and *Release* versions.
 
 ## Output methods
  The <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes provide the following output methods:
 
-- Various `Write` methods, which output information without breaking execution. These methods replace the `Debug.Print` method used in previous versions of Visual Basic.
+- Various [Write](/dotnet/api/system.diagnostics.debug#methods) methods, which output information without breaking execution. These methods replace the `Debug.Print` method used in older versions of Visual Basic.
 
 - <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> methods, which break execution and output information if a specified condition fails. By default, the `Assert` method displays the information in a dialog box. For more information, see [Assertions in managed code](../debugger/assertions-in-managed-code.md).
 
@@ -46,7 +44,7 @@ The **Output** window can also display information about:
 
 - Threads that exit.
 
-## See also
+## Related content
 - [Debugger security](../debugger/debugger-security.md)
 - [Output window](../ide/reference/output-window.md)
 - [Trace and instrument applications](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)

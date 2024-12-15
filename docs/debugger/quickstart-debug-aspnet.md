@@ -7,12 +7,10 @@ helpviewer_keywords:
   - "debugger"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Quickstart: Debug ASP.NET Core with the Visual Studio debugger
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Visual Studio debugger provides many powerful features to help you debug your apps. This article provides a quick way to learn some of the basic features.
 

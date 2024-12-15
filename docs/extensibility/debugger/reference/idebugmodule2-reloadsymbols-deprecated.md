@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugModule2::ReloadSymbols method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugModule2::ReloadSymbols_Deprecated
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 OBSOLETE. DO NOT USE. Reloads the symbols for this module.
 
 ## Syntax

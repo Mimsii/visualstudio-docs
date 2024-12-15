@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: dzsquared
 ms.author: drskwier
-manager: jmartens
-ms.technology: vs-xml-tools
+manager: mijacobs
+ms.subservice: xml-tools
 ---
 # Use XML snippets
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can invoke XML snippets by using the following two commands on the XML editor shortcut menu. The **Insert Snippet** command inserts the XML snippet at the cursor position. The **Surround With** command wraps the XML snippet around the selected text. Each XML snippet has designated snippet types. The snippet types determine whether the snippet is available with the **Insert Snippet** command, the **Surround With** command, or both.
 

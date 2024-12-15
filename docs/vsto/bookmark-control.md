@@ -15,12 +15,11 @@ helpviewer_keywords:
   - "Bookmark control"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Bookmark control
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The <xref:Microsoft.Office.Tools.Word.Bookmark> control is a bookmark that has a unique name, exposes events, and can be bound to data. The bookmark can be used as a placeholder to mark an item or location in a Microsoft Office Word document. The <xref:Microsoft.Office.Tools.Word.Bookmark> control is a combination of a <xref:Microsoft.Office.Interop.Word.Bookmark> object and a <xref:Microsoft.Office.Interop.Word.Range> object.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]

@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_targetSection method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_targetSection
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the address section of a thunk target.
 
 ## Syntax

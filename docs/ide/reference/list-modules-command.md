@@ -11,12 +11,11 @@ helpviewer_keywords:
 - list modules command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # List Modules Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Lists the modules for the current process.
 
 ## Syntax

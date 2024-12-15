@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugDefaultPort2::QueryIsLocal
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugDefaultPort2::QueryIsLocal
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method determines whether this port is on the local machine.
 
 ## Syntax

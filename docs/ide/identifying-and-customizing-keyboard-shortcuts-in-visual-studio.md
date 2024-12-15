@@ -1,7 +1,7 @@
 ---
 title: Identify and customize keyboard shortcuts
 description: Learn how to identify keyboard shortcuts for Visual Studio commands, customize those shortcuts, and export them for others to use.
-ms.date: 12/14/2022
+ms.date: 1/8/2024
 ms.topic: how-to
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -15,16 +15,14 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Identify and customize keyboard shortcuts in Visual Studio
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 You can identify keyboard shortcuts for Visual Studio commands, customize those shortcuts, and export them for others to use. Many shortcuts always invoke the same commands, but the behavior of a shortcut might vary based on the following conditions:
 
-- Which default environment settings you choose the first time that you open Visual Studio&mdash;for example, General development or Visual C#. (For more information about changing or resetting your settings, see [Environment settings](environment-settings.md).)
+- Which default environment settings you choose the first time that you open Visual Studio&mdash;for example, General development or Visual C#. (For more information about changing or resetting your settings, see [Environment settings](personalizing-the-visual-studio-ide.md).)
 
 - Whether you've customized the shortcut's behavior.
 
@@ -143,3 +141,4 @@ You can share your custom keyboard shortcuts by exporting them to a file and the
 ## Related content
 
 - [Accessibility features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Extended function key support limitation](https://developercommunity.visualstudio.com/t/Allow-the-F17-F24-keys-to-be-used-for-ke/10482857?q=fn+keys+f16-f19)

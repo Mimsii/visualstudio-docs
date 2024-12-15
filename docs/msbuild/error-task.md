@@ -14,8 +14,8 @@ helpviewer_keywords:
 - MSBuild, Error task
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Error task
 

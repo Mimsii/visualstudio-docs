@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccIsMultiCheckoutEnabled function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccIsMultiCheckoutEnabled Function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function checks whether the source control plug-in allows multiple checkouts on a file.
 
 ## Syntax

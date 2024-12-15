@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccAdd function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccAdd function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function adds new files to the source control system.
 
 ## Syntax

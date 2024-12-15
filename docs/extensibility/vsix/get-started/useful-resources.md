@@ -6,12 +6,10 @@ ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
 manager: pchapman
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-sdk
+
+ms.subservice: extensibility-integration
 ---
 # Useful resources on Visual Studio extensions
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 These resources can help you better navigate the world of Visual Studio extensibility.
 
@@ -24,8 +22,8 @@ Here are some useful resources that can help you in your extension journey.
 
 * [VSIX Community on GitHub](https://github.com/VsixCommunity)
 * [VSIX Community Samples repo](https://github.com/VsixCommunity/Samples)
-* [Official VS SDK documentation](../../index.yml)
-* [VS SDK Samples repo](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
+* [Official VSSDK documentation](../../index.yml)
+* [VSSDK Samples repo](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
 * [Extensibility chatroom on Gitter.im](https://gitter.im/Microsoft/extendvs)
 
 ## Know how to search for help

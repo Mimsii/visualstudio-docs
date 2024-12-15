@@ -10,12 +10,10 @@ helpviewer_keywords:
 - Evaluate Statement command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Evaluate Statement command
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Evaluates and displays the given statement.
 

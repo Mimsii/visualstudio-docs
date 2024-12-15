@@ -14,8 +14,8 @@ helpviewer_keywords:
 - <UsingTask> element [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # UsingTask element (MSBuild)
 
@@ -86,7 +86,7 @@ The assembly containing the custom task is loaded when the `Task` is first used.
            AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-Because there is no `Runtime` or `TaskHost` specified, the task will be executed the MSBuild process, in the runtime and architecture that happen to be running for a given build.
+Because there is no `Runtime` or `TaskHost` specified, the task will be executed in the MSBuild process, in the runtime and architecture that happen to be running for a given build.
 
 ## Example 2
 

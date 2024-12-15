@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: VisualStudio.Extensibility SDK
-summary: Learn about the new VisualStudio.Extensibility SDK, current in preview.
+summary: Learn about the new VisualStudio.Extensibility SDK, currently in preview.
 
 metadata:
   title: VisualStudio.Extensibility SDK
@@ -11,9 +11,9 @@ metadata:
   author: maiak
   ms.author: maiak
   monikerRange: ">=vs-2022"
-  manager: jmartens
-  ms.prod: visual-studio-windows
-  ms.technology: vs-extensibility  
+  manager: mijacobs
+  
+  ms.subservice: extensibility-integration  
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
@@ -53,10 +53,12 @@ landingContent:
             url: ./output-window/output-window.md
           - text: Project
             url: ./project/project.md
+          - text: Settings
+            url: ./settings/settings.md
           - text: Tool windows
             url: ./tool-window/tool-window.md
           - text: User prompts
-            url: ./document/documents.md
+            url: ./user-prompt/user-prompts.md
 
   # Card
   - title: Resources

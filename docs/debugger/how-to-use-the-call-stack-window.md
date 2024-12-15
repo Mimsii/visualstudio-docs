@@ -1,7 +1,7 @@
 ---
 title: View the call stack in the debugger
 description: Use the Call Stack window in the Visual Studio integrated development environment (IDE) to view the function or procedure calls that are currently on the stack.
-ms.date: 02/02/2023
+ms.date: 02/21/2024
 ms.topic: how-to
 f1_keywords: 
   - vs.debug.callstack
@@ -25,21 +25,19 @@ helpviewer_keywords:
   - Call Stack window, viewing disassembly code for functions on the call stack
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # View the call stack and use the Call Stack window in the debugger
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 By using the **Call Stack** window, you can view the function or procedure calls that are currently on the stack. The **Call Stack** window shows the order in which methods and functions are getting called. The call stack is a good way to examine and understand the execution flow of an app.
 
 When [debugging symbols](#bkmk_symbols) are not available for part of a call stack, the **Call Stack** window might not be able to display correct information for that part of the call stack, displaying instead:
 
-```[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]```
+`[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described here, depending on your active settings or edition. To change your settings, select **Import and Export Settings** on the **Tools** menu.  See [Reset settings](../ide/environment-settings.md#reset-settings). The **Call Stack** window is similar to the Debug perspective in some IDEs like Eclipse.
+> The dialog boxes and menu commands you see might differ from those described here, depending on your active settings or edition. To change your settings, select **Import and Export Settings** on the **Tools** menu.  See [Reset all settings](../ide/personalizing-the-visual-studio-ide.md#reset-all-settings). The **Call Stack** window is similar to the Debug perspective in some IDEs like Eclipse.
 
 ## View the call stack while in the debugger
 
@@ -79,7 +77,6 @@ Non-user code is any code that is not shown when [Just My Code](../debugger/just
 
 `[<External Code>]`
 
-
 ## <a name="bkmk_switch"></a> Switch to another stack frame (change the debugger context)
 
 1. In the **Call Stack** window, right-click the stack frame whose code and data that you want to view.
@@ -93,7 +90,7 @@ Non-user code is any code that is not shown when [Just My Code](../debugger/just
   ::: moniker range=">=vs-2022"
 
 ## View all related threads
-Toggle the **View all threads** button to see all the related threads in the Parallel Stack window. 
+Toggle the **View all threads** button to see all the related threads in the [Parallel Stack window](../debugger/using-the-parallel-stacks-window.md). 
 
 ## Call Stack Search 
 You can search for relevant call stack frames by typing relevant search terms in the search box located in the top left corner of the call stack window. The pertinent call stack frames will get highlighted. 
@@ -110,7 +107,7 @@ In the **Call Stack** window, select the function, right-click, and then choose 
 
 ## Set a breakpoint on the exit point of a function call
 
-See [Set a breakpoint at a call stack function](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
+See [Set a breakpoint at a call stack function](../debugger/get-started-with-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
 ## Display calls to or from another thread
 
@@ -133,6 +130,12 @@ In the **Call Stack** window, right-click the function whose disassembly code yo
 ## Change the optional information displayed
 
 Right-click in the **Call Stack** window and set or clear **Show \<**_the information that you want_**>**.
+
+::: moniker range=">=vs-2022"
+## Autodecompile .NET external code
+
+Starting in Visual Studio 2022 version 17.7, you can autodecompile .NET code by double-clicking external code in the Call Stack window. For more information, see [Generate source code from .NET assemblies while debugging](../debugger/decompilation.md).
+::: moniker-end
 
 ## <a name="bkmk_symbols"></a> Load symbols for a module (C#, C++, Visual Basic, F#)
 
@@ -162,7 +165,7 @@ See [Specify symbol (.pdb) and source files](../debugger/specify-symbol-dot-pdb-
 
 1. Select **OK** to close the **Options** dialog box.
 
-## See also
+## Related content
 
 - [Mixed code and missing information in the Call Stack window](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Viewing data in the debugger](../debugger/viewing-data-in-the-debugger.md)

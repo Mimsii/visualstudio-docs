@@ -15,12 +15,11 @@ helpviewer_keywords:
   - ClickOnce deployment, trust prompt
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # Configure the ClickOnce trust prompt behavior
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can configure the ClickOnce trust prompt to control whether end users are given the option of installing ClickOnce applications, such as Windows Forms applications, Windows Presentation Foundation applications, console applications, WPF browser applications, and Office solutions. You configure the trust prompt by setting registry keys on each end user's computer.
 
  The following table shows the configuration options that can be applied to each of the five zones (Internet, UntrustedSites, MyComputer, LocalIntranet, and TrustedSites).
@@ -28,8 +27,8 @@ You can configure the ClickOnce trust prompt to control whether end users are gi
 |Option|Registry setting value|Description|
 |------------|----------------------------|-----------------|
 |Enable the trust prompt.|`Enabled`|The ClickOnce trust prompt is displayed so that end users can grant trust to ClickOnce applications.|
-|Restrict the trust prompt.|`AuthenticodeRequired`|The ClickOnce trust prompt is only displayed if ClickOnce applications are signed with a certificate that identifies the publisher.|
-|Disable the trust prompt.|`Disabled`|The ClickOnce trust prompt is not displayed for any ClickOnce applications that are not signed with an explicitly trusted certificate.|
+|Restrict the trust prompt.|`AuthenticodeRequired`|The ClickOnce trust prompt is only displayed if ClickOnce applications are signed with a certificate that identifies the publisher. Otherwise, the ClickOnce application won't be installed.|
+|Disable the trust prompt.|`Disabled`|The ClickOnce trust prompt isn't displayed. Only ClickOnce applications that are signed with an explicitly trusted certificate will be installed.|
 
  The following table shows the default behavior for each zone. The Applications column refers to Windows Forms applications, Windows Presentation Foundation applications, WPF browser applications, and console applications.
 
@@ -58,9 +57,9 @@ You can configure the ClickOnce trust prompt to control whether end users are gi
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-     If the key does not exist, create it.
+     If the key doesn't exist, create it.
 
-3. Add the following subkeys as **String Value**, if they do not already exist, with the associated values shown in the following table.
+3. Add the following subkeys as **String Value**, if they don't already exist, with the associated values shown in the following table.
 
     |String Value subkey|Value|
     |-------------------------|-----------|
@@ -120,9 +119,9 @@ You can configure the ClickOnce trust prompt to control whether end users are gi
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-     If the key does not exist, create it.
+     If the key doesn't exist, create it.
 
-3. Add the following subkeys as **String Value**, if they do not already exist, with the associated values shown in the following table.
+3. Add the following subkeys as **String Value**, if they don't already exist, with the associated values shown in the following table.
 
     |String Value subkey|Value|
     |-------------------------|-----------|
@@ -166,7 +165,7 @@ You can configure the ClickOnce trust prompt to control whether end users are gi
 3. Build and run the application.
 
 ## Disable the ClickOnce trust prompt
- You can disable the trust prompt so that end users are not given the option to install solutions that are not already trusted in their security policy.
+ You can disable the trust prompt so that end users aren't given the option to install solutions that aren't already trusted in their security policy.
 
 #### To disable the ClickOnce trust prompt by using the registry editor
 
@@ -180,9 +179,9 @@ You can configure the ClickOnce trust prompt to control whether end users are gi
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-     If the key does not exist, create it.
+     If the key doesn't exist, create it.
 
-3. Add the following subkeys as **String Value**, if they do not already exist, with the associated values shown in the following table.
+3. Add the following subkeys as **String Value**, if they don't already exist, with the associated values shown in the following table.
 
     |String Value subkey|Value|
     |-------------------------|-----------|

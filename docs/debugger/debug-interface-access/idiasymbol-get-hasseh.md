@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the function contains any Structured Exception Handling (C/C++)) (for example, _try/__except blocks)."
+description: Retrieves a flag that specifies whether the function contains any Structured Exception Handling (C/C++)) (for example, _try/__except blocks).
 title: "IDiaSymbol::get_hasSEH"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasSEH method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_hasSEH
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the function contains any [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (for example, __try/\__except blocks).
 
 ## Syntax

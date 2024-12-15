@@ -2,17 +2,15 @@
 title: Install Visual Studio Build Tools into a container to support a consistent build system
 titleSuffix: ''
 description: Learn how to install Visual Studio Build Tools into a Windows container to support continuous integration and continuous delivery (CI/CD) workflows.
-ms.date: 12/05/2023
+ms.date: 1/23/2024
 ms.topic: conceptual
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.prod: visual-studio-windows
-ms.technology: vs-installation
+manager: mijacobs
+
+ms.subservice: installation
 ---
 # Install Build Tools into a container
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can install Visual Studio Build Tools into a Windows container to support continuous integration and continuous delivery (CI/CD) workflows. This article guides you through what Docker configuration changes are required as well as what [workloads and components](workload-component-id-vs-build-tools.md) you can install in a container.
 
@@ -22,11 +20,9 @@ If Visual Studio Build Tools does not have what you require to build your source
 
 ## Before you begin
 
-Some familiarity with [Docker](https://www.docker.com/what-docker) is assumed below. If you're not already familiar
-with running Docker on Windows, read about how to [install and configure the Docker engine on Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
+Some familiarity with [Docker](https://www.docker.com/what-docker) is assumed below. If you're not already familiar with running Docker on Windows, read about how to [install and configure the Docker engine on Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-The base image below is a sample and may not work for your system. Read [Windows container version compatibility](/virtualization/windowscontainers/deploy-containers/version-compatibility)
-to determine which base image you should use for your environment.
+The base image below is a sample and may not work for your system. Read [Windows container version compatibility](/virtualization/windowscontainers/deploy-containers/version-compatibility) to determine which base image you should use for your environment.
 
 ## Create and build the Dockerfile
 
@@ -85,8 +81,10 @@ Save the following example Dockerfile to a new file on your disk. If the file is
    ```
 
    > [!TIP]
-   > For a list of workloads and components, see the [Visual Studio Build Tools component directory](workload-component-id-vs-build-tools.md).
-   >
+   > To target 64-bit,  specify the `-arch=amd64` option in the `ENTRYPOINT` command to start the [Developer Command Prompt for Visual Studio](../ide/reference/command-prompt-powershell.md#developer-command-prompt) (`VSDevCmd.bat`).
+   > 
+   > For example:
+   > `ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "-arch=amd64", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`
 
    > [!WARNING]
    > If you base your image directly on microsoft/windowsservercore, the .NET Framework might not install properly and no install error is indicated. Managed code might not run after the install is complete. Instead, base your image on microsoft/dotnet-framework:4.8] or later. Also note that images that are tagged version 4.8 or later might use PowerShell as the default `SHELL`, which will cause the `RUN` and `ENTRYPOINT` instructions to fail.
@@ -129,8 +127,10 @@ Save the following example Dockerfile to a new file on your disk. If the file is
    ```
 
    > [!TIP]
-   > For a list of workloads and components, see the [Visual Studio Build Tools component directory](workload-component-id-vs-build-tools.md).
+   > To target 64-bit,  specify the `-arch=amd64` option in the `ENTRYPOINT` command to start the [Developer Command Prompt for Visual Studio](../ide/reference/command-prompt-powershell.md#developer-command-prompt) (`VSDevCmd.bat`).
    >
+   > For example:
+   > `ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "-arch=amd64", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`
 
    > [!WARNING]
    > If you base your image directly on microsoft/windowsservercore, the .NET Framework might not install properly and no install error is indicated. Managed code might not run after the install is complete. Instead, base your image on microsoft/dotnet-framework:4.8 or later. Also note that images that are tagged version 4.8 or later might use PowerShell as the default `SHELL`, which will cause the `RUN` and `ENTRYPOINT` instructions to fail.

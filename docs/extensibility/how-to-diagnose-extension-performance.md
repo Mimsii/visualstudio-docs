@@ -5,12 +5,10 @@ ms.date: "11/08/2016"
 ms.topic: how-to
 author: "BertanAygun"
 ms.author: "bertaygu"
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Measuring extension impact in startup
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ## Focus on extension performance in Visual Studio 2017
 
@@ -77,7 +75,7 @@ Beginning in Visual Studio 2017 Update 3, Visual Studio activity log will now co
 
 In the activity log, the entries will be under "Manage Visual Studio Performance" source, and will look like the following example:
 
-```Component: 3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c, Inclusive Cost: 2008.9381, Exclusive Cost: 2008.9381, Top Level Inclusive Cost: 2008.9381```
+`Component: 3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c, Inclusive Cost: 2008.9381, Exclusive Cost: 2008.9381, Top Level Inclusive Cost: 2008.9381`
 
 This example shows that a package with GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" spent 2008 ms in startup of Visual Studio. Note that Visual Studio considers top-level cost as the primary number when calculating impact of a package as that would be the savings users see when they disable the extension for that package.
 

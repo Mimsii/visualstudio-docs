@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: dzsquared
 ms.author: drskwier
-manager: jmartens
-ms.technology: vs-xml-tools
+manager: mijacobs
+ms.subservice: xml-tools
 ---
 # Search the schema set
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **XML Schema Explorer** enables you to search the schema set in the following ways:
 

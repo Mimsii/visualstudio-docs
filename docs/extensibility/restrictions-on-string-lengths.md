@@ -7,12 +7,11 @@ helpviewer_keywords:
 - source control plug-ins, restrictions on string lengths
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Restrictions on string lengths
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The Source Control Plug-in API limits the lengths of strings used in various functions.
 
 ## String length values

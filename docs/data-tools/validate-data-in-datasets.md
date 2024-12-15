@@ -18,12 +18,11 @@ helpviewer_keywords:
 - updating datasets, validating data
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Validate data in datasets in .NET Framework applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Validate data in datasets in .NET Framework applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -34,6 +33,7 @@ You can confirm that data that's being written to a dataset is valid by building
 The best place to add validation to your application is in the dataset's partial class file. In Visual Basic or Visual C#, open the **Dataset Designer** and double-click the column or table for which you want to create validation. This action opens up the code file, where you can create a <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> event handler.
 
 ### [C#](#tab/csharp)
+
 ```csharp
 private static void OnColumnChanging(object sender, DataColumnChangeEventArgs e)
 {
@@ -42,14 +42,17 @@ private static void OnColumnChanging(object sender, DataColumnChangeEventArgs e)
 ```
 
 ### [VB](#tab/vb)
+
 ```vb
 Private Shared Sub OnColumnChanging(sender As Object, e As DataColumnChangeEventArgs)
- 
+
 End Sub
 ```
+
 ---
 
 ## Validate data
+
 Validation within a dataset is accomplished in the following ways:
 
 - By creating your own application-specific validation that can check values in an individual data column during changes. For more information, see [How to: Validate data during column changes](validate-data-in-datasets.md).
@@ -107,6 +110,7 @@ You can validate data when the value in a data column changes by responding to t
 Validation can also be performed during the <xref:System.Data.DataTable.RowChanging> event.
 
 ## Validate data during row changes
+
 You can write code to verify that each column you want to validate contains data that meets the requirements of your application. Do this by setting the column to indicate that it contains an error if a proposed value is unacceptable. The following examples set a column error when the `Quantity` column is 0 or less. The row-changing event handlers should resemble the following examples.
 
 ### To validate data when a row changes (Visual Basic)
@@ -152,6 +156,7 @@ You can write code to verify that each column you want to validate contains data
     ```
 
 ## To retrieve changed rows
+
 Each row in a data table has a <xref:System.Data.DataRow.RowState%2A> property that keeps track of the current state of that row by using the values in the <xref:System.Data.DataRowState> enumeration. You can return changed rows from a dataset or data table by calling the `GetChanges` method of a <xref:System.Data.DataSet> or <xref:System.Data.DataTable>. You can verify that changes exist prior to calling `GetChanges` by calling the <xref:System.Data.DataSet.HasChanges%2A> method of a dataset.
 
 > [!NOTE]
@@ -210,6 +215,7 @@ Use the <xref:System.Data.DataRowVersion> enumeration to access the different ve
      ---
 
 ## Access the original version of a DataRow
+
 When changes are made to data rows, the dataset retains both the original (<xref:System.Data.DataRowVersion.Original>) and new (<xref:System.Data.DataRowVersion.Current>) versions of the row. For example, before calling the `AcceptChanges` method, your application can access the different versions of a record (as defined in the <xref:System.Data.DataRowVersion> enumeration) and process the changes accordingly.
 
 > [!NOTE]
@@ -245,7 +251,7 @@ Passing the <xref:System.Data.DataRowVersion> value along with the column index 
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet22":::
      ---
 
-## See also
+## Related content
 
 - [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [How to: Validate data in the Windows Forms DataGridView control](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)

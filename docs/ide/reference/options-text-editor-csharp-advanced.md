@@ -8,12 +8,10 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: mikadumont
 ms.author: midumont
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Options, Text Editor, C#, Advanced
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Use the **Advanced** options page to modify the settings for editor formatting, code refactoring, and XML documentation comments for C#. To access this options page, choose **Tools** > **Options**, and then choose **Text Editor** > **C#** > **Advanced**.
 
@@ -164,7 +162,6 @@ Select these check boxes to display dotted vertical lines between the curly brac
       public int Bump => ++Count;
    }
 
-
    public class CustomClass
    {
       public void DoIt()
@@ -179,7 +176,7 @@ Select these check boxes to display dotted vertical lines between the curly brac
 
    If the "Don't put ref or out on custom struct" option is **unchecked**, then the "Extract method" feature generates the following:
 
-   ```C#
+   ```csharp
    public class CustomClass
    {
       public void DoIt()
@@ -197,7 +194,7 @@ Select these check boxes to display dotted vertical lines between the curly brac
 
    If the "Don't put ref or out on custom struct" option is **checked**, then the "Extract method" feature generates the following:
 
-   ```C#
+   ```csharp
    public class CustomClass
    {
       public void DoIt()

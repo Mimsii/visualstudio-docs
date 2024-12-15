@@ -6,12 +6,10 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Roslyn analyzers and code-aware library for ImmutableArrays
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") helps you build code-aware libraries. A code-aware library provides functionality you can use and tooling (Roslyn analyzers) to help you use the library in the best way or to avoid errors. This topic shows you how to build a real world Roslyn analyzer to catch common errors when using the [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) NuGet package. The example also demonstrates how to provide a code fix for a code issue found by the analyzer. Users see code fixes in the Visual Studio light bulb UI and can apply a fix for the code automatically.
 
@@ -31,18 +29,18 @@ Users are familiar with writing code like the following:
 
 ```csharp
 var a1 = new int[0];
-Console.WriteLine("a1.Length = { 0}", a1.Length);
+Console.WriteLine("a1.Length = {0}", a1.Length);
 var a2 = new int[] { 1, 2, 3, 4, 5 };
-Console.WriteLine("a2.Length = { 0}", a2.Length);
+Console.WriteLine("a2.Length = {0}", a2.Length);
 ```
 
 Creating empty arrays to fill in with subsequent lines of code and using collection initializer syntax are familiar to C# developers. However, writing the same code for an ImmutableArray crashes at run time:
 
 ```csharp
 var b1 = new ImmutableArray<int>();
-Console.WriteLine("b1.Length = { 0}", b1.Length);
+Console.WriteLine("b1.Length = {0}", b1.Length);
 var b2 = new ImmutableArray<int> { 1, 2, 3, 4, 5 };
-Console.WriteLine("b2.Length = { 0}", b2.Length);
+Console.WriteLine("b2.Length = {0}", b2.Length);
 ```
 
 The first error is due to ImmutableArray implementation's using a struct to wrap the underlying data storage. Structs must have parameter-less constructors so that `default(T)` expressions can return structs with all zero or null members. When the code accesses `b1.Length`, there is a run time null dereference error because there is no underlying storage array in the ImmutableArray struct. The correct way to create an empty ImmutableArray is `ImmutableArray<int>.Empty`.
@@ -63,7 +61,7 @@ The template opens a *DiagnosticAnalyzer.cs* file. Choose that editor buffer tab
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
+public class ImmutableArrayAnalyzer : DiagnosticAnalyzer
 {}
 ```
 
@@ -224,7 +222,7 @@ namespace ImmutableArrayAnalyzer
 **Implement the property.** Fill in the `FixableDiagnosticIds` property's `get` body with the following code:
 
 ```csharp
-return ImmutableArray.Create(ImmutableArrayAnalyzerAnalyzer.DiagnosticId);
+return ImmutableArray.Create(ImmutableArrayAnalyzer.DiagnosticId);
 ```
 
 Roslyn brings together diagnostics and fixes by matching these identifiers, which are just strings. The project template generated a diagnostic ID for you, and you are free to change it. The code in the property just returns the ID from the analyzer class.

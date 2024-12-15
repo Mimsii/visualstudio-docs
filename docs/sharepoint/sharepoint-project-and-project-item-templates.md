@@ -18,12 +18,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, templates"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # SharePoint project and project item templates
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The following sections describe the available SharePoint project and project item templates and how they are used.
 
 ## Project and project item templates overview

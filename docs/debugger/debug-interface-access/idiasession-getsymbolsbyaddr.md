@@ -1,5 +1,5 @@
 ---
-description: "Retrieves an enumerator that finds symbols in the order of their addresses."
+description: Retrieves an enumerator that finds symbols in the order of their addresses.
 title: "IDiaSession::getSymbolsByAddr"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::getSymbolsByAddr method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::getSymbolsByAddr
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves an enumerator that finds symbols in the order of their addresses.
 
 ## Syntax
 
 ```C++
-HRESULT getSymbolsByAddr( 
+HRESULT getSymbolsByAddr( 
    IDiaEnumSymbolsByAddr** ppEnumbyAddr
 );
 ```

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProperty2::GetDerivedMostProperty
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProperty2::GetDerivedMostProperty
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the derived-most property of a property.
 
 ## Syntax

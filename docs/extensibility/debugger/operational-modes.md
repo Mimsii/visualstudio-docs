@@ -2,17 +2,16 @@
 title: Operational Modes
 description: Learn about the three modes in which the IDE can operate, which are design mode, run mode, and break mode.
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Operational modes
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 There are three modes in which the IDE can operate, as follows:
 
 - [Design mode](#vsconoperationalmodesanchor1)

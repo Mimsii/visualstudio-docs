@@ -11,12 +11,11 @@ helpviewer_keywords:
   - "modules [SharePoint development in Visual Studio]"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Include files by using a module
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   *Modules* (not to be confused with Visual Basic modules) are containers that enable you to deploy files such as ASPX master pages, text files, or images to SharePoint.
 
  You can choose to deploy a file into a document library or as a normal file (for example, default.aspx) outside a document library. To add a file to a document library, specify `Type="GhostableInLibrary"` as an attribute in the **File** element. This setting instructs SharePoint to create a list item to go with your file when it is added to the library. To deploy a file outside a document library, either specify `Type="Ghostable"` or just omit the **Type** attribute.

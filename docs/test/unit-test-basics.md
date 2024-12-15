@@ -7,12 +7,10 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 ---
 # Unit test basics
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Check that your code is working as expected by creating and running unit tests. It's called unit testing because you break down the functionality of your program into discrete testable behaviors that you can test as individual *units*. Visual Studio Test Explorer provides a flexible and efficient way to run your unit tests and view their results in Visual Studio. Visual Studio installs the Microsoft unit testing frameworks for managed and native code. Use a *unit testing framework* to create unit tests, run them, and report the results of these tests. Rerun unit tests when you make changes to test that your code is still working correctly. Visual Studio Enterprise can do this automatically with [Live Unit Testing](live-unit-testing-intro.md), which detects tests affected by your code changes and runs them in the background as you type.
 
@@ -24,7 +22,7 @@ You can quickly generate test projects and test methods from your code, or manua
 
 ## Get started
 
-For an introduction to unit testing that takes you directly into coding, see one of these topics:
+For an introduction to unit testing that takes you directly into coding, see one of these articles:
 
 - [Walkthrough: Create and run unit tests for .NET code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
@@ -34,7 +32,7 @@ For an introduction to unit testing that takes you directly into coding, see one
 
 ## The Bank solution example
 
-In this article, we use the development of a fictional application called `MyBank` as an example. You don't need the actual code to follow the explanations in this topic. Test methods are written in C# and presented by using the Microsoft Unit Testing Framework for Managed Code. However, the concepts are easily transferred to other languages and frameworks.
+In this article, we use the development of a fictional application called `MyBank` as an example. You don't need the actual code to follow the explanations in this article. Test methods are written in C# and presented by using the Microsoft Unit Testing Framework for Managed Code. However, the concepts are easily transferred to other languages and frameworks.
 
 ::: moniker range="vs-2019"
 ![MyBank Solution 2019](../test/media/vs-2019/basics-mybank-solution.png)
@@ -77,6 +75,10 @@ public void Withdraw(double amount)
 
 Now that we have some code, it's time for testing.
 
+## Create unit tests with Copilot
+
+You can also use Copilot `/tests` slash command to generate unit tests from code. For example, you can type `/tests using NUnit Framework` to generate NUnit tests. For more information, see [Use slash commands in Copilot Chat](../ide/copilot-chat-context.md#slash-commands).
+
 ## Create unit test projects and test methods (C#)
 
 For C#, it is often quicker to generate the unit test project and unit test stubs from your code. Or you can choose to create the unit test project and tests manually depending on your requirements. If you want to create unit tests from code with a 3rd party framework you will need one of these extensions installed: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) or [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). If you are not using C#, skip this section and go to [Create the unit test project and unit tests manually](#create-the-unit-test-project-and-unit-tests-manually).
@@ -99,7 +101,7 @@ For C#, it is often quicker to generate the unit test project and unit test stub
    > The **Create Unit Tests** menu command is only available for C# code. To use this method with .NET Core or .NET Standard, Visual Studio 2019 or later is required.
    ::: moniker-end
 
-2. Click **OK** to accept the defaults to create your unit tests, or change the values used to create and name the unit test project and the unit tests. You can select the code that is added by default to the unit test methods.
+2. Select **OK** to accept the defaults to create your unit tests, or change the values used to create and name the unit test project and the unit tests. You can select the code that is added by default to the unit test methods.
 
    ::: moniker range="<=vs-2019"
    ![Create Unit Tests dialog box in Visual Studio](../test/media/create-unit-tests.png)
@@ -127,7 +129,7 @@ A unit test project usually mirrors the structure of a single code project. In t
 
 1. In **Solution Explorer**, right-click on the solution and choose **Add** > **New** **Project**.
 
-2. Type **test** in the project template search box to find a unit test project template for the test framework that you want to use. (In the examples in this topic, we use MSTest.)
+2. Type **test** in the project template search box to find a unit test project template for the test framework that you want to use. (In the examples in this article, we use MSTest.)
 
 3. On the next page, name the project. To test the `Accounts` project of our example, you could name the project `AccountsTests`.
 
@@ -187,7 +189,7 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 }
 ```
 
-For more information about the Microsoft unit testing frameworks, see one of the following topics:
+For more information about the Microsoft unit testing frameworks, see one of the following articles:
 
 - [Unit test your code](unit-test-your-code.md)
 
@@ -285,7 +287,7 @@ Learn more details about [debugging unit tests](../debugger/debugger-feature-tou
 
 **Q: If I'm using TDD, how do I generate code from my tests?**
 
-**A:** Use Quick Actions to generate classes and methods in your project code. Write a statement in a test method that calls the class or method that you want to generate, then open the lightbulb that appears under the error. If the call is to a constructor of the new class, choose **Generate type** from the menu and follow the wizard to insert the class in your code project. If the call is to a method, choose **Generate method** from the IntelliSense menu.
+**A:** Use Quick Actions to generate classes and methods in your project code. Write a statement in a test method that calls the class or method that you want to generate, then open the light bulb that appears under the error. If the call is to a constructor of the new class, choose **Generate type** from the menu and follow the wizard to insert the class in your code project. If the call is to a method, choose **Generate method** from the IntelliSense menu.
 
 ::: moniker range="vs-2019"
 ![Generate Method Stub Quick Action Menu](../test/media/vs-2019/basics-generate-method-tdd.png)
@@ -304,7 +306,7 @@ Learn more about [data-driven unit tests](../test/how-to-create-a-data-driven-un
 
 **Q: Can I view how much of my code is tested by my unit tests?**
 
-**A:** Yes. You can determine the amount of your code that is actually being tested by your unit tests by using the Visual Studio code coverage tool in Visual Studio Enterprise. Native and managed languages and all unit test frameworks that can be run by the Unit Test Framework are supported.
+**A:** Yes. You can determine the amount of your code that is actually being tested by your unit tests by using the Visual Studio Code coverage tool in Visual Studio Enterprise. Native and managed languages and all unit test frameworks that can be run by the Unit Test Framework are supported.
 
 You can run code coverage on selected tests or on all tests in a solution. The **Code Coverage Results** window displays the percentage of the blocks of product code that were exercised by line, function, class, namespace and module.
 
@@ -342,3 +344,7 @@ Learn more about [isolating unit test methods with Microsoft Fakes](../test/isol
 ![Select other installed unit test framework](../test/media/createunittestsdialogextensions.png)
 
 Your unit test stubs will be created using the selected framework.
+
+**Q: How do I export my unit test results?**
+
+**A:** You can use a *.runsettings* file with either the command-line or the Visual Studio IDE to configure unit tests and set the test results file. For more information, see [LoggerRunSettings element](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#loggerrunsettings-element).

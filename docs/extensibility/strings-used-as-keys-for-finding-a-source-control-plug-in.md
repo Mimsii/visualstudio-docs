@@ -7,12 +7,11 @@ helpviewer_keywords:
 - source control plug-ins, strings used for finding
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Strings Used as Keys for Finding a Source Control Plug-in
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following strings are the keys for accessing the registry to find information about the source control plug-in.
 
  `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, and `STR_SCCPROVIDERNAME` are registry keys or values used to register a DLL as a source control plug-in for Visual Studio.
@@ -35,7 +34,7 @@ The following strings are the keys for accessing the registry to find informatio
 |`SCC_KEY`|SCC|
 |`SCC_FILE_SIGNATURE`|A source code control file|
 |`SCC_NSE`|Namespace extension|
-|`SCC_NSE_PREFIX`|Protocal Prefix|
+|`SCC_NSE_PREFIX`|Protocol Prefix|
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|
 |`STR_SCCHELPCOLLECTION`|HelpCollection|
 |`STR_UI_LANGUAGE`|UILanguage|

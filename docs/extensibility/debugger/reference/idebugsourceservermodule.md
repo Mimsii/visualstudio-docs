@@ -7,12 +7,11 @@ helpviewer_keywords:
 - IDebugSourceServerModule interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugSourceServerModule
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Represents the source server information that is contained in a PDB file.
 
 ## Syntax

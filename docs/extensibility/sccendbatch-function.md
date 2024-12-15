@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccEndBatch function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccEndBatch function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function concludes a batch of source control operations. These batches may not be nested.
 
 ## Syntax

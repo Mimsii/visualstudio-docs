@@ -14,12 +14,11 @@ helpviewer_keywords:
   - "pseudovariables"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Pseudovariables in the Visual Studio debugger
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Pseudovariables are terms used to display certain information in a variable window or the **QuickWatch** dialog box. You can enter a pseudovariable the same way you would enter a normal variable. Pseudovariables are not variables, however, and do not correspond to variable names in your program.
 
 ## Example
@@ -51,6 +50,8 @@ Pseudovariables are terms used to display certain information in a variable wind
 |`$exception`|Displays information on the last exception. If no exception has occurred, evaluating `$exception` displays an error message.<br /><br /> When the Exception Assistant is disabled, `$exception` is automatically added to the **Locals** window when an exception occurs.|
 |`$user`|Displays a structure with account information for the account running the application. For security reasons, the password information is not displayed.|
 |`$returnvalue`|Displays the return value of a .NET method.|
+|`$threadSmallObjectHeapBytes`|Displays the total number of bytes allocated in the small object heap by the current thread. (.NET 6+)|
+|`$threadUserOldHeapBytes`|Displays the total number of bytes allocated in the user old heap by the current thread. `User Old Heap = Large Object Heap + Pinned Object Heap` (.NET 6+)|
 
  In Visual Basic, you can use the pseudovariables shown in the following table:
 
@@ -62,6 +63,6 @@ Pseudovariables are terms used to display certain information in a variable wind
 |`$` *N* `#`|Displays object with Object ID equal to *N*.|
 |`$dynamic`|Displays the special **Dynamic View** node for an object that implements the `IDynamicMetaObjectProvider`. Interface. The syntax is `$dynamic,` *object*. This feature applies only to code that uses .NET Framework version 4 or later.|
 
-## See also
+## Related content
 - [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
 - [Variable Windows](../debugger/debugger-windows.md)

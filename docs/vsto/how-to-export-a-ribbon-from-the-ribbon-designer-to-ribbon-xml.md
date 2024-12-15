@@ -17,12 +17,11 @@ helpviewer_keywords:
   - "exporting Ribbon"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Export a ribbon from the Ribbon Designer to Ribbon XML
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The **Ribbon (Visual Designer)** item does not support all possible types of Ribbon customization. To customize the ribbon in advanced ways, you can export the ribbon from the designer to Ribbon XML and edit the XML directly.
 
 > [!NOTE]

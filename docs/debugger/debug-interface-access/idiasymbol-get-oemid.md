@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_oemId method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_oemId
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the symbol's original equipment manufacturer (OEM) ID value.
 
 ## Syntax

@@ -12,12 +12,10 @@ helpviewer_keywords:
   - "Test Explorer FAQ"
 ms.author: mikejo
 author: MikeJo5000
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 ---
 # Visual Studio Test Explorer FAQ
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ## Dynamic test discovery
 

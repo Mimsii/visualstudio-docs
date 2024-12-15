@@ -1,5 +1,5 @@
 ---
-description: "Reads specified properties from the current property set."
+description: Reads specified properties from the current property set.
 title: "IDiaPropertyStorage::ReadMultiple"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaPropertyStorage::ReadMultiple"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaPropertyStorage::ReadMultiple
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Reads specified properties from the current property set.
 
 ## Syntax
 
 ```C++
-HRESULT ReadMultiple( 
+HRESULT ReadMultiple( 
    ULONG          cpspec,
    PROPSPEC const rgpspec,
    PROPVARIANT    rgvar

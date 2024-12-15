@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "PointerType symbol"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # PointerType
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Each pointer is identified by a `SymTagPointerType` symbol.
 
 ## Properties

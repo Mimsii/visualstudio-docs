@@ -12,8 +12,8 @@ helpviewer_keywords:
 - MSBuild, FindAppConfigFile task
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # FindAppConfigFile task
 

@@ -4,31 +4,30 @@ author: ghogen
 description: Create and manage multi-container applications with Docker Compose and Container Tools in Visual Studio, including custom launch profiles.
 ms.author: ghogen
 ms.date: 10/18/2023
-ms.technology: vs-container-tools
+ms.subservice: container-tools
 ms.topic: tutorial
 ---
-# Tutorial: Create a multi-container app with Docker Compose
 
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Tutorial: Create a multi-container app with Docker Compose
 
 In this tutorial, you learn how to manage more than one container and communicate between them when using Container Tools in Visual Studio. Managing multiple containers requires *container orchestration* and requires an orchestrator such as Docker Compose or Service Fabric. For these procedures, you use Docker Compose. Docker Compose is great for local debugging and testing in the course of the development cycle.
 
 :::moniker range=">=vs-2022"
-The completed sample that you create in this tutorial can be found on GitHub at [https://github.com/MicrosoftDocs/vs-tutorial-samples](https://github.com/MicrosoftDocs/vs-tutorial-samples) in the folder *docker/ComposeSample*.
+The completed sample that you create in this tutorial can be found on GitHub at [`https://github.com/MicrosoftDocs/vs-tutorial-samples`](https://github.com/MicrosoftDocs/vs-tutorial-samples) in the folder *docker/ComposeSample*.
 :::moniker-end
 
 ## Prerequisites
 
 ::: moniker range="vs-2019"
 
-* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?cid=learn-onpage-download-cta) with the **Web Development**, **Azure Tools** workload, and/or **.NET cross-platform development** workload installed
+- [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?cid=learn-onpage-download-cta) with the **Web Development**, **Azure Tools** workload, and/or **.NET cross-platform development** workload installed
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?cid=learn-onpage-download-cta) with the **Web Development**, **Azure Tools** workload, and/or **.NET cross-platform development** workload installed. This installation includes the .NET 8 development tools.
+- [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?cid=learn-onpage-download-cta) with the **Web Development**, **Azure Tools** workload, and/or **.NET cross-platform development** workload installed. This installation includes the .NET 8 development tools.
 ::: moniker-end
 
 ## Create a Web Application project
@@ -46,15 +45,9 @@ Don't select **Enable Docker Support**. You add Docker support later in the proc
 ::: moniker-end
 ::: moniker range=">=vs-2022"
 
-> [!NOTE]
-> In Visual Studio 2022 17.2 and later, you can use Azure Functions for this project instead.
-
-![Screenshot showing Create ASP.NET Core Web App project.](./media/tutorial-multicontainer/vs-2022/create-web-project.png)
-
 Don't select **Enable Docker Support**. You add Docker support later in the process.
 
-![Screenshot of the Additional information screen when creating a web project. The option to Enable Docker Support is not selected.](./media/tutorial-multicontainer/vs-2022/create-web-project-additional-information.png)
-
+![Screenshot of the Additional information screen when creating a web project. The option to Enable Docker Support is not selected.](./media/tutorial-multicontainer/vs-2022/create-web-project.png)
 ::: moniker-end
 
 ## Create a Web API project
@@ -67,11 +60,14 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
 ::: moniker-end
 
 :::moniker range=">=vs-2022"
-1. Add a project to the same solution and call it *WebAPI*. Select **API** as the project type, and clear the checkbox for **Configure for HTTPS**. In this design, we're only using SSL for communication with the client, not for communication from between containers in the same web application. Only `WebFrontEnd` needs HTTPS and the code in the examples assumes that you have cleared that checkbox. In general, the .NET developer certificates used by Visual Studio are only supported for external-to-container requests, not for container-to-container requests.
+1. Add a project to the same solution and call it *MyWebAPI*. Select **API** as the project type, and clear the checkbox for **Configure for HTTPS**.
+
+   > [!NOTE]
+   > In this design, we're only using HTTPS for communication with the client, not for communication from between containers in the same web application. Only `WebFrontEnd` needs HTTPS and the code in the examples assumes that you have cleared that checkbox. In general, the .NET developer certificates used by Visual Studio are only supported for external-to-container requests, not for container-to-container requests.
 
    ![Screenshot of creating the Web API project.](media/tutorial-multicontainer/vs-2022/create-web-api-project.png)
 
-1. Add support for Redis Cache. Add the NuGet package `Microsoft.Extensions.Caching.StackExchangeRedis` (not `StackExchange.Redis`). In *Program.cs*, add the following lines, just before `var app = builder.Build()`:
+1. Add support for Azure Cache for Redis. Add the NuGet package `Microsoft.Extensions.Caching.StackExchangeRedis` (not `StackExchange.Redis`). In *Program.cs*, add the following lines, just before `var app = builder.Build()`:
 
    ```csharp
    builder.Services.AddStackExchangeRedisCache(options =>
@@ -81,14 +77,14 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
       });
    ```
 
-1. Add using directives in *Program.cs* for `Microsoft.Extensions.Caching.Distributed` and `Microsoft.Extensions.Caching.StackExchangeRedis`.
+1. Add using directives in `Program.cs` for `Microsoft.Extensions.Caching.Distributed` and `Microsoft.Extensions.Caching.StackExchangeRedis`.
 
    ```csharp
    using Microsoft.Extensions.Caching.Distributed;
    using Microsoft.Extensions.Caching.StackExchangeRedis;
    ```
 
-1. In the Web API project, delete the existing *WeatherForecast.cs* and *Controllers/WeatherForecastController.cs*, and add a file under Controllers, *CounterController.cs*, with the following contents:
+1. In the Web API project, delete the existing `WeatherForecast.cs` and *Controllers/WeatherForecastController.cs*, and add a file under Controllers, *CounterController.cs*, with the following contents:
 
    ```csharp
    using Microsoft.AspNetCore.Mvc;
@@ -139,7 +135,7 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
    }
    ```
 
-   The service increments a counter every time the page is accessed and stores the counter in the Redis cache.
+   The service increments a counter every time the page is accessed and stores the counter in the cache.
 :::moniker-end
 
 ## Add code to call the Web API
@@ -168,7 +164,7 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
    > [!NOTE]
    > In real-world code, you shouldn't dispose `HttpClient` after every request. For best practices, see [Use HttpClientFactory to implement resilient HTTP requests](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
-1. In the *Index.cshtml* file, add a line to display `ViewData["Message"]` so that the file looks like the following code:
+1. In the `Index.cshtml` file, add a line to display `ViewData["Message"]` so that the file looks like the following code:
 
    ```cshtml
    @page
@@ -176,7 +172,7 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
    @{
       ViewData["Title"] = "Home page";
    }
-    
+
    <div class="text-center">
       <h1 class="display-4">Welcome</h1>
       <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -212,15 +208,13 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
 
    ![Screenshot of choosing the Target OS.](media/tutorial-multicontainer/docker-tutorial-docker-support-options.PNG)
 
-   Visual Studio creates a *docker-compose.yml* file and a *.dockerignore* file in the **docker-compose** node in the solution, and that project shows in boldface font, which shows that it's the startup project.
+   Visual Studio creates a *docker-compose.yml* file and a `.dockerignore` file in the **docker-compose** node in the solution, and that project shows in boldface font, which shows that it's the startup project.
 
-   ![Screenshot of Solution Explorer with docker-compose project added.](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
+   ![Screenshot of Solution Explorer with Docker Compose project added.](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
 
    The *docker-compose.yml* appears as follows:
 
    ```yaml
-   version: '3.4'
-
     services:
       webfrontend:
         image: ${DOCKER_REGISTRY-}webfrontend
@@ -231,27 +225,25 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
 
    The `version` specified in the first line is the [Docker Compose file version](https://docs.docker.com/compose/compose-file/#version-top-level-element). You normally shouldn't change it, since it's used by the tools to understand how to interpret the file.
 
-   The *.dockerignore* file contains file types and extensions that you don't want Docker to include in the container. These files are generally associated with the development environment and source control, not part of the app or service you're developing.
+   The `.dockerignore` file contains file types and extensions that you don't want Docker to include in the container. These files are generally associated with the development environment and source control, not part of the app or service you're developing.
 
-   Look at the **Container Tools** section of the output pane for details of the commands being run.  You can see the command-line tool docker-compose is used to configure and create the runtime containers.
+   Look at the **Container Tools** section of the output pane for details of the commands being run. You can see the command-line tool `docker-compose` is used to configure and create the runtime containers.
 
-1. In the Web API project, again right-click on the project node, and choose **Add** > **Container Orchestrator Support**. Choose **Docker Compose**, and then select the same target OS.  
+1. In the Web API project, again right-click on the project node, and choose **Add** > **Container Orchestrator Support**. Choose **Docker Compose**, and then select the same target OS.
 
     > [!NOTE]
     > In this step, Visual Studio will offer to create a Dockerfile. If you do this on a project that already has Docker support, you are prompted whether you want to overwrite the existing Dockerfile. If you've made changes in your Dockerfile that you want to keep, choose no.
 
-    Visual Studio makes some changes to your docker compose YML file. Now both services are included.
+    Visual Studio makes some changes to your Docker Compose YML file. Now both services are included.
 
     ```yaml
-    version: '3.4'
-    
     services:
       webfrontend:
         image: ${DOCKER_REGISTRY-}webfrontend
         build:
           context: .
           dockerfile: WebFrontEnd/Dockerfile
-    
+
       mywebapi:
         image: ${DOCKER_REGISTRY-}mywebapi
         build:
@@ -259,9 +251,9 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. The first project that you add container orchestration to is set up to be launched when you run or debug. You can configure the launch action in the **Project Properties** for the docker-compose project.  On the docker-compose project node, right-click to open the context menu, and then choose **Properties**, or use Alt+Enter.  The following screenshot shows the properties you would want for the solution used here.  For example, you can change the page that is loaded by customizing the **Service URL** property.
+1. The first project that you add container orchestration to is set up to be launched when you run or debug. You can configure the launch action in the **Project Properties** for the Docker Compose project. On the Docker Compose project node, right-click to open the context menu, and then choose **Properties**, or use Alt+Enter. The following screenshot shows the properties you would want for the solution used here. For example, you can change the page that is loaded by customizing the **Service URL** property.
 
-   ![Screenshot of docker-compose project properties.](media/tutorial-multicontainer/launch-action.png)
+   ![Screenshot of Docker Compose project properties.](media/tutorial-multicontainer/launch-action.png)
 
    Here's what you see when launched (the .NET Core 2.x version):
 
@@ -269,7 +261,7 @@ Add a project to the same solution and call it *MyWebAPI*. Select **API** as the
 
    The web app for .NET 3.1 shows the weather data in JSON format.
 
-1. Now suppose you're only interested in having the debugger attached to WebFrontEnd, not the Web API project. From the menu bar, you can use the dropdown next to the start button to bring up a menu of debug options; choose **Manage Docker Compose Launch Settings**.
+1. Now suppose you're only interested in having the debugger attached to WebFrontEnd, not the Web API project. From the menu bar, you can use the dropdown list next to the start button to bring up a menu of debug options; choose **Manage Docker Compose Launch Settings**.
 
    ![Screenshot of Debug Manage Compose Settings menu item.](media/launch-settings/debug-dropdown-manage-compose.png)
 
@@ -294,12 +286,25 @@ Congratulations, you're running a Docker Compose application with a custom Docke
    ```csharp
    public async Task OnGet()
    {
+      // Call *mywebapi*, and display its response in the page
       using (var client = new System.Net.Http.HttpClient())
       {
-         // Call *mywebapi*, and display its response in the page
          var request = new System.Net.Http.HttpRequestMessage();
-         // webapi is the container name
-         request.RequestUri = new Uri("http://webapi/Counter");
+
+         // A delay is a quick and dirty way to work around the fact that
+         // the mywebapi service might not be immediately ready on startup.
+         // See the text for some ideas on how you can improve this.
+         // Uncomment for .NET 8 only
+         // await System.Threading.Tasks.Task.Delay(10000);
+
+         // mywebapi is the service name, as listed in docker-compose.yml.
+         // Docker Compose creates a default network with the services
+         // listed in docker-compose.yml exposed as host names.
+         // The port 8080 is exposed in the WebAPI Dockerfile.
+         // If your WebAPI is exposed on port 80 (the default for HTTP, used
+         // with earlier versions of the generated Dockerfile), change
+         // or delete the port number here.
+         request.RequestUri = new Uri("http://mywebapi:8080/Counter");
          var response = await client.SendAsync(request);
          string counter = await response.Content.ReadAsStringAsync();
          ViewData["Message"] = $"Counter value from cache :{counter}";
@@ -310,7 +315,13 @@ Congratulations, you're running a Docker Compose application with a custom Docke
     > [!NOTE]
     > In real-world code, you shouldn't dispose `HttpClient` after every request. For best practices, see [Use HttpClientFactory to implement resilient HTTP requests](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
-1. In the *Index.cshtml* file, add a line to display `ViewData["Message"]` so that the file looks like the following code:
+    The URI given references a service name defined in the *docker-compose.yml* file. Docker Compose sets up a default network for communication between containers using the listed service names as hosts.
+
+    The code shown here works with .NET 8 and later, which sets up a user account in the Dockerfile without administrator privileges, and exposes port 8080 because the HTTP default port 80 is not accessible without elevated privilege.
+
+    The delay is used here as a workaround for .NET 8 only, because this example code could run immediately on application launch, before the MyWebAPI service is ready to receive web requests.
+
+1. In the `Index.cshtml` file, add a line to display `ViewData["Message"]` so that the file looks like the following code:
 
       ```cshtml
       @page
@@ -318,7 +329,7 @@ Congratulations, you're running a Docker Compose application with a custom Docke
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -334,19 +345,21 @@ Congratulations, you're running a Docker Compose application with a custom Docke
 
 1. Choose **Docker Compose**.
 
-1. Choose your Target OS, for example, Linux.
+1. **Visual Studio 17.12 and later** Choose the scaffolding options for the WebFrontEnd project.
+
+   ![Screenshot showing Container Scaffolding Options dialog for the WebFrontEnd project.](media/tutorial-multicontainer/vs-2022/webfrontend-container-options.png)
+
+   **Visual Studio 17.11 and earlier** Choose your Target OS, for example, Linux.
 
    ![Screenshot of choosing the Target OS.](media/tutorial-multicontainer/docker-tutorial-docker-support-options.PNG)
 
-   Visual Studio creates a *docker-compose.yml* file and a *.dockerignore* file in the **docker-compose** node in the solution, and that project shows in boldface font, which shows that it's the startup project.
+   Visual Studio creates a *docker-compose.yml* file and a `.dockerignore` file in the **docker-compose** node in the solution, and that project shows in boldface font, which shows that it's the startup project.
 
-   ![Screenshot of Solution Explorer with docker-compose project added.](media/tutorial-multicontainer/vs-2022/multicontainer-solution-explorer.png)
+   ![Screenshot of Solution Explorer with Docker Compose project added.](media/tutorial-multicontainer/vs-2022/multicontainer-solution-explorer.png)
 
    The *docker-compose.yml* appears as follows:
 
    ```yaml
-   version: '3.4'
-
     services:
       webfrontend:
         image: ${DOCKER_REGISTRY-}webfrontend
@@ -355,29 +368,25 @@ Congratulations, you're running a Docker Compose application with a custom Docke
           dockerfile: WebFrontEnd/Dockerfile
    ```
 
-   The `version` specified in the first line is the [Docker Compose file version](https://docs.docker.com/compose/compose-file/#version-top-level-element). You normally shouldn't change it, since it's used by the tools to understand how to interpret the file.
+   The `.dockerignore` file contains file types and extensions that you don't want Docker to include in the container. These files are generally associated with the development environment and source control, not part of the app or service you're developing.
 
-   The *.dockerignore* file contains file types and extensions that you don't want Docker to include in the container. These files are generally associated with the development environment and source control, not part of the app or service you're developing.
+   Look at the **Container Tools** section of the output pane for details of the commands being run. You can see the command-line tool `docker-compose` is used to configure and create the runtime containers.
 
-   Look at the **Container Tools** section of the output pane for details of the commands being run.  You can see the command-line tool docker-compose is used to configure and create the runtime containers.
-
-1. In the Web API project, again right-click on the project node, and choose **Add** > **Container Orchestrator Support**. Choose **Docker Compose**, and then select the same target OS.  
+1. In the Web API project, again right-click on the project node, and choose **Add** > **Container Orchestrator Support**. Choose **Docker Compose**, and then select the same target OS.
 
     > [!NOTE]
     > In this step, Visual Studio will offer to create a Dockerfile. If you do this on a project that already has Docker support, you are prompted whether you want to overwrite the existing Dockerfile. If you've made changes in your Dockerfile that you want to keep, choose no.
 
-    Visual Studio makes some changes to your docker compose YML file. Now both services are included.
+    Visual Studio makes some changes to your `docker-compose` YML file. Now both services are included.
 
     ```yaml
-    version: '3.4'
-    
     services:
       webfrontend:
         image: ${DOCKER_REGISTRY-}webfrontend
         build:
           context: .
           dockerfile: WebFrontEnd/Dockerfile
-    
+
       mywebapi:
         image: ${DOCKER_REGISTRY-}mywebapi
         build:
@@ -385,7 +394,7 @@ Congratulations, you're running a Docker Compose application with a custom Docke
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. Add the Redis cache to the `docker.compose.yml` file:
+1. Add the cache to the `docker-compose.yml` file:
 
    ```yml
    redis:
@@ -394,9 +403,9 @@ Congratulations, you're running a Docker Compose application with a custom Docke
 
    Make sure the indentation is at the same level as the other two services.
 
-1. The first project that you add container orchestration to is set up to be launched when you run or debug. You can configure the launch action in the **Project Properties** for the docker-compose project.  On the docker-compose project node, right-click to open the context menu, and then choose **Properties**, or use **Alt**+**Enter**. For example, you can change the page that is loaded by customizing the **Service URL** property.
+1. The first project that you add container orchestration to is set up to be launched when you run or debug. You can configure the launch action in the **Project Properties** for the Docker Compose project. On the Docker Compose project node, right-click to open the context menu, and then choose **Properties**, or use **Alt**+**Enter**. For example, you can change the page that is loaded by customizing the **Service URL** property.
 
-   ![Screenshot of docker-compose project properties.](media/tutorial-multicontainer/launch-action.png)
+   ![Screenshot of Docker Compose project properties.](media/tutorial-multicontainer/launch-action.png)
 
 1. Press **F5**. Here's what you see when launched:
 
@@ -412,7 +421,7 @@ Congratulations, you're running a Docker Compose application with a custom Docke
 
 ## Set up launch profiles
 
-1. This solution has a Redis Cache, but it's not efficient to rebuild the Redis cache container every time you start a debugging session. To avoid that situation, you can set up a couple of launch profiles. Create one profile to start the Redis cache. Create a second profile to start the other services. The second profile can use the Redis cache container that's already running. From the menu bar, you can use the dropdown next to the start button to open a menu with debugging options. Select **Manage Docker Compose Launch Settings**.
+1. This solution has an Azure Cache for Redis, but it's not efficient to rebuild the cache container every time you start a debugging session. To avoid that situation, you can set up a couple of launch profiles. Create one profile to start the Azure Cache for Redis. Create a second profile to start the other services. The second profile can use the cache container that's already running. From the menu bar, you can use the dropdown list next to the start button to open a menu with debugging options. Select **Manage Docker Compose Launch Settings**.
 
    ![Screenshot of Debug Manage Compose Settings menu item.](media/tutorial-multicontainer/vs-2022/debug-dropdown-manage-compose.png)
 
@@ -430,7 +439,7 @@ Congratulations, you're running a Docker Compose application with a custom Docke
 
    (Optional) Create a third profile `Start All` to start everything. You can choose **Start without debugging** for Redis.
 
-1. Choose **Start Redis** from the dropdown list on the main Visual Studio toolbar, press **F5**. The Redis container builds and starts. You can use the **Containers** window to see that it's running. Next, choose **Start My Services** from the dropdown list and press **F5** to launch them. Now you can keep the Redis cache container running throughout many subsequent debug sessions. Every time you use **Start My Services**, those services use the same Redis cache container.
+1. Choose **Start Redis** from the dropdown list on the main Visual Studio toolbar. The Redis container builds and starts without debugging. You can use the **Containers** window to see that it's running. Next, choose **Start My Services** from the dropdown list and press **F5** to launch them. Now you can keep the cache container running throughout many subsequent debug sessions. Every time you use **Start My Services**, those services use the same cache container.
 
 Congratulations, you're running a Docker Compose application with a custom Docker Compose profile.
 
@@ -441,6 +450,7 @@ Congratulations, you're running a Docker Compose application with a custom Docke
 Look at the options for deploying your [containers to Azure](/azure/containers).
 
 ## See also
-  
-[Docker Compose](https://docs.docker.com/compose/)  
+
+[Docker Compose](https://docs.docker.com/compose/)
+
 [Container Tools](./index.yml)

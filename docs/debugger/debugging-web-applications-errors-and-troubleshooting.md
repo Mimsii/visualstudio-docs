@@ -2,7 +2,7 @@
 title: "Debugging web apps -  errors and troubleshooting"
 description: Find links to reference pages to help debug web applications, such as a troubleshooting page and pages that describe each error that you may encounter.
 ms.date: "07/21/2023"
-ms.topic: "reference"
+ms.topic: "error-reference"
 dev_langs:
   - "CSharp"
   - "VB"
@@ -23,14 +23,10 @@ helpviewer_keywords:
   - "troubleshooting Web applications"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Debugging Web Applications: Errors and Troubleshooting
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-For help to set properties for a web application using the IIS administration tool, see [Verify IIS property settings](../debugger/how-to-verify-iis-property-settings.md).
 
 You may encounter the following errors when attempting to debug Web applications.
 

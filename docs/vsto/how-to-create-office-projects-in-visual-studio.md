@@ -20,12 +20,11 @@ helpviewer_keywords:
   - "application-level add-ins [Office development in Visual Studio], creating projects"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Create Office projects in Visual Studio
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   You can use Visual Studio to create VSTO Add-in and document-level customizations for Microsoft Office applications. For more information about these types of projects, see [Office solutions development overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -56,27 +55,27 @@ ms.technology: office-development
 
     Locations have the following formats:
 
-   * [*drive*\]\:
+   * `[drive]:`
 
-   * \\\\*Server*\\*Share*
+   * `\\Server\Share`
 
      Do not use these characters in the location:
 
-   * Asterisk (*)
+   * Asterisk (`*`)
 
-   * Vertical bar (|)
+   * Vertical bar (`|`)
 
-   * Colon (:) (Except following the drive letter.)
+   * Colon (`:`) (Except following the drive letter.)
 
-   * Double quotation mark (") (Paths that contain spaces do not need quotation marks.)
+   * Double quotation mark (`"`) (Paths that contain spaces do not need quotation marks.)
 
-   * Less than (\<)
+   * Less than (`<`)
 
-   * Greater than (>)
+   * Greater than (`>`)
 
-   * Question mark (?)
+   * Question mark (`?`)
 
-   * Percent sign (%)
+   * Percent sign (`%`)
 
 7. Choose the **OK** button.
 
@@ -112,27 +111,27 @@ ms.technology: office-development
 
     Locations have the following formats:
 
-   - [*drive*\]\:
+   - `[drive]:`
 
-   - \\\\*Server*\\*Share*
+   - `\\Server\Share`
 
      Do not use these characters in the location:
 
-   - Asterisk (*)
+   - Asterisk (`*`)
 
-   - Vertical bar (|)
+   - Vertical bar (`|`)
 
-   - Colon (:) (Except following the drive letter.)
+   - Colon (`:`) (Except following the drive letter.)
 
-   - Double quotation mark (") (Paths that contain spaces do not need quotation marks.)
+   - Double quotation mark (`"`) (Paths that contain spaces do not need quotation marks.)
 
-   - Less than (\<)
+   - Less than (`<`)
 
-   - Greater than (>)
+   - Greater than (`>`)
 
-   - Question mark (?)
+   - Question mark (`?`)
 
-   - Percent sign (%)
+   - Percent sign (`%`)
 
    > [!NOTE]
    > If you use an existing document in a  Word 2013  project, only use documents that were created in or converted to  Word 2013 . Similarly, if you use an existing document in a Word 2010 project, only use documents that were created in or converted to Word 2010. Certain features will be disabled in the document if you use a document that was created in an earlier version of Word. If you try to write code that uses these features, you might encounter errors in your project. To convert a document, open it in  Word 2013  or Word 2010, on the **File** tab on the ribbon, choose **Info** > **Convert**.

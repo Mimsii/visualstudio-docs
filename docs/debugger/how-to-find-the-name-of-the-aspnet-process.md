@@ -1,7 +1,7 @@
 ---
 title: Find the running ASP.NET process
 description: Debug a running ASP.NET application in Visual Studio, and attach the Visual Studio debugger to the ASP.NET process by name.   
-ms.date: 11/04/2018
+ms.date: 04/24/2024
 ms.topic: how-to
 dev_langs: 
   - CSharp
@@ -13,12 +13,10 @@ helpviewer_keywords:
   - ASP.NET process
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Find the name of the ASP.NET process
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 To debug a running ASP.NET app, the Visual Studio debugger must attach to the ASP.NET process by name.
 
@@ -28,16 +26,14 @@ To debug a running ASP.NET app, the Visual Studio debugger must attach to the AS
 
 1. In the **Attach to Process** dialog, type the first letters of process names from the following list, or enter them into the search box. The one that is running is the one running the ASP.NET app. Attach to that process to debug the app.
 
-    - *w3wp.exe* is IIS 6.0 and later.
-    - *aspnet_wp.exe* is earlier versions of IIS.
-    - *iisexpress.exe* is IISExpress.
-    - *dotnet.exe* is ASP.NET Core.
-    - *inetinfo.exe* is older ASP applications running in-process.
+    - *w3wp.exe* is for ASP.NET and also for ASP.NET Core when using the [in-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) (IIS 6.0 and later).
+    - *appname.exe* is for ASP.NET Core running on the kestrel server (local default).
+    - *iisexpress.exe* is for IISExpress.
+    - *dotnet.exe* is for ASP.NET Core for the out-of-process hosting model.
+    - aspnet_wp.exe* is for ASP.NET running on IIS before IIS 6.0.
+    - *inetinfo.exe* is for older ASP applications running in-process.
 
->[!NOTE]
->Visual Studio 2012 and earlier ASP.NET code can be on the file system and run on the test server *WebDev.WebServer.exe* or *WebDev.WebServer40.exe*. In this case, for local debugging, attach to *WebDev.WebServer.exe* or *WebDev.WebServer40.exe* instead of the ASP.NET process.
-
-**See also:**
+## Related content
 
 - [Attach to a running process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Prerequisites for remote debugging web applications](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)

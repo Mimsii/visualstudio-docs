@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a stack frame enumerator for a specific platform type."
+description: Retrieves a stack frame enumerator for a specific platform type.
 title: "IDiaStackWalker::getEnumFrames2"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,19 +9,19 @@ helpviewer_keywords:
   - "IDiaStackWalker2::getEnumFrames2 method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackWalker::getEnumFrames2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a stack frame enumerator for a specific platform type.
 
 ## Syntax
 
 ```C++
 
-      HRESULT getEnumFrames2( 
+      HRESULT getEnumFrames2( 
    enum  CV_CPU_TYPE_e    cpuid,
    IDiaStackWalkHelper*   pHelper,
    IDiaEnumStackFrames**  ppEnum

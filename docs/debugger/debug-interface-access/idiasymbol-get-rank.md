@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_rank method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_rank
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the rank (number of dimensions) of a FORTRAN multi-dimensional array.
 
 ## Syntax

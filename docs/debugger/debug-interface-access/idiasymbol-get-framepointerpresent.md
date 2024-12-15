@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the frame pointer is present."
+description: Retrieves a flag that specifies whether the frame pointer is present.
 title: "IDiaSymbol::get_framePointerPresent"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_framePointerPresent method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_framePointerPresent
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the frame pointer is present. Use when the [SymTagEnum Enumeration](../../debugger/debug-interface-access/symtagenum.md) is set to `SymTagFunction`.
 
 ## Syntax
 
 ```C++
-HRESULT get_framePointerPresent( 
+HRESULT get_framePointerPresent( 
    BOOL* pRetVal
 );
 ```
@@ -28,7 +28,7 @@ HRESULT get_framePointerPresent( 
 #### Parameters
  `pRetVal`
 
-[out] ] Returns `TRUE` if the frame pointer is present; otherwise, returns `FALSE`.
+[out]] Returns `TRUE` if the frame pointer is present; otherwise, returns `FALSE`.
 
 ## Return Value
  If successful, returns `S_OK`; otherwise, returns `S_FALSE` or an error code.

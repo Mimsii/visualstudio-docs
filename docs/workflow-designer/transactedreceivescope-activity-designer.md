@@ -7,12 +7,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.TransactedReceiveScope.UI"
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # TransactedReceiveScope Activity Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **TransactedReceiveScope** designer is used to create and configure a <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity.
 

@@ -4,10 +4,10 @@ titleSuffix: ""
 description: Create Docker applications with Visual Studio Code, the Docker Visual Studio Code Extension, Docker Desktop, and Docker Hub.
 author: ghogen
 ms.author: ghogen
-ms.prod: vs-code
+ms.service: vs-code
 ms.topic: tutorial 
-ms.date: 04/12/2023
-# Under contractual obligation with Docker Inc. to provide this content. Contact is: nebuk89. Mike Morton has context on MSFT side, but has moved on to another role. 
+ms.date: 05/30/2024
+# Agreed with Docker Inc. to provide this content. Contact is: nebuk89. Mike Morton has context on MSFT side, but has moved on to another role. 
 ---
 
 # Tutorial: Create a Docker app with Visual Studio Code
@@ -148,14 +148,11 @@ A Dockerfile is a text-based script of instructions that is used to create a con
 
    The tag is a friendly name for the image.
 
-   To create a container image from the command line, use the following command.
+   To create a container image from the command line, use the following command from the `app` folder that has the *Dockerfile*.
 
     ```bash
     docker build -t getting-started .
     ```
-
-    > [!NOTE]
-    > In an external Bash window, go to the `app` folder that has the *Dockerfile* to run this command.
 
 You've used the *Dockerfile* to build a new container image.
 You might have noticed that many "layers" were downloaded.
@@ -191,7 +188,6 @@ Now that you have an image, you can run the application.
 1. Add an item or two to test if it works as you expect.   You can mark items as complete and remove items.
    Your frontend is successfully storing items in the backend.
 
-
 ## Next steps
 
 You've completed this tutorial and you have a running todo list manager with a few items.  You've learned to create container images and run a containerized app.
@@ -201,7 +197,6 @@ Next, try part II of this series:
 
 > [!div class="nextstepaction"]
 > [Update and share a Docker app](docker-tutorial-share.md)
-
 
 Here are some resources that might be useful to you:
 - [Docker Cloud Integration](https://github.com/docker/compose-cli)

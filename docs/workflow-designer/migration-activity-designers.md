@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Migration activity designers
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Migration activity designers are used to call workflow 3.0/3.5 activities from a workflow that targets .NET Framework 4 or later.
 

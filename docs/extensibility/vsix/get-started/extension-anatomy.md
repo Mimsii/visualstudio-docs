@@ -6,12 +6,10 @@ ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
 manager: pchapman
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-sdk
+
+ms.subservice: extensibility-integration
 ---
 # Anatomy of a Visual Studio extension
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 A VSIX package is a .vsix file that contains one or more Visual Studio extensions and the metadata that Visual Studio uses to classify and install the extensions. The VSIX package format follows the Open Packaging Conventions (OPC) standard that means it can be opened by any tool that can open ZIP files.
 
@@ -38,7 +36,7 @@ When the VSIX project builds, it automatically deploys itself to the Experimenta
 :::image type="content" source="../media/deploy-vsix-experimental-instance.png" alt-text="VSIX project properties.":::
 
 ## Experimental instance
-To safeguard your Visual Studio development environment from untested applications that might change it, the VS SDK provides an experimental space that you can use to experiment. You develop new applications by using Visual Studio as usual, but you run them by using this Experimental Instance.
+To safeguard your Visual Studio development environment from untested applications that might change it, the VSSDK provides an experimental space that you can use to experiment. You develop new applications by using Visual Studio as usual, but you run them by using this Experimental Instance.
 
 Every application that has a VSIX package launches the Visual Studio experimental instance in debug mode.
 

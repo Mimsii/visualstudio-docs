@@ -1,6 +1,6 @@
 ---
-description: "Enables a client application to supply bytes of an executable file as  specified by file position."
-title: "IDiaReadExeAtOffsetCallback"
+description: Enables a client application to supply bytes of an executable file as specified by file position.
+title: IDiaReadExeAtOffsetCallback
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -9,19 +9,17 @@ helpviewer_keywords:
   - "IDiaReadExeAtOffsetCallback interface"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaReadExeAtOffsetCallback
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enables a client application to supply bytes of an executable file as  specified by file position.
 
 ## Syntax
 
-```
-IDiaReadExeAtOffsetCallback : IUnknown
-```
+`IDiaReadExeAtOffsetCallback : IUnknown`
 
 ## Methods in Vtable Order
  The following table shows the methods of `IDiaReadExeAtOffsetCallback`.

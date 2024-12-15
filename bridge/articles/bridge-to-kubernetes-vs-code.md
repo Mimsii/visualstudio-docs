@@ -2,14 +2,16 @@
 ms.topic: quickstart
 ms.author: ghogen
 author: ghogen
-manager: jmartens
-ms.technology: bridge
+manager: mijacobs
+ms.subservice: bridge
 title: Redirect traffic between Kubernetes cluster & local code (VS Code)
 ms.date: 09/14/2023
 description: Use Bridge to Kubernetes to redirect traffic between your Kubernetes cluster and code running on your development computer.
 ---
 
 # Use Bridge to Kubernetes (VS Code)
+
+[!INCLUDE [Bridge to Kubernetes deprecation note](./includes/deprecation.md)]
 
 Bridge to Kubernetes allows you to run and debug code on your development computer, while still connected to your Kubernetes cluster with the rest of your application or services. In this guide, you will learn how to use Bridge to Kubernetes to redirect traffic between your Kubernetes cluster and code running on your development computer.
 
@@ -119,7 +121,7 @@ If you're using an AKS cluster that uses managed identity, a security feature pr
 
 Logging output is written to the **Bridge to Kubernetes** window after your development computer is connected to your Kubernetes cluster.
 
-Click on the **Kubernetes** Status bar and choose **Show connection diagnostics information**. This command prints the current environment variables and DNS entires in the logging output.
+Click on the **Kubernetes** Status bar and choose **Show connection diagnostics information**. This command prints the current environment variables and DNS entries in the logging output.
 
 Additionally, you can find the diagnostic logs in the `Bridge to Kubernetes` directory in your development computer's TEMP directory. On Windows 10, that's in `%TEMP%\Bridge to Kubernetes`. On a Mac, the TEMP directory can be found by running `echo $TMPDIR` from a terminal window. On Linux, it is `/tmp/Bridge to Kubernetes`.
 
@@ -145,7 +147,7 @@ var response = await client.SendAsync(request);
 > [!NOTE]
 > To avoid affecting code at every request, you can create a class that inherits from [System.Net.Http.DelegatingHandler](/dotnet/api/system.net.http.delegatinghandler) and override the `SendAsync` method with code similar to the preceding example. You can find code using this technique on the web; one example is [Properly Propagating "kubernetes-route-as" in Bridge to Kubernetes](https://blogs.u2u.be/lander/post/2020/11/25/properly-propagating-kubernetes-route-as-in-bridge-to-kubernetes).
 
-For Node.js services, you can use code similar to the following, taken from the todo-app sample in the [Bridge to Kubernetes repo](https://github.com/Azure/Bridge-To-Kubernetes):
+For Node.js services, you can use code similar to the following, taken from the todo-app sample in the [Bridge to Kubernetes repo](https://github.com/hsubramanianaks/b2k-samples):
 
 ```js
     server.get("/api/stats", function (req, res) {
@@ -200,8 +202,6 @@ When you are using Bridge to Kubernetes in a remote SSH session, if EndpointMana
 Learn more about Bridge to Kubernetes at [How Bridge to Kubernetes works][btk-how-it-works].
 
 If you need to debug multiple services at the same time in parallel, see [Debug multiple services at the same time](parallel-services.md).
-
-Information about the currently supported features and a future roadmap for Bridge to Kubernetes may be found at [Bridge to Kubernetes roadmap](https://github.com/microsoft/mindaro/projects/1).
 
 [azure-kubernetes-service]: /azure/aks/kubernetes-walkthrough
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools

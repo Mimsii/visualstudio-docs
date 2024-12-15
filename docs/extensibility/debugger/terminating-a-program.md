@@ -8,12 +8,11 @@ helpviewer_keywords:
 - debugging [Debugging SDK], terminating a program
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Terminating a program
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following section describes the termination of a single program with one thread.
 
 ## Termination process

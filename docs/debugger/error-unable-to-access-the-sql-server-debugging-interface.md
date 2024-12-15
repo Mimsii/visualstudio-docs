@@ -13,12 +13,11 @@ dev_langs:
   - "SQL"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Error: Unable to access the SQL Server debugging interface
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This message occurs when you attempt SQL debugging on a machine where SQL debugging is not enabled.
 
 ### To correct this error

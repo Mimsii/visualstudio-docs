@@ -7,12 +7,10 @@ helpviewer_keywords:
   - "debugger"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Debugging techniques and tools to help you write better code
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Fixing bugs and errors in your code can be a time-consuming and sometimes frustrating task. It takes time to learn how to debug effectively. A powerful IDE like Visual Studio can make your job a lot easier. An IDE can help you fix errors and debug your code more quickly, and help you write better code with fewer bugs. This article provides a holistic view of the "bug-fixing" process, so you can know when to use the code analyzer, when to use the debugger, how to fix exceptions, and how to code for intent. If you already know that you need to use the debugger, see [First look at the debugger](../debugger/debugger-feature-tour.md).
 
@@ -302,6 +300,11 @@ Here are a couple of important tips for exception handling:
 * For unfamiliar functions that you include in your app, especially functions that interact with external data (such as a web request), check the documentation to see what exceptions the function is likely to throw. This can be critical information for proper error handling and for debugging your app.
 
 For the sample app, fix the `SerializationException` in the `GetJsonData` method by changing `4o` to `40`.
+
+::: moniker range=">= vs-2022"
+> [!TIP]
+> If you have [Copilot](../ide/visual-studio-github-copilot-extension.md), you can get AI assistance while you're debugging exceptions. Just look for the **Ask Copilot** ![Screenshot of Ask Copilot button.](../debugger/media/vs-2022/debug-with-copilot-ask-copilot-button.png) button. For more information, see [Debug with Copilot](../debugger/debug-with-copilot.md).
+::: moniker-end
 
 ## Clarify your code intent by using assert
 

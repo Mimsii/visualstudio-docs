@@ -1,5 +1,5 @@
 ---
-description: "Retrieves an enumerated sequence of debug data streams."
+description: Retrieves an enumerated sequence of debug data streams.
 title: "IDiaSession::getEnumDebugStreams"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::getEnumDebugStreams method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::getEnumDebugStreams
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves an enumerated sequence of debug data streams.
 
 ## Syntax
 
 ```C++
-HRESULT getEnumDebugStreams ( 
+HRESULT getEnumDebugStreams ( 
    IDiaEnumDebugStreams** ppEnumDebugStreams
 )
 ```

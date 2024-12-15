@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugBreakpointResolution2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface represents the information that describes a bound breakpoint.
 
 ## Syntax

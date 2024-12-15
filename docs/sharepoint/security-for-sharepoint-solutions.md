@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, security"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Security for SharePoint solutions
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Visual Studio incorporates the following features to help enhance the security of SharePoint applications.
 
 ## Safe control entries

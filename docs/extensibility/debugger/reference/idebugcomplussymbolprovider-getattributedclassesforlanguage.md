@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the classes with the specified attribute that are implemented in the specified programming language.
 
 ## Syntax
@@ -141,7 +140,7 @@ HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(
                     &pUnused,
                     &cbUnused ) == S_OK)
             {
-                // Only return classes implemeted in the correct language
+                // Only return classes implemented in the correct language
 
                 if (pModule->ClassImplementedInLanguage( rgTypeDefs[iTypeDef],
                         guidLanguage) )

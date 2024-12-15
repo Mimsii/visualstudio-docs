@@ -5,13 +5,11 @@ ms.date: 10/25/2023
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 monikerRange: '>= vs-2022'
 ---
 # Remote Testing (experimental preview)
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Remote testing enables developers to connect Visual Studio 2022 to remote environments for running and debugging tests. This functionality is useful for cross-platform developers who deploy code to multiple different target environments such as different Windows or Linux operating systems. For example, normally a developer pushes changes to a CI pipeline to get feedback from a test running on Linux. With the remote testing feature, you can run Linux tests right from Visual Studio by connecting the Test Explorer to a remote environment.
 
@@ -21,15 +19,15 @@ The following requirements apply to the experimental version of remote testing:
 
 * You must be running Visual Studio 2022 Update 17.0 Preview 3 or later.
 
-* Currently, the feature supports .NET tests only.
+* Currently, the feature supports .NET and .NET Framework tests only.
 
    * If you're interested in remote testing support for other languages, you can [file a suggestion](../ide/suggest-a-feature.md) or **upvote** an existing suggestion. [Supporting C++ remote testing](https://developercommunity.visualstudio.com/t/run-c-unit-tests-on-linux-with-visual-studio/1403357).
 
-* Currently, the feature supports Windows, Ubuntu, and Debian images on the remote environment. 
+* Currently, the feature supports Windows, Ubuntu, and Debian images on the remote environment. For .NET Framework, only remote Windows environments are supported.
 
 * Currently, the bulk of the provisioning of the environment is left to the user's specification.
 
-   The user must install the necessary dependencies in the target environment. For example, if your tests target .NET 6.0, you need to make sure the container has .NET 6.0 installed via your Dockerfile. There might be a prompt to install .NET Core on the remote environment, which is needed to run and discover tests remotely. 
+   The user must install the necessary dependencies in the target environment. For example, if your tests target .NET 6.0, you need to make sure the container has .NET 6.0 installed via your Dockerfile. There might be a prompt to install .NET Core on the remote environment, which is needed to run and discover tests remotely.
 
 * Plan to monitor your connection status to the remote environment by using the **Output** > **Tests** pane.
 
@@ -80,16 +78,16 @@ For a Dockerfile, the environment can be specified in the *testEnvironments.json
 }
 ```
 
-The following example shows the *testenvironments.json* file for a local container image named `<mcr.microsoft.com/dotnet/core/sdk>`.
+The following example shows the *testenvironments.json* file for a local container image named `<mcr.microsoft.com/dotnet/sdk>`.
 
 ```json
 {
     "version": "1",
     "environments": [
         {
-            "name": "linux dotnet-core-sdk-3.1",
+            "name": "linux dotnet-sdk-5.0",
             "type": "docker",
-            "dockerImage": "mcr.microsoft.com/dotnet/core/sdk"
+            "dockerImage": "mcr.microsoft.com/dotnet/sdk"
         }
     ]
 }
@@ -98,7 +96,7 @@ The following example shows the *testenvironments.json* file for a local contain
 The following example shows a Dockerfile for running tests targeting .NET 5.0. The second line makes sure the debugger can connect and run in your container.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/core/sdk:5.0
+FROM mcr.microsoft.com/dotnet/sdk:5.0
 
 RUN wget https://aka.ms/getvsdbgsh && \
     sh getvsdbgsh -v latest  -l /vsdbg
@@ -163,7 +161,7 @@ The environment can be specified in the *testEnvironments.json* file in the root
 
 Review the following prerequisites for a remote Windows environment.
 
-1. Ensure [Windows Projected File System](/windows/win32/projfs/enabling-windows-projected-file-system) is enabled. You can run the following code from an admin PowerShell window to enable it:
+1. Ensure [Windows Projected File System](/windows/win32/projfs/enabling-windows-projected-file-system) is enabled on the remote machine. You can run the following code from an admin PowerShell window to enable it:
 
    ```powershell
     Enable-WindowsOptionalFeature -Online -FeatureName Client-ProjFS -NoRestart
@@ -181,7 +179,7 @@ Review the following prerequisites for a remote Windows environment.
 
 1. Prepare the environment for debugging tests:
 
-   1. Install the [Remote tools SKU](/visualstudio/debugger/remote-debugging?view=vs-2022&preserve-view=true) on the remote environment. 
+   1. Install the [Remote tools SKU](/visualstudio/debugger/remote-debugging?view=vs-2022&preserve-view=true) on the remote environment.
 
    1. Start up the remote debugger as an admin and ensure the Visual Studio user has permissions to connect.
 

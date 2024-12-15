@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackFrame::get_allocatesBasePointer"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackFrame::get_allocatesBasePointer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the base pointer is allocated for code in this address range.
 
 ## Syntax
 
 ```C++
-HRESULT get_allocatesBasePointer ( 
+HRESULT get_allocatesBasePointer ( 
    BOOL* pRetVal
 );
 ```

@@ -5,15 +5,13 @@ ms.date: 05/20/2022
 ms.topic: reference
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
 - CSharp
 - VB
 ---
 # Common Quick Actions
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The sections in this topic list some of the common **Quick Actions** that are applicable to both C# and Visual Basic code. These actions are *code fixes* for either compiler diagnostics, or the built-in [.NET Compiler Platform analyzers](../code-quality/roslyn-analyzers-overview.md) in Visual Studio.
 
@@ -96,10 +94,6 @@ private void MyMethod()
 
 The **Remove Unnecessary Usings/Imports** Quick Action removes any unused `using` and `Import` directives for the current file. When you select this item, unused namespace imports are removed.
 
-| Applicable Languages | Supported Version |
-| - | - |
-| C# and Visual Basic | Visual Studio 2015 and later |
-
 ### Remove unnecessary cast
 
 If you cast a type to another type that doesn't require a cast, the **Remove Unnecessary Cast** Quick Action item removes the unnecessary cast.
@@ -126,10 +120,6 @@ Dim number as Integer = CType(3, Integer)
 Dim number as Integer = 3
 ```
 ---
-
-| Diagnostic ID | Applicable Languages | Supported Version |
-| ------- | -------------------- | ---------------- |
-| IDE0004 | C# and Visual Basic | Visual Studio 2015 and later |
 
 ### Remove unused variables
 
@@ -699,7 +689,7 @@ int fibonacci(int n)
 | ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Visual Studio 2017 version 15.5 and later |
 
-This Quick Action suggests the use of [pattern matching](/dotnet/csharp/pattern-matching) rather than the ```ReferenceEquals``` coding-pattern, where possible.
+This Quick Action suggests the use of [pattern matching](/dotnet/csharp/pattern-matching) rather than the `ReferenceEquals` coding-pattern, where possible.
 
 ```csharp
 // Before

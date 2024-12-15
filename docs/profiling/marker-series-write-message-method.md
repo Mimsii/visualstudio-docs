@@ -9,12 +9,11 @@ helpviewer_keywords:
 - Concurrency, diagnostic::marker_series::write_message method
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # marker_series::write_message method
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Writes a message to the Concurrency Visualizer trace file.
 
 ## Syntax

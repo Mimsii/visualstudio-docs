@@ -10,12 +10,11 @@ helpviewer_keywords:
 - File.AddExistingProject
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Add Existing Project Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Adds an existing project to the current solution.
 
 ## Syntax

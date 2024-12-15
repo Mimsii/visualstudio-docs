@@ -5,12 +5,10 @@ ms.date: 11/14/2017
 ms.topic: conceptual
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Language Server Protocol
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ## What is the Language Server Protocol?
 

@@ -5,14 +5,12 @@ ms.date: 02/14/2019
 ms.topic: reference
 author: mikadumont 
 ms.author: midumont 
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
   - CSharp
 ---
 # Use expression body or block body for lambda expressions
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This refactoring applies to:
 

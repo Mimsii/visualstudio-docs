@@ -13,12 +13,10 @@ helpviewer_keywords:
   - "publishing, ClickOnce"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # Build ClickOnce applications from the command line
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In Visual Studio, you can build projects from the command line, even if they're created in the integrated development environment (IDE). In fact, you can rebuild a project created with Visual Studio on another computer that has only the .NET Framework installed. This capability allows you to reproduce a build by using an automated process, for example, in a central build lab or with advanced scripting techniques beyond the scope of building the project itself.
 

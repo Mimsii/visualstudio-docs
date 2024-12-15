@@ -7,12 +7,10 @@ helpviewer_keywords:
   - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 ---
 # Get started with Live Unit Testing
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 When you enable Live Unit Testing in a Visual Studio solution, it visually depicts your test coverage and the status of your tests. Live Unit Testing also dynamically executes tests whenever you modify your code and immediately notifies you when your changes cause tests to fail.
 
@@ -88,7 +86,7 @@ Now that you've created the solution, you'll create a class library named String
 
    - `StartsWithUpper` returns `true` if a string starts with an uppercase character; otherwise, it returns `false`.
 
-   - `StartsWithLower`returns `true` if a string starts with a lowercase character; otherwise, it returns `false`.
+   - `StartsWithLower` returns `true` if a string starts with a lowercase character; otherwise, it returns `false`.
 
    - `HasEmbeddedSpaces` returns `true` if a string contains an embedded whitespace character; otherwise, it returns `false`.
 

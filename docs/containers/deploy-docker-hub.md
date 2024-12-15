@@ -2,17 +2,16 @@
 title: Deploy an ASP.NET Core web app to Docker Hub
 description: Use Visual Studio Container Tools to manually deploy an ASP.NET Core web application to Docker Hub for convenient hosting of your image repositories.
 author: ghogen
-manager: jmartens
-ms.technology: vs-container-tools
+manager: mijacobs
+ms.subservice: container-tools
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 10/28/2021
 ms.author: ghogen
 monikerRange: ">=vs-2019"
 ---
-# Deploy to Docker Hub
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Deploy to Docker Hub
 
 Docker Hub provides a convenient hosting service for your image repositories. You can easily deploy to Docker Hub manually from Visual Studio.
 
@@ -53,7 +52,7 @@ If you don't have a Docker Hub repository, create one at [Docker Hub](https://hu
 
 1. If you are connecting to your own repository (not part of an organization), leave the checkbox for **Publish to a personal repository** checked. If the repository is owned by an organization, clear the checkbox, and enter the organization name. Enter your Docker username and password for your Docker account that has permissions to access the repository that you are connecting to, and then select **Save**.
 
-   Visual Studio attempts to deploy your image to the Docker Hub.  If successful, the **Publish** screen appears with the URL for the repository image, the image tag, repository, and the build configuration (for example, **Release**).
+   Visual Studio attempts to deploy your image to the Docker Hub. If successful, the **Publish** screen appears with the URL for the repository image, the image tag, repository, and the build configuration (for example, **Release**).
 
    :::moniker range="vs-2019"
    ![Screenshot of Publish screen.](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
@@ -62,7 +61,7 @@ If you don't have a Docker Hub repository, create one at [Docker Hub](https://hu
    :::image type="content" source="media/deploy-docker-hub/vs-2022/container-tools-docker-hub-finished.png" alt-text="Screenshot of Publish screen." lightbox="media/deploy-docker-hub/vs-2022/container-tools-docker-hub-finished.png":::
    :::moniker-end
 
-1. You can update the image at any time by clicking on the **Publish** button on this page.  Or, you can modify or remove the profile, by using the links underneath the URL.
+1. You can update the image at any time by clicking on the **Publish** button on this page. Or, you can modify or remove the profile, by using the links underneath the URL.
 
 ## Next steps
 
@@ -70,7 +69,7 @@ Publish to [Azure Container Registry](/azure/container-registry/) by following t
 
 Set up continuous integration and delivery (CI/CD) with [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
-## See also
+## Related content
 
-[Deploy to Azure App Service](deploy-app-service.md)
-[Visual Studio Container Tools](./index.yml).
+- [Deploy to Azure App Service](deploy-app-service.md)
+- [Visual Studio Container Tools](./index.yml).

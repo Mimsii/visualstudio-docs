@@ -6,12 +6,10 @@ ms.date: 03/18/2019
 ms.topic: ui-reference
 author: cwebster-99
 ms.author: cowebster
-manager: jmartens
-ms.technology: vs-python
+manager: mijacobs
+ms.subservice: python
 ---
 # Python Environments window tabs reference in Python Tools for Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 To open the **Python Environments** window:
 
@@ -99,7 +97,7 @@ When installing packages into an environment that's located in a protected area 
 
 Selecting **Always elevate when installing or removing packages** prevents the dialog from appearing for the environment in question. To make the dialog appear again, go to **Tools** > **Options** > **Python** > **General** and select the button, **Reset all permanently hidden dialogs**.
 
-In that same **Options** tab, you can also select **Always run pip as administrator** to suppress the dialog for all environments. See [Options - General tab](python-support-options-and-settings-in-visual-studio.md#general-options).
+In that same **Options** tab, you can also select **Always run pip as administrator** to suppress the dialog for all environments. For more information, see [Options - Python General tab](python-support-options-and-settings-in-visual-studio.md#general-python-options).
 
 ### Security restrictions with older versions of Python
 

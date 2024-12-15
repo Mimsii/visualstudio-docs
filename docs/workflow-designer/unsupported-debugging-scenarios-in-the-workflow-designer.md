@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Unsupported debugging scenarios in the Workflow Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Workflow Designer does not support the following debugging scenarios:
 

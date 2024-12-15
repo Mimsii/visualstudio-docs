@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: dzsquared
 ms.author: drskwier
-manager: jmartens
-ms.technology: vs-xml-tools
+manager: mijacobs
+ms.subservice: xml-tools
 ---
 # Walkthrough: Using XSLT IntelliSense
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This walkthrough demonstrates how to use XSLT IntelliSense to auto-complete value of some attributes.
 

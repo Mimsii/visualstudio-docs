@@ -18,8 +18,6 @@ monikerRange: '>= vs-2019'
 ---
 # Debug a managed memory dump with .NET Diagnostic Analyzers
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 
 In this tutorial, you will:
 
@@ -87,7 +85,7 @@ My next job is to find that problematic code.
 
    ![Analyze decompiled code](../debugger/media/diagnostic-analyzer-decompiled-code.png)
 
-## See also
+## Related content
 
 * [Use dump files in the debugger](../debugger/using-dump-files.md)
 * [Generate source code from .NET assemblies while debugging](../debugger/decompilation.md)

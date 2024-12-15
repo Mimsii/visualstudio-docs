@@ -3,16 +3,14 @@ title: Productivity tips for .NET developers
 description: Review productivity tips about navigation, code analysis, unit testing, and other features to help you write better C# code for .NET faster.
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
-ms.date: 08/08/2023
+manager: mijacobs
+ms.subservice: general-ide
+ms.date: 12/10/2024
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ---
 # Visual Studio productivity guide for C# developers
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Learn how Visual Studio makes [.NET](/dotnet/fundamentals/) developers who use [C#](/dotnet/csharp/) more productive than ever. Take advantage of our performance and productivity improvements like navigation to decompiled assemblies, variable name suggestions as you type, a hierarchy-view in **Test Explorer**, Go To All (**Ctrl**+**T**) to navigate to file/type/member/symbol declarations, an intelligent **Exception Helper**, code style configuration and enforcement, and many refactorings and code fixes.
 
@@ -104,7 +102,7 @@ You can use an EditorConfig file to codify coding conventions and have them trav
 
 ::: moniker-end
 
-- Add a default or .NET-style EditorConfig file to your project by choosing **Add** > **New Item** from the [Add context menu fly-out](use-solution-explorer.md#the-add-context-menu-fly-out) in Solution Explorer. Then, in the **Add New Item** dialog box, search for "editorconfig". Select either of the **editorconfig File** item templates and then choose **Add**.
+- Add a default or .NET-style EditorConfig file to your project by choosing **Add** > **New Item** from the [Add context menu fly-out](use-solution-explorer.md#the-add-menu) in Solution Explorer. Then, in the **Add New Item** dialog box, search for "editorconfig". Select either of the **editorconfig File** item templates and then choose **Add**.
 
 ::: moniker range="vs-2022"
 
@@ -246,6 +244,12 @@ Visual Studio has many features to help you search and [navigate your code](../i
 ## Improved IntelliSense
 
 Use [IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) for Visual Studio to get context-aware code completions instead of just an alphabetical list. 
+
+::: moniker range=">=vs-2022"
+## AI assistance
+
+If you're using [Copilot](../ide/visual-studio-github-copilot-install-and-states.md), get AI assistance to [help you write and debug code](../ide/ai-assisted-development-visual-studio.md#ai-capabilities-side-by-side).
+::: moniker-end
 
 ## Unit testing
 

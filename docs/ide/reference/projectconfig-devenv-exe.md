@@ -17,12 +17,10 @@ helpviewer_keywords:
 - projects [Visual Studio], cleaning
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /ProjectConfig (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Specifies a project build configuration to be applied when you build, clean, rebuild, or deploy the project named in the `/Project` argument.
 

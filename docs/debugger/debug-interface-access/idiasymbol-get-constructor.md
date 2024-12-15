@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the user-defined data type has a constructor or destructor."
+description: Retrieves a flag that specifies whether the user-defined data type has a constructor or destructor.
 title: "IDiaSymbol::get_constructor"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_constructor method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_constructor
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the user-defined data type has a constructor or destructor.
 
 ## Syntax
 
 ```C++
-HRESULT get_constructor ( 
+HRESULT get_constructor ( 
    BOOL* pRetVal
 );
 ```

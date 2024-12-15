@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugBreakpointUnboundEvent2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface tells the session debug manager (SDM) that a bound breakpoint has been unbound from a loaded program.
 
 ## Syntax

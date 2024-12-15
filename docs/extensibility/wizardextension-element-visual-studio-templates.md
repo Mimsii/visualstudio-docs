@@ -2,7 +2,7 @@
 title: WizardExtension Element (Visual Studio Templates)
 description: Learn about the WizardExtension element and how it contains the registration elements for customizing the template wizard.
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.subservice: general-ide
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
@@ -11,11 +11,10 @@ helpviewer_keywords:
 - <WizardExtension> element [Visual Studio Templates]
 author: maiak
 ms.author: maiak
-manager: jmartens
+manager: mijacobs
 ---
 # WizardExtension Element (Visual Studio Templates)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Contains the registration elements for customizing the template wizard.
 
  \<VSTemplate>

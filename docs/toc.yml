@@ -68,6 +68,25 @@
         href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
       - name: Troubleshoot network errors
         href: /troubleshoot/developer/visualstudio/installation/troubleshoot-network-related-errors?toc=%2Fvisualstudio%2Ftoc.json
+      - name: Visual Studio workload and component IDs
+        items:
+        - name: Overview
+          displayName: Workload and component IDs
+          href: install/workload-and-component-ids.md
+        - name: Visual Studio Enterprise
+          href: install/workload-component-id-vs-enterprise.md
+        - name: Visual Studio Professional
+          href: install/workload-component-id-vs-professional.md
+        - name: Visual Studio Community
+          href: install/workload-component-id-vs-community.md
+        - name: Visual Studio Team Explorer
+          href: install/workload-component-id-vs-team-explorer.md
+        - name: Visual Studio Build Tools
+          href: install/workload-component-id-vs-build-tools.md
+        - name: Visual Studio Test Agent
+          href: install/workload-component-id-vs-test-agent.md
+        - name: Visual Studio Test Controller
+          href: install/workload-component-id-vs-test-controller.md        
     - name: Manage global policies
       items:
       - name: Administrative Templates (ADMX)
@@ -88,25 +107,6 @@
         href: install/disable-or-move-the-package-cache.md
       - name: Tools to detect & manage Visual Studio instances
         href: install/tools-for-managing-visual-studio-instances.md
-      - name: Visual Studio workload and component IDs
-        items:
-        - name: Overview
-          displayName: Workload and component IDs
-          href: install/workload-and-component-ids.md
-        - name: Visual Studio Enterprise
-          href: install/workload-component-id-vs-enterprise.md
-        - name: Visual Studio Professional
-          href: install/workload-component-id-vs-professional.md
-        - name: Visual Studio Community
-          href: install/workload-component-id-vs-community.md
-        - name: Visual Studio Team Explorer
-          href: install/workload-component-id-vs-team-explorer.md
-        - name: Visual Studio Build Tools
-          href: install/workload-component-id-vs-build-tools.md
-        - name: Visual Studio Test Agent
-          href: install/workload-component-id-vs-test-agent.md
-        - name: Visual Studio Test Controller
-          href: install/workload-component-id-vs-test-controller.md        
   - name: Use on Devices, VMs, and Containers
     items:
     - name: Use on Azure virtual machines
@@ -141,14 +141,22 @@
   - name: GitHub Copilot
     expanded: true
     items:
-    - name: Use GitHub Copilot 
+    - name: Install and manage GitHub Copilot
+      href: ide/visual-studio-github-copilot-install-and-states.md
+    - name: Use GitHub Copilot Completions
       href: ide/visual-studio-github-copilot-extension.md
     - name: Use GitHub Copilot Chat 
       href: ide/visual-studio-github-copilot-chat.md
     - name: Tips to improve Copilot Chat results 
       href: ide/copilot-chat-context.md
-    - name: Debug with Copilot
+    - name: Debug with GitHub Copilot
       href: debugger/debug-with-copilot.md
+    - name: Deploy GitHub Copilot to your enterprise
+      href: ide/deploy-copilot-to-enterprise.md
+    - name: Troubleshoot GitHub Copilot state
+      href: ide/visual-studio-github-copilot-troubleshoot.md
+    - name: Admin controls for GitHub Copilot
+      href: ide/visual-studio-github-copilot-admin.md
   - name: IntelliCode
     items:
     - name: 'What is IntelliCode?'
@@ -228,7 +236,7 @@
       - name: Create web templates
         href: ide/how-to-manually-create-web-templates.md
       - name: Troubleshoot templates
-        href: /troubleshoot/developer/visualstudio/project-build/how-to-troubleshoot-templates?toc=%2Fvisualstudio%2Fmsbuild%2Ftoc.json
+        href: /troubleshoot/developer/visualstudio/project-build/how-to-troubleshoot-templates?toc=%2Fvisualstudio%2Ftoc.json
     - name: Locate project and item templates
       href: ide/how-to-locate-and-organize-project-and-item-templates.md
     - name: Customize templates
@@ -296,16 +304,10 @@
           href: ide/visual-cpp-code-snippets.md
         - name: Insert XML comments
           href: ide/reference/generate-xml-documentation-comments.md
-        - name: Use surround-with code snippets
-          href: ide/how-to-use-surround-with-code-snippets.md
-        - name: Best practices
-          href: ide/best-practices-for-using-code-snippets.md
         - name: 'Walkthrough: Create a code snippet'
           href: ide/walkthrough-creating-a-code-snippet.md
         - name: Distribute code snippets
           href: ide/how-to-distribute-code-snippets.md
-        - name: Code snippet functions
-          href: ide/code-snippet-functions.md
         - name: Code snippets schema reference
           href: ide/code-snippets-schema-reference.md
         - name: Troubleshoot snippets
@@ -520,6 +522,14 @@
           href: /dotnet/fundamentals/code-analysis/style-rules/
         - name: .NET code refactoring conventions
           href: ide/reference/code-styles-refactoring-options.md
+        - name: IDE-only code style rules
+          items:
+          - name: JSON001
+            href: ide/reference/json001.md
+          - name: JSON002
+            href: ide/reference/json002.md
+          - name: RE0001
+            href: ide/reference/re0001.md
     - name: Customize the scroll bar
       href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
     - name: Set bookmarks in code
@@ -536,6 +546,8 @@
     href: ide/viewing-the-structure-of-code.md
   - name: Use the Task List
     href: ide/using-the-task-list.md
+  - name: Compare files - diff view
+    href: ide/compare-with.md
   - name: Class Designer
     items:
     - name: Design classes in Class Designer
@@ -706,8 +718,6 @@
       href: ide/understanding-build-configurations.md
     - name: Create and edit configurations
       href: ide/how-to-create-and-edit-configurations.md
-    - name: Manage build configurations with Visual Basic developer settings
-      href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
     - name: Build multiple configurations simultaneously
       href: ide/how-to-build-multiple-configurations-simultaneously.md
   - name: Build platforms
@@ -731,9 +741,56 @@
     href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: Debug >>
   href: debugger/index.yml
-- name: Track changes with Git >>
+- name: Git in Visual Studio
   displayName: git, github, azure dev ops, dev ops, version control, source control, source, versioning, clone, integrate, release
-  href: version-control/index.yml
+  items:
+  - name: About Git in Visual Studio
+    href: version-control/git-with-visual-studio.md
+  - name: Get started
+    expanded: true
+    items:
+    - name: Clone a repo
+      href: version-control/git-clone-repository.md
+    - name: Create a repo
+      href: version-control/git-create-repository.md
+    - name: Git settings and preferences
+      href: version-control/git-settings.md
+  - name: Innerloop workflow
+    expanded: true
+    items:
+    - name: Create a branch
+      href: version-control/git-create-branch.md
+    - name: Make a commit
+      href: version-control/git-make-commit.md
+    - name: Stage lines of code
+      href: version-control/git-line-staging.md
+    - name: Push to remote
+      href: version-control/git-push-remote.md
+    - name: Create a pull request
+      href: version-control/git-create-pull-request.md
+    - name: Fetch, pull, and sync
+      href: version-control/git-fetch-pull-sync.md
+  - name: Repo management
+    expanded: true
+    items:
+    - name: Browse a repo
+      href: version-control/git-browse-repository.md
+    - name: Manage a repo
+      href: version-control/git-manage-repository.md
+    - name: Work with multiple repos
+      href: version-control/git-multi-repository-support.md
+    - name: Resolve merge conflicts
+      href: version-control/git-resolve-conflicts.md
+  - name: Reference
+    items:
+    - name: Git Changes with no active repo set
+      href: version-control/git-changes-with-no-active-repo.md
+  - name: Resources
+    items:
+    - name: Create a GitHub account
+      href: version-control/git-create-github-account.md
+    - name: Compare Git and Team Explorer side-by-side
+      href: version-control/git-team-explorer-feature-comparison.md
 - name: Test >>
   displayName: Unit testing
   href: test/index.yml
@@ -755,11 +812,6 @@
   - name: Customize the IDE
     displayName: Personalize
     href: ide/personalizing-the-visual-studio-ide.md
-  - name: Personalize the color theme and text
-    href: ide/quickstart-personalize-the-ide.md
-  - name: Environment settings
-    displayName: profiles
-    href: ide/environment-settings.md
   - name: Synchronized settings
     href: ide/synchronized-settings-in-visual-studio.md
   - name: Fonts and colors
@@ -997,6 +1049,8 @@
       items:
       - name: Project Designer reference
         href: ide/reference/project-properties-reference.md
+      - name: .NET Project Designer (C#)
+        href: ide/reference/project-designer-dotnet-csharp.md
       - name: Application Page, Project Designer (UWP)
         href: ide/reference/application-page-project-designer-uwp.md
       - name: Application Page, Project Designer (Visual Basic)
@@ -1230,6 +1284,8 @@
     href: /visualstudio/productinfo/vs-servicing-vs/
   - name: Offline help >>
     href: help-viewer/overview.md
+  - name: Welcome to Visual Studio docs
+    href: ide/not-in-toc/welcome-to-visual-studio-docs.md
 - name: Send feedback
   items:
   - name: Suggest a feature

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Obtains a specified interface across process boundaries.
 
 ## Syntax

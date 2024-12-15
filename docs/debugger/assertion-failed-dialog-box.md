@@ -1,5 +1,5 @@
 ---
-title: "Assertion Failed Dialog Box"
+title: Assertion Failed Dialog Box
 description: Learn about the Assertion Failed dialog box, which is a dialog box that you might encounter in the debugging user interface of Visual Studio.
 ms.date: "11/04/2016"
 ms.topic: "ui-reference"
@@ -17,12 +17,12 @@ helpviewer_keywords:
   - "Assertion Failed dialog box"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # Assertion Failed Dialog Box
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 An assertion statement specifies a condition that you expect to hold true at some particular point in your program. If that condition does not hold true, the assertion fails, execution of your program is interrupted, and this dialog box appears.
 
 |Click|To|

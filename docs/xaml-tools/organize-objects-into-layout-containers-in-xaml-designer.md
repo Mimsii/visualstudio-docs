@@ -5,12 +5,10 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 author: maddymontaquila
 ms.author: maleger
-manager: jmartens
-ms.technology: vs-xaml-tools
+manager: mijacobs
+ms.subservice: xaml-tools
 ---
 # Organize objects into layout containers in XAML Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This article describes layout panels and controls for XAML Designer.
 

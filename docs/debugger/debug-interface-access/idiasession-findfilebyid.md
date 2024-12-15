@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a source file by source file identifier."
+description: Retrieves a source file by source file identifier.
 title: "IDiaSession::findFileById"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::findFileById method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findFileById
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a source file by source file identifier.
 
 ## Syntax
 
 ```C++
-HRESULT findFileById ( 
+HRESULT findFileById ( 
    DWORD            uniqueId,
    IDiaSourceFile** ppResult
 );

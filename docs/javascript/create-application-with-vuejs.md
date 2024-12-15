@@ -6,15 +6,13 @@ ms.topic: "how-to"
 ms.devlang: javascript
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-javascript
+manager: mijacobs
+ms.subservice: javascript-typescript
 dev_langs:
   - JavaScript
 monikerRange: '=vs-2019'
 ---
 # Create a Vue.js application using Node.js Tools for Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio supports app development with the [Vue.js](https://vuejs.org/) framework in either JavaScript or TypeScript.
 
@@ -156,7 +154,7 @@ An unknown issue with the vue-cli 3.0 might prevent automating the build process
 
 Alternatively, you can build the vue-cli 3.0 project as a pre-build event using the ASP.NET project properties. Right-click the project, choose **Properties**, and include the following commands in the **Build** tab, in the **Pre-build event command line** text box.
 
-``` cmd
+```cmd
 cd ./client-app
 npm run build
 cd ../

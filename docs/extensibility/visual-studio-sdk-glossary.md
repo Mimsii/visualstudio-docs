@@ -7,12 +7,11 @@ helpviewer_keywords:
 - glossary [Visual Studio SDK]
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Visual Studio SDK glossary
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This glossary provides definitions for terms that are used in the Visual Studio SDK documentation.
 
 ## Terms

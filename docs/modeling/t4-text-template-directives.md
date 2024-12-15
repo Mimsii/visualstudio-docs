@@ -12,12 +12,10 @@ helpviewer_keywords:
 - text templates, template directive
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # T4 Text Template Directives
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Directives provide instructions to the text template transformation engine.
 

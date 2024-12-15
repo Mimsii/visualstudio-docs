@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_virtualTableShape method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_virtualTableShape
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the symbol interface of the type of the virtual table for a user-defined type.
 
 ## Syntax

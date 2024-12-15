@@ -9,14 +9,12 @@ helpviewer_keywords:
 - Diff Devenv switch
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Diff (devenv.exe)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-Compares two files. The differences are displayed in a special Visual Studio window.
+Compares two files. The differences are displayed in a special Visual Studio window. See [Compare files - diff view](../compare-with.md)
 
 ## Syntax
 

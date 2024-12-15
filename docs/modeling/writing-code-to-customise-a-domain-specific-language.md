@@ -7,13 +7,11 @@ helpviewer_keywords:
   - "Domain-Specific Language, programming"
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 
 # Write code to customize a domain-specific language
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This section shows you how to use custom code to access, modify, or create a model in a domain-specific language (DSL).
 

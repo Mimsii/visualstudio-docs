@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_value method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_value
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the value of a constant.
 
 ## Syntax
@@ -45,7 +44,7 @@ The supplied VARIANT must be initialized before it is passed to this method. For
 void ProcessValue(IDiaSymbol *pSymbol)
 {
     VARIANT value;
-    value.vt = VT_EMPTY;    // Initialize variant for use.
+    VariantInit(&value);    // Initialize variant for use.
     if (pSymbol->get_value(&value) == S_OK)
     {
         // Do something with value.
@@ -66,3 +65,4 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 
 ## See also
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Variant Manipulation Functions](/previous-versions/windows/desktop/automat/variant-manipulation-functions)

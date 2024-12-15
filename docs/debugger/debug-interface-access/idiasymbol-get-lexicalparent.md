@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_lexicalParent method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_lexicalParent
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a reference to the lexical parent of the symbol.
 
 ## Syntax
 
 ```C++
-HRESULT get_lexicalParent ( 
+HRESULT get_lexicalParent ( 
    IDiaSymbol** pRetVal
 );
 ```

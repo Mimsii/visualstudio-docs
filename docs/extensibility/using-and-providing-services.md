@@ -9,12 +9,11 @@ helpviewer_keywords:
 - services
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Using and Providing Services
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 A service is a contract between two VSPackages. One VSPackage offers a specific set of interfaces for another VSPackage to consume. For example, Visual Studio offers the <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service to any VSPackage it loads. This service provides the <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, which can be used to write to the activity log. For more information, see [How to: Use the Activity Log](../extensibility/how-to-use-the-activity-log.md).
 
  VSPackages can offer services of their own by using the <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface..
@@ -27,21 +26,18 @@ A service is a contract between two VSPackages. One VSPackage offers a specific 
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Provides basic windowing and UI-related functionality in the IDE, such as the ability to create tools and document windows.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Provides basic solution-related functionality, such as the ability to enumerate projects, create new projects, and monitor project changes.|
 
-## In This Section
-- [Service Essentials](../extensibility/internals/service-essentials.md)
- Presents the important elements of a Visual Studio service.
+## In this section
 
-- [How to: Get a Service](../extensibility/how-to-get-a-service.md)
- Discusses how to request (consume) a service.
+- [Service Essentials](../extensibility/internals/service-essentials.md) presents the important elements of a Visual Studio service.
 
-- [How to: Provide a Service](../extensibility/how-to-provide-a-service.md)
- Discusses how to provide a service.
+- [How to: Get a Service](../extensibility/how-to-get-a-service.md) discusses how to request (consume) a service.
 
-- [How to: Provide an Asynchronous Visual Studio Service](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)
- Discusses how to provide an asynchronous service.
+- [How to: Provide a Service](../extensibility/how-to-provide-a-service.md) discusses how to provide a service.
 
-- [How to: Troubleshoot Services](../extensibility/how-to-troubleshoot-services.md)
- Discusses common problems and presents solutions to them.
+- [How to: Provide an Asynchronous Visual Studio Service](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md) discusses how to provide an asynchronous service.
 
-## Related Sections
+- [How to: Troubleshoot Services](../extensibility/how-to-troubleshoot-services.md) discusses common problems and presents solutions to them.
+
+## Related sections
+
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

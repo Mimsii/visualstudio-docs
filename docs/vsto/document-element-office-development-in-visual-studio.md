@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "<document> element"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # &lt;document&gt; element (Office development in Visual Studio)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The `document` element of the `vstov4` namespace stores customization-specific information for document-level customizations.
 
 ## Syntax

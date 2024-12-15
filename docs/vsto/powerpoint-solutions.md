@@ -15,12 +15,11 @@ helpviewer_keywords:
   - "Office projects [Office development in Visual Studio], PowerPoint"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # PowerPoint solutions
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Visual Studio provides project templates you can use to create VSTO Add-ins for Microsoft Office PowerPoint. You can use VSTO Add-ins to automate PowerPoint, extend PowerPoint features, or customize the PowerPoint user interface (UI).
 
  For more information about VSTO Add-ins, see [Get started programming VSTO Add-ins](getting-started-programming-vsto-add-ins.md) and [Architecture of VSTO Add-ins](architecture-of-vsto-add-ins.md). If you are new to programming with Microsoft Office, see [Get started &#40;Office development in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md).
@@ -38,7 +37,7 @@ ms.technology: office-development
 
 - Add or change shapes on a slide.
 
-  To access the PowerPoint object model from a VSTO Add-in, use the `Application` field of the `ThisAddIn` class in your project. The `Application` field returns a [Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) object that represents the current instance of PowerPoint. For more information, see [Program VSTO Add-Ins](programming-vsto-add-ins.md).
+  To access the PowerPoint object model from a VSTO Add-in, use the `Application` field of the `ThisAddIn` class in your project. The `Application` field returns an [Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) object that represents the current instance of PowerPoint. For more information, see [Program VSTO Add-Ins](programming-vsto-add-ins.md).
 
   When you call into the PowerPoint object model, you use types that are provided in the primary interop assembly for PowerPoint. The primary interop assembly acts as a bridge between the managed code in the VSTO Add-in and the COM object model in PowerPoint. All types in the PowerPoint primary interop assembly are defined in the [Microsoft.Office.Interop.PowerPoint](/previous-versions/office/developer/office-2010/ff763170(v=office.14)) namespace. For more information about primary interop assemblies, see [Office solutions development overview &#40;VSTO&#41;](office-solutions-development-overview-vsto.md) and [Office primary interop assemblies](office-primary-interop-assemblies.md).
 

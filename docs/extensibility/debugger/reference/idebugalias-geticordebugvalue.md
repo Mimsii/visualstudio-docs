@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugAlias::GetICorDebugValue method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugAlias::GetICorDebugValue
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a managed code interface that represents the value associated with this alias.
 
 ## Syntax

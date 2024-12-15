@@ -9,12 +9,10 @@ helpviewer_keywords:
   - "IntelliTrace, debugging applications in production"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Using the IntelliTrace stand-alone collector (C#, Visual Basic)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **IntelliTrace stand-alone collector** lets you collect IntelliTrace diagnostic data for your apps on production servers or other environments without installing Visual Studio on the target machine and without changing the target system's environment. The IntelliTrace stand-alone collector works on web, SharePoint, WPF and Windows Forms apps. When you're done collecting data, just delete the collector to uninstall it.
 
@@ -60,9 +58,9 @@ The **IntelliTrace stand-alone collector** lets you collect IntelliTrace diagnos
 
 5. [Collect data from a Web app or SharePoint application](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     -or-
+    -or-
 
-     [Collect data from a managed app](#BKMK_Collect_Data_from_Executables)
+    [Collect data from a managed app](#BKMK_Collect_Data_from_Executables)
 
 6. [Open the .iTrace file in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -173,7 +171,7 @@ The **IntelliTrace stand-alone collector** lets you collect IntelliTrace diagnos
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       -or-
+        -or-
 
    - To set up permissions with Windows Explorer (or File Explorer):
 

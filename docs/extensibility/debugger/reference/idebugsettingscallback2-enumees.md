@@ -7,15 +7,14 @@ helpviewer_keywords:
 - IDebugSettingsCallback2::EnumEEs
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSettingsCallback2::EnumEEs
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enumerates the available expression evaluators given the language and vendor identifiers.
 
 ## Syntax

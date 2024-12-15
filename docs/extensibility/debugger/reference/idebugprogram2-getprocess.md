@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProgram2::GetProcess
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProgram2::GetProcess
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Get the process that this program is running in.
 
 ## Syntax

@@ -6,19 +6,18 @@ ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
 dev_langs:
-- VB
-- CSharp
-- C++
 - C++
 helpviewer_keywords:
 - VCMessage task (MSBuild (C++))
 - MSBuild (C++), VCMessage task
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # VCMessage task
+
+[!INCLUDE [C++-specific task](./includes/cpp-task.md)]
 
 Logs warning and error messages during a build.
 

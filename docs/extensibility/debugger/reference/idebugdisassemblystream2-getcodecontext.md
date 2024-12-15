@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeContext
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugDisassemblyStream2::GetCodeContext
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Returns a code context object corresponding to a specified code location identifier.
 
 ## Syntax

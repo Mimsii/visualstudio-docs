@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugEngineLaunch2::CanTerminateProcess
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngineLaunch2::CanTerminateProcess
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Determines if a process can be terminated.
 
 ## Syntax

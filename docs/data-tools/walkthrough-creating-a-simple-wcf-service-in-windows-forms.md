@@ -13,12 +13,11 @@ helpviewer_keywords:
 - WCF services, walkthrough
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Walkthrough: Create a simple WCF service in .NET Framework Windows Forms
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Walkthrough: Create a simple WCF service in .NET Framework Windows Forms
 
 This walkthrough demonstrates how to create a simple Windows Communication Foundation (WCF) service, test it, and then access it from a .NET Framework Windows Forms application.
 
@@ -34,12 +33,12 @@ The WCF tools are not installed with the .NET workload; use the Visual Studio In
 
 2. On the start window, choose **Create a new project**.
 
-3. Type **wcf service library** in the search box on the **Create a new project** page. Select either the C# or Visual Basic template for **WCF Service Library**, and then click **Next**.
+3. Type **wcf service library** in the search box on the **Create a new project** page. Select either the C# or Visual Basic template for **WCF Service Library**, and then select **Next**.
 
    ![Create new WCF Service Library project in Visual Studio](media/vs-2019/create-new-wcf-service-library.png)
 
    > [!TIP]
-   > If you don't see any templates, you may need to install the **Windows Communication Foundation** component of Visual Studio. Choose **Install more tools and features** to open Visual Studio Installer. Choose the **Individual components** tab, scroll down to **Development activities**, and then select **Windows Communication Foundation**. Click **Modify**.
+   > If you don't see any templates, you might need to install the **Windows Communication Foundation** component of Visual Studio. Choose **Install more tools and features** to open Visual Studio Installer. Choose the **Individual components** tab, scroll down to **Development activities**, and then select **Windows Communication Foundation**. Click **Modify**.
 
 4. On the **Configure your new project** page, click **Create**.
 
@@ -134,7 +133,7 @@ The WCF tools are not installed with the .NET workload; use the Visual Studio In
 
 1. From the **Toolbox**, drag a `TextBox` control, a `Label` control, and a `Button` control onto the form.
 
-     [ ![Screenshot showing adding controls to the form.](../data-tools/media/vs-2022/windows-communication-foundation-client-app.png) ](../data-tools/media/vs-2022/windows-communication-foundation-client-app.png#lightbox)
+     :::image type="content" alt-text="Screenshot showing adding controls to the form." source="../data-tools/media/vs-2022/windows-communication-foundation-client-app.png" lightbox="../data-tools/media/vs-2022/windows-communication-foundation-client-app.png":::
 
 1. Double-click the `Button`, and add the following code in the `Click` event handler:
 
@@ -151,6 +150,6 @@ The WCF tools are not installed with the .NET workload; use the Visual Studio In
 
      ![Screenshot of the running form showing the result.](../data-tools/media/vs-2022/windows-forms-app.png)
 
-## See also
+## Related content
 
 - [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

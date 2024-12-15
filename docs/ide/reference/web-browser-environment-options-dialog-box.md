@@ -18,25 +18,23 @@ helpviewer_keywords:
 - Internet Explorer, setting options
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Options dialog box: Environment \> Web Browser
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Sets options for both the internal Web browser and Internet Explorer. To access this dialog box, click **Options** on the **Tools** menu, expand the **Environment** folder, and select **Web Browser**.
 
 > [!Important]
 > This feature is deprecated in Visual Studio 2022 and won’t be supported going forward.
 >
-> For more information about Visual Studio 2022, check out our [release notes]( /visualstudio/releases/2022/release-notes) and the Visual Studio [roadmap](/visualstudio/productinfo/vs-roadmap/).
+> For more information about Visual Studio 2022, check out our [release notes](/visualstudio/releases/2022/release-notes) and the Visual Studio [roadmap](/visualstudio/productinfo/vs-roadmap/).
 
 > [!IMPORTANT]
 > Opening certain files or components from the Web can execute code on your computer.
 
 > [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Reset settings](../environment-settings.md#reset-settings).
+> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Reset settings](../personalizing-the-visual-studio-ide.md#reset-all-settings).
 
 ## Home page
 

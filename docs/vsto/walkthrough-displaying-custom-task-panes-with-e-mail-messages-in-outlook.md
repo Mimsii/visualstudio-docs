@@ -15,12 +15,11 @@ helpviewer_keywords:
   - "custom task panes [Office development in Visual Studio], displaying with e-mail messages"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Walkthrough: Display custom task panes with email messages in Outlook
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This walkthrough demonstrates how to display a unique instance of a custom task pane with each email message that is created or opened. Users can display or hide the custom task pane by using a button on the Ribbon of each e-mail message.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

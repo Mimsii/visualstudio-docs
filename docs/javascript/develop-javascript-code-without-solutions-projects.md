@@ -7,14 +7,12 @@ ms.topic: "how-to"
 ms.devlang: javascript
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-javascript
+manager: mijacobs
+ms.subservice: javascript-typescript
 dev_langs:
   - JavaScript
 ---
 # Develop JavaScript and TypeScript code in Visual Studio without solutions or projects
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Starting in Visual Studio 2017, you can [develop code without projects or solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), which enables you to open a folder of code and immediately start working with rich editor support such as IntelliSense, search, refactoring, debugging, and more. In addition to these features, the Node.js Tools for Visual Studio adds support for building TypeScript files, managing npm packages, and running npm scripts.
 
@@ -79,9 +77,7 @@ You can enable the unit test integration in Visual Studio by specifying a test r
 }
 ```
 
-The test runner enumerates the locally installed packages to determine which test framework to use.
-If none of the supported frameworks are recognized, the test runner defaults to *ExportRunner*. The other
-supported frameworks are:
+The test runner enumerates the locally installed packages to determine which test framework to use. If none of the supported frameworks are recognized, the test runner defaults to *ExportRunner*. The other supported frameworks are:
 
 * Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))

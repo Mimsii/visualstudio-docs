@@ -2,18 +2,17 @@
 title: Modules
 description: This article describes the definition and role of a module in the debugger architecture in Visual Studio.
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
 helpviewer_keywords:
 - modules
 - debugging [Debugging SDK], modules
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Modules
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 In terms of the debugger architecture, a *module*:
 
 - Is a physical container of code, such as an executable file or a DLL.

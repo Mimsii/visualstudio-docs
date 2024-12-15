@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugPortEx2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugPortEx2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface lets the session debug manager (SDM) control the programs and processes running on a port.
 
 ## Syntax

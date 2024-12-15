@@ -9,12 +9,10 @@ helpviewer_keywords:
 - upgrade Devenv switch
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Upgrade (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Updates the solution file and all of its project files, or the project file specified, to the current Visual Studio formats for these files.
 

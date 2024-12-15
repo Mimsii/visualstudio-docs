@@ -1,22 +1,22 @@
 ---
 title: Analyze memory usage for .NET objects
 description: View how much memory your app uses and what code paths allocate the most memory by using the .NET Object Allocation tool.
-ms.date: 07/19/2023
+ms.date: 01/31/2024
 ms.topic: how-to
 helpviewer_keywords: 
   - memory allocation, memory usage
 author: Mikejo5000
 ms.author: mikejo
 manager: AndSter
-ms.technology: vs-ide-debug
+ms.subservice: debug-diagnostics
 ---
 # Analyze memory usage by using the .NET Object Allocation tool
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can see how much memory your app uses and what code paths allocate the most memory by using the .NET Object Allocation tool.
 
 After running the tool, you can see the function execution paths where objects are being allocated. You can then trace back to the root of the call tree that is taking up the most memory.
+
+For a tutorial that shows how to improve performance using the .NET Object Allocation tool, see [Case study: Beginner's guide to optimizing code](../profiling/optimize-code-using-profiling-tools.md).
 
 ## Setup
 
@@ -32,6 +32,8 @@ After running the tool, you can see the function execution paths where objects a
    ::: moniker-end
 
 1. Select the **Start** button to run the tool.
+
+   If you enable the **Start with collection paused** option before starting the profiler, data will not be collected until you select the **Record** button in the diagnostic session view.
 
 1. After the tool starts running, go through the scenario you want to profile in your app. Then select **Stop collection** or close your app to see your data.
 

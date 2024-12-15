@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "publisherIdentity Element [ClickOnce deployment manifest], syntax, elements, and attributes"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;publisherIdentity&gt; element (ClickOnce deployment)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Contains information about the publisher that signed this deployment manifest.
 
 ## Syntax

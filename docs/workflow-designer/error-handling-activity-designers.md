@@ -5,11 +5,9 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Error Handling Activity Designers
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Error Handling activity designers are used to manage error handling in Workflow Designer. The topics contained in this section provide guidance on how to use the Workflow Designer activity and template designers.

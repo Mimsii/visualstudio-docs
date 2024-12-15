@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates whether the section cannot be paged out of memory."
+description: Retrieves a flag that indicates whether the section cannot be paged out of memory.
 title: "IDiaSectionContrib::get_notPaged"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_notPaged method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_notPaged
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the section cannot be paged out of memory.
 
 ## Syntax
 
 ```C++
-HRESULT get_notPaged ( 
+HRESULT get_notPaged ( 
    BOOL* pRetVal
 );
 ```

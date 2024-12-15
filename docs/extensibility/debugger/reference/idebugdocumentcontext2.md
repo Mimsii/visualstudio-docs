@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugDocumentContext2
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugDocumentContext2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface represents a position in a source file document.
 
 ## Syntax

@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the symbol that contains a specified metadata token."
+description: Retrieves the symbol that contains a specified metadata token.
 title: "IDiaSession::findSymbolByToken"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::findSymbolByToken method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findSymbolByToken
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the symbol that contains a specified metadata token.
 
 ## Syntax
 
 ```C++
-HRESULT findSymbolByToken ( 
+HRESULT findSymbolByToken ( 
    ULONG        token,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol

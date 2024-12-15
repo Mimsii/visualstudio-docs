@@ -9,18 +9,18 @@ f1_keywords:
 - VC.Project.VCCLCompilerTool.TreatSpecificWarningsAsErrors
 - VC.Project.VCCLCompilerTool.CreateHotpatchableImage
 dev_langs:
-- VB
-- CSharp
 - C++
 helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # CL task
+
+[!INCLUDE [C++-specific task](./includes/cpp-task.md)]
 
 Wraps the Microsoft C++ compiler tool, *cl.exe*. The compiler produces executable (*.exe*) files, dynamic-link library (*.dll*) files, or code module (*.netmodule*) files. For more information, see [Compiler options](/cpp/build/reference/compiler-options) and [Use MSBuild from the command line](/cpp/build/msbuild-visual-cpp) and [Use the Microsoft C++ toolset from the command line](/cpp/build/building-on-the-command-line).
 
@@ -234,13 +234,21 @@ Wraps the Microsoft C++ compiler tool, *cl.exe*. The compiler produces executabl
 
    Optional String parameter.
 
-   Specifies the architecture for code generation that uses the Streaming SIMD Extensions (SSE) and Streaming SIMD Extensions 2 (SSE2) instructions.
+   Specifies the architecture for code generation that uses the Streaming SIMD Extensions (SSE), Streaming SIMD Extensions 2 (SSE2) and Advanced Vector Extensions (AVX) instructions.
 
    Specify one of the following values, each of which corresponds to a command-line option.
+
+  - **NoExtensions** - **/arch:IA32**
 
   - **StreamingSIMDExtensions** - **/arch:SSE**
 
   - **StreamingSIMDExtensions2** - **/arch:SSE2**
+
+  - **AdvancedVectorExtensions** - **/arch:AVX**
+
+  - **AdvancedVectorExtensions2** - **/arch:AVX2**
+
+  - **AdvancedVectorExtensions512** - **/arch:AVX512**
 
     For more information, see [/arch (x86)](/cpp/build/reference/arch-x86).
 

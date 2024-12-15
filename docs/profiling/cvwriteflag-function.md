@@ -15,12 +15,11 @@ helpviewer_keywords:
   - CvWriteFlagExVW method
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # CvWriteFlag function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Writes a flag to the Concurrency Visualizer trace file.
 
 ## Syntax

@@ -8,12 +8,11 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluators
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Implement an expression evaluator
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 > [!IMPORTANT]
 > In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, see [CLR expression evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
@@ -54,8 +53,8 @@ ms.technology: vs-ide-debug
   The EE consumes all of these interfaces.
 
 ## In this section
- [Expression evaluator implementation strategy](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)
- Defines a three-step process for the expression evaluator (EE) implementation strategy.
+
+[Expression evaluator implementation strategy](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) defines a three-step process for the expression evaluator (EE) implementation strategy.
 
 ## Related content
 - [Writing a CLR expression evaluator](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

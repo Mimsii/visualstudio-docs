@@ -3,18 +3,16 @@ description: "Specifies the minimum version of the .NET Framework that is requir
 title: RequiredFrameworkVersion Element (Visual Studio Templates)
 titleSuffix: ""
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.subservice: general-ide
 ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 author: maiak
 ms.author: maiak
-manager: jmartens
+manager: mijacobs
 ---
 # RequiredFrameworkVersion element (Visual Studio templates)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Specifies the minimum version of the .NET Framework that is required by the template. It causes the **Target Framework Version** dropdown to be displayed in the **New Project** dialog. The `RequiredFrameworkVersion` element also determines the lowest value available in the dropdown.
 

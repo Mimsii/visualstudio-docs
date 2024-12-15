@@ -9,15 +9,14 @@ helpviewer_keywords:
 - PENDING_BP_STATE_FLAGS enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # PENDING_BP_STATE_FLAGS
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies the pending breakpoint state flags.
 
 ## Syntax

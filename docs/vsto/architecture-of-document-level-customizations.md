@@ -17,12 +17,11 @@ helpviewer_keywords:
   - "architecture [Office development in Visual Studio], document-level customizations"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Architecture of document-level customizations
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Visual Studio 2013 includes projects for creating document-level customizations for Microsoft Office Word and Microsoft Office Excel. This topic describes the following aspects of document-level customizations:
 
 - [Understand customizations](#UnderstandingCustomizations)

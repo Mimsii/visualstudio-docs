@@ -1,6 +1,6 @@
 ---
 title: Use Dotfuscator Community to protect .NET apps
-ms.date: 03/28/2019
+ms.date: 07/25/2024
 ms.devlang: dotnet
 ms.topic: overview
 keywords: Dotfuscator, Dotfuscator CE, Dotfuscator Community, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, free, Visual Studio 2019, Visual Studio 2017, Visual Studio
@@ -22,13 +22,11 @@ helpviewer_keywords:
 description: Protect your .NET applications with the free copy of Dotfuscator Community in Visual Studio, find your installed version or upgrade, and update related references.
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 
 # About Dotfuscator Community & Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ***PreEmptive Protection - Dotfuscator*** provides comprehensive .NET application protection that easily fits into your secure software development lifecycle.
 Use it to harden, protect, and prune desktop, mobile, server, and embedded applications to help secure trade secrets and other intellectual property (IP), reduce piracy and counterfeiting, and protect against tampering and unauthorized debugging.
@@ -54,6 +52,7 @@ For more information on how Dotfuscator fits into a secure software development 
 
 Your copy of Microsoft Visual Studio includes a copy of ***PreEmptive Protection - Dotfuscator Community***, free for personal use.
 (This free version was previously known as Dotfuscator Community Edition or Dotfuscator CE.)
+
 For instructions on how to install the version of Dotfuscator Community included with Visual Studio, see the [Installation page][install].
 
 Dotfuscator Community offers a range of [software protection and hardening][software-protection] services for developers, architects, and testers.
@@ -68,8 +67,7 @@ Examples of [.NET Obfuscation][obfuscation] and other [Application Protection][a
 For details on these features, including how they fit into your application protection strategy, see the [Capabilities page][capabilities].
 
 Dotfuscator Community offers basic protection out-of-the-box.
-Even more application protection measures are available to registered users of Dotfuscator Community,
-and to users of ***PreEmptive Protection - Dotfuscator Professional***, the world's leading [.NET Obfuscator][net-obfuscator].
+Even more application protection measures are available to registered users of Dotfuscator Community, and to users of ***PreEmptive Protection - Dotfuscator Professional***, the world's leading [.NET Obfuscator][net-obfuscator].
 For information about enhancing Dotfuscator, see the [Upgrades page][upgrades].
 
 ## Getting started
@@ -79,8 +77,9 @@ To begin using Dotfuscator Community from Visual Studio, type `dotfuscator` into
 * If Dotfuscator Community is already installed, **Search Box** shows the option to start Dotfuscator Community under the *Menus* heading. For details, see [the Getting Started page of the full Dotfuscator Community User Guide][get-started].
 * If Dotfuscator Community is not yet installed, **Search Box** instead shows **Install PreEmptive Protection - Dotfuscator** under the *Individual Components* heading. See the [Installation page][install] for details.
 
-
 You can also get the **latest version** of Dotfuscator Community from [the Dotfuscator Downloads page on preemptive.com][download].
+
+:::moniker range="vs-2019"
 
 ## Upgrade from Dotfuscator Community 5
 
@@ -118,6 +117,9 @@ This section includes sets of instructions for upgrading typical usages of Dotfu
 ### Install Dotfuscator 6
 
 Dotfuscator Community is distributed as an extension for Visual Studio. The instructions to install Dotfuscator 6 vary by which version of Visual Studio you have:
+
+* **Visual Studio 2022**
+  Dotfuscator Community 6 is included in Visual Studio 2022.
 
 * **Visual Studio 2019**
   Dotfuscator Community 6 is included in later versions of Visual Studio 2019 (version 16.10.0 and later).
@@ -158,13 +160,11 @@ The symptoms and solution listed below also apply to this scenario.
 
 If your build is using an invalid Dotfuscator CLI path, you may get errors such as one of the following examples:
 
-`'"[...]\PreEmptiveSolutions\DotfuscatorCE\dotfuscatorCLI.exe"' is not recognized as an internal or external command,
-operable program or batch file.`
+`'"[...]\PreEmptiveSolutions\DotfuscatorCE\dotfuscatorCLI.exe"' is not recognized as an internal or external command, operable program or batch file.`
 
 `The command ""[...]\PreEmptiveSolutions\DotfuscatorCE\dotfuscatorCLI.exe" Dotfuscator.xml" exited with code 9009.`
 
-`When the DotfuscatorXamarinEnabled property is 'true', the Dotfuscator command line interface specified by
-DotfuscatorXamarinCliPath ('[...]\DotfuscatorCE\dotfuscatorCLI.exe') must exist.`
+`When the DotfuscatorXamarinEnabled property is 'true', the Dotfuscator command line interface specified by DotfuscatorXamarinCliPath ('[...]\DotfuscatorCE\dotfuscatorCLI.exe') must exist.`
 
 To update your build to use the correct CLI path:
 
@@ -216,8 +216,7 @@ To update your build to use the correct CLI path:
 
 If you try to run the Dotfuscator CLI with an old configuration file, you get errors like the following examples:
 
-`Dotfuscator Engine Initialization error: PreEmptive Analytics, Authenticode signing, and the Introduce Explicit Method Overrides
-setting are no longer supported. Please open your Dotfuscator config in the Config Editor which automatically upgrades it.`
+`Dotfuscator Engine Initialization error: PreEmptive Analytics, Authenticode signing, and the Introduce Explicit Method Overrides setting are no longer supported. Please open your Dotfuscator config in the Config Editor which automatically upgrades it.`
 
 > [!IMPORTANT]
 > You receive this error and need to upgrade your config file even if you were not using the features mentioned.
@@ -276,16 +275,13 @@ The library containing the [Check Attributes][attributes-checks] has changed. In
 
 If you try to build a Visual Studio project that still references the old location, you may get errors like the following examples:
 
-`The type or namespace name 'PreEmptive' could not be found
-(are you missing a using directive or an assembly reference?)`
+`The type or namespace name 'PreEmptive' could not be found (are you missing a using directive or an assembly reference?)`
 
-`The type or namespace name 'TamperCheckAttribute' could not be found
-(are you missing a using directive or an assembly reference?)`
+`The type or namespace name 'TamperCheckAttribute' could not be found (are you missing a using directive or an assembly reference?)`
 
 You may also get this warning:
 
-`Could not resolve this reference. Could not locate the assembly "PreEmptive.Attributes". Check to make sure the assembly exists
-on disk. If this reference is required by your code, you may get compilation errors.`
+`Could not resolve this reference. Could not locate the assembly "PreEmptive.Attributes". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.`
 
 To update your project to use the new location:
 
@@ -307,8 +303,7 @@ If you try to build a Visual Studio project that used instrumentation attributes
 
 If you try to run Dotfuscator on already-built assemblies that contain usages of instrumentation attributes, you get errors like the following examples:
 
-`The PreEmptive.Attributes.FeatureAttribute attribute (annotating SomeNamespace.SomeType::SomeMethod) is not recognized
-by this version of Dotfuscator.`
+`The PreEmptive.Attributes.FeatureAttribute attribute (annotating SomeNamespace.SomeType::SomeMethod) is not recognized by this version of Dotfuscator.`
 
 To fix these problems, remove all usages of instrumentation attributes from your source code.
 You also need to remove the assembly references to the library that defined the attributes, `PreEmptive.Attributes.dll`.
@@ -355,6 +350,7 @@ Additionally, `.xap` packages can no longer be used as inputs because Silverligh
 
 The Renaming option to introduce explicit method overrides has been removed from Dotfuscator. To use Dotfuscator 6, [upgrade your configuration file](#steps-config-files) to remove this setting.
 
+:::moniker-end
 
 ## Full documentation
 
@@ -387,7 +383,7 @@ See [the full Dotfuscator Community User Guide at preemptive.com][full] for deta
 [attributes-checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/attributes_checks.html
 [attributes-obfuscation]: https://www.preemptive.com/dotfuscator/ce/docs/help/attributes_obfuscation.html
 
-[verbosity]: ../how-to-view-save-and-configure-build-log-files.md#to-change-the-amount-of-information-included-in-the-build-log
+[verbosity]: ../how-to-view-save-and-configure-build-log-files.md#specify-data-verbosity-for-build-logs
 [dotnet-attributes]: /dotnet/standard/attributes
 [application-insights]: /azure/azure-monitor/app/app-insights-overview
 [nuget-org]: https://www.nuget.org/

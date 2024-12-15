@@ -7,12 +7,10 @@ dev_langs:
   - "C++"
 author: "tylermsft"
 ms.author: "twhitney"
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Visual Studio C++ Project system extensibility and toolset integration
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Visual C++ project system is used for .vcxproj files. It's based on the [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) and provides additional, C++ specific extensibility points for easy integration of new toolsets, build architectures, and target platforms.
 
@@ -244,7 +242,7 @@ The `ClCompile` target should not have any dependencies except the `SelectClComp
 
 ## MSBuild tasks to use in toolset targets
 
-To invoke an actual build tool, the target needs to call an MSBuild task. There is a basic [Exec task](../msbuild/exec-task.md) that allows you to specify a command line to run. However, build tools usually have many options, inputs. and outputs to track for incremental builds, so it makes more sense to have special tasks for them. For instance, the `CL` task translates MSBuild properties into CL.exe switches, writes them into a response file, and calls CL.exe. It also tracks all input and output files for later incremental builds. For more information, see [Incremental builds and up-to-date checks](#incremental-builds-and-up-to-date-checks).
+To invoke an actual build tool, the target needs to call an MSBuild task. There is a basic [Exec task](../msbuild/exec-task.md) that allows you to specify a command line to run. However, build tools usually have many options, inputs, and outputs to track for incremental builds, so it makes more sense to have special tasks for them. For instance, the `CL` task translates MSBuild properties into CL.exe switches, writes them into a response file, and calls CL.exe. It also tracks all input and output files for later incremental builds. For more information, see [Incremental builds and up-to-date checks](#incremental-builds-and-up-to-date-checks).
 
 The Microsoft.Cpp.Common.Tasks.dll implements these tasks:
 
@@ -465,8 +463,7 @@ If the rule should be visible in more than one context, use semi-colons (**;**) 
 
 #### Rule format and main types
 
-The rule format is straightforward, so this section only describes the
-attributes that affect how the rule looks in the user interface.
+The rule format is straightforward, so this section only describes the attributes that affect how the rule looks in the user interface.
 
 ```xml
 <Rule
@@ -635,7 +632,7 @@ To disable project upgrades, use a `NoUpgrade` value:
 
 To improve performance when working with large C++ solutions in Visual Studio 2017, the [project cache](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) was introduced. It's implemented as a SQLite database populated with project data, and then used to load projects without loading MSBuild or CPS projects into memory.
 
-Because there are no CPS objects present for .vcxproj projects loaded from cache, the extension's MEF components that import `UnconfiguredProject` or `ConfiguredProject` can`t be created. To support extensibility, the project cache isn't used when Visual Studio detects whether a project uses (or is likely to use) MEF extensions.
+Because there are no CPS objects present for .vcxproj projects loaded from cache, the extension's MEF components that import `UnconfiguredProject` or `ConfiguredProject` can't be created. To support extensibility, the project cache isn't used when Visual Studio detects whether a project uses (or is likely to use) MEF extensions.
 
 These project types are always fully loaded and have CPS objects in memory, so all MEF extensions are created for them:
 

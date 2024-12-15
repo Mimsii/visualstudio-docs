@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "documents [Office development in Visual Studio], document properties"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically populate Word tables with document properties
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The following example creates a Microsoft Office Word table at the top of the document and populates it with the properties of the host document.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]

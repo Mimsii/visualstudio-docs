@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IPropertyProxyEESide::InitSourceDataProvider
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IPropertyProxyEESide::InitSourceDataProvider
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Initializes the source data for this object and returns an object containing the initial data.
 
 ## Syntax

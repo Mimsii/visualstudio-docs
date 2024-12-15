@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugExceptionEvent2::PassToDebuggee
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExceptionEvent2::PassToDebuggee
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies whether the exception should be passed on to the program being debugged when execution resumes, or if the exception should be discarded.
 
 ## Syntax

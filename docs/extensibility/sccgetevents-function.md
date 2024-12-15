@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccGetEvents function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccGetEvents function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function retrieves a queued status event.
 
 ## Syntax

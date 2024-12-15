@@ -1,6 +1,6 @@
 ---
-description: "This function determines the parent project path of a specified project."
 title: SccGetParentProjectPath Function
+description: "This function determines the parent project path of a specified project."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccGetParentProjectPath function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccGetParentProjectPath function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function determines the parent project path of a specified project. This function is called when the user is adding a Visual Studio project to source control.
 
 ## Syntax
@@ -89,7 +88,7 @@ SCCRTN SccGetParentProjectPath(
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**
 
- If this registry entry does not exist or is set to dword:00000000, Visual Studio attempts to use the new functions, `SccCreateSubProject`and`SccGetParentProjectPath`.
+ If this registry entry does not exist or is set to dword:00000000, Visual Studio attempts to use the new functions, `SccCreateSubProject` and `SccGetParentProjectPath`.
 
  If the registry entry is set to dword:00000001, Visual Studio does not attempt to use these new functions, and the operations of adding to source control work as they did in prior versions of Visual Studio.
 

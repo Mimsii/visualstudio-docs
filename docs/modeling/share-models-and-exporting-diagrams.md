@@ -8,12 +8,11 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Share models and exporting diagrams
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 In Visual Studio, you can share models and diagrams with colleagues in several ways.
 
  To see which editions of Visual Studio support this feature, see [Edition support for architecture and modeling tools](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).

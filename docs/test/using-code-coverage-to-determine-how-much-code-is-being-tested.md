@@ -11,8 +11,8 @@ dev_langs:
 - CPP
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 ---
 # Use code coverage to determine how much code is being tested
 
@@ -25,6 +25,9 @@ Code coverage option is available under the Test menu when you run test methods 
 ## Requirements
 
 The code coverage feature is available only in Visual Studio Enterprise edition.
+
+>[!NOTE]
+> For .NET code coverage, you can alternatively use the command-line tool, [dotnet-coverage](/dotnet/core/additional-tools/dotnet-coverage).
 
 ## Analyze code coverage
 
@@ -305,11 +308,11 @@ When you check in your code, your tests run on the build server along with tests
 
 ## Analyze code coverage from the command line
 
-To run tests from the command line, use *vstest.console.exe* utility. Code coverage is an option of the *vstest.console.exe* utility invoked by ```/EnableCodeCoverage``` option.
+To run tests from the command line, use *vstest.console.exe* utility. Code coverage is an option of the *vstest.console.exe* utility invoked by `/EnableCodeCoverage` option.
 
 1. Launch the Developer Command Prompt for Visual Studio:
 
-   In the Windows **Start** menu, search ```Developer Command Prompt for VS``` and select the App result that's associated with your search text.
+   In the Windows **Start** menu, search `Developer Command Prompt for VS` and select the App result that's associated with your search text.
 
 1. At the command prompt, run the following command:
 

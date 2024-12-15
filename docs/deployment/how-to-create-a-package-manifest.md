@@ -15,12 +15,11 @@ helpviewer_keywords:
   - dependencies, custom bootstrapper packages
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # Create a package manifest
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 To deploy prerequisites for your application, you can use a bootstrapper package. A bootstrapper package contains a single product manifest file but a package manifest for each locale. Shared functionality across different localized versions should go into the product manifest.
 
  For more information about product manifests, see [How to: Create a product manifest](../deployment/how-to-create-a-product-manifest.md).
@@ -66,7 +65,7 @@ To deploy prerequisites for your application, you can use a bootstrapper package
     </Strings>
     ```
 
-7. Copy the *C:\package* folder to the Visual Studio bootstrapper directory. For Visual Studio 2010, this is the *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* directory.
+7. Copy the *C:\package* folder to the Visual Studio bootstrapper directory. For older versions of Visual Studio, this is the *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* directory.
 
 ## Example
  The package manifest contains locale-specific information, such as error messages, software license terms, and language packs.

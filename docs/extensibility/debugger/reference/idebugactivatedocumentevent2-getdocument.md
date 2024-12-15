@@ -10,15 +10,14 @@ helpviewer_keywords:
 - IDebugActivateDocumentEvent2::GetDocument method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugActivateDocumentEvent2::GetDocument
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the document to activate.
 
 ## Syntax

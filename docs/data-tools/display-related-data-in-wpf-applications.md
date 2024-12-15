@@ -13,12 +13,11 @@ helpviewer_keywords:
 - data binding, WPF
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Display related data in .NET Framework WPF applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Display related data in .NET Framework WPF applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 

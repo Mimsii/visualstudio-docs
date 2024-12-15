@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies if the Compiland) contains debugging information."
+description: Retrieves a flag that specifies if the Compiland) contains debugging information.
 title: "IDiaSymbol::get_hasDebugInfo"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasDebugInfo method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_hasDebugInfo
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies if the [Compiland](../../debugger/debug-interface-access/compiland.md) contains debugging information.
 
 ## Syntax

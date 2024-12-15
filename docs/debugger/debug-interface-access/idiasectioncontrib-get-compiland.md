@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a reference to the compiland symbol that contributed this section."
+description: Retrieves a reference to the compiland symbol that contributed this section.
 title: "IDiaSectionContrib::get_compiland"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_compiland method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_compiland
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a reference to the compiland symbol that contributed this section.
 
 ## Syntax
 
 ```C++
-HRESULT get_compiland ( 
+HRESULT get_compiland ( 
    IDiaSymbol** pRetVal
 );
 ```

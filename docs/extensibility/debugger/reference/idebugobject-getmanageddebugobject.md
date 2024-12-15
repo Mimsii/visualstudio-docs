@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugObject::GetManagedDebugObject method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugObject::GetManagedDebugObject
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creates a copy of the managed object in the address space of the debug engine.
 
 ## Syntax

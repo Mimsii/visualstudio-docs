@@ -4,11 +4,13 @@ ms.date: 08/11/2022
 description: Use Kubernetes service environment variables with Bridge to Kubernetes to enable service-to-service communication as a nonelevated user in a Kubernetes cluster.
 ms.author: ghogen
 author: ghogen
-manager: jmartens
+manager: mijacobs
 ms.topic: conceptual
-ms.technology: bridge
+ms.subservice: bridge
 ---
 # Kubernetes service environment variables
+
+[!INCLUDE [Bridge to Kubernetes deprecation note](./includes/deprecation.md)]
 
 When you communicate with another service in the same Kubernetes cluster, for example with an HTTP request, you typically use the hardcoded service name in the URL for the request, but that won't work in some scenarios with Bridge to Kubernetes. This article describes how to use the Kubernetes service environment variables to specify the connection URL.
 

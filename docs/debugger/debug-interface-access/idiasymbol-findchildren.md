@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the children of the symbol."
+description: Retrieves the children of the symbol.
 title: "IDiaSymbol::findChildren"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::findChildren method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::findChildren
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the children of the symbol.
 
 ## Syntax
 
 ```C++
-HRESULT findChildren ( 
+HRESULT findChildren ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,

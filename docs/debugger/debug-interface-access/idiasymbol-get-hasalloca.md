@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the function contains a call to alloca (which is used to allocate memory on the stack)."
+description: Retrieves a flag that specifies whether the function contains a call to alloca (which is used to allocate memory on the stack).
 title: "IDiaSymbol::get_hasAlloca"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasAlloca method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_hasAlloca
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the function contains a call to `alloca` (which is used to allocate memory on the stack).
 
 ## Syntax
 
 ```cpp
-HRESULT get_hasAlloca(   BOOL *pFlag);
+HRESULT get_hasAlloca(   BOOL *pFlag);
 ```
 
 #### Parameters

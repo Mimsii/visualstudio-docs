@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugClassField::GetDefaultIndexer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the name of the default indexer.
 
 ## Syntax

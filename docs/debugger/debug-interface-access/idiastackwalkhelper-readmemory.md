@@ -1,5 +1,5 @@
 ---
-description: "Reads a block of data from the executable's image in memory."
+description: Reads a block of data from the executable's image in memory.
 title: "IDiaStackWalkHelper::readMemory"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackWalkHelper2::readMemory method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackWalkHelper::readMemory
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Reads a block of data from the executable's image in memory.
 
 ## Syntax
 
 ```C++
-HRESULT readMemory( 
+HRESULT readMemory( 
    enum MemoryTypeEnum type,
    ULONGLONG           va,
    DWORD               cbData,

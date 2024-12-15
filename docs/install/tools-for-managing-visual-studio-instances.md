@@ -10,13 +10,11 @@ helpviewer_keywords:
 - visual studio instance
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.prod: visual-studio-windows
-ms.technology: vs-installation
+manager: mijacobs
+
+ms.subservice: installation
 ---
 # Tools for detecting and managing Visual Studio instances
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 There are several tools that you can use to detect and manage Visual Studio installations on client machines.
 

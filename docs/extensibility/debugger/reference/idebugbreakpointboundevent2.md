@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugBreakpointBoundEvent2
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugBreakpointBoundEvent2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface tells the session debug manager (SDM) that a pending breakpoint has been successfully bound to a loaded program.
 
 ## Syntax

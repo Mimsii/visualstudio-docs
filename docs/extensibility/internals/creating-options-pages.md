@@ -8,12 +8,11 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating using managed package framework
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Create options pages
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 In the Visual Studio managed package framework, classes derived from <xref:Microsoft.VisualStudio.Shell.DialogPage> extend the Visual Studio IDE by adding **Options** pages under the **Tools** menu.
 
  An object implementing a given **Tools Option** page is associated with specific VSPackages by the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> object.

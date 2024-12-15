@@ -2,18 +2,16 @@
 title: Overview for Visual Basic developers
 description: Explore how to work with Visual Studio to edit, debug, and build code, and then publish an app as a Visual Basic developer.
 ms.date: 11/17/2023
-ms.technology: vs-ide-general
+ms.subservice: general-ide
 ms.custom: vs-acquisition
 ms.topic: conceptual
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
+manager: mijacobs
 dev_langs:
 - VB
 ---
 # Welcome to the Visual Studio IDE | Visual Basic
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 An *integrated development environment* (IDE) is a feature-rich program that supports many aspects of software development. The Visual Studio IDE is a creative launching pad that you can use to edit, debug, and build code, and then publish an app. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to enhance the software development process.
 
@@ -45,7 +43,7 @@ The preceding image shows Visual Studio with an open Visual Basic project that s
 
 ## Editions
 
-Visual Studio is available for Windows and Mac. [Visual Studio for Mac](/visualstudio/mac/) has many of the same features as Visual Studio for Windows, and is optimized for developing cross-platform and mobile apps. This article focuses on the Windows version of Visual Studio.
+Visual Studio is available for Windows.
 
 There are three editions of Visual Studio: Community, Professional, and Enterprise. See [Compare Visual Studio editions](https://visualstudio.microsoft.com/vs/compare/) to learn about which features each edition supports.
 
@@ -125,7 +123,7 @@ Some popular features in Visual Studio that improve your productivity when devel
 
 - [Live Share](/visualstudio/liveshare/)
 
-   Collaboratively edit and debug with others in real time, regardless of your app type or programming language. You can instantly and securely share your project. You can also share debugging sessions, terminal instances, localhost web apps, voice calls, and more.
+   Collaboratively edit and debug with others in real time, regardless of your app type or programming language. You can instantly and securely share your project. You can also share debugging sessions, terminal instances, `localhost` web apps, voice calls, and more.
 
 - [Call Hierarchy](../../ide/reference/call-hierarchy.md)
 

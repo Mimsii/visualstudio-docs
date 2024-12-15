@@ -5,14 +5,12 @@ ms.date: 06/19/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
   - CSharp
 ---
 # Convert switch statement to switch expression
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This refactoring applies to:
 
@@ -30,7 +28,7 @@ This refactoring applies to:
 2. Place your cursor in the `switch` keyword and press **Ctrl**+**.** to trigger the **Quick Actions and Refactorings** menu.
 3. Select **Convert switch statement to expression**.
 
-   ![Convert switch statement to switch expression](media/convert-switch-statement-to-switch-expression.png) 
+   ![Convert switch statement to switch expression](media/convert-switch-statement-to-switch-expression.png)
 
 ## See also
 

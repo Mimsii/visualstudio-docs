@@ -9,12 +9,10 @@ helpviewer_keywords:
   - "execution, controlling in debugger"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Learn productivity tips and tricks for the debugger in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Read this topic to learn a few productivity tips and tricks for the Visual Studio debugger. For a look at the basic features of the debugger, see [First look at the debugger](../debugger/debugger-feature-tour.md). In this topic, we cover some areas that are not included in the feature tour.
 
@@ -118,9 +116,9 @@ You can take and compare snapshots of the heap, optimize memory usage, and find 
 
 A *dump file* is a snapshot that shows the process that was executing and modules that were loaded for an app at a point in time. A dump with heap information also includes a snapshot of the app's memory at that point. Dumps are mostly used to debug issues from machines that developers don't have access to.
 
-If you need to save a dump file, select select **Debug > Save Dump As**.
+If you need to save a dump file, select select **Debug > Save Dump As**.
 
-To analyze a dump file, choose **File > Open** in Visual Studio. To start debugging using the dump file, select **Debug with Managed Only**, **Debug with Native Only**, **Debug with Mixed**, or **Debug with Managed Memory**.
+To analyze a dump file, choose **File > Open** in Visual Studio. To start debugging using the dump file, select **Debug with Managed Only**, **Debug with Native Only**, **Debug with Mixed**, or **Debug with Managed Memory**.
 
 For more information, see [Dump files](using-dump-files.md).
 
@@ -138,7 +136,7 @@ With the debugger paused on a line of code, use the mouse to grab the yellow arr
 
 ![Move the Execution Pointer](../debugger/media/dbg-tour-move-the-execution-pointer.gif "Move the Execution Pointer")
 
-By changing the execution flow, you can do things like test different code execution paths or rerun code without restarting the debugger. For more information, see [Move the exeuction pointer](../debugger/move-the-execution-pointer-with-the-debugger.md).
+By changing the execution flow, you can do things like test different code execution paths or rerun code without restarting the debugger. For more information, see [Move the execution pointer](../debugger/move-the-execution-pointer-with-the-debugger.md).
 
 > [!WARNING]
 > Often you need to be careful with this feature, and you see a warning in the tooltip. You may see other warnings, too. Moving the pointer cannot revert your app to an earlier application state.
@@ -180,6 +178,6 @@ For additional tips and tricks and more detailed information, see these blog pos
 - [7 lesser known hacks for debugging in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 hidden gems in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## See also
+## Related content
 
 [Keyboard Shortcuts](../ide/productivity-shortcuts.md)

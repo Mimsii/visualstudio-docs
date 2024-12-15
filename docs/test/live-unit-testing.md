@@ -7,12 +7,10 @@ helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
-ms.technology: vs-ide-test
+ms.subservice: test-tools
 monikerRange: '>=vs-2022'
 ---
 # Configure and use Live Unit Testing
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 While you develop an application, Live Unit Testing automatically runs any affected unit tests in the background and presents the results and code coverage in real time. When you modify your code, Live Unit Testing provides feedback on how your changes affected existing tests and whether the new code you added is covered by one or more existing tests. This feedback reminds you to write unit tests as you make bug fixes or add new features.
 
@@ -238,7 +236,7 @@ To select the individual projects in unit tests, follow these steps after Live U
 1. Right-click the solution in **Solution Explorer** and select **Live Unit Testing** > **Exclude** to exclude the entire solution.
 1. Right-click each test project that you want to include in the tests and select **Live Unit Testing** > **Include**.
 
-### Programatically in test code
+### Programmatically in test code
 
 You can apply the <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> attribute to programmatically exclude methods, classes, or structures from reporting their coverage in Live Unit Testing.
 

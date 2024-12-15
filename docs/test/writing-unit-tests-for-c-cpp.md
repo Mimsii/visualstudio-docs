@@ -9,8 +9,6 @@ author: tylermsft
 ---
 # Write unit tests for C/C++ in Visual Studio
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 You can write and run your C++ unit tests by using the **Test Explorer** window. It works just like it does for other languages. For more information about using **Test Explorer**, see [Run unit tests with Test Explorer](run-unit-tests-with-test-explorer.md).
 
 > [!NOTE]
@@ -37,9 +35,12 @@ C++ unit test projects support [CodeLens](../ide/find-code-changes-and-other-his
 
 - **CTest** support is included with the **C++ CMake tools** component, which is part of the **Desktop development with C++** workload. For more information, see [How to: Use CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
 
-**Visual Studio 2015 and earlier**
+**Earlier versions of Visual Studio**
 
 You can download the Google Test adapter and Boost.Test Adapter extensions on the Visual Studio Marketplace. Find them at [Test adapter for Boost.Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforBoostTest) and [Test adapter for Google Test](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.TestAdapterforGoogleTest).
+
+> [!TIP]
+> You can also use Copilot `/tests` slash command to generate unit tests from code. For example, you can type `/tests using Boost framework` to generate Boost.Test tests. For more information, see [Use slash commands in Copilot Chat](../ide/copilot-chat-context.md#slash-commands).
 
 ## Basic test workflow
 

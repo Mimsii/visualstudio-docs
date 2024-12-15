@@ -5,13 +5,12 @@ description: "Use workload and component IDs to install Visual Studio by using t
 keywords:
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
+manager: mijacobs
 ms.date: 08/10/2021
-ms.prod: visual-studio-windows
-ms.technology: vs-installation
+
+ms.subservice: installation
 ms.topic: include
 ---
-
 
 
 ## Visual Studio core editor (included with Visual Studio Professional 2019)

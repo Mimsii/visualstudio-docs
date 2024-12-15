@@ -8,12 +8,10 @@ helpviewer_keywords:
 - privacy, developer community
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Developer Community data privacy
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 By default, all information in problem reports on [Developer Community](https://aka.ms/feedback/suggest?space=8), including any comments and replies, is publicly visible. This is beneficial because it allows the entire community to see the issues, solutions, and workarounds that other users have found. However, if you're concerned about the privacy of your data or identity, you have options. You can also View, Export, or Delete your feedback data.
 
@@ -79,6 +77,10 @@ If **Report a problem** is initiated from Visual Studio, we collect one or more 
 > [!NOTE]
 > Log files, screenshots and recording data you send can significantly increase Microsoft's ability understand and respond to your issue.  So we recommend including them. To protect your privacy, any attached log files, screenshots and recording data are sent only to Microsoft when you provide permission by submitting the problem report with which they are included. You can see which files are included on the 'Summary' step of the 'Report a Problem' window before submitting the report. You can exclude system log files from the report by unchecking 'Attach system logs' in the 'Summary' step. For reference, see the following screenshot. 
   > ![Report a Problem * Summary of logs collected](media/report-a-problem-logs-collected.png)
+
+## Leveraging AI
+Publicly submitted information on Developer Community, including ticket titles, descriptions, and public comments, may be processed by AI language models. This data is utilized to facilitate tasks such as ticket summarization, routing, and other operational improvements aimed at enhancing the user experience. Your data is not used for training AI nor retained outside the feedback system.
+
 
 ## GDPR Data Subject Request processing
 

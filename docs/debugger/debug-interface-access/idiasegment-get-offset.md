@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the offset, in segments, where the section begins."
+description: Retrieves the offset, in segments, where the section begins.
 title: "IDiaSegment::get_offset"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSegment::get_offset method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSegment::get_offset
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the offset, in segments, where the section begins.
 
 ## Syntax
 
 ```C++
-HRESULT get_offset ( 
+HRESULT get_offset ( 
    DWORD* pRetVal
 );
 ```

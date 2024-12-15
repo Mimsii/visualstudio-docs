@@ -11,12 +11,11 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Walkthrough: Create a dataset for .NET Framework applications using the Dataset Designer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Walkthrough: Create a dataset for .NET Framework applications using the Dataset Designer
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -24,7 +23,7 @@ In this walkthrough you create a dataset using the **Dataset Designer**. The art
 
 ## Prerequisites
 
-To complete this tutorial, you need the **.NET desktop development** and **Data storage and processing** workloads installed in Visual Studio. To install them, open **Visual Studio Installer** and choose **Modify** (or **More** > **Modify**) next to the version of Visual Studio you want to modify. See [Modify Visual Studio](../install/modify-visual-studio.md).
+To complete this tutorial, you need the **.NET desktop development** workload and (for the **Data Sources** window) the **Data storage and processing** workload installed in Visual Studio. To install them, open **Visual Studio Installer** and choose **Modify** (or **More** > **Modify**) next to the version of Visual Studio you want to modify. See [Modify Visual Studio](../install/modify-visual-studio.md).
 
 This walkthrough uses SQL Server Express LocalDB and the Northwind sample database.
 
@@ -92,7 +91,11 @@ This section explains how to add tables to the dataset.
 
      An **Order Details** data table, **OrderDetailsTableAdapter**, and a data relation between the **Orders** and **OrderDetails** tables are added to the dataset.
 
-## Next Steps
+## Save the dataset
+
+The dataset that you just created is available in the **Data Sources** window. If you don't see the **Data Sources** window, check that you have the **Data storage and processing** workload installed as mentioned in the [Prerequisites](#prerequisites).
+
+You can now perform any of the following tasks:
 
 - Save the dataset.
 
@@ -102,7 +105,7 @@ This section explains how to add tables to the dataset.
 
 - Add validation logic to the <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> events of the data tables in the dataset. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).
 
-## See also
+## Related content
 
 - [Create and configure datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

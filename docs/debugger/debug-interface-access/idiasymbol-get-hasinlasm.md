@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the function contains inline assembly."
+description: Retrieves a flag that specifies whether the function contains inline assembly.
 title: "IDiaSymbol::get_hasInlAsm"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasInlAsm method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_hasInlAsm
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the function contains inline assembly.
 
 ## Syntax

@@ -1,19 +1,19 @@
 ---
 title: How do I purchase Visual Studio subscriptions?
 description: 'Learn about the various ways you can purchase Visual Studio subscriptions'
-comment:  As of August 2023 this include file is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Evan Windom and Larissa Crawford of Red Door Collaborative and Sharvari Dighe.
+comment:  As of August 2023 this include file is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Jose Becerra and Larissa Crawford of Red Door Collaborative and Angela Cao-Hong.
 ms.faqid: group4_1
 ms.topic: include
 ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
-author: evanwindom
+author: joseb-rdc
 ms.author: amast
-ms.date: 08/09/2023
+ms.date: 09/24/2024
 ---
 
 ## How do I purchase Visual Studio subscriptions?
-Visual Studio subscriptions are available for purchase through various channels, including [Volume Licensing](https://www.microsoft.com/licensing/default), the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), and [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
+Visual Studio subscriptions are available for purchase through various channels, including [Volume Licensing](https://www.microsoft.com/licensing/default), the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), and [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
-[Compare subscription benefits and pricing](https://visualstudio.microsoft.com/vs/pricing/) to understand the benefits of each Visual Studio subscription. 
+[Compare subscription benefits and pricing](https://visualstudio.microsoft.com/vs/pricing/) to understand the benefits of each Visual Studio subscription. 
 Check out the [subscription benefits page](https://visualstudio.microsoft.com/vs/benefits/) for more help deciding which subscription is right for you.   
 
 ### Microsoft Store

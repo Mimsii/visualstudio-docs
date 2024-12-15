@@ -1,6 +1,6 @@
 ---
-description: "Enumerates the various segments contained in the data source."
-title: "IDiaEnumSegments"
+description: Enumerates the various segments contained in the data source.
+title: IDiaEnumSegments
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -9,21 +9,20 @@ helpviewer_keywords:
   - "IDiaEnumSegments interface"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaEnumSegments
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enumerates the various segments contained in the data source.
 
 ## Syntax
 
-```
-IDiaEnumSegments : IUnknown
-```
+`IDiaEnumSegments : IUnknown`
 
 ## Methods in Vtable Order
+
 The following table shows the methods of `IDiaEnumSegments`.
 
 |Method|Description|
@@ -39,12 +38,14 @@ The following table shows the methods of `IDiaEnumSegments`.
 ## Remarks
 
 ## Notes for Callers
+
 Obtain this interface by calling the `QueryInterface` method on an [IDiaTable](../../debugger/debug-interface-access/idiatable.md) object. See the example for details.
 
 ## Example
+
 This example shows how to obtain the `IDiaEnumSections` interface from a table. For a more complete example of using segments, see the [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interface.
 
-```C++
+```c++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 {
     CComPtr<IDiaEnumSegments> pSegments;
@@ -60,6 +61,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## Requirements
+
 Header: Dia2.h
 
 Library: diaguids.lib
@@ -67,6 +69,7 @@ Library: diaguids.lib
 DLL: msdia80.dll
 
 ## See also
+
 - [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

@@ -8,12 +8,11 @@ helpviewer_keywords:
 - VSIX private galleries, Atom feed
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Create an Atom feed for a private gallery
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can create an Atom (RSS) feed to an intranet location that contains extensions and add the feed to **Extensions and Updates** as a private gallery. For more information, see [Private galleries](../extensibility/private-galleries.md).
 
 ## Create an Atom feed

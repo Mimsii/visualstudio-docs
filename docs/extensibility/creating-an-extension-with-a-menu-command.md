@@ -10,12 +10,10 @@ helpviewer_keywords:
 - visual studio package
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Create an extension with a menu command
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This walkthrough shows how to create an extension with a menu command that launches Notepad.
 
@@ -122,4 +120,4 @@ This walkthrough has shown you only a small part of what you can do with a Visua
 
 5. Add Options and Property pages and user settings to your extension: [Extend properties and the Property window](../extensibility/extending-properties-and-the-property-window.md) and [Extend user settings and options](../extensibility/extending-user-settings-and-options.md)
 
-   Other kinds of extensions require a little more work, such as creating a new type of project ([Extend projects](../extensibility/extending-projects.md)), creating a new type of editor ([Create custom editors and designers](../extensibility/creating-custom-editors-and-designers.md)), or implementing your extension in an isolated shell: [Visual Studio isolated shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+   Other kinds of extensions require a little more work, such as creating a new type of project ([Extend projects](../extensibility/extending-projects.md)), or creating a new type of editor ([Create custom editors and designers](../extensibility/creating-custom-editors-and-designers.md)).

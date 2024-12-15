@@ -10,15 +10,14 @@ helpviewer_keywords:
 - IDebugModule3::GetSymbolInfo method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugModule3::GetSymbolInfo
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a list of paths that are searched for symbols as well as the results of searching each path.
 
 ## Syntax

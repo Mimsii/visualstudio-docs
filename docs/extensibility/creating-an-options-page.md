@@ -7,12 +7,10 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Create an options page
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This walkthrough creates a simple Tools/Options page that uses a property grid to examine and set properties.
 

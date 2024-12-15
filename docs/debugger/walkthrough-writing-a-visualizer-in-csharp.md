@@ -10,17 +10,18 @@ helpviewer_keywords:
   - "walkthroughs [Visual Studio], visualizers"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Walkthrough: Writing a Visualizer in C\#
 
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+> [!IMPORTANT]
+> Starting with Visual Studio 2022 version 17.9, visualizers can now be written in .NET 6.0+ that run out-of-process using the new VisualStudio.Extensibility model. We encourage visualizer authors to reference the new documentation at [Create Visual Studio debugger visualizers](../extensibility/visualstudio.extensibility/debugger-visualizer/debugger-visualizers.md) unless they want to support older versions of Visual Studio or want to ship their custom visualizers as part of a library DLL.
 
 This walkthrough shows how to write a simple visualizer by using C#. The visualizer you create in this walkthrough displays the contents of a string using a Windows Form. This simple string visualizer isn't especially useful in itself, but it shows the basic steps that you must follow to create more useful visualizers for other data types.
 
 > [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help, depending on your active settings or edition. To change your settings, go to the **Tools** menu and choose **Import and Export Settings**. For more information, see [Reset settings](../ide/environment-settings.md#reset-settings).
+> The dialog boxes and menu commands you see might differ from those described in Help, depending on your active settings or edition. To change your settings, go to the **Tools** menu and choose **Import and Export Settings**. For more information, see [Reset settings](../ide/personalizing-the-visual-studio-ide.md#reset-all-settings).
 
 Visualizer code must be placed in a DLL file that the debugger reads. Therefore, the first step is to create a Class Library project for the DLL.
 
@@ -81,7 +82,18 @@ Now you're ready to create the debugger-side code. This code runs within the deb
    public class DebuggerSide : DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer` has one abstract method (`Show`) that you must override.
+1. Add an empty constructor so that you can pass to the base class' constructor the serialization policy that will be used to communicate between the visualizer components.
+
+   ```csharp
+   public DebuggerSide() : base(FormatterPolicy.NewtonsoftJson) // or FormatterPolicy.Json
+   {
+   }
+   ```
+
+   > [!NOTE]
+   > Due to the security issues described in [Special debugger side considerations for .NET 5.0+](./create-custom-visualizers-of-data.md#special-debugger-side-considerations-for-net-50), starting with Visual Studio 2022 version 17.11, visualizers won't be able to specify the `Legacy` formatter policy.
+
+1. `DialogDebuggerVisualizer` has one abstract method (`Show`) that you must override.
 
 #### Override the DialogDebuggerVisualizer.Show method
 
@@ -321,7 +333,6 @@ In this section, you switch from the `System.String` data object to a custom dat
    When you choose **MyFirstVisualizer** from the magnifying glass, you see the Form with the data object text in the title.
 
    ![Visualizer showing a Windows Form](../debugger/media/vs-2019/visualizer-csharp-windows-form.png)
-
 
 ## Related content
 

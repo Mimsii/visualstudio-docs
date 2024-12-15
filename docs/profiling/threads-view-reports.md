@@ -13,12 +13,10 @@ helpviewer_keywords:
   - "Concurrency Visualizer, Threads View Reports (Parallel Performance)"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Threads view reports in the Concurrency Visualizer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
  This article provides information about the reports in the Threads view of the Concurrency Visualizer.
 

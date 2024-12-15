@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a specified symbol type that contains, or is closest to, a specified virtual address."
+description: Retrieves a specified symbol type that contains, or is closest to, a specified virtual address.
 title: "IDiaSession::findSymbolByVA"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::findSymbolByVA method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findSymbolByVA
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a specified symbol type that contains, or is closest to, a specified virtual address.
 
 ## Syntax
 
 ```C++
-HRESULT findSymbolByVA ( 
+HRESULT findSymbolByVA ( 
    ULONGLONG    va,
    SymTagEnum   symtag,
    IDiaSymbol** ppSymbol

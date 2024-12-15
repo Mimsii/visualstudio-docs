@@ -5,12 +5,10 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Configure Visual Studio as a WIP-exempt app
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP) helps to protect enterprise data from leaking through apps like email, social media, and the public cloud, which are outside of the enterprise’s control. WIP helps to protect against accidental data leakage on enterprise-owned devices and personal devices, without requiring changes to your environment or other apps.
 
@@ -24,7 +22,7 @@ To exempt Visual Studio from WIP, follow the [steps to exempt a desktop app](/wi
 
 ## Create a WIP-exempt AppLocker policy file
 
-Because Visual Studio includes multiple binaries, [create an WIP-exempt AppLocker policy file](/windows/security/threat-protection/windows-defender-application-control/applocker/run-the-automatically-generate-rules-wizard). AppLocker allows you to automatically generate rules for all files within a folder.
+Because Visual Studio includes multiple binaries, [create a WIP-exempt AppLocker policy file](/windows/security/threat-protection/windows-defender-application-control/applocker/run-the-automatically-generate-rules-wizard). AppLocker allows you to automatically generate rules for all files within a folder.
 
 ## Add AppCompat to the Enterprise cloud resource policy
 

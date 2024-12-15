@@ -15,12 +15,11 @@ helpviewer_keywords:
 - Visual Studio, executables from
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Shell Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Launches executable programs from within Visual Studio.
 
 ## Syntax

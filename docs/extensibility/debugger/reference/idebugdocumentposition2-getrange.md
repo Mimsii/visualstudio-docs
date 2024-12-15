@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugDocumentPosition2::GetRange
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugDocumentPosition2::GetRange
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the range for this document position.
 
 ## Syntax

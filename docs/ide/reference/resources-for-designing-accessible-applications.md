@@ -8,14 +8,11 @@ helpviewer_keywords:
   - "Windows applications, accessibility"
   - "Web applications, accessibility"
   - "accessibility, Web applications"
-author: j-martens
-ms.author: jmartens
-manager: jmartens
-ms.technology: vs-ide-general
+author: anandmeg
+ms.author: meghaanand
+ms.subservice: general-ide
 ---
 # Resources for designing accessible applications
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Learn more about technologies that support accessible design. We've also included tips and links to tutorials that can help you develop accessible Windows apps and websites.
 
@@ -46,9 +43,8 @@ Learn more about technologies that support accessible design. We've also include
 
 ### Third-party resources
 
-- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** This website provides guidelines and techniques for accessible website development. For more information, see [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** This website provides guidelines and techniques for accessible website development. For more information, see [`https://www.w3.org/WAI/GL/`](https://www.w3.org/WAI/GL/).
 
 ## Related content
 
 * [Accessibility features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-* [Accessibility for Visual Studio for Mac](/visualstudio/mac/accessibility/)

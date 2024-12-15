@@ -10,12 +10,11 @@ helpviewer_keywords:
 - Edit.Find command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Find Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Searches files using a subset of the options available on the **Find in Files** tab of the **Find and Replace** window.
 
 ## Syntax

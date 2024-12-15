@@ -5,12 +5,10 @@ ms.date: 11/02/2023
 ms.topic: how-to
 author: maddymontaquila
 ms.author: maleger
-manager: jmartens
-ms.technology: vs-xaml-tools
+manager: mijacobs
+ms.subservice: xaml-tools
 ---
 # Inspect XAML properties while debugging
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can get a real-time view of your running XAML code with the **Live Visual Tree** and the **Live Property Explorer**. These tools give you a tree view of the UI elements of your running XAML application, and show you the runtime properties of any UI element you select.
 
@@ -29,7 +27,6 @@ Let's get started with a very simple WPF application that has a list view and a 
 ### Create the project
 
 1. Create a new C# WPF application (**File** > **New** > **Project**, type "C# WPF", choose the **WPF Application** project template, name the project **TestXAML**, and then verify that the correct .NET version appears in the **Target Framework** drop-down).
-
 
 2. Change MainWindow.xaml to the following:
 

@@ -5,15 +5,13 @@ ms.date: 02/15/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont 
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
   - CSharp
   - VB
 ---
 # Unused value assignments, variables, and parameters
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This refactoring applies to:
 

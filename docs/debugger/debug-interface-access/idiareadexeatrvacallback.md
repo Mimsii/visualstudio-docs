@@ -1,6 +1,6 @@
 ---
-description: "Enables a client application to supply bytes of an executable file as specified by a relative virtual address."
-title: "IDiaReadExeAtRVACallback"
+description: Enables a client application to supply bytes of an executable file as specified by a relative virtual address.
+title: IDiaReadExeAtRVACallback
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -9,19 +9,17 @@ helpviewer_keywords:
   - "IDiaReadExeAtRVACallback interface"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaReadExeAtRVACallback
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enables a client application to supply bytes of an executable file as specified by a relative virtual address.
 
 ## Syntax
 
-```
-IDiaReadExeAtRVACallback : IUnknown
-```
+`IDiaReadExeAtRVACallback : IUnknown`
 
 ## Methods in Vtable Order
  The following table shows the methods of `IDiaReadExeAtRVACallback`.

@@ -1,16 +1,15 @@
 ---
 title: Image Library Viewer
 description: Learn about the Visual Studio Image Library Viewer tool that loads and searches image manifests, allowing you to view and manipulate image attributes.
-ms.date: 11/04/2016
+ms.date: 08/21/2024
 ms.topic: reference
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Image Library Viewer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The Visual Studio Image Library Viewer tool can load and search image manifests, allowing the user to manipulate them in the same way Visual Studio would. The user can alter background, sizes, DPI, high contrast, and other settings. The tool also displays loading information for each image manifest and displays source information for each image in the image manifest. This tool is useful for:
 
 1. Diagnosing errors
@@ -60,6 +59,8 @@ A complete image manifest looks like this:
       <Guid Name="ShellCommandGuid" Value="8ee4f65d-bab4-4cde-b8e7-ac412abbda8a" />
       <ID Name="cmdidSaveAll" Value="1000" />
       <String Name="AssemblyName" Value="Microsoft.VisualStudio.Shell.UI.Internal" />
+      <!-- If your assembly is strongly named, you'll need the version and public key token as well -->
+      <!-- <String Name="AssemblyName" Value="Microsoft.VisualStudio.Shell.UI.Internal;v17.0.0.0;b03f5f7f11d50a3a" /> -->
 </Symbols>
 ```
 

@@ -7,8 +7,8 @@ helpviewer_keywords:
 - MSBuild, test custom task
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Tutorial: Test a custom task
 
@@ -142,7 +142,7 @@ Unit tests are important, but you also need to test the custom MSBuild task in a
 1. The test argument gives the instructions to build this MSBuild file:
 
    ```csharp
-    //Arrage
+    //Arrange
     buildProcess.StartInfo.Arguments = "build .\\Resources\\testscript-success.msbuild /t:generateSettingClass";
    ```
 

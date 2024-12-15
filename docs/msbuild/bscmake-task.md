@@ -7,22 +7,21 @@ f1_keywords:
 - vc.task.bscmake
 - VC.Project.VCBscMakeTool.PreserveSBR
 dev_langs:
-- VB
-- CSharp
-- C++
 - C++
 helpviewer_keywords:
 - MSBuild (C++), tasks
 - BscMake task (MSBuild (C++))
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # BscMake task
 
 > [!IMPORTANT]
 > BscMake is no longer used by the Visual Studio IDE. Since Visual Studio 2008, browse information is stored automatically in an *.sdf* file in the *Solution* folder.
+
+[!INCLUDE [C++-specific task](./includes/cpp-task.md)]
 
  Wraps the Microsoft Browse Information Maintenance Utility tool (*bscmake.exe*).  The *bscmake.exe* tool builds a browse information file (*.bsc*) from source browser files (*.sbr*) that are created during compilation. Use the **Object Browser** to view a *.bsc* file. For more information, see [BSCMAKE reference](/cpp/build/reference/bscmake-reference).
 

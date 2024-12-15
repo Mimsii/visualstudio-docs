@@ -10,12 +10,10 @@ helpviewer_keywords:
 - debugging executables
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /DebugExe (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Opens the specified executable file to be debugged.
 
@@ -34,6 +32,8 @@ devenv /DebugExe ExecutableFile
 ## Remarks
 
 Any strings following the *ExecutableFile* parameter are passed to that file as arguments.
+
+Visual Studio will parse any strings following the *ExecutableFile* parameter for matches in [Devenv command-line switches](../../ide/reference/devenv-command-line-switches.md). You can prevent Visual Studio from parsing a command-line switch by surrounding the switch with double quotes.
 
 ## Example
 

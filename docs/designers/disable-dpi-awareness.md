@@ -1,17 +1,15 @@
 ---
 title: Fix DPI display issues in Windows Form Designer
 description: Fix DPI display problems in Windows Forms Designer in Visual Studio to correct scaling and rendering on HDPI (high dots per inch) monitors.
-ms.date: 06/29/2023
+ms.date: 02/08/2024
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-designers
+manager: mijacobs
+ms.subservice: ui-designers
 ms.topic: how-to
-ms.custom: contperf-fy23q2,  engagement-fy23
+ms.custom: engagement-fy23
 ---
 # Fix HDPI/scaling issues with Windows Forms Designer in Visual Studio 
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this article, you learn how to address rendering issues due to scaling limitations of the Windows Forms Designer on HDPI monitors by [running Visual Studio as a DPI-unaware process](#restart-visual-studio-as-a-dpi-unaware-process). HDPI stands for high dots per inch, with each dot representing a physical device pixel.
 
@@ -20,6 +18,19 @@ Higher pixel density creates sharper images, and display scaling sizes elements 
 When an application declares itself to be DPI-aware, it's a statement specifying that the app behaves well at higher DPI settings, and so Windows can apply autoscaling. Conversely, DPI-unaware applications render at a fixed DPI value of 96 pixels per inch, or 100%, and so autoscaling isn't applied.
 
 ## Windows Forms Designer is DPI-unaware
+
+:::moniker range=">=vs-2022"
+
+> [!NOTE]
+> In Visual Studio 2022 version 17.8 or later, you can avoid the issues described in this article. Visual Studio 2022 version 17.8 provides support for DPI-unaware tabs within a DPI-aware application. See [Visual Studio DPI improvements](/dotnet/desktop/winforms/whats-new/net80#visual-studio-dpi-improvements). This lets you design Windows Forms for DPI-unaware contexts, without requiring you to run Visual Studio in DPI-unaware mode. To use this setting in a Windows Forms project, set the property `ForceDesignerDPIUnaware` to `true` in your project file:
+>
+>```xml
+><PropertyGroup>
+>   ...
+>   <ForceDesignerDPIUnaware>true</ForceDesignerDPIUnaware>
+></PropertyGroup>
+
+:::moniker-end
 
 By default, Visual Studio is a dots per inch (DPI)-aware application, which means the display scales automatically.  However, **Windows Forms Designer** is a DPI-unaware app, so it appears as a bitmap at 96 DPI. Without autoscaling support, issues and overlapping arises when opening forms on HDPI monitors, like in this image:
 
@@ -45,7 +56,6 @@ It's important to restart Visual Studio to return it to its default as a DPI-awa
 **To return to DPI-aware:**
 - Close and reopen Visual Studio to return to DPI-aware again. Alternatively, select the **Restart Visual Studio as a DPI-aware process** option in the information bar.
 
-
 When Visual Studio runs as DPI-unaware, the designer layout issues are resolved, however fonts might appear blurry and issues can appear in other designers such as the XAML Designer. Visual Studio displays a different informational message when DPI-unaware that says "Visual Studio is running as a DPI-unaware process. WPF and XAML designers might not display correctly." 
 
 ::: moniker range="<=vs-2019"
@@ -63,7 +73,6 @@ When Visual Studio runs as DPI-unaware, the designer layout issues are resolved,
 > - The default Visual Basic profile won't reopen projects when Visual Studio restarts as a DPI-unaware process. Instead, access your project through **File** > **Recent Projects and Solutions**.
 
 ::: moniker-end
-
 
 ## Use Windows to set your display scaling to 100%
 

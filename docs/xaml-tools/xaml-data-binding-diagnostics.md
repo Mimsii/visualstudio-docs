@@ -8,13 +8,11 @@ helpviewer_keywords:
   - "xaml diagnostics"
 author: maddymontaquila
 ms.author: maleger
-manager: jmartens
-ms.technology: vs-xaml-tools
+manager: mijacobs
+ms.subservice: xaml-tools
 monikerRange: ">=vs-2019"
 ---
 # XAML data binding diagnostics
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Developers who work on XAML projects often have to detect and resolve XAML data binding failures in their applications. Now there are tools within Visual Studio 2019 [version 16.8 or later](/visualstudio/releases/2019/history) and Visual Studio 2022 to help find these annoying data binding failures while you debug your application. Examples of common binding failures are as follows:
 

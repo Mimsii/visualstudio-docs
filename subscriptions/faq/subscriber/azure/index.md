@@ -2,9 +2,9 @@
 title: FAQs for Azure for Visual Studio subscribers
 description: Review frequently asked questions (FAQs) for Azure subscribers about Visual Studio subscriptions, billing, service restrictions, account sign-in, and Azure credits.
 ms.topic: conceptual
-author: evanwindom
+author: joseb-rdc
 ms.author: amast
-ms.date: 10/17/2022
+ms.date: 09/27/2024
 ms.faqid: Section5
 ---
 
@@ -29,3 +29,5 @@ ms.faqid: Section5
 [!INCLUDE [Can I use my work account to sign in?](includes/work-account-sign-in.md)]
 
 [!INCLUDE [What happens to my Azure resources when my subscription expires?](includes/expired-azure.md)]
+
+[!INCLUDE [How do I contact support for Azure subscription-related questions?](includes/support-request.md)]

@@ -7,15 +7,14 @@ helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricFile
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSettingsCallback2::GetEEMetricFile
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the expression evaluator metric file given the name or the metric.
 
 ## Syntax

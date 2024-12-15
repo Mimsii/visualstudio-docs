@@ -21,12 +21,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, deployment conflict resolution"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Troubleshoot SharePoint packaging and deployment
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This topic covers various problems that you might encounter when you package and deploy SharePoint solutions.
 
 ## Enable enhanced debugging

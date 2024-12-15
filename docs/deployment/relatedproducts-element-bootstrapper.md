@@ -18,12 +18,11 @@ helpviewer_keywords:
   - "<RelatedProducts> element [bootstrapper]"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;RelatedProducts&gt; element (bootstrapper)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The `RelatedProducts` element defines other products that either depend upon or are included in the current product.
 
 ## Syntax

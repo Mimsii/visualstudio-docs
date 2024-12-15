@@ -1,7 +1,7 @@
 ---
 title: Read XML data into dataset in .NET Framework apps
 description: Read XML data into ADO.NET datasets with .NET Framework application development in Visual Studio and create Windows apps to load XML data into datasets.
-ms.date: 11/01/2023
+ms.date: 03/14/2024
 ms.topic: how-to
 dev_langs:
 - VB
@@ -17,20 +17,24 @@ helpviewer_keywords:
 - datasets [Visual Basic], reading XML data
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Read XML data into a dataset in .NET Framework applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Read XML data into a dataset in .NET Framework applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
-ADO.NET provides simple methods for working with XML data. In this walkthrough, you create a Windows application that loads XML data into a dataset. The dataset is then displayed in a <xref:System.Windows.Forms.DataGridView> control. Finally, an XML schema based on the contents of the XML file is displayed in a text box.
+ADO.NET provides simple methods for working with XML data. In this walkthrough, you create a Windows application that loads XML data into a dataset. The dataset is then displayed in a <xref:System.Windows.Forms.DataGridView> control. Finally, an XML Schema based on the contents of the XML file is displayed in a text box.
 
 ## Prerequisites
 
-To complete this tutorial, you need the **.NET desktop development** and **Data storage and processing** workloads installed in Visual Studio. To install them, open **Visual Studio Installer** and choose **Modify** (or **More** > **Modify**) next to the version of Visual Studio you want to modify. See [Modify Visual Studio](../install/modify-visual-studio.md).
+To complete this tutorial, you need Visual Studio with the following workloads installed:
+
+- **.NET desktop development**
+- **Data storage and processing**
+
+To install them, open **Visual Studio Installer** and choose **Modify** (or **More** > **Modify**) next to the version of Visual Studio you want to modify. See [Modify Visual Studio](../install/modify-visual-studio.md).
 
 ## Create a new project
 
@@ -116,7 +120,7 @@ The user interface for this application consists of the following:
 
 - A <xref:System.Windows.Forms.DataGridView> control that displays the contents of the XML file as data.
 
-- A <xref:System.Windows.Forms.TextBox> control that displays the XML schema for the XML file.
+- A <xref:System.Windows.Forms.TextBox> control that displays the XML Schema for the XML file.
 
 - Two <xref:System.Windows.Forms.Button> controls.
 
@@ -159,7 +163,7 @@ In this step, you create a new dataset named `authors`. For more information abo
 
      **DataSet1** is added to the component tray.
 
-4. In the **Properties** window, set the **Name** and <xref:System.Data.DataSet.DataSetName%2A> properties for`AuthorsDataSet`.
+4. In the **Properties** window, set the **Name** and <xref:System.Data.DataSet.DataSetName%2A> properties for `AuthorsDataSet`.
 
 ## Create the event handler to read the XML file into the dataset
 
@@ -167,7 +171,7 @@ The **Read XML** button reads the XML file into the dataset. It then sets proper
 
 1. In **Solution Explorer**, select **Form1**, and then select the **View Designer** button on the **Solution Explorer** toolbar.
 
-2. Select the **Read XML** button.
+2. Double-click the **Read XML** button.
 
      The **Code Editor** opens at the `ReadXmlButton_Click` event handler.
 
@@ -184,11 +188,11 @@ The **Read XML** button reads the XML file into the dataset. It then sets proper
 
 ## Create the event handler to display the schema in the textbox
 
-The **Show Schema** button creates a <xref:System.IO.StringWriter> object that's filled with the schema and is displayed in the <xref:System.Windows.Forms.TextBox>control.
+The **Show Schema** button creates a <xref:System.IO.StringWriter> object that's filled with the schema and is displayed in the <xref:System.Windows.Forms.TextBox> control.
 
 1. In **Solution Explorer**, select **Form1**, and then select the **View Designer** button.
 
-2. Select the **Show Schema** button.
+2. Double-click the **Show Schema** button.
 
      The **Code Editor** opens at the `ShowSchemaButton_Click` event handler.
 
@@ -213,7 +217,7 @@ You can now test the form to make sure it behaves as expected.
 
 3. Select the **Show Schema** button.
 
-     The text box displays the XML schema for the XML file.
+     The text box displays the XML Schema for the XML file.
 
 ## Next steps
 
@@ -223,7 +227,7 @@ This walkthrough teaches you the basics of reading an XML file into a dataset, a
 
 - Edit the data in the dataset and write it out to a database.
 
-## See also
+## Related content
 
 - [Access data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [XML tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

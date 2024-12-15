@@ -2,8 +2,8 @@
 title: JavaScript and TypeScript in Visual Studio
 description: Learn how Visual Studio provides rich support for JavaScript development, both using JavaScript directly, and also using the TypeScript programming language.
 titleSuffix: ""
-ms.date: "06/05/2023"
-ms.technology: vs-javascript
+ms.date: "06/27/2024"
+ms.subservice: javascript-typescript
 ms.topic: conceptual
 dev_langs:
   - "JavaScript"
@@ -11,14 +11,12 @@ dev_langs:
   - "DHTML"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
+manager: mijacobs
 ---
 # JavaScript and TypeScript in Visual Studio
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 ::: moniker range=">=vs-2022"
-Visual Studio 2022 provides rich support for JavaScript development, both using JavaScript directly, and also using the [TypeScript programming language](https://www.typescriptlang.org/), which was developed to provide a more productive and enjoyable JavaScript development experience, especially when developing projects at scale. You can write JavaScript or TypeScript code in Visual Studio for many application types and services.
+Visual Studio 2022 provides rich support for JavaScript development, both using JavaScript directly, and also using the [TypeScript programming language](https://www.typescriptlang.org/), which was developed to provide a more productive and enjoyable JavaScript development experience, especially when developing projects at scale. You can write JavaScript or TypeScript code in Visual Studio for many application types and services.
 
 ## JavaScript language service
 
@@ -39,7 +37,7 @@ Projects configured for npm, such as Node.js projects, can specify their own ver
 The TypeScript SDK has been deprecated in Visual Studio 2022. Existing projects that rely on the SDK should be upgraded to use the NuGet package. For projects that cannot be upgraded immediately, the SDK is still available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-442) and as an optional component in the Visual Studio installer.
 
 > [!TIP]
-> For projects developed in Visual Studio 2022, we encourage you to use the TypeScript NuGet or the TypeScript npm package for greater portability across different platforms and environments. For more information, see [Compile TypeScript code using NuGet](../javascript/compile-typescript-code-nuget.md) and [Compile TypeScript code using tsc](../javascript/compile-typescript-code-npm.md).
+> For projects developed in Visual Studio 2022, we encourage you to use the TypeScript NuGet or the TypeScript npm package for greater portability across different platforms and environments. For more information, see [Compile TypeScript code using NuGet](../javascript/compile-typescript-code-nuget.md) and [Compile TypeScript code using tsc](../javascript/compile-typescript-code-npm.md).
 
 ## Project templates
 
@@ -53,9 +51,7 @@ Within these new projects, you can run JavaScript and TypeScript unit tests, eas
 ::: moniker-end
 
 ::: moniker range="vs-2019"
-Visual Studio 2019 provides rich support for JavaScript development, both using JavaScript directly, and also using
-the [TypeScript programming language](https://www.typescriptlang.org/), which was developed to provide a more
-productive and enjoyable JavaScript development experience, especially when developing projects at scale. You can write JavaScript or TypeScript code in Visual Studio for many application types and services.
+Visual Studio 2019 provides rich support for JavaScript development, both using JavaScript directly, and also using the [TypeScript programming language](https://www.typescriptlang.org/), which was developed to provide a more productive and enjoyable JavaScript development experience, especially when developing projects at scale. You can write JavaScript or TypeScript code in Visual Studio for many application types and services.
 
 ## JavaScript Language Service
 

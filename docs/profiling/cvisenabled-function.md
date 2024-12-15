@@ -11,12 +11,11 @@ helpviewer_keywords:
   - CvIsEnabledEx method
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # CvIsEnabled function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Determines whether any session has enabled the specified ETW provider.
 
 ## Syntax

@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_liveRangeStartRelativeVirtualAddress"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Returns the beginning of the address range in which the local symbol is valid.
 
 ## Syntax

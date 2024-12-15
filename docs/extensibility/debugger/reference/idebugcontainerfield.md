@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugContainerField interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugContainerField
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface represents a symbol or type that is a container for other symbols or types.
 
 ## Syntax

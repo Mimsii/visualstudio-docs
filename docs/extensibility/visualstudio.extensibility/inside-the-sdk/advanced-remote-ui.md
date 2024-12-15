@@ -6,8 +6,8 @@ ms.topic: conceptual
 ms.author: maiak
 monikerRange: ">=vs-2022"
 author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 
 # Tutorial: Advanced remote UI
@@ -23,14 +23,15 @@ You'll learn about:
 - How reference types are handled in the Remote UI data context and its proxy.
 - How to use an *async command* as an event handler.
 - How to disable a single button when its *async command*'s callback is executing if multiple buttons are bound to the same command.
+- How to use XAML resource dictionaries from a Remote UI control.
 - How to use WPF types, like complex brushes, in the Remote UI data context.
 - How Remote UI handles threading.
 
 This tutorial is based on the introductory [Remote UI](remote-ui.md) article and expects that you have a working VisualStudio.Extensibility extension including:
 
 1. a `.cs` file for the command that opens the tool window,
-1. a `MyToolWindow.cs` file for the `ToolWindow` class,
-1. a `MyToolWindowContent.cs` file for the `RemoteUserControl` class,
+1. a `MyToolWindow.cs` file for the [`ToolWindow`](/dotnet/api/microsoft.visualstudio.extensibility.toolwindows.toolwindow) class,
+1. a `MyToolWindowContent.cs` file for the [`RemoteUserControl`](/dotnet/api/microsoft.visualstudio.extensibility.ui.remoteusercontrol) class,
 1. a `MyToolWindowContent.xaml` embedded resource file for the `RemoteUserControl` xaml definition,
 1. a `MyToolWindowData.cs` file for the data context of the `RemoteUserControl`.
 
@@ -69,8 +70,8 @@ To start, update `MyToolWindowContent.xaml` to show a list view and a button":
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>        
-        <Button Content=**Add color** Command="{Binding AddColorCommand}" Grid.Row="1" />
+        </ListView>
+        <Button Content="Add color" Command="{Binding AddColorCommand}" Grid.Row="1" />
     </Grid>
 </DataTemplate>
 ```
@@ -168,7 +169,7 @@ This solution still has imperfect synchronization since, when the user clicks th
 A better solution is to use the `RunningCommandsCount` property of *async commands*:
 
 ```xml
-<Button Content=**Add color** Command="{Binding AddColorCommand}" IsEnabled="{Binding AddColorCommand.RunningCommandsCount.IsZero}" Grid.Row="1" />
+<Button Content="Add color" Command="{Binding AddColorCommand}" IsEnabled="{Binding AddColorCommand.RunningCommandsCount.IsZero}" Grid.Row="1" />
 ```
 
 `RunningCommandsCount` is a counter of how many concurrent async executions of the command are currently underway. This counter is incremented on the UI thread as soon as the button is clicked, which allows to synchronously disable the button by binding `IsEnabled` to `RunningCommandsCount.IsZero`.
@@ -190,7 +191,7 @@ In this section, you implement the **Remove** button, which allows the user to d
             RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListView}}}" />
 ```
 
-2. Add the corresponding `AsyncCommand` to `MyToolWindowData`:
+2. Add the corresponding [`AsyncCommand`](/dotnet/api/microsoft.visualstudio.extensibility.ui.asynccommand) to `MyToolWindowData`:
 
 ```CSharp
 [DataMember]
@@ -261,13 +262,81 @@ In this case, we use `vs:EventHandler` to attach to each button its own separate
 
 ![Diagram of async Command with targeted RunningCommandsCount.](./media/targeted-counter.gif)
 
+## User XAML resource dictionaries
+
+Starting with Visual Studio 17.10, Remote UI supports [XAML resource dictionaries](/windows/apps/design/style/xaml-resource-dictionary). This allows multiple Remote UI controls to share styles, templates, and other resources. It also allows you to define different resources (E.g., strings) for different languages.
+
+Similarly to a Remote UI control XAML, resource files must be configured as embedded resources:
+
+```xml
+<ItemGroup>
+  <EmbeddedResource Include="MyResources.xaml" />
+  <Page Remove="MyResources.xaml" />
+</ItemGroup>
+```
+
+Remote UI references resource dictionaries in a different way than WPF: they are not added to the control's merged dictionaries (merged dictionaries are not supported at all by Remote UI) but referenced by name in the control's .cs file:
+
+```cs
+internal class MyToolWindowContent : RemoteUserControl
+{
+    public MyToolWindowContent()
+        : base(dataContext: new MyToolWindowData())
+    {
+        this.ResourceDictionaries.AddEmbeddedResource(
+            "MyToolWindowExtension.MyResources.xaml");
+    }
+...
+```
+
+`AddEmbeddedResource` takes the full name of the embedded resource which, by default, is composed of the root namespace for the project, any subfolder path it may be under, and the file name. It is possible to override such name by setting a `LogicalName` for the `EmbeddedResource` in the project file.
+
+The resource file itself is a normal WPF resource dictionary:
+
+```xml
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+  <system:String x:Key="removeButtonText">Remove</system:String>
+  <system:String x:Key="addButtonText">Add color</system:String>
+</ResourceDictionary>
+```
+
+You can reference a resource from the resource dictionary in the Remote UI control using `DynamicResource`:
+
+```xml
+<Button Content="{DynamicResource removeButtonText}" ...
+```
+
+## Localizing XAML resource dictionaries
+
+Remote UI resource dictionaries can be localized in the same way as you would localize embedded resources: you create other XAML files with the same name and a language suffix, for example `MyResources.it.xaml` for Italian resources:
+
+```xml
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+  <system:String x:Key="removeButtonText">Rimuovi</system:String>
+  <system:String x:Key="addButtonText">Aggiungi colore</system:String>
+</ResourceDictionary>
+```
+
+You can use wildcards in the project file to include all localized XAML dictionaries as embedded resources:
+
+```xml
+<ItemGroup>
+  <EmbeddedResource Include="MyResources.*xaml" />
+  <Page Remove="MyResources.*xaml" />
+</ItemGroup>
+```
+
 ## Use WPF types in the data context
 
 Until now, the data context of our *remote user control* has been composed of primitives (numbers, strings, etc.), observable collections and our own classes marked with `DataContract`. it's sometimes useful to include simple WPF types in the data context like complex brushes.
 
 Because a *VisualStudio.Extensibility* extension may not even run in the Visual Studio process, it can't share WPF objects directly with its UI. The extension may not even have access to WPF types since it can target `netstandard2.0` or `net6.0` (not the `-windows` variant).
 
-Remote UI provides the `XamlFragment` type, which allows including a XAML definition of a WPF object in the data context of a *remote user control*:
+Remote UI provides the [`XamlFragment`](/dotnet/api/microsoft.visualstudio.extensibility.ui.xamlfragment) type, which allows including a XAML definition of a WPF object in the data context of a *remote user control*:
 
 ```CSharp
 [DataContract]
@@ -298,7 +367,7 @@ With the code above, the `Color` property value is converted to a `LinearGradien
 
 *Async command* callbacks (and `INotifyPropertyChanged` callbacks for values updated by the UI through data biding) are raised on random thread pool threads. Callbacks are raised one at a time and won't overlap until the code yields control (using an `await` expression).
 
-This behavior can be changed by passing a [NonConcurrentSynchronizationContext](/dotnet/api/microsoft.visualstudio.threading.nonconcurrentsynchronizationcontext) to the `RemoteUserControl` constructor. In that case, you can use the provided synchronization context for all *async command* and `INotifyPropertyChanged` callbacks related to that control.
+This behavior can be changed by passing a [NonConcurrentSynchronizationContext](/dotnet/api/microsoft.visualstudio.threading.nonconcurrentsynchronizationcontext) to the [`RemoteUserControl`](/dotnet/api/microsoft.visualstudio.extensibility.ui.remoteusercontrol) constructor. In that case, you can use the provided synchronization context for all *async command* and `INotifyPropertyChanged` callbacks related to that control.
 
 ## Related content
 

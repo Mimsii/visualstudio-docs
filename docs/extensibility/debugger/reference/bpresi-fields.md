@@ -9,15 +9,14 @@ helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # BPRESI_FIELDS
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies the information to be retrieved about the successful resolution of a breakpoint.
 
 ## Syntax

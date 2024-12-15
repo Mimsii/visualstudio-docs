@@ -7,18 +7,18 @@ dev_langs:
   - "C++"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::findInlineeLinesByRVA
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves an enumeration that allows a client to iterate through the line number information of all functions that are inlined, directly or indirectly, in this symbol within the specified relative virtual address (RVA).
 
 ## Syntax
 
 ```C++
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,
    IDiaEnumLineNumbers** ppResult
 );
 ```

@@ -7,12 +7,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.InitializeCorrelation.UI"
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # InitializeCorrelation Activity Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **InitializeCorrelation** activity designer is used to create and configure an <xref:System.ServiceModel.Activities.InitializeCorrelation> activity. The <xref:System.ServiceModel.Activities.InitializeCorrelation> activity establishes a correlation between messages before sending or receiving them.
 

@@ -6,19 +6,18 @@ ms.topic: reference
 f1_keywords:
 - vc.task.cppclean
 dev_langs:
-- VB
-- CSharp
-- C++
 - C++
 helpviewer_keywords:
 - MSBuild (C++), CPPClean task
 - CPPClean task (MSBuild (C++))
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # CPPClean Task
+
+[!INCLUDE [C++-specific task](./includes/cpp-task.md)]
 
 Deletes the temporary files that MSBuild creates when a C++ project is built. The process of deleting build files is known as *cleaning*.
 

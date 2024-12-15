@@ -11,12 +11,10 @@ helpviewer_keywords:
 - applications [Visual Studio], rebuilding
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Rebuild (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Cleans and then builds the specified solution configuration.
 

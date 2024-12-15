@@ -1,5 +1,5 @@
 ---
-description: "Given a corresponding tag value, this method returns an enumeration of symbols that are contained in a specified parent Accelerator stub function at a specified relative virtual address."
+description: Given a corresponding tag value, this method returns an enumeration of symbols that are contained in a specified parent Accelerator stub function at a specified relative virtual address.
 title: "IDiaSession::findSymbolsByRVAForAcceleratorPointerTag"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -7,18 +7,18 @@ dev_langs:
   - "C++"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Given a corresponding tag value, this method returns an enumeration of symbols that are contained in a specified parent Accelerator stub function at a specified relative virtual address.
 
 ## Syntax
 
 ```C++
-HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
+HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
    IDiaSymbol*           parent,
    DWORD                 tagValue,
    DWORD                 rva,

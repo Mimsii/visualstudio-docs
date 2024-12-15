@@ -11,13 +11,11 @@ helpviewer_keywords:
   - unit tests, data-driven
   - data-driven unit tests
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 author: mikejo5000
 ---
 # Create a data-driven unit test
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can use the Microsoft unit test framework (MSTest) for managed code to set up a unit test method to retrieve values from a data source. The method is run successively for each row in the data source, which makes it easy to test a variety of input by using a single method.
 
@@ -186,6 +184,9 @@ The `DataSource` attribute specifies the connection string for the data source a
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
+
+> [!CAUTION]
+> The connection string can contain sensitive data (for example, a password). The connection string is stored in plain text in source code and in the compiled assembly. Restrict access to the source code and assembly to protect this sensitive information.
 
 The DataSource attribute has three constructors.
 

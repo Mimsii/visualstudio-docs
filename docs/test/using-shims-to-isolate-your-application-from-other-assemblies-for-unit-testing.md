@@ -5,15 +5,13 @@ ms.date: 05/23/2023
 ms.topic: how-to
 ms.author: oscalles
 manager: aajohn
-ms.technology: vs-ide-test
+ms.subservice: test-tools
 author: ocallesp
 dev_langs: 
   - CSharp
   - VB
 ---
 # Use shims to isolate your app for unit testing
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 **Shim types**, one of the two key technologies utilized by the Microsoft Fakes Framework, are instrumental in isolating the components of your app during testing. They work by intercepting and diverting calls to specific methods, which you can then direct to custom code within your test. This feature enables you to manage the outcome of these methods, ensuring the results are consistent and predictable during each call, regardless of external conditions. This level of control streamlines the testing process and aids in achieving more reliable and accurate results.
 
@@ -104,8 +102,7 @@ this.Records = System.IO.File.ReadAllLines(path);
 
    ![Screnshot of the command Add Fakes Assembly.](../test/media/microsoft-fakes-shims-add-fakes-assembly.png)
 
-Since building results in some warnings and errors because not all types can be used with shims, you will have to
-modify the content of Fakes\mscorlib.fakes to exclude them.
+Since building results in some warnings and errors because not all types can be used with shims, you will have to modify the content of `Fakes\mscorlib.fakes` to exclude them.
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/" Diagnostic="true">
@@ -195,7 +192,6 @@ Shims operate by introducing *detours* into the codebase of the application bein
 It's important to note that these detours are created and removed dynamically at runtime. Detours should always be created within the lifespan of a `ShimsContext`. When the ShimsContext is disposed, any active shims that were created within it are also removed. To manage this efficiently, it's recommended to encapsulate the creation of detours within a `using` statement.
 
 ---
-
 
 ## Shims for different kinds of methods
 
@@ -409,7 +405,6 @@ public class ShimMyBase : ShimBase<MyBase> {
     { set { ... } }
 }
 ```
-
 
 ### Static constructors
 

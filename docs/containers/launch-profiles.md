@@ -1,20 +1,19 @@
 ---
-title: "Launch a subset of Docker Compose services"
+title: Launch a subset of Docker Compose services
 description: Use Docker Compose launch profiles and control what services are available for running and debugging with Visual Studio for Windows.
 author: ghogen
-manager: jmartens
-ms.technology: vs-container-tools
+manager: mijacobs
+ms.subservice: container-tools
 ms.devlang: dotnet
 ms.topic: how-to
-ms.date: 10/08/2021
+ms.date: 12/10/2024
 ms.author: ghogen
 monikerRange: ">=vs-2019"
 ---
+
 # Launch a subset of Compose services
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-If you have an application that consists of multiple services and uses Docker Compose, you can configure which services run and debug by creating or editing an existing launch profile in Docker Compose launch settings. Launch profiles allow you to dynamically run only the services that matter to your current scenario. You can create and select from launch profiles in order to customize your debugging experience and set specific launch actions such as `Browser Launch URL`. You will also have the option of either choosing each service individually or by choosing a Docker Compose profile, which also looks at your Compose file to determine the group of services to run.
+If you have an application that consists of multiple services and uses Docker Compose, you can configure which services run and debug by creating or editing an existing launch profile in Docker Compose launch settings. Launch profiles allow you to dynamically run only the services that matter to your current scenario. You can create and select from launch profiles in order to customize your debugging experience and set specific launch actions such as `Browser Launch URL`. You also have the option of either choosing each service individually or by choosing a Docker Compose profile, which also looks at your Compose file to determine the group of services to run.
 
 For information about Docker Compose profiles, see [Using profiles with Compose](https://docs.docker.com/compose/profiles/).
 
@@ -91,14 +90,14 @@ In the example below, the `web1` Compose profile is selected, which filters the 
 
 !["Screenshot of launch settings dialog box"](media/launch-settings/launch-settings-create-profile.png)
 
->[!NOTE]
+> [!NOTE]
 > The Docker Compose profiles section only appears if there are profiles defined in your *docker-compose.yml* files.
 
-The next example demonstrates selecting between individual services instead of filtering to the services in a Compose profile. Here, we show how the dialog would look if you created a new launch profile named `test2` that only starts two out of the five services, `webapplication1` with debugging and `webapplication2` without debugging.  This launch profile also launches a browser when the application starts and opens it to the home page of `webapplication1`. 
+The next example demonstrates selecting between individual services instead of filtering to the services in a Compose profile. Here, we show how the dialog would look if you created a new launch profile named `test2` that only starts two out of the five services, `webapplication1` with debugging and `webapplication2` without debugging. This launch profile also launches a browser when the application starts and opens it to the home page of `webapplication1`.
 
 ![Screenshot of launch settings dialog with some services deselected](media/launch-settings/launch-settings-selected.png)
 
-And this information will be saved in *launchSettings.json* as shown below
+And this information is saved in *launchSettings.json* as shown below
 
 ```json
 {
@@ -125,14 +124,14 @@ And this information will be saved in *launchSettings.json* as shown below
 
 You can also further customize launch behaviors by creating Visual Studio launch profiles that make use of the Compose profiles.
 
-To create another profile that makes use of the Compose profile, select **Use Docker Compose profiles** and choose `web1`. Now the launch profile includes three services – `webapplication1` (which belongs to both `web` and `web1` Compose profiles), `external1` and `external2`. By default, the services without source code such as `external1` and  `external2` have the default action of **Start without debugging**. .NET applications with source code will default to **Start debugging**.
+To create another profile that makes use of the Compose profile, select **Use Docker Compose profiles** and choose `web1`. Now the launch profile includes three services: `webapplication1` (which belongs to both `web` and `web1` Compose profiles), `external1`, and `external2`. By default, the services without source code such as `external1` and  `external2` have the default action of **Start without debugging**. .NET applications with source code defaults to **Start debugging**.
 
 > [!IMPORTANT]
-> If a service doesn't specify a Compose profile, it will be included in all Compose profiles implicitly.
+> If a service doesn't specify a Compose profile, it's included in all Compose profiles implicitly.
 
 ![Screenshot of launch settings dialog with another profile created](media/launch-settings/launch-settings-create-profile.png)
 
-This information will be saved as shown in the following code. The configuration for the service and its default action are not saved unless you change the default action.
+This information is saved as shown in the following code. The configuration for the service and its default action are not saved unless you change the default action.
 
 ```json
 {
@@ -173,11 +172,11 @@ You can also change the action of webapplication1 to **Start without debugging**
 
 ## Properties
 
-Here is a description of each property in the *launchSettings.json*:
+Here's a description of each property in the *launchSettings.json*:
 
 |Property| Description|
 | - | - |
-|commandName| Name of the command. Defaults to “DockerCompose”|
+|commandName| Name of the command. Defaults to "DockerCompose"|
 |commandVersion| Version number used to manage the schema of the DockerCompose launch profile.|
 |composeProfile| Parent property that defines the launch profile definition. Its child properties are `includes` and `serviceActions`|
 |composeProfile - includes | List of the Compose profile names that make up a launch profile.|
@@ -187,12 +186,8 @@ Here is a description of each property in the *launchSettings.json*:
 |composeLaunchUrl| The URL to use when launching the browser. Valid replacement tokens are "{ServiceIPAddress}", "{ServicePort}", and "{Scheme}". For example: {Scheme}://{ServiceIPAddress}:{ServicePort}|
 |composeLaunchServiceName| Specifies the service used for replacing the tokens in composeLaunchUrl.|
 
-## Next steps
+## Related content
 
-Learn more about how Container Tools works by reading [Visual Studio Container Tools build and debug overview](container-build.md).
-
-## See also
-
+- [Visual Studio Container Tools build and debug overview](container-build.md)
 - [Visual Studio Container Tools launch settings](container-launch-settings.md)
-
 - [Docker Compose build settings](docker-compose-properties.md)

@@ -2,7 +2,7 @@
 title: "Edit and Continue error message dialog box| Microsoft Docs"
 description: Edit and Continue may report that it isn't available for your code changes. This article provides possible reasons.
 ms.date: "10/15/2018"
-ms.topic: "reference"
+ms.topic: "ui-reference"
 f1_keywords:
   - "vs.debug.ENC.SupportedButNotAvailable"
   - "vs.debug.ENC.CannotEditWhileException"
@@ -15,12 +15,10 @@ helpviewer_keywords:
   - "Edit and Continue Error Message dialog box"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Edit and Continue error message
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **Edit and Continue** error message box appears when you're debugging in a code language that supports Edit and Continue, but Edit and Continue isn't available for the code changes you've made. The error message provides a more detailed explanation. To respond to the dialog, select **OK** to close the dialog box and cancel the edit attempt.
 

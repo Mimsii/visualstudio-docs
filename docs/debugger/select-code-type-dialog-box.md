@@ -19,12 +19,10 @@ helpviewer_keywords:
 no-loc: ["Blazor WebAssembly"]
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Select Code Type Dialog Box
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 To open this dialog box, open the **Attach to Process** dialog box, and then click the **Select** button.
 

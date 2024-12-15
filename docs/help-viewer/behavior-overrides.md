@@ -5,12 +5,10 @@ ms.date: 05/17/2022
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-help-viewer
+manager: mijacobs
+ms.subservice: help-viewer
 ---
 # Override Help Viewer defaults
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can change the default behavior of Microsoft Help Viewer and help-related features in the Visual Studio IDE.
 

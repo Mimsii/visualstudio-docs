@@ -1,6 +1,6 @@
 ---
 title: "IDiaSymbol::get_baseType"
-description: "Retrieves the base type for this symbol"
+description: Retrieves the base type for this symbol
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_baseType method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_baseType
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the base type for this symbol.
 
 ## Syntax

@@ -12,25 +12,24 @@ dev_langs:
   - "C++"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Mixed mode debugging for x64 processes is only supported when using Microsoft.NET Framework 4 or greater
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 .NET Framework versions earlier than 4 do not provide support for mixed-mode debugging of x64 processes. That means that you cannot step from managed code to native code, or from native code to managed code, while debugging.
 
 ### Workarounds
 
 - Update your project to use Microsoft .NET Framework 4 or later.
 
-     -or-
+    -or-
 
-     Debug your managed and native code in separate debugging sessions.
+- Debug your managed and native code in separate debugging sessions.
 
-     -or-
+    -or-
 
-     Debug your mixed code as a 32-bit process, as described in the following procedures.
+- Debug your mixed code as a 32-bit process, as described in the following procedures.
 
 ### To change the platform to 32-bit (Visual Basic or C#)
 
@@ -52,5 +51,5 @@ ms.technology: vs-ide-debug
 
 - See [Setting Up SQL Debugging](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
-## See also
+## Related content
 - [Debug 64-Bit Applications](../debugger/debug-64-bit-applications.md)

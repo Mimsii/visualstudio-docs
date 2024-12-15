@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugEngineLaunch2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugEngineLaunch2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Used by a debug engine (DE) to launch and terminate programs.
 
 ## Syntax

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - TEXT_DOC_ATTR_2 enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # TEXT_DOC_ATTR_2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Describes the attributes of a document.
 
 ## Syntax

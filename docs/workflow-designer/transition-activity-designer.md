@@ -7,12 +7,10 @@ f1_keywords:
 - System.Activities.Statements.Transition.UI
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Transition Activity Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 A <xref:System.Activities.Statements.Transition> represents the transition between two states.
 

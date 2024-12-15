@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a specified symbol type that contains, or is closest to, a specified address."
+description: Retrieves a specified symbol type that contains, or is closest to, a specified address.
 title: "IDiaSession::findSymbolByAddr"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::findSymbolByAddr method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findSymbolByAddr
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a specified symbol type that contains, or is closest to, a specified address.
 
 ## Syntax
 
 ```C++
-HRESULT findSymbolByAddr ( 
+HRESULT findSymbolByAddr ( 
    DWORD        isect,
    DWORD        offset,
    SymTagEnum   symtag,

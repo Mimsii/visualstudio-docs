@@ -8,15 +8,14 @@ helpviewer_keywords:
 - LoadSymbolsWithCorModule
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Loads debug symbols given the **ICorDebugModule** object.
 
 ## Syntax

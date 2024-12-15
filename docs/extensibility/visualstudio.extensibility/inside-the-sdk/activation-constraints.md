@@ -6,23 +6,23 @@ ms.date: 6/30/2023
 ms.author: maiak
 monikerRange: ">=vs-2022"
 author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 
 # Rule-based activation constraints
 
-One of the common concepts in VisualStudio.Extensibility is use of context-based activation rules. These are rules that govern the conditions under which an extension or a command is surfaced to the user. An example of a context-based activation rule is the [`VisibleWhen`](/dotnet/api/microsoft.visualstudio.extensibility.commands.commandconfiguration.visiblewhen) property in a command's configuration that declares when the command is made visible.
+One of the common concepts in VisualStudio.Extensibility is the use of context-based activation rules. These rules govern the conditions under which an extension or a command is surfaced to the user. An example of a context-based activation rule is the [`VisibleWhen`](/dotnet/api/microsoft.visualstudio.extensibility.commands.commandconfiguration.visiblewhen) property in a command's configuration that declares when the command is made visible.
 
 ## Constraint types
 
-Each constraint is defined as an instance of the [`ActivationConstraint`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint) type created with one of the `ActivationConstraint`'s factory methods, like `ClientContext`.
+Each constraint is defined as an instance of the [`ActivationConstraint`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint) type created with one of the `ActivationConstraint`'s factory methods, like [`ClientContext`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.clientcontext).
 
 Multiple activation constraints can be combined together using the [`And`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.and), [`Or`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.or), and [`Not`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.not) methods. You can also combine activation constraints using operators `&`, `|`, and `!`.
 
 ## Example definition
 
-In the following example, the command configuration property `EnabledWhen` defines when the command is in the enabled state. The `ClientContext` method is one of the activation constraint factory methods. It generates the activation constraint, given the two arguments, a string and regular expression pattern to match against that string. Therefore, the following code indicates that a command is enabled when the user has selected a file with one of those extensions.
+In the following example, the command configuration property [`EnabledWhen`](/dotnet/api/microsoft.visualstudio.extensibility.commands.commandconfiguration.enabledwhen) defines when the command is in the enabled state. The [`ClientContext`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.clientcontext) method is one of the activation constraint factory methods. It generates the activation constraint, given the two arguments, a string and regular expression pattern to match against that string. Therefore, the following code indicates that a command is enabled when the user selects a file with one of those extensions.
 
 ```csharp
 public override CommandConfiguration CommandConfiguration => new("%My command.DisplayName%")
@@ -51,11 +51,11 @@ EnabledWhen =
 
 ## Activation constraint properties
 
-Activation constraints can be used to configure a variety of VisualStudio.Extensibility functionalities, including the [loading of an extension](/dotnet/api/microsoft.visualstudio.extensibility.extensionconfiguration.loadedwhen), and the [enabled](/dotnet/api/microsoft.visualstudio.extensibility.commands.commandconfiguration.enabledwhen) or [visible](/dotnet/api/microsoft.visualstudio.extensibility.commands.commandconfiguration.visiblewhen) state of a command. The configuration types contain property of type `ActivationConstraint`, typically with a `When` suffix that implies that something activates when the specified conditions are satisfied.
+Activation constraints can be used to configure a variety of VisualStudio.Extensibility functionalities, including the [loading of an extension](/dotnet/api/microsoft.visualstudio.extensibility.extensionconfiguration.loadedwhen), and the [enabled](/dotnet/api/microsoft.visualstudio.extensibility.commands.commandconfiguration.enabledwhen) or [visible](/dotnet/api/microsoft.visualstudio.extensibility.commands.commandconfiguration.visiblewhen) state of a command. The configuration types contain property of type [`ActivationConstraint`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint), typically with a `When` suffix that implies that something activates when the specified conditions are satisfied.
 
 ## Activation constraint factory methods
 
-This section shows the list of currently supported activation constraints. Each entry on the list is a factory method on the `ActivationConstraint` type.
+This section shows the list of currently supported activation constraints. Each entry on the list is a factory method on the [`ActivationConstraint`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint) type.
 
 | Term | Description |
 | -- | -- |
@@ -64,6 +64,7 @@ This section shows the list of currently supported activation constraints. Each 
 | [`ProjectAddedItem`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.projectaddeditem)(\<pattern>=\<regex>) | The term is true when a file matching the "pattern" is added to a project in the solution that is opened. |
 | [`SolutionHasProjectCapability`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.solutionhasprojectcapability)(\<expression>=[`ProjectCapability`](/dotnet/api/microsoft.visualstudio.extensibility.projectcapability)) | True whenever solution has a project with capabilities matching the provided subexpression. An expression can be something like `VB | CSharp`. For more about project capabilities, see [Project query API overview](../project/project.md). |
 | [`SolutionState`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.solutionstate)(\<state>=[`SolutionState`](/dotnet/api/microsoft.visualstudio.extensibility.solutionstate)) | True when solution state matches the provided value, see [solution states](#solution-states) for list of values. |
+| [`EditorContentType`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.editorcontenttype)(\<contentType>) | True when active editor content type is or inherits from specific content type.
 
 For compatibility reasons, the following legacy activation constraints are also supported:
 
@@ -73,6 +74,7 @@ For compatibility reasons, the following legacy activation constraints are also 
 | [`ActiveProjectFlavor`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.activeprojectflavor)(\<guid>) | True whenever the selected project has a flavor matching the given project type GUID. |
 | [`SolutionHasProjectBuildProperty`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.solutionhasprojectbuildproperty)(\<property>=\<regex>) | The term is true when solution has a loaded project with the specified build property and property value matches to regex filter provided. |
 | [`SolutionHasProjectFlavor`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.solutionhasprojectflavor)(\<guid>) | True whenever a solution has project that is flavored (aggregated) and has a flavor matching the given project type GUID. |
+| [`UIContext`](/dotnet/api/microsoft.visualstudio.extensibility.activationconstraint.uicontext)(\<guid>) | True when specified [UI Context](/dotnet/api/microsoft.visualstudio.vsconstants.uicontext) is active in Visual Studio instance. |
 
 ## Solution states
 

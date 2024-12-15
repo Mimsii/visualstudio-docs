@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugManagedObject::GetManagedObject method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugManagedObject::GetManagedObject
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Returns an interface that represents the managed object.
 
 ## Syntax

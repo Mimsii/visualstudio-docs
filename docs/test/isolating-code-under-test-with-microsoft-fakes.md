@@ -5,15 +5,13 @@ ms.date: 05/23/2023
 ms.topic: how-to
 ms.author: oscalles
 manager: aajohn
-ms.technology: vs-ide-test
+ms.subservice: test-tools
 author: ocallesp
 dev_langs: 
   - VB
   - CSharp
 ---
 # Isolate code under test with Microsoft Fakes
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Code isolation is a testing strategy often implemented with tools like Microsoft Fakes, where the code you're testing is separated from the rest of the application. This separation is achieved by replacing parts of the application that interact with the code under test with stubs or shims. These are small pieces of code controlled by your tests, which simulate the behavior of the actual parts they're replacing.
 

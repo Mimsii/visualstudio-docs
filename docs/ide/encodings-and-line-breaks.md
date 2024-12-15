@@ -14,12 +14,10 @@ helpviewer_keywords:
 - Visual Studio, line break characters
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Encodings and line endings
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The following characters are interpreted as line breaks in Visual Studio:
 

@@ -7,15 +7,14 @@ helpviewer_keywords:
 - IDebugPortSupplierDescription2::GetDescription
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugPortSupplierDescription2::GetDescription
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the description and description metadata for the port supplier.
 
 ## Syntax

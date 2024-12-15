@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugExpressionContext2::ParseText
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExpressionContext2::ParseText
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Parses an expression in text form for later evaluation.
 
 ## Syntax
@@ -96,7 +95,7 @@ HRESULT CEnvBlock::ParseText(
     if (pszAnsiCode) {
         // Map the wide-character pszCode string to the new pszAnsiCode character string.
         WideCharToMultiByte(CP_ACP, 0, pszCode, -1, pszAnsiCode, iAnsiLen, NULL, NULL);
-        // Check to see if the app can succesfully get the environment variable.
+        // Check to see if the app can successfully get the environment variable.
         if (GetEnv(pszAnsiCode)) {
 
             // Create and initialize a CExpression object.
@@ -109,7 +108,7 @@ HRESULT CEnvBlock::ParseText(
             *ppExpr = pExpr;
             (*ppExpr)->AddRef();
             hr = S_OK;
-        // If the program cannot succesfully get the environment variable.
+        // If the program cannot successfully get the environment variable.
         } else {
             // Set the errror message and return E_FAIL.
             *pbstrError = SysAllocString(L"No such environment variable.");

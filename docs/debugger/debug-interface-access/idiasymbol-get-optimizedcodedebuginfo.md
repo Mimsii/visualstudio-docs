@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_optimizedCodeDebugInfo method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_optimizedCodeDebugInfo
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the function contains debug information that is specific for optimized code.
 
 ## Syntax

@@ -1,5 +1,5 @@
 ---
-description: "Reads the specified number of bytes starting at the specified offset from an executable file."
+description: Reads the specified number of bytes starting at the specified offset from an executable file.
 title: "IDiaReadExeAtOffsetCallback::ReadExecutableAt"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaReadExeAtOffsetCallback::ReadExecutableAt method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaReadExeAtOffsetCallback::ReadExecutableAt
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Reads the specified number of bytes starting at the specified offset from an executable file.
 
 ## Syntax
 
 ```C++
-HRESULT ReadExecutableAt ( 
+HRESULT ReadExecutableAt ( 
    DWORDLONG fileOffset,
    DWORD     cbData,
    DWORD*    pcbData,

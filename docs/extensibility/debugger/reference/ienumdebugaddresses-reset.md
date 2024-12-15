@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IEnumDebugAddresses::Reset method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IEnumDebugAddresses::Reset
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method resets the enumeration to the first element.
 
 ## Syntax

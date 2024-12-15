@@ -11,12 +11,11 @@ helpviewer_keywords:
   - "shapes [Office development in Visual Studio], common tasks with Visio shapes"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Work with Visio shapes
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The topics in this section provide step-by-step procedures and code examples for using the object model of Microsoft Office Visio to work with shapes in Office projects.
 
 |Task|Procedure|

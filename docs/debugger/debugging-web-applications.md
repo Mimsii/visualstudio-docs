@@ -10,12 +10,10 @@ helpviewer_keywords:
   - "ASP.NET Web pages, debugging"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Debugging Web Applications
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This article provides links to help you debug different types of web applications.
 
@@ -39,7 +37,7 @@ This article provides links to help you debug different types of web application
 
   AJAX-enabled Web applications make heavy use of script code and pose special debugging challenges. For information about AJAX debugging techniques, see [Debugging and Tracing Ajax Applications Overview](/previous-versions/bb398817(v=vs.140)).
 
-## See also
+## Related content
 
 - [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)
 - [First look at the debugger](../debugger/debugger-feature-tour.md)

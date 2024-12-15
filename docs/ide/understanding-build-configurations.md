@@ -1,8 +1,8 @@
 ---
 title: Understand build configurations
 description: Discover how to work with build configurations when you need to build your projects with different settings in Visual Studio.
-ms.date: 11/01/2023
-ms.technology: vs-ide-compile
+ms.date: 11/14/2024
+ms.subservice: compile-build
 ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
@@ -23,11 +23,9 @@ helpviewer_keywords:
 - solutions [Visual Studio], build configuration
 author: ghogen
 ms.author: ghogen
-manager: jmartens
+manager: mijacobs
 ---
 # Understand build configurations
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You need build configurations when you need to build your projects with different settings. For example, **Debug** and **Release** are build configurations, and different compiler options are used accordingly when building them.  One configuration is active and is indicated in the command bar at the top of the IDE.
 
@@ -37,9 +35,6 @@ You need build configurations when you need to build your projects with differen
 :::moniker range=">=vs-2022"
 ![Screenshot showing the active configuration in the main Visual Studio toolbar.](media/vs-2022/build-configurations-active-config.png)
 :::moniker-end
-
-> [!NOTE]
-> This topic applies to Visual Studio on Windows. For Visual Studio for Mac, see [Build configurations in Visual Studio for Mac](/visualstudio/mac/configurations).
 
 The configuration and the platform control where built output files are stored. Normally, when Visual Studio builds your project, the output is placed in a project subfolder named with the active configuration (for example, *bin/Debug/x86*), but you can change that.
 
@@ -101,7 +96,6 @@ When you build a solution using the **Build** > **Build Solution** command, Visu
 
 If you want to build multiple configurations and platforms in one action, you can use the **Build** > **Batch Build** option in Visual Studio. To access this feature, press **Ctrl**+**Q** to open the search box, and enter `Batch build`. Batch build is not available for all project types. See [How to: Build multiple configurations simultaneously](how-to-build-multiple-configurations-simultaneously.md).
 
-
 ## Related content
 
 - [Walkthrough: Build an application](../ide/walkthrough-building-an-application.md)
@@ -109,4 +103,3 @@ If you want to build multiple configurations and platforms in one action, you ca
 - [Solutions and projects](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ build reference](/cpp/build/reference/c-cpp-building-reference)
 - [Configure projects to target platforms](how-to-configure-projects-to-target-platforms.md)
-- [Build configurations (Visual Studio for Mac)](/visualstudio/mac/configurations)

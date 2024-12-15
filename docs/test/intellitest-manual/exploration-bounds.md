@@ -6,13 +6,11 @@ ms.topic: reference
 helpviewer_keywords:
   - "IntelliTest, Exploration bounds"
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 author: mikejo5000
 ---
 # Exploration bounds
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 **PexSettingsAttributeBase** is the abstract base class for settings bounds as attributes. See [Settings Waterfall](settings-waterfall.md) for an overview of settings in IntelliTest.
 
@@ -65,8 +63,7 @@ Typically, the reason for a timeout is that IntelliTest is trying to find a solu
 
 The maximum number of branches that may be taken along a single execution path.
 
-The motivation behind this exploration bound is to limit the length of any execution path that IntelliTest explores during [input generation](input-generation.md). In particular, it prevents IntelliTest from becoming unresponsive
-if the program goes into an infinite loop.
+The motivation behind this exploration bound is to limit the length of any execution path that IntelliTest explores during [input generation](input-generation.md). In particular, it prevents IntelliTest from becoming unresponsive if the program goes into an infinite loop.
 
 Each conditional and unconditional branch of the executed and monitored code is counted towards this limit, including branches which do not depend on the inputs of the parameterized test.
 
@@ -81,8 +78,7 @@ for (int i=0; i<100; i++) { }
 
 The maximum number of calls that may be made during a single execution path.
 
-The motivation behind this exploration bound is to limit the length of any execution path that IntelliTest explores during [input generation](input-generation.md). In particular, it prevents IntelliTest from becoming unresponsive
-if the program calls a method recursively an infinite number of times, which would cause a stack overflow that IntelliTest cannot recover from.
+The motivation behind this exploration bound is to limit the length of any execution path that IntelliTest explores during [input generation](input-generation.md). In particular, it prevents IntelliTest from becoming unresponsive if the program calls a method recursively an infinite number of times, which would cause a stack overflow that IntelliTest cannot recover from.
 
 Each call (direct, indirect, virtual, jump) of the executed and monitored code is counted towards this limit.
 
@@ -96,7 +92,7 @@ The motivation behind this exploration bound is to limit the size of the stack o
 <a name="maxconditions"></a>
 ## MaxConditions
 
-The emaximum number of conditions over the inputs that may be checked during a single execution path.
+The maximum number of conditions over the inputs that may be checked during a single execution path.
 
 The motivation behind this exploration bound is to limit the complexity of any execution path that IntelliTest explores during [input generation](input-generation.md). Each conditional branch that depends on the inputs of the parameterized test is counted towards this limit.
 
@@ -118,7 +114,7 @@ void ParameterizedTest(int n)
 <a name="maxruns"></a>
 ## MaxRuns
 
-Th emaximum number of runs that IntelliTest will try during the exploration of a test.
+The maximum number of runs that IntelliTest will try during the exploration of a test.
 
 The motivation behind this exploration bound is that any code which contains loops or recursion might have an infinite number of execution paths, and thus IntelliTest needs to be limited during [input generation](input-generation.md).
 

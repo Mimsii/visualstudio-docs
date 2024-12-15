@@ -3,20 +3,18 @@ title: Welcome to the Visual Studio docs
 description: Find and learn about the resources available in the docs for the Visual Studio IDE on the Windows platform.
 ms.topic: ui-reference
 ms.author: ghogen
-ms.prod: visual-studio
-ms.technology: 
+ms.service: visual-studio
+ms.subservice: 
 author: ghogen
-manager: jmartens
+manager: mijacobs
 f1_keywords:
  - vs.ViewHelp
  - MSDNSTART
  - vs.Default.Query
-ms.date: 02/28/2023
+ms.date: 05/14/2024
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Welcome to the Visual Studio docs
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You likely arrived here by clicking **View Help** in the Visual Studio IDE. Let's get you where you need to go.
 
@@ -79,7 +77,7 @@ You can install a local copy of the documentation, also called offline documenta
 
 First, you need to [install the Help Viewer](~/help-viewer/install-manage-local-content.md), which is available in the Visual Studio Installer. Choose **Modify** > **Individual Components** and search for **Help Viewer**.
 
-Not all documentation on the Learn platform is available locally. Available documentation includes Visual Studio, .NET, Windows APIs, SQL Server, and more. To see the full list of what you can install, choose the **View > Manage Help Content** menu item.
+Not all documentation on the Learn platform is available locally. Available documentation includes Visual Studio, .NET, Windows APIs, SQL Server, and more. To see the full list of what you can install, choose the **Help > Add and Remove Help Content** menu item from the main Visual Studio menu, or in the Help Viewer, use the toolbar button  with the tooltip **Manage Help Content** (it looks like books on a shelf), or press **Ctrl**+**Shift**+**M**.
 
 ## More help & feedback
 
@@ -90,4 +88,4 @@ If your feedback is about the documentation, use the feedback link at the bottom
 ## Next steps
 
 + [Main documentation home page](~/windows/index.yml)
-+ [Select a color theme for Visual Studio](~/ide/quickstart-personalize-the-ide.md)
++ [Select a color theme for Visual Studio](~/ide/how-to-change-fonts-and-colors-in-visual-studio.md)

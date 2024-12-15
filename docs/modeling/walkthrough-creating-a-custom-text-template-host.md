@@ -8,15 +8,13 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 dev_langs:
 - CSharp
 - VB
 ---
 # Walkthrough: Create a Custom Text Template Host
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 A *text template host* provides an environment that enables the *text template transformation engine* to run. The host is responsible for managing the engine's interaction with the file system. The engine or *directive processor* that needs a file or an assembly can request a resource from the host. The host can then search directories and the global assembly cache to locate the requested resource. For more information, see [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).
 
@@ -35,7 +33,7 @@ This walkthrough illustrates the following tasks:
 
 To complete this walkthrough, you must have the following:
 
-- Visual Studio 2010 or later
+- Visual Studio
 
 - Visual Studio SDK
 
@@ -341,7 +339,7 @@ In this walkthrough, you create a custom host in an executable application that 
                return AppDomain.CreateDomain("Generation App Domain");
                //This could be changed to return the current appdomain, but new
                //assemblies are loaded into this AppDomain on a regular basis.
-               //If the AppDomain lasts too long, it will grow indefintely,
+               //If the AppDomain lasts too long, it will grow indefinitely,
                //which might be regarded as a leak.
                //This could be customized to cache the application domain for
                //a certain number of text template generations (for example, 10).
@@ -659,7 +657,7 @@ In this walkthrough, you create a custom host in an executable application that 
                Return AppDomain.CreateDomain("Generation App Domain")
                'This could be changed to return the current appdomain, but new
                'assemblies are loaded into this AppDomain on a regular basis.
-               'If the AppDomain lasts too long, it will grow indefintely,
+               'If the AppDomain lasts too long, it will grow indefinitely,
                'which might be regarded as a leak.
                'This could be customized to cache the application domain for
                'a certain number of text template generations (for example, 10).

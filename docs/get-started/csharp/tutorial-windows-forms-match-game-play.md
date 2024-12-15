@@ -6,15 +6,13 @@ dev_langs:
   - "VB"
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ms.topic: tutorial
 ms.date: 03/16/2023
 ms.custom: vs-acquisition
 ---
 # Tutorial: Display a message in your matching game WinForms app
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this series of four tutorials, you build a matching game, where the player matches pairs of hidden icons.
 
@@ -49,8 +47,6 @@ Those labels continue to be displayed.
   ### [VB](#tab/vb)
   :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb" id="Snippet9":::
   ---
-
-  [!INCLUDE [devlang-control-csharp-vb](../includes/devlang-control-csharp-vb.md)]
 
   The `if` statement checks whether the icon in the first label that the player chooses is the same as the icon in the second label.
   If the icons are the same, the program runs its three statements.

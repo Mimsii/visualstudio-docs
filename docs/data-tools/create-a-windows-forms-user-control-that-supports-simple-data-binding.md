@@ -11,12 +11,11 @@ helpviewer_keywords:
 - Data Sources Window, controls
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Create a .NET Framework Windows Forms user control that supports simple data binding
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Create a .NET Framework Windows Forms user control that supports simple data binding
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -129,21 +128,21 @@ This step uses the **Data Source Configuration** wizard to create a data source 
 
 2. In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.
 
-3. On the **Choose a Data Source Type** page, select **Database**, and then click **Next**.
+3. On the **Choose a Data Source Type** page, select **Database**, and then select **Next**.
 
 4. On the **Choose your Data Connection** page, do one of the following:
 
-    - If a data connection to the Northwind sample database is available in the drop-down list, select it.
+    - If a data connection to the Northwind sample database is available in the dropdown list, select it.
 
     - Select **New Connection** to launch the **Add/Modify Connection** dialog box.
 
-5. If your database requires a password, select the option to include sensitive data, and then click **Next**.
+5. If your database requires a password, select the option to include sensitive data, and then select **Next**.
 
 6. On the **Save connection string to the Application Configuration file** page, click **Next**.
 
 7. On the **Choose your Database Objects** page, expand the **Tables** node.
 
-8. Select the `Customers` table, and then click **Finish**.
+8. Select the `Customers` table, and then select **Finish**.
 
      The **NorthwindDataSet** is added to your project, and the `Customers` table appears in the **Data Sources** window.
 
@@ -155,13 +154,13 @@ Within the **Data Sources** window, you can set the control to be created prior 
 
 2. Expand the **Customers** node in the **Data Sources** window.
 
-3. Click the drop-down arrow on the **Customers** node, and choose **Details** from the control list.
+3. Click the dropdown list arrow on the **Customers** node, and choose **Details** from the control list.
 
-4. Click the drop-down arrow on the **Phone** column, and choose **Customize**.
+4. Click the dropdown list arrow on the **Phone** column, and choose **Customize**.
 
 5. Select the **PhoneNumberBox** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.
 
-6. Click the drop-down arrow on the **Phone** column, and choose **PhoneNumberBox**.
+6. Click the dropdown list arrow on the **Phone** column, and choose **PhoneNumberBox**.
 
 ## Add controls to the form
 
@@ -183,7 +182,7 @@ Depending on your application requirements, there are several steps you might wa
 
 - Creating controls that support more complex data-binding scenarios. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) and [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## See also
+## Related content
 
 - [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

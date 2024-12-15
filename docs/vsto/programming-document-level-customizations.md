@@ -25,12 +25,11 @@ helpviewer_keywords:
   - "application development [Office development in Visual Studio], document-level customizations"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Program document-level customizations
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   When you extend Microsoft Office Word or Microsoft Office Excel by using a document-level customization, you can perform the following tasks:
 
 - Automate the application by using its object model.

@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccGetExtendedCapabilities function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccGetExtendedCapabilities function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function returns additional capabilities supported by the source control plug-in.
 
 ## Syntax

@@ -12,12 +12,10 @@ helpviewer_keywords:
   - "data [Office development in Visual Studio], adding to worksheets"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Populate worksheets with data from a database
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can access data in document-level Office projects in the same way that you access data in Windows Forms projects. You use the same tools and code to bring the data into your solution, and you can even use Windows Forms controls to display the data. In addition, you can take advantage of controls called host controls, which are native objects in Microsoft Office Excel that have been enhanced with events and data-binding capability. For more information, see [Host items and host controls overview](../vsto/host-items-and-host-controls-overview.md).
 

@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "Office solutions [Office development in Visual Studio], developing"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Develop Office solutions
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   After you design a project by using the Office developer tools in Visual Studio and set up the project files, you can begin to concentrate on implementing the code and custom user interface (UI).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]

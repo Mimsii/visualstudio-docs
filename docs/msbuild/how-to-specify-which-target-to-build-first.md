@@ -9,8 +9,8 @@ helpviewer_keywords:
 - MSBuild, DefaultTargets attribute
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Specify which target to build first
 

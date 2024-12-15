@@ -7,12 +7,11 @@ helpviewer_keywords:
 - ports, notification
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Notify the port
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 After launching a program, the port must be notified, as follows:
 
 1. When a port receives a new program node, it sends a program creation event back to the debug session. The event carries with it an interface that represents the program.

@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "FileClassifier task [WPF MSBuild]"
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # FileClassifier task
 

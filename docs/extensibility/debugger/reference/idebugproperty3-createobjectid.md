@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProperty3::CreateObjectID
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProperty3::CreateObjectID
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creates a unique ID for this property to ensure that it is unique among all other properties.
 
 ## Syntax

@@ -8,12 +8,11 @@ helpviewer_keywords:
 - command-table file compilation (VSCT files)
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # VSCT Compiler Command-Line Flags
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The Visual Studio Command Table (VSCT) compiler provides command-line switches to ensure successful compilation of .vsct files.
 
 ## Command Line Parameters

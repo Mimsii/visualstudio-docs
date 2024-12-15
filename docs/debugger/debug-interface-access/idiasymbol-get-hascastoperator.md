@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the user-defined data type has any cast operators defined."
+description: Retrieves a flag that specifies whether the user-defined data type has any cast operators defined.
 title: "IDiaSymbol::get_hasCastOperator"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasCastOperator method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_hasCastOperator
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the user-defined data type has any cast operators defined.
 
 ## Syntax
 
 ```C++
-HRESULT get_hasCastOperator ( 
+HRESULT get_hasCastOperator ( 
    BOOL* pRetVal
 );
 ```

@@ -6,14 +6,13 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-javascript
+manager: mijacobs
+ms.subservice: javascript-typescript
+monikerRange: 'vs-2019'
 dev_langs:
   - JavaScript
 ---
 # Publish a Node.js application to Azure (Linux App Service)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This tutorial walks you through the task of creating a simple Node.js application and publishing it to Azure.
 
@@ -24,10 +23,8 @@ Linux App Service deploys a Linux Docker container to run the Node.js applicatio
 
 This tutorial shows how to create a Node.js application starting from a template installed with the Node.js Tools for Visual Studio, push the code to a repository on GitHub, and then provision an Azure App Service via the Azure web portal so that you can deploy from the GitHub repository. To use the command-line to provision the Azure App Service and push the code from a local Git repository, see [Create Node.js App](/azure/app-service/containers/quickstart-nodejs).
 
-::: moniker range=">=vs-2022"
 > [!IMPORTANT]
 > The information in this article applies only to the Node.js project type (.njsproj). The template used in this article is no longer available starting in Visual Studio 2022 version 17.8 Preview 2.
-::: moniker-end
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -74,8 +71,7 @@ In this tutorial, you learn how to:
 
 To set up GitHub for Visual Studio:
 
-1. Make sure the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) is installed and enabled using the
-menu item **Tools** > **Extensions and Updates**.
+1. Make sure the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) is installed and enabled using the menu item **Tools** > **Extensions and Updates**.
 
 2. From the menu select **View** > **Other Windows** > **GitHub**.
 
@@ -87,8 +83,7 @@ menu item **Tools** > **Extensions and Updates**.
 
 4. Click **Get started**.
 
-    If you are already connected to GitHub, the toolbox appears similar
-to the following illustration.
+    If you are already connected to GitHub, the toolbox appears similar to the following illustration.
 
     ![GitHub repo settings](../javascript/media/azure-github-publish.png)
 
@@ -141,8 +136,7 @@ to the following illustration.
 
     Once it is finished syncing, a check mark will appear.
 
-    The site is now running the Node.js application from the GitHub repository,
-and it is accessible at the URL created for the Azure App Service (by default the name given to the Azure App Service followed by ".azurewebsites.net").
+    The site is now running the Node.js application from the GitHub repository, and it is accessible at the URL created for the Azure App Service (by default the name given to the Azure App Service followed by `.azurewebsites.net`).
 
 ## Modify your app and push changes
 
@@ -165,13 +159,10 @@ and it is accessible at the URL created for the Azure App Service (by default th
 ## Troubleshooting
 
 * If the node.exe process dies (that is, an unhandled exception occurs), the container restarts.
-* When the container starts up, it runs through various heuristics to figure out
-how to start the Node.js process. Details of the implementation can be seen at
+* When the container starts up, it runs through various heuristics to figure out how to start the Node.js process. Details of the implementation can be seen at
 [generateStartupCommand.js](https://github.com/Azure/app-service-builtin-images/blob/master/node/8.9.4/startup/generateStartupCommand.js).
-* You can connect to the running container via SSH for investigations. This is easily done using the Azure portal. Select the App Service, and scroll down
-the list of tools until reaching **SSH** under the **Development Tools** section.
-* To aid in troubleshooting, go to the **Diagnostics logs** settings for the App Service, and change the **Docker Container logging** setting
-from **Off** to **File System**. Logs are created in the container under */home/LogFiles/*_docker.log*, and can be accessed on the box using SSH or FTP(S).
+* You can connect to the running container via SSH for investigations. This is easily done using the Azure portal. Select the App Service, and scroll down the list of tools until reaching **SSH** under the **Development Tools** section.
+* To aid in troubleshooting, go to the **Diagnostics logs** settings for the App Service, and change the **Docker Container logging** setting from **Off** to **File System**. Logs are created in the container under */home/LogFiles/*_docker.log*, and can be accessed on the box using SSH or FTP(S).
 * A custom domain name might be assigned to the site, rather than the *.azurewebsites.net URL assigned by default. For more details, see the topic [Map Custom Domain](/azure/app-service/app-service-web-tutorial-custom-domain).
 * Deploying to a staging site for further testing before moving into production is a best practice. For details on how to configure this, see the topic
 [Create staging environments](/azure/app-service/web-sites-staged-publishing).

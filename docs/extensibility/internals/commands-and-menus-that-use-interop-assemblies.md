@@ -10,12 +10,11 @@ helpviewer_keywords:
 - command handling with interop assemblies
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Commands and menus that use Interop assemblies
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 A VSPackage that implements menu and toolbar commands by using Interop assemblies must:
 
 - Inform the Visual Studio integrated development environment (IDE) about the commands it supports and whether they are currently enabled.

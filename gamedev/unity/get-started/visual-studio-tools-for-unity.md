@@ -2,8 +2,8 @@
 title: "Visual Studio Tools for Unity"
 description: Explore Visual Studio Tools for Unity, a free Visual Studio extension that helps you develop cross-platform games and apps with Unity.
 ms.date: "12/10/2021"
-ms.technology: vs-unity-tools
-ms.prod: visual-studio
+ms.subservice: unity-tools
+ms.service: visual-studio
 ms.topic: overview
 author: therealjohn
 ms.author: johmil
@@ -12,7 +12,6 @@ zone_pivot_groups: platform
 ---
 # Visual Studio Tools for Unity
 ![Screenshot of a computer, game controller, and icons for game play.](../media/hero.png)
-
 
 Visual Studio Tools for Unity includes a rich set of features that enhances writing and debugging Unity C# scripts and working with Unity projects.
 
@@ -35,7 +34,7 @@ Visit the Visual Studio Tools for Unity [getting started with Tools For Unity.](
 
 ### Supported Unity versions
 #### Visual Studio Editor Unity package
-Unity 2020.1 and newer require a Unity Package for external editor tools like Visual Studio and Visual Studio for Mac. [Documentation to Learn more about these changes in the Unity blog post.](https://unity.com/releases/2020-1/programmer-tools#verified-ide-packages-now-include-visual-studio).
+Unity 2020.1 and newer require a Unity Package for external editor tools like Visual Studio and Visual Studio for Mac. [Documentation to Learn more about these changes in the Unity blog post.](https://unity.com/developer-tools#verified-ide-packages-now-include-visual-studio).
 
 The [getting started section](getting-started-with-visual-studio-tools-for-unity.md) includes more information on the configuration of the Visual Studio Editor package.
 

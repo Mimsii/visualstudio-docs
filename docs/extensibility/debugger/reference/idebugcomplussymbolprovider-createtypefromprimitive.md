@@ -8,15 +8,14 @@ helpviewer_keywords:
 - CreateTypeFromPrimitive
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creates a type from the specified primitive type.
 
 ## Syntax

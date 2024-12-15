@@ -13,12 +13,10 @@ helpviewer_keywords:
   - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Get started debugging multithreaded applications (C#, Visual Basic, C++)
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio provides several tools and user interface elements to help you debug multithreaded applications. This tutorial shows how to use thread markers, the **Parallel Stacks** window, the **Parallel Watch** window, conditional breakpoints, and filter breakpoints. Completing this tutorial familiarizes you with Visual Studio features for debugging multithreaded applications.
 
@@ -154,7 +152,7 @@ The first step is to create a multithreaded application project.
     ```
 
     ### [C++](#tab/cpp)
-    ```C++
+    ```cpp
     // #include "pch.h" // Use with pre-compiled header
     #include <thread>
     #include <iostream>
@@ -213,7 +211,7 @@ The first step is to create a multithreaded application project.
     ```
 
     ### [C++](#tab/cpp)
-    ```C++
+    ```cpp
     std::this_thread::sleep_for(std::chrono::seconds(3));
     std::cout << "The function called by the worker thread has ended." << std::endl;
     ```
@@ -354,7 +352,7 @@ You can set breakpoints on different conditions, such as the thread name or the 
     ![Conditional Breakpoint](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > If you are more interested in a specific thread, then use a thread name or thread ID for the condition. To do this in the **Breakpoint Settings** window, select **Filter** instead of **Conditional expression**, and follow the filter tips. You might want to name your threads in your app code, as threads IDs change when you restart the debugger.
+    > If you are more interested in a specific thread, then use a thread name or thread ID for the condition. To do this in the **Breakpoint Settings** window, select **Filter** instead of **Conditional expression**, and follow the filter tips. You might want to [name your threads](../debugger/tips-for-debugging-threads.md) in your app code, as threads IDs change when you restart the debugger.
 
 3. Close the **Breakpoint Settings** window.
 
@@ -369,7 +367,7 @@ You can set breakpoints on different conditions, such as the thread name or the 
     > [!NOTE]
     > When you advance the debugger, all threads will run. However, the debugger won't break into code on other threads unless one of the other threads hits a breakpoint.
 
-## See also
+## Related content
 
 - [Debug multithreaded applications](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [How to: Switch to another thread while debugging](../debugger/how-to-switch-to-another-thread-while-debugging.md)

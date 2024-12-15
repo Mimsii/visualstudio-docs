@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether a class is an intrinsic type."
+description: Retrieves a flag that specifies whether a class is an intrinsic type.
 title: "IDiaSymbol::get_intrinsic"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_intrinsic method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_intrinsic
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether a class is an intrinsic type.
 
 ## Syntax
 
 ```C++
-HRESULT get_intrinsic( 
+HRESULT get_intrinsic( 
    BOOL* pRetVal)
 );
 ```

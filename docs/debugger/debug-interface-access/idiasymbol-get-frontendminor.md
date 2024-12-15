@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the front end minor version number."
+description: Retrieves the front end minor version number.
 title: "IDiaSymbol::get_frontEndMinor"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_frontEndMinor method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_frontEndMinor
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the front end minor version number.
 
 ## Syntax
 
 ```C++
-HRESULT get_frontEndMinor ( 
+HRESULT get_frontEndMinor ( 
    DWORD* pRetVal
 );
 ```

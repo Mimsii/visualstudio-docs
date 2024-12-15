@@ -7,12 +7,10 @@ f1_keywords:
 - WFDKeyboardShortcuts.UI
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Keyboard Shortcuts in the Workflow Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 All of the core functionality of the Workflow Designer can be accessed by keyboard.
 

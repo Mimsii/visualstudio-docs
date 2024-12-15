@@ -9,15 +9,14 @@ helpviewer_keywords:
 - EncUnavailableReason enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # EncUnavailableReason
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 `This is for internal use only!` Represents the reasons that **Edit and Continue** is not available.
 
 ## Syntax

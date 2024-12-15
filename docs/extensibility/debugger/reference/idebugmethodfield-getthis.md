@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugMethodField::GetThis method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugMethodField::GetThis
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the `this` (`Me` in Visual Basic) pointer of the object containing the method.
 
 ## Syntax

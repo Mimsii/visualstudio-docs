@@ -10,15 +10,14 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Subtract method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugMemoryContext2::Subtract
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Subtracts the specified value from the current context and returns a new context.
 
 ## Syntax

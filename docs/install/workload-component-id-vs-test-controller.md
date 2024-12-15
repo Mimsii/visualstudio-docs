@@ -5,26 +5,26 @@ description: Use Visual Studio workload and component IDs to distribute automate
 keywords:
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.date: 11/14/2023
+manager: mijacobs
+ms.date: 11/12/2024
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.prod: visual-studio-windows
-ms.technology: vs-installation
+
+ms.subservice: installation
 open_to_public_contributors: false
 ---
 # Visual Studio Test Controller component directory
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
 ::: moniker range="vs-2019"
 
 [!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
+
+To install these components by using the manual installer, download and run the [Test Controller for Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 [!include[Visual Studio Test Controller 2019](includes/vs-2019/workload-component-id-vs-test-controller.md)]
 
@@ -33,6 +33,8 @@ open_to_public_contributors: false
 ::: moniker range=">= vs-2022"
 
 [!INCLUDE[workloads-components-header-2022_md](includes/workloads-components-header-2022.md)]
+
+To install these components by using the manual installer, download and run the [Test Controller for Visual Studio](https://visualstudio.microsoft.com/downloads/#agents-for-visual-studio-2022).
 
 [!include[Visual Studio Test Controller 2022](includes/vs-2022/workload-component-id-vs-test-controller.md)]
 

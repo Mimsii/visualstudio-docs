@@ -1,10 +1,10 @@
 ---
 ms.date: 11/17/2023
-ms.technology: vs-ide-general
+ms.subservice: general-ide
 ms.custom: vs-get-started
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
+manager: mijacobs
 ms.topic: include
 ---
 An *integrated development environment* (IDE) is a feature-rich program that supports many aspects of software development. The Visual Studio IDE is a creative launching pad that you can use to edit, debug, and build code, and then publish an app. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to enhance the software development process.
@@ -31,7 +31,7 @@ The preceding image shows Visual Studio with an open project that shows key wind
 
 ## Editions
 
-Visual Studio is available for Windows and Mac. [Visual Studio for Mac](/visualstudio/mac/) has many of the same features as Visual Studio for Windows, and is optimized for developing cross-platform and mobile apps. This article focuses on the Windows version of Visual Studio.
+Visual Studio is available for Windows.
 
 There are three editions of Visual Studio: Community, Professional, and Enterprise. See [Compare Visual Studio editions](https://visualstudio.microsoft.com/vs/compare/) to learn about which features are supported in each edition.
 
@@ -114,7 +114,7 @@ Some popular features in Visual Studio that improve your productivity when devel
 
 - [Live Share](/visualstudio/liveshare/)
 
-   Collaboratively edit and debug with others in real time, regardless of your app type or programming language. You can instantly and securely share your project. You can also share debugging sessions, terminal instances, localhost web apps, voice calls, and more.
+   Collaboratively edit and debug with others in real time, regardless of your app type or programming language. You can instantly and securely share your project. You can also share debugging sessions, terminal instances, `localhost` web apps, voice calls, and more.
 
 - [Call Hierarchy](../../ide/reference/call-hierarchy.md)
 
@@ -365,7 +365,6 @@ First, rename the `name` variable:
    ::: moniker-end
 
    The variable is renamed across the project, which in our case is only two places.
-
 
 1. Now take a look at IntelliSense. Below the line that says `Console.WriteLine($"\nHello {username}!");`, type `DateTime now = DateTime.`.
 

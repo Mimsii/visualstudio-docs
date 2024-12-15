@@ -9,12 +9,11 @@ helpviewer_keywords:
 - errors [Debugging SDK]
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Breakpoint errors
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following describes the process when a breakpoint attempts to bind to code but fails.
 
 ## Troubleshoot a breakpoint error

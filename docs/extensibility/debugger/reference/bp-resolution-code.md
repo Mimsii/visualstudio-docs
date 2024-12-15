@@ -9,15 +9,14 @@ helpviewer_keywords:
 - BP_RESOLUTION_CODE structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # BP_RESOLUTION_CODE
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Describes the location of a code breakpoint.
 
 ## Syntax

@@ -9,14 +9,13 @@ helpviewer_keywords:
 - BP_LOCATION_CODE_STRING structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 ---
 # BP_LOCATION_CODE_STRING
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Used for setting code breakpoints based on a string that the user can enter from the integrated development environment (IDE).
 
 ## Syntax

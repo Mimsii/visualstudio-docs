@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, deploying"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Deploy and publish a SharePoint solution to a local SharePoint site
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   You can deploy or publish SharePoint solutions to a local SharePoint server on your development computer. The deployment process copies the *.wsp* file to the SharePoint server, installs the solution, and then activates the features. The publishing process only copies the *.wsp* file to the SharePoint server and installs it. You must manually activate it to enable it in SharePoint.
 
 ## To deploy a SharePoint solution to the local SharePoint server

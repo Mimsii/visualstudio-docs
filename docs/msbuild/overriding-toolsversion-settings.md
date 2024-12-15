@@ -8,8 +8,8 @@ helpviewer_keywords:
 - MSBuild, building solutions with
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Override ToolsVersion settings
 

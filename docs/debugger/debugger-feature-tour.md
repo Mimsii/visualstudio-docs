@@ -2,17 +2,15 @@
 title: "First look at the debugger"
 description: Get started debugging your applications by using the Visual Studio debugger and see what your code is doing while it runs.
 ms.topic: conceptual
-ms.date: 09/14/2023
+ms.date: 11/5/2024
 helpviewer_keywords:
   - "debugger"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # First look at the Visual Studio Debugger
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This topic introduces the debugger tools provided by Visual Studio. In the Visual Studio context, when you *debug your app*, it usually means that you are running the application with the debugger attached (that is, in debugger mode). When you do this, the debugger provides many ways to see what your code is doing while it runs. You can step through your code and look at the values stored in variables, you can set watches on variables to see when values change, you can examine the execution path of your code, et al. If this is the first time that you've tried to debug code, you may want to read [Debugging for absolute beginners](../debugger/debugging-absolute-beginners.md) before going through this topic. If you are trying to perform a specific task and need to know what feature to use, see [Debugger feature finder](../debugger/find-your-debugging-task.yml). To try AI-assisted debugging, see [Debug with Copilot](../debugger/debug-with-copilot.md).
 
@@ -93,7 +91,7 @@ This command resumes app execution (and advances the debugger) until the current
 
 ## Run to cursor
 
-When you are editing code (rather than paused in the debugger), right-click a line of code in your app and choose **Run to Cursor** (or press **Ctrl** to **F10**). This command starts debugging and sets a temporary breakpoint on the current line of code. For more details on this feature and similar navigation features, see [Run to a specific location in your code](../debugger/navigating-through-code-with-the-debugger.md#run-to-a-specific-location-or-function).
+When you are editing code (rather than paused in the debugger), right-click a line of code in your app and choose **Run to Cursor** (or press **Ctrl** + **F10**). This command starts debugging and sets a temporary breakpoint on the current line of code. For more details on this feature and similar navigation features, see [Run to a specific location in your code](../debugger/navigating-through-code-with-the-debugger.md#run-to-a-specific-location-or-function).
 
 ::: moniker range=">= vs-2022"
 ![Run to Cursor](../debugger/media/vs-2022/dbg-tour-run-to-cursor.png "Run to Cursor")
@@ -183,6 +181,17 @@ Next, look at the **Locals** window. The **Locals** window shows you the variabl
 
 In this example, the `this` object and the object `f` are in scope. For more info, see [Inspect Variables in the Autos and Locals Windows](../debugger/autos-and-locals-windows.md).
 
+::: moniker range=">= vs-2022"
+## View return values of method calls
+
+In .NET and C++ code, you can examine return values in the **Autos** window when you step over or out of a method call, which can be useful when the return value is not stored in a local variable. For more information, see [View return values of method calls](../debugger/autos-and-locals-windows.md#bkmk_returnValue).
+
+Starting in Visual Studio 2022 version 17.12 Preview 3, you can also view return values of method calls inline and not just in the Autos window.
+
+[ ![Screenshot showing the return values of method calls.](../debugger/media/vs-2022/view-return-values.png) ](../debugger/media/vs-2022/view-return-values.png#lightbox)
+
+::: moniker-end
+
 ## Set a watch
 
 You can use a **Watch** window to specify a variable (or an expression) that you want to keep an eye on. For detailed information, see [Set a Watch using the Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md).
@@ -239,6 +248,17 @@ The Exception Helper is a great feature that can help you debug errors. You can 
 
 Expand the **Exception Settings** node to see more options on how to handle this exception type, but you don't need to change anything for this tour!
 
+::: moniker range=">= vs-2022"
+> [!TIP]
+> If you have [Copilot](../ide/visual-studio-github-copilot-extension.md), you can get AI assistance while you're debugging exceptions. Just look for the **Ask Copilot** ![Screenshot of Ask Copilot button.](../debugger/media/vs-2022/debug-with-copilot-ask-copilot-button.png) button. For more information, see [Debug with Copilot](../debugger/debug-with-copilot.md).
+::: moniker-end
+
+::: moniker range=">= vs-2022"
+## Get AI assistance
+
+If you have [Copilot](../ide/visual-studio-github-copilot-extension.md), you can get AI assistance while you're debugging. For more information, see [Debug with Copilot](../debugger/debug-with-copilot.md). While debugging, you can also look for the **Ask Copilot** ![Screenshot of Ask Copilot button.](../debugger/media/vs-2022/debug-with-copilot-ask-copilot-button.png) button. In these scenarios, Copilot already knows the context for your questions, so you don't need to provide context yourself in Copilot chat. 
+::: moniker-end
+
 ## Configure debugging
 
 You can configure your project to build as a [Debug or Release configuration](../debugger/how-to-set-debug-and-release-configurations.md), configure project properties for debugging, or configure [general settings](../debugger/how-to-specify-debugger-settings.md) for debugging. In addition, you can configure the debugger to display custom information using features such as [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) attribute or, for C/C++, the [NatVis framework](create-custom-views-of-native-objects.md).
@@ -284,7 +304,7 @@ For more information, see the [Inspect previous app states using IntelliTrace](.
 
 If your app runs too slowly or uses too much memory, you may need to test your app with the profiling tools early on. For more information about profiling tools such as the CPU Usage tool and the Memory Analyzer, see [First look at the profiling tools](../profiling/profiling-feature-tour.md).
 
-## Next steps
+## Related content
 
 In this tutorial, you've had a quick look at many debugger features. You may want a more in-depth look at one of these features, such as breakpoints.
 

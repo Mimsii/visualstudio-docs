@@ -12,13 +12,11 @@ dev_langs:
   - "C++"
 helpviewer_keywords:
   - "debugger"
-author: "isadorasophia"
-ms.author: "isgarcia"
-manager: caslan
+author: MikeJo5000
+ms.author: mikejo
+manager: mijacobs
 ---
 # Debugger Services Running Out of Memory
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Debugging Services ran out of memory and caused the termination of the debugging session.
 

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProgram2::EnumCodePaths
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProgram2::EnumCodePaths
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a list of the code paths for a given position in a source file.
 
 ## Syntax

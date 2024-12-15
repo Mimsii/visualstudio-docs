@@ -9,15 +9,14 @@ helpviewer_keywords:
 - BP_COND_STYLE enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # BP_COND_STYLE
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies the breakpoint condition style for pending and bound breakpoints.
 
 ## Syntax

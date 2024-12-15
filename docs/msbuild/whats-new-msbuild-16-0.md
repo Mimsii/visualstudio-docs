@@ -5,8 +5,8 @@ ms.date: 03/11/2019
 ms.topic: whats-new
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 monikerRange: '>=vs-2019'
 ---
 # What's new in MSBuild 16.0

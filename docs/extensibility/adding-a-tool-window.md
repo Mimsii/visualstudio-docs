@@ -8,12 +8,10 @@ helpviewer_keywords:
 - tool windows
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Add a tool window
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this walkthrough you learn how to create a tool window and integrate it into Visual Studio in the following ways:
 
@@ -33,7 +31,7 @@ The Visual Studio SDK is included as an optional feature in Visual Studio setup.
 
 ## Create a tool window
 
-1. Create a project named **FirstToolWin** using the VSIX template, and add a custom tool window item template named **FirstToolWindow**.
+1. Create a project named **FirstToolWindow** using the VSIX template, and add a custom tool window item template named **FirstToolWindow**.
 
     > [!NOTE]
     > For more information about creating an extension with a tool window, see [Create an extension with a tool window](../extensibility/creating-an-extension-with-a-tool-window.md).

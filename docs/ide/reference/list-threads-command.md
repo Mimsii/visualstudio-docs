@@ -11,12 +11,11 @@ helpviewer_keywords:
 - Debug.ListThreads command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # List Threads Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Displays a list of the threads in the current program.
 
 ## Syntax

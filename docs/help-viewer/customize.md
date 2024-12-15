@@ -10,12 +10,11 @@ helpviewer_keywords:
   - "Viewer Options [Help Viewer]"
 author: jasonchlus
 ms.author: jasonchlus
-manager: jmartens
-ms.technology: vs-help-viewer
+manager: mijacobs
+ms.subservice: help-viewer
 ---
 # Customize the help viewer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can customize the layout of the Help Viewer windows, as well as other options such as font size, maximum number of results, and whether to include English content.
 
 ## Customizing window layout

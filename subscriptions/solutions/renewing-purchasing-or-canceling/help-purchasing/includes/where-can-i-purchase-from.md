@@ -1,10 +1,10 @@
 ---
 title: Where can I purchase Visual Studio subscriptions from?
 description: Where can I purchase Visual Studio subscriptions from?
-comment:  As of August 2023 this include is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Evan Windom and Larissa Crawford of Red Door Collaborative and Sharvari Dighe.
+comment:  As of August 2023 this include is used to render marketing FAQ content for VS Subscriptions in the following portals - VSCom, Manage, and My portals. It was not used for learn.microsoft.com content at that time.  SMEs are Jose Becerra and Larissa Crawford of Red Door Collaborative and Angela Cao-Hong.
 ms.topic: include
 ms.assetid: 2f23c628-1937-4ecd-a36e-cfe579265279
-author: evanwindom
+author: joseb-rdc
 ms.author: amast
 ms.date: 08/17/2023
 user.type: subscriber
@@ -15,9 +15,9 @@ sap.id: c374762c-640b-8b2c-d049-bda9545e903c
 
 ## Where to purchase subscriptions 
 
-Visual Studio subscriptions are available for purchase through various channels, including [Volume Licensing](https://www.microsoft.com/licensing/default), the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), and [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
+Visual Studio subscriptions are available for purchase through various channels, including [Volume Licensing](https://www.microsoft.com/licensing/default), the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions), and [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
-[Compare subscription benefits and pricing](https://visualstudio.microsoft.com/vs/pricing/) to understand the benefits of each Visual Studio subscription. 
+[Compare subscription benefits and pricing](https://visualstudio.microsoft.com/vs/pricing/) to understand the benefits of each Visual Studio subscription. 
 
 Check out the subscription benefits page for more help deciding which subscription is right for you.   
 

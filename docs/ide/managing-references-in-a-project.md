@@ -1,7 +1,7 @@
 ---
 title: Manage references in a project
 description: Manage references to external components and connected services in your project so Visual Studio can locate the component or the service.
-ms.date: 08/31/2023
+ms.date: 08/12/2024
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -19,12 +19,10 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Manage references in a project
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Before you write code against an external component or connected service, your project must first contain a reference to it. A reference is essentially an entry in a project file that contains the information that Visual Studio needs to locate the component or the service.
 

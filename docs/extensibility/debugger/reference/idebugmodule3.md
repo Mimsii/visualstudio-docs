@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugModule3 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugModule3
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface represents a module that supports alternate locations of symbols and JustMyCode states.
 
 ## Syntax

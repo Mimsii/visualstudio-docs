@@ -9,15 +9,14 @@ helpviewer_keywords:
 - CONSTRUCTOR_ENUM enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # CONSTRUCTOR_ENUM
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Selects different types of constructors.
 
 ## Syntax

@@ -10,12 +10,11 @@ helpviewer_keywords:
   - "thunk symbol"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Thunk
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Each `thunk` is identified by a `SymTagThunk` tag.
 
 ## Properties

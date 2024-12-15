@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the load address for the executable file that corresponds to the symbols in this symbol store."
+description: Retrieves the load address for the executable file that corresponds to the symbols in this symbol store.
 title: "IDiaSession::get_loadAddress"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::get_loadAddress method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::get_loadAddress
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the load address for the executable file that corresponds to the symbols in this symbol store.
 
 ## Syntax
 
 ```C++
-HRESULT get_loadAddress ( 
+HRESULT get_loadAddress ( 
    ULONGLONG* pRetVal
 );
 ```

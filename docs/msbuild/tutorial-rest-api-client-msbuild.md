@@ -8,8 +8,8 @@ helpviewer_keywords:
 - MSBuild, code generation
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Tutorial: Generate a REST API client
 
@@ -302,7 +302,7 @@ The next step is to create an app that uses the task.
       </Target>
       ```
 
-     `Input` and `Output` are related to [Incremental Build](how-to-build-incrementally.md), and the`forceReGenerationOnRebuild` target deletes the generated file after `CoreClean`, which forces the client to be regenerated during the rebuild operation.
+     `Input` and `Output` are related to [Incremental Build](how-to-build-incrementally.md), and the `forceReGenerationOnRebuild` target deletes the generated file after `CoreClean`, which forces the client to be regenerated during the rebuild operation.
 
 1. Select `PetReaderToolTaskConsoleApp` and rebuild only that project. Now, the client code is generated and the code compiles. You can execute it and see how it works. This code generates the code from a file, and that is allowed.
 

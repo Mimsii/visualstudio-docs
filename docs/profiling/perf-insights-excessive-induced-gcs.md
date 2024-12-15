@@ -5,8 +5,8 @@ ms.date: 9/15/2022
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 
 # Excessive induced GCs

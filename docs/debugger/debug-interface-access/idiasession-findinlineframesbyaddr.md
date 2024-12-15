@@ -7,18 +7,18 @@ dev_langs:
   - "C++"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findInlineFramesByAddr
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves an enumeration that allows a client to iterate through all of the inline frames on a given address.
 
 ## Syntax
 
 ```C++
-HRESULT findInlineFramesByAddr ( 
+HRESULT findInlineFramesByAddr ( 
    IDiaSymbol*       parent,   DWORD             isect,
    DWORD             offset,
    IDiaEnumSymbols** ppResult

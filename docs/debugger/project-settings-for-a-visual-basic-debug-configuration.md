@@ -2,7 +2,7 @@
 title: "Project Settings for a VB debug config"
 description: Learn how to change the project settings for a Visual Basic debug configuration in the Property Pages window of Visual Studio.
 ms.date: "11/04/2016"
-ms.topic: "reference"
+ms.topic: "ui-reference"
 f1_keywords:
   - "vbProjectPropertiesDebug"
 dev_langs:
@@ -19,12 +19,11 @@ helpviewer_keywords:
   - "debug configurations, Visual Basic"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Project Settings for a Visual Basic Debug Configuration
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can change the project settings for a Visual Basic debug configuration in the **Property Pages** window, as discussed in [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). The following tables show where to find debugger-related settings in the **Property Pages** window.
 
 > [!WARNING]

@@ -10,12 +10,11 @@ helpviewer_keywords:
   - "Debug.SetCurrentStackFrame command"
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Set Current Stack Frame Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Allows you to set a particular stack frame.
 
 ## Syntax

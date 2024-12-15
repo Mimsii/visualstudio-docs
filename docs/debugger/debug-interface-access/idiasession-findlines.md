@@ -1,5 +1,5 @@
 ---
-description: "Retrieves line numbers within specified compiland and source file identifiers."
+description: Retrieves line numbers within specified compiland and source file identifiers.
 title: "IDiaSession::findLines"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::findLines method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findLines
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves line numbers within specified compiland and source file identifiers.
 
 ## Syntax
 
 ```C++
-HRESULT findLines ( 
+HRESULT findLines ( 
    IDiaSymbol*           compiland,
    IDiaSourceFile*       file,
    IDiaEnumLineNumbers** ppResult

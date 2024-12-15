@@ -2,31 +2,42 @@
 title: Set bookmarks in Visual Studio
 description: Learn how to use bookmarks to mark lines in your code so that you can quickly return to a specific location, or jump back and forth between locations.
 titleSuffix: ''
-ms.date: 04/26/2023
+ms.date: 09/12/2024
 ms.topic: how-to
 f1_keywords:
 - VS.BookmarkWindow
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
-ms.custom: engagement-fy23
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Bookmark code in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can use bookmarks to mark lines in your code so that you can quickly return to a specific location, or jump back and forth between locations. Bookmarks can help you keep track of important parts of your code and remind you of what you might want to work on next, which can improve your productivity.
 
 Bookmark commands and icons are available in two places: 
 
-- The **Bookmarks** window; to open it, select **View** > **Bookmark Window** from the menu bar, or use the **Ctrl**+**K**, **Ctrl**+**W** keyboard shortcut. 
+- The **Text Editor** toolbar, which is the row of buttons under the menu bar in Visual Studio.
+  
+  ::: moniker range="<=vs-2019"
 
-  ![Screenshot of the Bookmarks window.](media/bookmarks-window.png)
+    :::image type="content" source="media/vs-2019/tutorial-editor-toolbar-bookmarks.png" alt-text="Screenshot of Bookmark commands and icons in the Text Editor toolbar in Visual Studio 2022.":::
 
-- The **Bookmarks** toolbar
+  ::: moniker-end
 
-  ![Screenshot of the Bookmarks toolbar in the Bookmarks window.](media/bookmarks-toolbar.png)
+  ::: moniker range=">=vs-2022"
+
+  :::image type="content" source="media/vs-2022/tutorial-editor-toolbar-bookmarks.png" alt-text="Screenshot of Bookmark commands and icons in the Text Editor toolbar in Visual Studio 2022.":::
+
+  ::: moniker-end
+
+- The **Bookmarks** toolbar in the **Bookmarks** window; to open it, select **View** > **Bookmark Window** from the menu bar, or use the **Ctrl**+**K**, **Ctrl**+**W** keyboard shortcut. 
+   
+    :::image type="content" source="media/vs-2022/view-menu-bookmarks-window.png" alt-text="Screenshot that shows the Bookmarks window option in the View menu.":::
+  
+  The **Bookmarks** window:
+
+   :::image type="content" source="media/bookmarks-window.png" alt-text="Screenshot that shows the Bookmarks window and the Bookmarks toolbar.":::
 
   The following table includes available toolbar commands and their [keyboard shortcuts](default-keyboard-shortcuts-in-visual-studio.md), listed from left to right.
 

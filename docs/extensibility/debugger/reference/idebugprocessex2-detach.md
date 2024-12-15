@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProcessEx2::Detach
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method informs the process that a session is no longer debugging the process.
 
 ## Syntax

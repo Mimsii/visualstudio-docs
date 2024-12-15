@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "mail items [Office development in Visual Studio], unread mail"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically retrieve unread messages from the Inbox
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This example retrieves unread email messages from the Outlook **Inbox** and displays the number of items.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerCount
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProperty3::GetCustomViewerCount
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the number of custom viewers that might be available for this property.
 
 ## Syntax

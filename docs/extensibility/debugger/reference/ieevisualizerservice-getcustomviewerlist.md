@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IEEVisualizerService::GetCustomViewerList
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method returns a list of type visualizers that this service knows about.
 
 ## Syntax

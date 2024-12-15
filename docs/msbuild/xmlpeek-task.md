@@ -12,8 +12,8 @@ helpviewer_keywords:
 - MSBuild, XmlPeek task
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # XmlPeek task
 

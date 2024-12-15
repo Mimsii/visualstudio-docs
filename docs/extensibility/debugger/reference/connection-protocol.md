@@ -9,15 +9,14 @@ helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # CONNECTION_PROTOCOL
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Indicates the protocol being used to communicate between a debug server and the debug package (DE).
 
 ## Syntax

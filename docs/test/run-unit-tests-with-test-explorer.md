@@ -1,16 +1,14 @@
 ---
 title: Run unit tests with Test Explorer
 description: Run tests with Test Explorer in Visual Studio, enable automatic tests after build, view results, group and filter the test list, create playlists, and use shortcuts.
-ms.date: 12/13/2022
+ms.date: 12/3/2024
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-test
+manager: mijacobs
+ms.subservice: test-tools
 ---
 # Run unit tests with Test Explorer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Use Test Explorer to run unit tests from Visual Studio or third-party unit test projects. You can also use Test Explorer to group tests into categories, filter the test list, and create, save, and run playlists of tests. You can also use Test Explorer to [debug unit tests](../test/debug-unit-tests-with-test-explorer.md) and, in Visual Studio Enterprise, to [analyze code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -27,7 +25,7 @@ Visual Studio includes the Microsoft unit testing frameworks for both managed an
 
 ## Run tests in Test Explorer
 
-When you build the test project, the tests appear in Test Explorer. If Test Explorer is not visible, choose **Test** on the Visual Studio menu, choose **Windows**, and then choose **Test Explorer** (or press **Ctrl** + **E**, **T**).
+When you build the test project, the tests appear in Test Explorer. If Test Explorer is not visible, choose **Test** on the Visual Studio menu, and then choose **Test Explorer** (or press **Ctrl** + **E**, **T**).
 
 ::: moniker range="vs-2019"
 ![Test Explorer](../test/media/vs-2019/test-explorer-16-2.png)
@@ -58,6 +56,9 @@ You can run all the tests in the solution, all the tests in a group, or a set of
 - Select the individual tests that you want to run, open the right-click menu for a selected test and then choose **Run Selected Tests** (or press **Ctrl** + **R**, **T**).
 
 - If individual tests have no dependencies that prevent them from being run in any order, turn on parallel test execution in the settings menu of the toolbar. This can noticeably reduce the time taken to run all the tests.
+
+>![NOTE]
+> To configure the target platform (process architecture) for running unit tests, see [Configure process architecture for a unit test](../test/run-a-unit-test-as-a-64-bit-process.md).
 
 ### Run tests after every build
 
@@ -181,13 +182,14 @@ You can also check or uncheck the boxes of the parent groups in the hierarchy. T
 If you would like to make a playlist for traits, use the following format for MSTest.
 ```xml
 <Playlist Version="2.0">
-	<Rule Name="Includes" Match="Any">
-		<Property Name="Trait" Value="SchemaUpdateBasic" />
-	</Rule>
+  <Rule Name="Includes" Match="Any">
+    <Property Name="Trait" Value="SchemaUpdateBasic" />
+  </Rule>
 </Playlist>
 ```
 
 Use the following format for xUnit. Make sure there is a space between your `TestCategory` name and the `[Value]`.
+
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">
@@ -195,8 +197,8 @@ Use the following format for xUnit. Make sure there is a space between your `Tes
       <Property Name="Solution" />
         <Rule Match="Any">
             <Property Name="Trait" Value="TestCategory [Value]" />
-	    </Rule>
-	</Rule>
+        </Rule>
+    </Rule>
   </Rule>
 </Playlist>
 ```
@@ -229,15 +231,17 @@ You can also check or uncheck the boxes of the parent groups in the hierarchy. T
 ![Playlist xml file](../test/media/vs-2022/test-explorer-playlist-xml-file.png)
 
 If you would like to make a playlist for traits, use the following format for MSTest.
+
 ```xml
 <Playlist Version="2.0">
-	<Rule Name="Includes" Match="Any">
-		<Property Name="Trait" Value="SchemaUpdateBasic" />
-	</Rule>
+  <Rule Name="Includes" Match="Any">
+    <Property Name="Trait" Value="SchemaUpdateBasic" />
+  </Rule>
 </Playlist>
 ```
 
 Use the following format for xUnit. Make sure there is a space between your `TestCategory` name and the `[Value]`.
+
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">
@@ -245,8 +249,8 @@ Use the following format for xUnit. Make sure there is a space between your `Tes
       <Property Name="Solution" />
         <Rule Match="Any">
             <Property Name="Trait" Value="TestCategory [Value]" />
-	    </Rule>
-	</Rule>
+        </Rule>
+    </Rule>
   </Rule>
 </Playlist>
 ```
@@ -338,7 +342,7 @@ For example, `FullName:"MyClass" - FullName:"PerfTest"` returns all tests that i
 
 ### Analyze unit test code coverage
 
-You can determine the amount of product code that is actually being tested by your unit tests by using the Visual Studio code coverage tool that's available in Visual Studio Enterprise edition. You can run code coverage on selected tests or on all tests in a solution.
+You can determine the amount of product code that is actually being tested by your unit tests by using the Visual Studio Code coverage tool that's available in Visual Studio Enterprise edition. You can run code coverage on selected tests or on all tests in a solution.
 
 To run code coverage for test methods in a solution:
 
@@ -350,7 +354,7 @@ For more information, see [Use code coverage to determine how much code is being
 
 ## Test shortcuts
 
-Tests can be run from Test Explorer by right-clicking in the code editor on a test and selecting **Run test** or by using the default [Test Explorer shortcuts](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) in Visual Studio. Some of the shortcuts are context-based. This means that they run or [debug tests](../test/debug-unit-tests-with-test-explorer.md) based on where your cursor is in the code editor. If your cursor is inside a test method, then that test method runs. If your cursor is at the class level, then all the tests in that class run. This is the same for the namespace level as well.
+Tests can be run from Test Explorer by right-clicking in the code editor on a test and selecting **Run test** or by using the default [Test Explorer shortcuts](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) in Visual Studio. Some of the shortcuts are context-based. This means that they run, [debug](../test/debug-unit-tests-with-test-explorer.md), or [profile](../test/debug-unit-tests-with-test-explorer.md#diagnose-test-method-performance-issues) tests based on where your cursor is in the code editor. If your cursor is inside a test method, then that test method runs. If your cursor is at the class level, then all the tests in that class run. This is the same for the namespace level as well.
 
 |Frequent Commands| Keyboard Shortcuts|
 |-|------------------------|

@@ -7,12 +7,10 @@ helpviewer_keywords:
 - properties [Visual Studio SDK], grid
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Properties display grid
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **Properties** window displays fields within a grid. The left column contains the property names; the right column contains the property values.
 

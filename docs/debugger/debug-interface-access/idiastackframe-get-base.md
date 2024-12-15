@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the base address of the frame."
+description: Retrieves the base address of the frame.
 title: "IDiaStackFrame::get_base"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackFrame::get_base method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackFrame::get_base
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the base address of the frame.
 
 ## Syntax
 
 ```C++
-HRESULT get_base ( 
+HRESULT get_base ( 
    ULONGLONG* pRetVal
 );
 ```

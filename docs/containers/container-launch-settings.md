@@ -3,15 +3,22 @@ title: Visual Studio Container Tools launch settings
 author: ghogen
 description: Learn about the launch settings for Container Tools that are related to how Visual Studio handles containerized apps.
 ms.author: ghogen
-ms.date: 08/15/2019
-ms.technology: vs-container-tools
+ms.date: 10/7/2024
+ms.subservice: container-tools
 ms.topic: reference
 ---
+
 # Container Tools launch settings
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+In the *Properties* folder in an ASP.NET Core project, you can find the `launchSettings.json` file, which contains settings that control how your web app is started on your development machine. For detailed information on how this file is used in ASP.NET development, see [Use multiple environments in ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true).
 
-In the *Properties* folder in an ASP.NET Core project, you can find the launchSettings.json file, which contains settings that control how your web app is started on your development machine. For detailed information on how this file is used in ASP.NET development, see [Use multiple environments in ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true). In *launchSettings.json*, the settings in the **Docker** section are related to how Visual Studio handles containerized apps.
+You can edit this file directly, but in Visual Studio IDE, you can also edit the properties in this file through the UI. Choose the dropdown list next to the launch option (for example, `Docker` or `.NET SDK`), and then choose **Debug Properties** for a single-container project.
+
+![Screenshot of launch profile dialog, showing launch settings for a container launch profile.](./media/container-launch-settings/launch-profiles-container.png)
+
+For Docker Compose, choose **Manage Docker Compose Launch Settings**, and see [Launch a subset of compose services](launch-profiles.md).
+
+In *launchSettings.json*, the settings in the **Docker** section are related to how Visual Studio handles containerized apps.
 
 ```json
     "Docker": {
@@ -29,44 +36,57 @@ In the *Properties* folder in an ASP.NET Core project, you can find the launchSe
     }
 ```
 
-The commandName setting identifies that this section applies to Container Tools. The following table shows the properties that can be set in this section:
+The commandName setting identifies that this section applies to Container Tools.
+
+:::moniker range=">=vs-2022"
+Most of the settings in `launchSettings.json` are available and applicable whether you're using a Dockerfile, or using the .NET SDK's built-in container build support (available for .NET 7 and later).
+:::moniker-end
+
+The following table shows the properties that can be set in this section:
 
 ::: moniker range="vs-2019"
 
 | Setting name         | Example                                               | Description                                                                                                             |
 | -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | These command-line arguments for starting your app are used when launching your project in the container.                                     |
-|DockerfileRunArguments|"dockerfileRunArguments": "-l mylabel=value"|Additional arguments to pass to the [docker run](https://docs.docker.com/engine/reference/commandline/run/) command.|
-| environmentVariables | "environmentVariables": {<br/>   "ASPNETCORE_URLS": "https://+:443;http://+:80", <br/>   "ASPNETCORE_HTTPS_PORT": "44381" <br/> }                    | These environment variable values are passed to the process when it is launched in the container.                       |
-| httpPort             | "httpPort": 24051                                     | This port on the host is mapped to the container's port 80 when launching the container. |
-| launchBrowser        | "launchBrowser": true                                 | Indicates whether to launch the browser after successfully launching the project.                                       |
-| launchBrowserTimeout | "launchBrowserTimeout": 1                             | The maximum amount of time (in seconds) to wait for the app to be ready before launching the browser. |
-| launchUrl            | "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}" | This URL is used when launching the browser. Supported replacement tokens for this string are: <br/><br/> - {Scheme} - Replaced with either "http" or "https" depending on whether SSL is used. <br/><br/> - {ServiceHost} - Usually replaced with "localhost". <br/> When targeting Windows containers on Windows 10 RS3 or older, though, it is replaced with the container's IP. <br/><br/> - {ServicePort} - Usually replaced with either sslPort or httpPort, depending on whether SSL is used. <br/> When targeting Windows containers on Windows 10 RS3 or older, though, it is replaced with either "443" or "80", depending on whether SSL is used. |
-| sslPort              | "sslPort": 44381                                      | This port on the host is mapped to the container's port 443 when launching the container. |
-| useSSL               | "useSSL": true                                        | Indicates whether to use SSL when launching the project. If useSSL is not specified, then SSL is used when sslPort > 0. |
+| commandLineArgs      | `"commandLineArgs": "--mysetting myvalue"`              | These command-line arguments for starting your app are used when launching your project in the container.                                     |
+|DockerfileRunArguments|`"dockerfileRunArguments": "-l mylabel=value"`|Additional arguments to pass to the [`docker run`](https://docs.docker.com/engine/reference/commandline/run/) command.|
+| environmentVariables | `"environmentVariables":` `{`<br/>   `"ASPNETCORE_URLS": "https://+:443;http://+:80"``, <br/>   `"ASPNETCORE_HTTPS_PORT": "44381"`` <br/> `}`                    | These environment variable values are passed to the process when it's launched in the container.                       |
+| httpPort             | `"httpPort": 24051`                                     | This port on the host is mapped to the container's port 80 when launching the container. |
+| launchBrowser        | `"launchBrowser": true`                                 | Indicates whether to launch the browser after successfully launching the project.                                       |
+| launchBrowserTimeout | `"launchBrowserTimeout": 1`                             | The maximum amount of time (in seconds) to wait for the app to be ready before launching the browser. |
+| launchUrl            | `"launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"` | This URL is used when launching the browser. Supported replacement tokens for this string are: <br/><br/> - `{Scheme}` - Replaced with either `http` or `https` depending on whether SSL is used. <br/><br/> - `{ServiceHost}` - Usually replaced with `localhost`. <br/> When you're targeting Windows containers on Windows 10 RS3 or older, though, it's replaced with the container's IP. <br/><br/> - `{ServicePort}` - Usually replaced with either `sslPort` or `httpPort`, depending on whether SSL is used. <br/> When you're targeting Windows containers on Windows 10 RS3 or older, though, it's replaced with either `443` or `80`, depending on whether SSL is used. |
+| sslPort              | `"sslPort": 44381`                                      | This port on the host is mapped to the container's port 443 when launching the container. |
+| useSSL               | `"useSSL": true`                                        | Indicates whether to use SSL when launching the project. If `useSSL` isn't specified, then SSL is used when `sslPort > 0`. |
 
 > [!NOTE]
-> If the same settings, for example, DockerfileRunArguments, is found in both the project file and in the launch settings file, the value in the launch settings file takes precedence.
+> If the same settings, for example, `DockerfileRunArguments`, is found in both the project file and in the launch settings file, the value in the launch settings file takes precedence.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-| Setting name         | Example                                               | Description                                                                                                             |
-| -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| commandLineArgs      | "commandLineArgs": "--mysetting myvalue"              | These command-line arguments for starting your app are used when launching your project in the container.                                     |
-|DockerfileRunArguments|"dockerfileRunArguments": "-l mylabel=value"|Additional arguments to pass to the [docker run](https://docs.docker.com/engine/reference/commandline/run/) command. In Visual Studio 17.3 Preview 2 and later, support for replacement tokens has been added:<br/><br/> - {ProjectDir} - Full path to the project directory. <br/><br/> - {OutDir} - The value of the MSBuild property OutDir.|
-| environmentVariables | "environmentVariables": {<br/>   "ASPNETCORE_URLS": "https://+:443;http://+:80", <br/>   "ASPNETCORE_HTTPS_PORT": "44381" <br/> }                    | These environment variable values are passed to the process when it is launched in the container.                       |
-| httpPort             | "httpPort": 24051                                     | This port on the host is mapped to the container's port 80 when launching the container. |
-| launchBrowser        | "launchBrowser": true                                 | Indicates whether to launch the browser after successfully launching the project.                                       |
-| launchBrowserTimeout | "launchBrowserTimeout": 1                             | The maximum amount of time (in seconds) to wait for the app to be ready before launching the browser. |
-| launchUrl            | "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}" | This URL is used when launching the browser. Supported replacement tokens for this string are: <br/><br/> - {Scheme} - Replaced with either "http" or "https" depending on whether SSL is used. <br/><br/> - {ServiceHost} - Usually replaced with "localhost". <br/> When targeting Windows containers on Windows 10 RS3 or older, though, it is replaced with the container's IP. <br/><br/> - {ServicePort} - Usually replaced with either sslPort or httpPort, depending on whether SSL is used. <br/> When targeting Windows containers on Windows 10 RS3 or older, though, it is replaced with either "443" or "80", depending on whether SSL is used. |
-| publishAllPorts    | "publishAllPorts": true                                 | If true, pass `-P` to `docker run` which will publish all exposed ports to a random port. See [Docker documentation](https://docs.docker.com/engine/reference/commandline/run/). However, when you specify `sslPort`, Visual Studio still passes `-p 5002:443`, so your service should still be listening on port 5002.|
-| sslPort              | "sslPort": 44381                                      | This port on the host is mapped to the container's port 443 when launching the container. |
-| useSSL               | "useSSL": true                                        | Indicates whether to use SSL when launching the project. If useSSL is not specified, then SSL is used when sslPort > 0. |
+| Property in Debug Profile UI | Setting name in launchSettings.json |Example|Description|
+| - | - | - | - |
+|Command line arguments| commandLineArgs      | `"commandLineArgs": "--mysetting myvalue"`              | These command-line arguments for starting your app are used when launching your project in the container.                                     |
+|Container run arguments| containerRunArguments<br/>ContainerRunArguments|`"containerRunArguments": "-l mylabel=value"`| Additional arguments to pass to the [`docker run`](https://docs.docker.com/engine/reference/commandline/run/) command. <br><br/> (Use the lowercase version in Visual Studio 17.12 and later. The uppercase version was introduced in Visual Studio 17.9 and is provided for backward compatibility.) <br/><br/> You can use the following replacement tokens:<br/><br/> - `{ProjectDir}` - Full path to the project directory. <br/><br/> - `{OutDir}` - The value of the MSBuild property OutDir. |
+|N/A|DockerfileRunArguments|`dockerfileRunArguments": "-l mylabel=value"`|Like `containerRunArguments`, but only for projects that use the Dockerfile build type. For Visual Studio 17.12 and later, it is recommended to use `containerRunArguments` instead.|
+|Environment Variables| environmentVariables | `"environmentVariables":` {<br/>   `"ASPNETCORE_URLS": "https://+:443;http://+:80"`, <br/>   `"ASPNETCORE_HTTPS_PORT": "44381"` <br/> }                    | These environment variable values are passed to the process when it's launched in the container.                       |
+|Container Name| containerName | `mycontainer` | (17.12 and later) A name for the container matching the regular expression `[a-zA-Z0-9][a-zA-Z0-9_.-]`.|
+|Container environment files| containerRunEnvironmentFiles | `"containerRunEnvironmentFiles": "abc.env;xyz.env"` | (17.12 and later) A list of environment variable files (`.env` files) separated by semicolons. See [.env file syntax](https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/#env-file-syntax). |
+|HTTP Port| httpPort             | `"httpPort": 24051`                                     | This port on the host is mapped to the container's port 80 when launching the container. |
+|Launch Browser| launchBrowser        | `"launchBrowser": true`                                 | Indicates whether to launch the browser after successfully launching the project.                                       |
+|N/A| launchBrowserTimeout | `"launchBrowserTimeout": 1`                            | The maximum amount of time (in seconds) to wait for the app to be ready before launching the browser (Docker Compose only). |
+|URL | launchUrl            | `"launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"` | This URL is used when launching the browser. Supported replacement tokens for this string are: <br/><br/> - `{Scheme}` - Replaced with either `http` or `https`, depending on whether SSL is used. <br/><br/> - `{ServiceHost}` - Usually replaced with `localhost`. <br/> When you're targeting Windows containers on Windows 10 RS3 or older, though, it's replaced with the container's IP. <br/><br/> - `{ServicePort}` - Usually replaced with either sslPort or httpPort, depending on whether SSL is used. <br/> When you're targeting Windows containers on Windows 10 RS3 or older, though, it's replaced with either `443` or `80`, depending on whether SSL is used. |
+| Publish all ports | publishAllPorts      | `"publishAllPorts": true`                                 | If true, pass `-P` to `docker run`, which publishes all exposed ports to a random port. See [Docker documentation](https://docs.docker.com/engine/reference/commandline/run/). However, when you specify `sslPort`, Visual Studio still passes `-p 5002:443`, so your service should still be listening on port 5002.|
+| SSL Port| sslPort              | `"sslPort": 44381`                                      | This port on the host is mapped to the container's port 443 when launching the container. |
+| N/A | useSSL               | `"useSSL": true`                                        | Indicates whether to use SSL when launching the project. If `useSSL` isn't specified, then SSL is used when `sslPort > 0`. |
+
+Not all settings are available in the UI, for example, `useSSL`. To change those settings, edit `launchSettings.json` directly.
+
+The setting `DockerfileRunArguments` is superceded in Visual Studio 2022 17.12 and later by `containerRunArguments`, which can be set in the Launch Profiles UI as `Container run arguments`.
 
 > [!NOTE]
-> If the same settings, for example, DockerfileRunArguments, is found in both the project file and in the launch settings file, the value in the launch settings file takes precedence.
+> If the same setting is found in both the project file and in the launch settings file, the value in the launch settings file takes precedence.
 
 ::: moniker-end
 

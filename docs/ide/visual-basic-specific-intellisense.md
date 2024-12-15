@@ -10,12 +10,10 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio], Visual Basic
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # IntelliSense for Visual Basic code files
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Visual Basic source code editor offers the following IntelliSense features:
 

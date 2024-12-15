@@ -5,19 +5,14 @@ ms.date: 07/12/2022
 ms.topic: reference
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Shortcut tips for Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can navigate in Visual Studio more easily by using the shortcuts in this article. These shortcuts include keyboard and mouse shortcuts as well as text you can enter to help accomplish a task more easily.
 
 For a comprehensive list of command shortcuts and a printable keyboard shortcut cheat sheet, see [Keyboard shortcuts in Visual Studio](default-keyboard-shortcuts-in-visual-studio.md).
-
-> [!NOTE]
-> This topic applies to Visual Studio on Windows. For Visual Studio for Mac, see [Default keyboard shortcuts in Visual Studio for Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## Window management
 
@@ -64,7 +59,7 @@ For a comprehensive list of command shortcuts and a printable keyboard shortcut 
 |Task|Shortcut|
 |-|-|
 |Go To All|**Ctrl**+**T**|
-|Go to recent files|**Ctrl**+**T**,**R**|
+|Go to recent files|**Ctrl**+**1**,**R**|
 |Multi-caret multiple insertion points|**Ctrl**+**Alt**+**click**|
 |Multi-caret add matching selection|**Shift**+**Alt**+**Ins**|
 |Format Document|**Ctrl**+**K**,**D**|
@@ -127,4 +122,3 @@ For a comprehensive list of command shortcuts and a printable keyboard shortcut 
 - [Accessibility tips and tricks](../ide/reference/accessibility-tips-and-tricks.md)
 - [Productivity features in Visual Studio](productivity-features.md)
 - [Keyboard shortcuts in Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)
-- [Default keyboard shortcuts in Visual Studio for Mac](/visualstudio/mac/keyboard-shortcuts)

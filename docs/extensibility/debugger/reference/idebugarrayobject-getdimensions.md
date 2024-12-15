@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugArrayObject::GetDimensions method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugArrayObject::GetDimensions
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the dimensions of the array.
 
 ## Syntax

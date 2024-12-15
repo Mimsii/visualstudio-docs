@@ -6,19 +6,18 @@ ms.topic: reference
 f1_keywords:
 - vc.task.setenv
 dev_langs:
-- VB
-- CSharp
-- C++
 - C++
 helpviewer_keywords:
 - MSBuild (C++), tasks
 - SetEnv task (MSBuild (C++))
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # SetEnv task
+
+[!INCLUDE [C++-specific task](./includes/cpp-task.md)]
 
 Sets or deletes the value of a specified environment variable.
 

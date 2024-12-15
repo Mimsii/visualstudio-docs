@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugQueryEngine2::GetEngineInterface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugQueryEngine2::GetEngineInterface
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets a custom debug engine (DE) interface.
 
 ## Syntax

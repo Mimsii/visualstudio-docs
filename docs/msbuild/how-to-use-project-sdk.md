@@ -1,18 +1,18 @@
 ---
 title: Reference an MSBuild Project SDK
 description: Use the MSBuild project SDKs to simplify working with software development kits that require properties and targets to be imported.
-ms.date: 05/10/2023
+ms.date: 05/16/2024
 ms.topic: how-to
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Use MSBuild project SDKs
 
-MSBuild 15.0 introduced the concept of the "project SDK", which simplifies using software development kits that require properties and targets to be imported.
+You can reference all the build infrastructure required for a development technology stack such as the .NET SDK simply by referencing a set of properties and targets collectively known as a *project SDK* by its specific ID. The ID references a particular set of `.props` files that contain property definitions, and `.targets` files that contain target definitions. You reference a project SDK by using the `Sdk` attribute on the top-level project node.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -37,6 +37,8 @@ During evaluation of the project, MSBuild adds implicit imports at the top and b
     <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 </Project>
 ```
+
+There are many SDKs distributed by Microsoft. The project SDK referenced in the previous example has the moniker `Microsoft.NET.Sdk`. The project SDKs associated with .NET Core and .NET 5 and later are listed at [.NET Project SDK overview](/dotnet/core/project-sdk/overview).
 
 ## Reference a project SDK
 
@@ -86,16 +88,16 @@ The `Version` attribute isn't required.
 </Project>
 ```
 
-Explicitly including the imports in your project allows you full control over the order.
+When you explicitly include the imports in your project, you have full control over the order.
 
 When using the `<Import/>` element, you can specify an optional `Version` attribute as well. For example, you can specify `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 > [!WARNING]
-> If you are changing project to use `<Import/>` elements, make sure you add both `.props` and `.targets` imports and that you remove the SDK from the `<Project/>` element and `<Sdk/>` elements. Failure to do so will result in doubled imports and an [`MSB4011`](./errors/msb4011.md) warning.
+> If you change your project to use `<Import/>` elements, make sure you add both `.props` and `.targets` imports, and that you remove the SDK from the `<Project/>` element and `<Sdk/>` elements. Failure to do so will result in doubled imports and an [`MSB4011`](./errors/msb4011.md) warning.
 
 ## How project SDKs are resolved
 
-When evaluating the import, MSBuild dynamically resolves the path to the project SDK based on the name and version you specified.  MSBuild also has a list of registered SDK resolvers, which are plug-ins that locate project SDKs on your machine. These plug-ins include:
+When evaluating the import, MSBuild dynamically resolves the path to the project SDK based on the name and version you specified. MSBuild also has a list of registered SDK resolvers, which are plug-ins that locate project SDKs on your machine. These plug-ins include:
 
 - A NuGet-based resolver that queries your configured package feeds for NuGet packages that match the ID and version of the SDK you specified.
 
@@ -125,4 +127,4 @@ Only one version of each project SDK can be used during a build. If you referenc
 - [MSBuild concepts](../msbuild/msbuild-concepts.md)
 - [Customize your build](../msbuild/customize-your-build.md)
 - [Packages, metadata, and frameworks](/dotnet/core/packages)
-- [Additions to the csproj format for .NET Core](/dotnet/core/tools/csproj)
+- [MSBuild reference for .NET SDK projects](/dotnet/core/project-sdk/msbuild-props)

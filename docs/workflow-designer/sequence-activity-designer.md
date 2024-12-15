@@ -7,12 +7,10 @@ f1_keywords:
   - "System.Activities.Statements.Sequence.UI"
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Sequence Activity Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The <xref:System.Activities.Statements.Sequence> activity contains an ordered collection of child activities that it executes in order.
 

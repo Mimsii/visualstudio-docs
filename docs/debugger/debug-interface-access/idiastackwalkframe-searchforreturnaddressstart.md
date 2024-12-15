@@ -1,5 +1,5 @@
 ---
-description: "Searches the specified stack frame for a return address at or near the specified address."
+description: Searches the specified stack frame for a return address at or near the specified address.
 title: "IDiaStackWalkFrame::searchForReturnAddressStart"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackWalkFrame::searchForReturnAddressStart method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackWalkFrame::searchForReturnAddressStart
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Searches the specified stack frame for a return address at or near the specified address.
 
 ## Syntax
 
 ```C++
-HRESULT searchForReturnAddressStart ( 
+HRESULT searchForReturnAddressStart ( 
    IDiaFrameData* frame,
    ULONGLONG      startAddress,
    ULONGLONG*     returnAddress

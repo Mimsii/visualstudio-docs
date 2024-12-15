@@ -1,5 +1,5 @@
 ---
-description: "Retrieves all children of a specified parent identifier that match the name and symbol type."
+description: Retrieves all children of a specified parent identifier that match the name and symbol type.
 title: "IDiaSession::findChildren"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSession::findChildren method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::findChildren
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves all children of a specified parent identifier that match the name and symbol type.
 
 ## Syntax
 
 ```C++
-HRESULT findChildren ( 
+HRESULT findChildren ( 
    IDiaSymbol*       parent,
    SymTagEnum        symtag,
    LPCOLESTR         name,

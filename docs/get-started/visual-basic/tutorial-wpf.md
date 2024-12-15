@@ -3,18 +3,16 @@ title: "Tutorial: Use Windows Presentation Foundation (WPF)"
 description: Create a Windows Desktop .NET app in Visual Basic with Visual Studio by using the Windows Presentation Foundation (WPF) UI framework.
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ms.topic: tutorial
-ms.prod: visual-studio-windows
+
 dev_langs:
   - "VB"
 ms.date: 12/07/2023
 ms.custom: vs-acquisition
 ---
 # Tutorial: Create a WPF application with Visual Basic
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this tutorial, you'll create an application using Visual Basic in the Visual Studio integrated development environment (IDE).
 Your program will use the Windows Presentation Foundation (WPF) UI framework.

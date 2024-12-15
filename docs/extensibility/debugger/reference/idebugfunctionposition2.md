@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugFunctionPosition2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugFunctionPosition2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface represents an abstract position of a function in a source document.
 
 ## Syntax

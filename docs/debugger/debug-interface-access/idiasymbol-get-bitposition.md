@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the bit position of location."
+description: Retrieves the bit position of location.
 title: "IDiaSymbol::get_bitPosition"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_bitPosition method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_bitPosition
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the bit position of location. Used when the [LocationType Enumeration](../../debugger/debug-interface-access/locationtype.md) is `LocIsBitField`.
 
 ## Syntax
 
 ```C++
-HRESULT get_bitPosition ( 
+HRESULT get_bitPosition ( 
    DWORD* pRetVal
 );
 ```

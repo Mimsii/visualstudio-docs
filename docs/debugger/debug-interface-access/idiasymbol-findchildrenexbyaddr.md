@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the children of the symbol that are valid at a specified address."
+description: Retrieves the children of the symbol that are valid at a specified address.
 title: "IDiaSymbol::findChildrenExByAddr"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::findChildrenExByAddr"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::findChildrenExByAddr
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the children of the symbol that are valid at a specified address.
 
 ## Syntax
 
 ```C++
-HRESULT findChildrenExByAddr ( 
+HRESULT findChildrenExByAddr ( 
    enum SymTagEnum   symtag,
    LPCOLESTR         name,
    DWORD             compareFlags,

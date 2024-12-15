@@ -9,15 +9,14 @@ helpviewer_keywords:
 - ADDRESS_KIND enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # ADDRESS_KIND
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies the kinds of addresses.
 
 ## Syntax

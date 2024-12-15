@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "data access, ClickOnce applications"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # Access local and remote data in ClickOnce applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Most applications consume or produce data. ClickOnce gives you a variety of options for reading and writing data, both locally and remotely.
 
 ## Local Data

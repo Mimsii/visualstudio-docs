@@ -10,12 +10,10 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Manually create web templates
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Creating a web template is different than creating other kinds of templates. Because web project templates appear in the **Add New Web Site** dialog box, and web project items are categorized by programming language, the *vstemplate* file must specify the template as a web template and identify the programming language.
 
@@ -52,7 +50,7 @@ Creating a web template is different than creating other kinds of templates. Bec
 
 7. Select the files in your template (this includes the *vstemplate* file), right-click the selection, and choose **Send to** > **Compressed (zipped) folder**. The files are compressed into a *.zip* file.
 
-8. Put the *.zip* template file in the Visual Studio project template directory. By default, this directory is *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*.
+8. Put the *.zip* template file in the Visual Studio project template directory. By default, this directory is `%USERPROFILE%\Documents\Visual Studio {Version}\Templates\ProjectTemplates`.
 
 ## Example
 

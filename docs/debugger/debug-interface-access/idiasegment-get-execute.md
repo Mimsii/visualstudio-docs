@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates whether the segment is executable."
+description: Retrieves a flag that indicates whether the segment is executable.
 title: "IDiaSegment::get_execute"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSegment::get_execute method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSegment::get_execute
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the segment is executable.
 
 ## Syntax
 
 ```C++
-HRESULT get_execute ( 
+HRESULT get_execute ( 
    BOOL* pRetVal
 );
 ```

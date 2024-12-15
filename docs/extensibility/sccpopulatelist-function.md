@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccPopulateList function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccPopulateList Function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function updates a list of files for a particular source control command and supplies source control status on all given files.
 
 ## Syntax

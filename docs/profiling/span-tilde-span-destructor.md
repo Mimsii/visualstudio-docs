@@ -9,12 +9,10 @@ helpviewer_keywords:
   - "Concurrency::diagnostic::span::~span destructor"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # span::~span destructor
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Destroys the `span` object and releases its resources.
 

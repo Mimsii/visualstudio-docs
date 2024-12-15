@@ -10,15 +10,14 @@ helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Allows (or disallows) expression evaluation to occur on the given thread, even if the program has stopped.
 
 ## Syntax

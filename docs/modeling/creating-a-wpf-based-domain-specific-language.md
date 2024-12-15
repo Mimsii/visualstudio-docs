@@ -5,13 +5,11 @@ ms.date: 06/22/2022
 ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 
 # Create a WPF-Based domain-specific language
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can create a domain-specific language (DSL) that has a WPF designer instead of a graphical designer.
 

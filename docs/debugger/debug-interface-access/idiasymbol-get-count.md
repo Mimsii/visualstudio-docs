@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the number of items in a list or array."
+description: Retrieves the number of items in a list or array.
 title: "IDiaSymbol::get_count"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_count method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_count
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the number of items in a list or array.
 
 ## Syntax
 
 ```C++
-HRESULT get_count ( 
+HRESULT get_count ( 
    DWORD* pRetVal
 );
 ```

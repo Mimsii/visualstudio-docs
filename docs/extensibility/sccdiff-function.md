@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccDiff function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccDiff function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function displays (or optionally just checks for) the differences between the current file (on the local disk) and its last checked-in version in the source control system.
 
 ## Syntax

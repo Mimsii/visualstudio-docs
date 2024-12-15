@@ -1,5 +1,5 @@
 ---
-description: "Returns the name of the compiler used to generate the Compiland)."
+description: Returns the name of the compiler used to generate the Compiland).
 title: "IDiaSymbol::get_compilerName"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_compilerName method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_compilerName
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Returns the name of the compiler used to generate the [Compiland](../../debugger/debug-interface-access/compiland.md).
 
 ## Syntax

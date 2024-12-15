@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_sealed method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_sealed
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the class or method is sealed.
 
 ## Syntax
@@ -37,7 +36,7 @@ HRESULT get_sealed( 
 > A return value of `S_FALSE` means the property is not available for the symbol.
 
 ## Remarks
- A sealed class cannot be used as a base class. A sealed method cannot be overidden.
+ A sealed class cannot be used as a base class. A sealed method cannot be overridden.
 
 ## Requirements
  Header: Dia2.h

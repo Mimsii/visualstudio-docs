@@ -12,12 +12,10 @@ helpviewer_keywords:
   - "print preview, worksheets"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically print worksheets
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can print any worksheet in a workbook.
 

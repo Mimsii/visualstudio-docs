@@ -6,12 +6,10 @@ ms.date: 03/06/2018
 ms.topic: conceptual
 author: maddymontaquila
 ms.author: maleger
-manager: jmartens
-ms.technology: vs-xaml-tools
+manager: mijacobs
+ms.subservice: xaml-tools
 ---
 # Display data in Blend for Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can view sample data in your designer as you customize the layout of your pages. You can generate sample data from scratch or by using an existing class. You can also connect to *Live data* that appears in your app when you run it.
 

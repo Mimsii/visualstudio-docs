@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the segment number."
+description: Retrieves the segment number.
 title: "IDiaSegment::get_frame"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSegment::get_frame method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSegment::get_frame
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the segment number.
 
 ## Syntax
 
 ```C++
-HRESULT get_frame ( 
+HRESULT get_frame ( 
    DWORD* pRetVal
 );
 ```

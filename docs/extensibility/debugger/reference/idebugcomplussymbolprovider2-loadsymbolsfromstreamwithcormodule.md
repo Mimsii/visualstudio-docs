@@ -9,15 +9,14 @@ helpviewer_keywords:
 - LoadSymbolsFromStreamWithCorModule
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Load debug symbols from a data stream given the **ICorDebugModule** object.
 
 ## Syntax

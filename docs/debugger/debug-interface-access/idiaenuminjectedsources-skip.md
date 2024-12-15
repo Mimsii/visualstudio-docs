@@ -1,5 +1,5 @@
 ---
-description: "Skips a specified number of injected sources in an enumeration sequence."
+description: Skips a specified number of injected sources in an enumeration sequence.
 title: "IDiaEnumInjectedSources::Skip"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,29 +9,32 @@ helpviewer_keywords:
   - "IDiaEnumInjectedSources::Skip method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaEnumInjectedSources::Skip
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Skips a specified number of injected sources in an enumeration sequence.
 
 ## Syntax
 
-```C++
-HRESULT Skip ( 
+```c++
+HRESULT Skip ( 
    ULONG celt
 );
 ```
 
 #### Parameters
- celt
+
+celt
 
 [in] The number of injected sources in the enumeration sequence to skip.
 
 ## Return Value
- If successful, returns `S_OK`; otherwise, returns `S_FALSE` if there are no more injected sources to skip.
+
+If successful, returns `S_OK`; otherwise, returns `S_FALSE` if there are no more injected sources to skip.
 
 ## See also
+
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

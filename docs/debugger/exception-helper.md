@@ -1,7 +1,7 @@
 ---
 title: Inspect and break exceptions when debugging
 description: Learn about the information that Visual Studio provides to help you debug exceptions, and how to selectively disable breaking on exceptions.
-ms.date: 2/2/2023
+ms.date: 09/04/2024
 ms.topic: how-to
 dev_langs: 
   - CSharp
@@ -14,12 +14,10 @@ helpviewer_keywords:
   - debugging [Visual Studio], exception helper, Examine an exception
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Inspect an exception using the Exception Helper 
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Dealing with exceptions is a common problem, no matter your technology or level of expertise. It can be a frustrating experience figuring out why exceptions are causing problems in your code. When you're debugging an exception in Visual Studio, we want to lessen that frustration by providing you with relevant exception information to help you debug your issue faster.
 
@@ -61,12 +59,26 @@ In cases where an exception has been `thrown` the Exception Helper shows the cal
 ![Exception helper with rethrown exceptions](media/debugger-exception-helper-innerexception.png)
 
 ::: moniker range=">= vs-2022"
+## Inspect async exceptions (.NET)
+
+Starting with .NET 9, the Visual Studio debugger automatically breaks when an async Task method throws an exception within .NET framework code. This makes is easier to debug asynchronous code, especially in ASP.NET, because exceptions are often thrown across asynchronous boundaries.
+
+![Screenshot of Exception helper with async method.](media/vs-2022/debugger-exception-helper-async.png)
+
+::: moniker-end
+
+::: moniker range=">= vs-2022"
 
 ## View the call stack
 
 Starting in Visual Studio 2022 version 17.3, you can view exception stack frames inside the Call Stack window. For async exceptions, this adds the ability to quickly load symbols or locate sources and go directly to the site of the exception. Exception stack frames inside the Call Stack window provide standard call stack features such as automatic navigation, quickly switching back and forth between frames, symbol load, and decompile options to get back to the source code where the exception was thrown.
 
 ![Exception helper with call stack](media/vs-2022/debugger-exception-helper-call-stack.png)
+::: moniker-end
+::: moniker range=">= vs-2022"
+## Get AI assistance
+
+If you have [Copilot](../ide/visual-studio-github-copilot-extension.md), you can get AI assistance while you're debugging exceptions. Just look for the **Ask Copilot** ![Screenshot of Ask Copilot button.](../debugger/media/vs-2022/debug-with-copilot-ask-copilot-button.png) button. In these scenarios, Copilot already knows the context for your questions, so you don't need to provide context yourself in chat. For more information, see [Debug with Copilot](../debugger/debug-with-copilot.md).
 ::: moniker-end
 
 ## Share a debug session with Live Share

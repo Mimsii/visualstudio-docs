@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "WPF .targets files [WPF MSBuild]"
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # WPF .targets files
 

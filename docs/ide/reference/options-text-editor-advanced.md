@@ -12,13 +12,11 @@ helpviewer_keywords:
 - editors, global settings
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 monikerRange: ">=vs-2019"
 ---
 # Options dialog box: Text Editor \> Advanced
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can use the Advanced dialog box to change global settings for the Visual Studio code and text editor. To display the dialog box, select **Tools** from the menu bar, and then select **Options** > **Text Editor** > **Advanced**.
 
@@ -55,7 +53,7 @@ Selected by default, this option enables the editor to suggest possible completi
 
 ## Click to peek in margin
 
-The **Single click** setting is selected by default. The settings you choose from allow you to customize how Peek Definition works when you use it to display the differences between Git commits. You can change the default **Single click** setting to **Double click**, or you can select **None** to turn off the [Peek Difference UI](../../version-control/git-line-staging.md#peek-difference-support).
+The **Single click** setting is selected by default. The settings you choose from allow you to customize how Peek Definition works when you use it to display the differences between Git commits. You can change the default **Single click** setting to **Double click**, or you can select **None** to turn off the [Peek Difference UI](../../version-control/git-line-staging.md#view-staged-changes-with-peek-difference).
 
 ::: moniker-end
 

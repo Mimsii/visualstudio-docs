@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "<Schedules> element [bootstrapper]"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;Schedules&gt; element (bootstrapper)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The `Schedules` element contains `Schedule` elements, which define specific times at which commands defined by the `Command` element should be run.
 
 ## Syntax

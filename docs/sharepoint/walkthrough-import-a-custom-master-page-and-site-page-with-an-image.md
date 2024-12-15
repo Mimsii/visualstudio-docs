@@ -11,12 +11,11 @@ helpviewer_keywords:
   - "importing items [SharePoint development in Visual Studio]"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Walkthrough: Import a custom master page and site page with an image
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This walkthrough demonstrates how to import a SharePoint custom master page and a site page that has an image into a Visual Studio SharePoint project.
 
  This walkthrough shows how to accomplish the following tasks:

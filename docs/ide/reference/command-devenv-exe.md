@@ -9,12 +9,10 @@ helpviewer_keywords:
 - Command Devenv switch
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # /Command (devenv.exe)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Executes the specified command after launching the Visual Studio IDE.
 

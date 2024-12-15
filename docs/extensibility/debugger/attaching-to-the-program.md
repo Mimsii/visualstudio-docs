@@ -7,12 +7,11 @@ helpviewer_keywords:
 - debug engines, attaching to programs
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Attach to the program
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 After you have registered your programs with the appropriate port, you must attach the debugger to the program you want to debug.
 
 ## Choose how to attach

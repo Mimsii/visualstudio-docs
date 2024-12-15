@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccProperties function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccProperties Function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function displays source control properties for a file or project.
 
 ## Syntax

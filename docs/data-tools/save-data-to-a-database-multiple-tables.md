@@ -13,12 +13,11 @@ helpviewer_keywords:
 - data [Visual Studio], updating
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Save data to a database (multiple tables) in .NET Framework applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Save data to a database (multiple tables) in .NET Framework applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
@@ -30,7 +29,7 @@ Tasks illustrated in this walkthrough include:
 
 - Creating and configuring a data source in your application with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
 
-- Setting the controls of the items in the [Data Sources window](add-new-data-sources.md#data-sources-window). For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Setting the controls of the items in the [Data Sources window](add-new-data-sources.md#work-with-data-sources-and-windows-forms). For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Creating data-bound controls by dragging items from the **Data Sources** window onto your form.
 
@@ -76,9 +75,9 @@ This step creates a data source from the Northwind database using the **Data Sou
 
 4. On the **Choose your Data Connection** screen, do one of the following:
 
-    - If a data connection to the Northwind sample database is available in the drop-down list, select it.
+    - If a data connection to the Northwind sample database is available in the dropdown list, select it.
 
-         -or-
+      -or-
 
     - Select **New Connection** to open the **Add/Modify Connection** dialog box.
 

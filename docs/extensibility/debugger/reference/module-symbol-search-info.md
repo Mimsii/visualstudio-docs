@@ -9,15 +9,13 @@ helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # MODULE_SYMBOL_SEARCH_INFO
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Contains status information about symbol search paths that have been searched.
 

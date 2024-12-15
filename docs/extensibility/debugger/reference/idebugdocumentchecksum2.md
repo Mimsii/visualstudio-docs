@@ -7,12 +7,11 @@ helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugDocumentChecksum2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Represents a checksum for a debug document and enables passing the checksum between components.
 
 ## Syntax

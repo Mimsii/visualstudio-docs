@@ -1,5 +1,5 @@
 ---
-description: "Gets an enumerator for properties within this set."
+description: Gets an enumerator for properties within this set.
 title: "IDiaPropertyStorage::Enum"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaPropertyStorage::Enum"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaPropertyStorage::Enum
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets an enumerator for properties within this set.
 
 ## Syntax
 
 ```C++
-HRESULT Enum ( 
+HRESULT Enum ( 
    IEnumSTATPROPSTG** ppenum
 );
 ```

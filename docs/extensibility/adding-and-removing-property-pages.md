@@ -9,15 +9,13 @@ helpviewer_keywords:
 - property pages, removing
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 dev_langs:
 - CSharp
 - VB
 ---
 # Add and remove property pages
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Project Designer provides a centralized location for managing project properties, settings, and resources in Visual Studio. It appears as a single window in the Visual Studio integrated development environment (IDE) and contains a number of panes on the right that are accessed through the tabs on the left. The panes (often referred to as property pages) in the Project Designer vary by project type and language. The Project Designer can be accessed with the **Properties** command on the **Project** menu.
 
@@ -121,7 +119,7 @@ A project subtype frequently needs to display additional property pages in the P
     class DeployPropertyPage : Form, Microsoft.VisualStudio.OLE.Interop.IPropertyPage
     {
         . . . .
-        //Summary: Return a stucture describing your property page.
+        //Summary: Return a structure describing your property page.
         public void GetPageInfo(Microsoft.VisualStudio.OLE.Interop.PROPPAGEINFO[] pPageInfo)
         {
             PROPPAGEINFO info = new PROPPAGEINFO();
@@ -143,7 +141,7 @@ A project subtype frequently needs to display additional property pages in the P
     Class DeployPropertyPage
             Inherits Form
             Implements Microsoft.VisualStudio.OLE.Interop.IPropertyPage
-        'Summary: Return a stucture describing your property page.
+        'Summary: Return a structure describing your property page.
         ....
         Public Sub GetPageInfo(ByVal pPageInfo As Microsoft.VisualStudio.OLE.Interop.PROPPAGEINFO())
             Dim info As PROPPAGEINFO = New PROPPAGEINFO()

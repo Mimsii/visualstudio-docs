@@ -8,12 +8,11 @@ helpviewer_keywords:
 - commands, updating UI
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Updating the User Interface
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 After you implement a command, you can add code to update the user interface with the state of your new commands.
 
  In a typical Win32 application, the command set can be continuously polled and the state of individual commands can be adjusted as the user views them. However, because the Visual Studio shell can host an unlimited number of VSPackages, extensive polling might decrease responsiveness, especially polling across interop assemblies between managed code and COM.

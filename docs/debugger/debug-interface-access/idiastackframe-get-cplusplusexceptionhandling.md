@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates if C++ exception handling is in effect."
+description: Retrieves a flag that indicates if C++ exception handling is in effect.
 title: "IDiaStackFrame::get_cplusplusExceptionHandling"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaStackFrame::get_cplusplusExceptionHandling method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackFrame::get_cplusplusExceptionHandling
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates if C++ exception handling is in effect.
 
 ## Syntax
 
 ```C++
-HRESULT get_cplusplusExceptionHandling ( 
+HRESULT get_cplusplusExceptionHandling ( 
    BOOL* pRetVal
 );
 ```

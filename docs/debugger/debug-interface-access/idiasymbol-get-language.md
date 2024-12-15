@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_language method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_language
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the language of the source.
 
 ## Syntax
 
 ```C++
-HRESULT get_language ( 
+HRESULT get_language ( 
    DWORD* pRetVal
 );
 ```

@@ -8,12 +8,11 @@ helpviewer_keywords:
 - debug engines, detaching from programs
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Termination and detaching
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The following section describes normal termination.
 
 ## Discussion

@@ -5,14 +5,12 @@ ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 dev_langs:
   - CSharp
 ---
 # Convert between auto property and full property
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This refactoring applies to:
 
@@ -32,11 +30,11 @@ This refactoring applies to:
 
     Select **Convert to full property**.
 
-   ![Convert auto property to full property](media/convert-auto-property-to-full-property.png) 
+    ![Convert auto property to full property](media/convert-auto-property-to-full-property.png)
 
     Select **Use auto property**. 
 
-    ![Convert full property to auto property](media/convert-full-property-to-auto-property.png) 
+    ![Convert full property to auto property](media/convert-full-property-to-auto-property.png)
 
 ## See also
 

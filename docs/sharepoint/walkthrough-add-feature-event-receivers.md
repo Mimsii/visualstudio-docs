@@ -14,12 +14,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, feature event receivers"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Walkthrough: Add feature event receivers
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Feature event receivers are methods that execute when one of the following feature-related events occurs in SharePoint:
 
 - A feature is installed.

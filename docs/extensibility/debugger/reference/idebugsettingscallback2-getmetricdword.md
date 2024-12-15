@@ -7,15 +7,14 @@ helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricDword
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSettingsCallback2::GetMetricDword
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the value of a metric given its name.
 
 ## Syntax

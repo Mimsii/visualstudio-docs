@@ -1,5 +1,5 @@
 ---
-description: "Determines if searching for .pdb files is allowed in the system root directory."
+description: Determines if searching for .pdb files is allowed in the system root directory.
 title: "IDiaLoadCallback2::RestrictSystemRootAccess"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaLoadCallback2::RestrictSystemRootAccess method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaLoadCallback2::RestrictSystemRootAccess
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Determines if searching for .pdb files is allowed in the system root directory.
 
 ## Syntax

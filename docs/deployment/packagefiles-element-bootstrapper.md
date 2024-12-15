@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "<PackageFiles> element [bootstrapper]"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # &lt;PackageFiles&gt; element (bootstrapper)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The `PackageFiles` element contains `PackageFile` elements, which define the installation packages executed as a result of the `Command` element.
 
 ## Syntax

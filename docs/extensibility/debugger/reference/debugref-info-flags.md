@@ -9,15 +9,14 @@ helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # DEBUGREF_INFO_FLAGS
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Specifies what information to retrieve about a debug reference object.
 
 ## Syntax

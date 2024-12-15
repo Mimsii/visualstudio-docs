@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugDocumentPosition2::GetFileName
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugDocumentPosition2::GetFileName
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets the file name of the source file that contains the document position.
 
 ## Syntax

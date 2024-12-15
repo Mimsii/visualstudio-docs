@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugPortSupplier2::EnumPorts
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugPortSupplier2::EnumPorts
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a list of all the ports supplied by a port supplier.
 
 ## Syntax

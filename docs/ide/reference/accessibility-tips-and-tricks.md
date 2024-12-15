@@ -1,25 +1,27 @@
 ---
 title: "Accessibility tips and tricks for Visual Studio"
 description: Discover tips and tricks that help make the Visual Studio integrated development environment (IDE) more accessible for everyone, including people with disabilities.
-ms.date: 12/06/2022
+ms.date: 3/15/2024
 ms.topic: conceptual
 helpviewer_keywords:
   - "accessibility [Visual Studio]"
-author: j-martens
-ms.author: jmartens
-manager: jmartens
-ms.technology: vs-ide-general
+author: anandmeg
+ms.author: meghaanand
+ms.subservice: general-ide
 ---
 # Accessibility tips and tricks for Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Visual Studio has built-in accessibility features that are compatible with screen readers and other assistive technologies. Whether you want to use keyboard shortcuts to navigate the IDE, or use high-contrast themes to improve visibility, you'll find several tips & tricks on this page about how to do so.
 
 We also cover how to use annotations to reveal useful information about your code, and also how to set audio cues for error, breakpoint, or warning events.
 
-> [!NOTE]
-> This topic applies to Visual Studio on Windows. For Visual Studio for Mac, see [Accessibility for Visual Studio for Mac](/visualstudio/mac/accessibility).
+## Screen readers
+
+Visual Studio supports screen readers in the IDE. The following screen readers have been tested:
+
+- [NVDA](https://www.nvaccess.org/)
+- [JAWS](https://www.freedomscientific.com/products/software/jaws)
+- [Narrator](https://support.microsoft.com/help/22798)
 
 ## Save your IDE settings
 
@@ -78,6 +80,7 @@ Some other useful keyboard shortcuts include the following.
 |Toolbox window|Add a control from the Toolbox to a form or designer.|**Enter**|
 |Options dialog box: Environment > Keyboard|Delete a key combination entered in the **Press shortcut keys** option.|**Backspace**|
 |Notifications tool window|Open the Notifications tool window by using two keyboard shortcut key combinations, one followed by the other. Then, view a  notification by using the arrow keys to select it.| **Ctrl**+**&#92;**, **Ctrl**+**N**|
+|Data Grids|Open filters in data grid column headers, such as in the references tool window.|**Ctrl**+**[arrow keys]**|
 
 For a complete list, see [Keyboard shortcuts in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
 
@@ -161,5 +164,4 @@ Here's how to add audio cues to program events by using either Windows 11 or Win
 * [Set accessibility options](../how-to-change-fonts-and-colors-in-visual-studio.md#set-accessibility-options)
 * [Customize menus and toolbars in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
-* [Accessibility (Visual Studio for Mac)](/visualstudio/mac/accessibility)
 * [Microsoft Accessibility](https://www.microsoft.com/Accessibility)

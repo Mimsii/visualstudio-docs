@@ -17,12 +17,11 @@ helpviewer_keywords:
   - "HasVstoObject method"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Extend Word documents and Excel workbooks in VSTO add-ins at run time
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   You can use a VSTO Add-in to customize Word documents and Excel workbooks in the following ways:
 
 - Add managed controls to any open document or worksheet.
@@ -137,7 +136,7 @@ ms.technology: office-development
 ## <a name="HasVstoObject"></a> Determine whether an Office object has been extended
  To determine whether an extended object has already been generated for a particular native Office object, use the `HasVstoObject` method. This method returns **true** if an extended object has already been generated.
 
- Use the `Globals.Factory.HasVstoMethod` method. Pass in the native Word or Excel object, such as a <xref:Microsoft.Office.Interop.Word.Document> or <xref:Microsoft.Office.Interop.Excel.Worksheet>, that you want to test for an extended object.
+ Use the `Globals.Factory.HasVstoObject` method. Pass in the native Word or Excel object, such as a <xref:Microsoft.Office.Interop.Word.Document> or <xref:Microsoft.Office.Interop.Excel.Worksheet>, that you want to test for an extended object.
 
  The `HasVstoObject` method is useful when you want to run code only when a specified Office object has an extended object. For example, if you have a Word VSTO Add-in that handles the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event to remove managed controls from a document before it's saved, use the `HasVstoObject` method to determine whether the document has been extended. If the document has not been extended, it cannot have managed controls, and the event handler can return without trying to clean up controls on the document.
 

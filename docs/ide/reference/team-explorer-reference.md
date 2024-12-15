@@ -5,12 +5,10 @@ ms.date: 11/02/2022
 ms.topic: reference
 ms.author: ghogen
 author: ghogen
-ms.manager: jmartens
+ms.manager: mijacobs
 monikerRange: "<=vs-2019"
 ---
 # Team Explorer reference
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This article provides links to Azure DevOps articles about the various functions in **Team Explorer**.
 

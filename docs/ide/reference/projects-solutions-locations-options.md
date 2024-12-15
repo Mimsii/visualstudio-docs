@@ -7,12 +7,10 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Options dialog box: Projects and Solutions \> Locations
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Use this page to set default locations for projects, project templates, and item templates. To access these options, select **Tools** > **Options**, expand **Projects and Solutions**, and then select **Locations**.
 

@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the function has a custom calling convention."
+description: Retrieves a flag that specifies whether the function has a custom calling convention.
 title: "IDiaSymbol::get_customCallingConvention"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_customCallingConvention method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_customCallingConvention
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the function has a custom calling convention.
 
 ## Syntax

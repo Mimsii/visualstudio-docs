@@ -10,8 +10,8 @@ helpviewer_keywords:
 - output, removing items
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Clean a build
 

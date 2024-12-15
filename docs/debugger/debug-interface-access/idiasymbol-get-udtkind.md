@@ -9,12 +9,11 @@ helpviewer_keywords:
   - "IDiaSymbol::get_udtKind method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDiaSymbol::get_udtKind
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the variety of a user-defined type (UDT).
 
 ## Syntax

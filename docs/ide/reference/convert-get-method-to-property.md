@@ -6,8 +6,8 @@ ms.topic: reference
 ms.devlang: csharp
 author: mikadumont
 ms.author: midumont
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
@@ -15,8 +15,6 @@ dev_langs:
 - VB
 ---
 # Convert Get method to property / Convert property to Get method refactorings
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 These refactorings apply to:
 

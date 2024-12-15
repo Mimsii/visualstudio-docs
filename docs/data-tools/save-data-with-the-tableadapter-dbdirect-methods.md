@@ -13,16 +13,15 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapter
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# Save data with the TableAdapter DBDirect methods in .NET Framework applications
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# Save data with the TableAdapter DBDirect methods in .NET Framework applications
 
 [!INCLUDE [Data access tech note](./includes/data-technology-note.md)]
 
-This tutorial provides detailed instructions for running SQL statements directly against a database by using the DBDirect methods of a TableAdapter. The DBDirect methods of a TableAdapter provide a fine level of control over your database updates. You can use them to run specific SQL statements and stored procedures by calling the individual `Insert`, `Update`, and `Delete` methods as needed by your application (as opposed to the overloaded `Update` method that performs the UPDATE, INSERT, and DELETE statements all in one call).
+This tutorial provides detailed instructions for running SQL statements directly against a database by using the DBDirect methods of a TableAdapter. The DBDirect methods of a TableAdapter provide a fine level of control over your database updates. You can use them to run specific SQL statements and stored procedures by calling the individual `Insert`, `Update`, and `Delete` methods as needed by your application (as opposed to the overloaded `Update` method that performs the `UPDATE`, `INSERT`, and `DELETE` statements all in one call).
 
 During this tutorial, you will learn how to:
 
@@ -77,9 +76,9 @@ This step uses the **Data Source Configuration Wizard** to create a data source 
 
 4. On the **Choose your Data Connection** screen, do one of the following:
 
-    - If a data connection to the Northwind sample database is available in the drop-down list, select it.
+    - If a data connection to the Northwind sample database is available in the dropdown list, select it.
 
-         -or-
+      -or-
 
     - Select **New Connection** to launch the **Add/Modify Connection** dialog box.
 

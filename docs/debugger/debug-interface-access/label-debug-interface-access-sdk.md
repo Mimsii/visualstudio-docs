@@ -10,12 +10,11 @@ helpviewer_keywords:
   - "Label symbol"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Label (Debug Interface Access SDK)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 A location in program code is identified by a `SymTagLabel` symbol.
 
 ## Properties

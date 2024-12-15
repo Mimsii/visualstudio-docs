@@ -15,12 +15,10 @@ helpviewer_keywords:
   - "multiple Office versions"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Run solutions in different versions of Microsoft Office
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ## Run Office solutions created by using Visual Studio 2010 and above
 

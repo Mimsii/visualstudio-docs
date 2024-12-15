@@ -14,12 +14,10 @@ helpviewer_keywords:
   - "reusable workflows [SharePoint development in Visual Studio]"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Walkthrough: Import a SharePoint Designer reusable workflow
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
   This walkthrough demonstrates how to import a reusable workflow created in SharePoint Designer 2010 into a Visual Studio SharePoint workflow project.
 

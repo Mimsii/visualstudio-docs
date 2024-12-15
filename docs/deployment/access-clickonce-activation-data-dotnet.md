@@ -8,13 +8,11 @@ helpviewer_keywords:
   - "file associations, ClickOnce for .NET 5+"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 monikerRange: '>= vs-2022'
 ---
 # Access ClickOnce activation data for .NET on Windows
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Starting in the .NET 8.0 Preview 1 version of *dotnet-mage*, you can access `ActivationData` properties using environment variables. Using this version of *dotnet-mage*, you can programmatically:
 

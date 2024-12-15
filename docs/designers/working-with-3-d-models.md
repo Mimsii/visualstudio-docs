@@ -5,14 +5,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-designers
+manager: mijacobs
+ms.subservice: ui-designers
 ---
 # Work with 3D models
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 You can use the Model Editor in Visual Studio to create 3D models. You can use the models in your DirectX-based game or app.
+
+> [!NOTE]
+> Visual Studio 2022 17.9.3 removed support for the Model Editor and MeshContentTask due to security concerns in the Autodesk FBX SDK. See [CVE-2023-27911](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-27911).
 
 ## 3D models
 

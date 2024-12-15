@@ -1,5 +1,5 @@
 ---
-description: "This function retrieves a flag indicating whether the function was marked as inline (using one of the inline, _inline, __forceinline) attributes)."
+description: This function retrieves a flag indicating whether the function was marked as inline (using one of the inline, _inline, __forceinline) attributes).
 title: "IDiaSymbol::get_InlSpec"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_InlSpec method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_InlSpec
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function retrieves a flag indicating whether the function was marked as inline (using one of the [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) attributes).
 
 ## Syntax

@@ -1,5 +1,5 @@
 ---
-description: "Reads ULONGLONG values in a property set."
+description: Reads ULONGLONG values in a property set.
 title: "IDiaPropertyStorage::ReadULONGLONG"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaPropertyStorage::ReadULONGLONG"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaPropertyStorage::ReadULONGLONG
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Reads `ULONGLONG` values in a property set.
 
 ## Syntax
 
 ```C++
-HRESULT ReadULONGLONG ( 
+HRESULT ReadULONGLONG ( 
    PROPID     id,
    ULONGLONG* pValue
 );

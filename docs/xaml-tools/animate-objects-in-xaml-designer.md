@@ -6,12 +6,10 @@ ms.date: 07/31/2019
 ms.topic: how-to
 author: maddymontaquila
 ms.author: maleger
-manager: jmartens
-ms.technology: vs-xaml-tools
+manager: mijacobs
+ms.subservice: xaml-tools
 ---
 # Animate objects in XAML Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Blend for Visual Studio lets you easily create short animations that move objects or fade them in and out, for example.
 

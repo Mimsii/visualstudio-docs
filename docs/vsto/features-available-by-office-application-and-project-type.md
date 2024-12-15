@@ -18,12 +18,11 @@ helpviewer_keywords:
   - "form regions [Office development in Visual Studio], features available"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Features available by Office application and project type
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Visual Studio has several types of project templates that support different business scenarios for Microsoft Office applications, including the following types:
 
 - Document-level customizations.

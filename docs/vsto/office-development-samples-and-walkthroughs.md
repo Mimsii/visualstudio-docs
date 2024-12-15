@@ -18,12 +18,11 @@ helpviewer_keywords:
   - "examples [Office development in Visual Studio]"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Office development samples and walkthroughs
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This section contains sample applications, example code, and step-by-step walkthroughs that illustrate the syntax, structure, and techniques used to build Microsoft Office solutions.
 
  The sample code is intended for instructional purposes, and should not be used in deployed solutions without modifications. In particular, security must be taken into greater consideration.

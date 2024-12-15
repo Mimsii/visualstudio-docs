@@ -8,12 +8,11 @@ helpviewer_keywords:
 - expression evaluation, displaying locals
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Display locals
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 > [!IMPORTANT]
 > In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, see [CLR expression evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed expression evaluator sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
@@ -27,8 +26,8 @@ ms.technology: vs-ide-debug
 > The **QuickWatch** and **Watch** windows also display variables with the same format of name, value, and type. However, those values are obtained by calling [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) instead of `IDebugProperty2::EnumChildren`.
 
 ## In this section
- [Sample implementation of locals](../../extensibility/debugger/sample-implementation-of-locals.md)
- Uses examples to step through the process of implementing locals.
+
+[Sample implementation of locals](../../extensibility/debugger/sample-implementation-of-locals.md) uses examples to step through the process of implementing locals.
 
 ## Related content
 - [Evaluation context](../../extensibility/debugger/evaluation-context.md) explains that when the debug engine (DE) calls the expression evaluator (EE), it passes three arguments.

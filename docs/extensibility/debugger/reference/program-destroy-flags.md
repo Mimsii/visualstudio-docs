@@ -7,15 +7,14 @@ helpviewer_keywords:
 - PROGRAM_DESTROY_FLAGS enumeration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # PROGRAM_DESTROY_FLAGS
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enumerates the valid values of the program destroy flags.
 
 ## Syntax

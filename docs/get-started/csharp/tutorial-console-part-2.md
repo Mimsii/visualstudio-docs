@@ -2,21 +2,18 @@
 title: "Tutorial 2: Extend your C# console app"
 description: Extend a C# console application in Visual Studio, including debugging features, managing multiple projects, and referencing third-party packages.
 ms.custom: vs-acquisition
-ms.date: 10/31/2023
-ms.technology: vs-ide-general
-ms.prod: visual-studio-windows
+ms.date: 10/18/2024
+ms.subservice: general-ide
 ms.topic: tutorial
-ms.devlang: CSharp
+ms.devlang: csharp
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
+manager: mijacobs
 monikerRange: ">=vs-2019"
 dev_langs:
   - CSharp
 ---
 # Tutorial: Extend C# console app and debug in Visual Studio (part 2 of 2)
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In part 2 of this tutorial series, you dive a little deeper into the Visual Studio build and debug features you need for daily development. These features include managing multiple projects, debugging, and referencing third-party packages. You run the C# console app you created in [Part 1 of this tutorial](tutorial-console.md), and explore some features of the Visual Studio integrated development environment (IDE). This tutorial is part 2 of a two-part tutorial series.
 
@@ -79,6 +76,7 @@ In Visual Studio, you use the menu command **File** > **Add** > **New Project** 
    *CalculatorLibrary.cs* should now resemble the following code:
 
    ```csharp
+   // CalculatorLibrary.cs
    using System;
 
     namespace CalculatorLibrary
@@ -118,15 +116,17 @@ In Visual Studio, you use the menu command **File** > **Add** > **New Project** 
     }
    ```
 
-1. *Program.cs* also has a reference, but an error says the `Calculator.DoOperation` call doesn't resolve. The error is because `CalculatorLibrary` is in a different namespace. For a fully qualified reference, you could add the `CalculatorLibrary` namespace to the `Calculator.DoOperation` call:
+1. *Program.cs* also has a reference, but an error says the `Calculator.DoOperation` call doesn't resolve. The error is because `CalculatorLibrary` is in a different namespace. For a fully qualified reference, you could add the `CalculatorLibrary` namespace to the `Calculator.DoOperation` call in *Program.cs*:
 
    ```csharp
+   // Program.cs
    result = CalculatorLibrary.Calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-   Or, you could try adding a `using` directive to the beginning of the file:
+   Or, you could try adding a `using` directive to the beginning of the *Program.cs* file:
 
    ```csharp
+   // Program.cs
    using CalculatorLibrary;
    ```
 
@@ -135,6 +135,7 @@ In Visual Studio, you use the menu command **File** > **Add** > **New Project** 
    To resolve the ambiguity, rename the namespace from `Calculator` to `CalculatorProgram` in *Program.cs*.
 
    ```csharp
+   // Program.cs
    namespace CalculatorProgram
    ```
 
@@ -179,6 +180,7 @@ In Visual Studio, you use the menu command **File** > **Add** > **New Project** 
    *CalculatorLibrary.cs* should now resemble the following code:
 
    ```csharp
+    // CalculatorLibrary.cs
     namespace CalculatorLibrary
     {
         public class Calculator
@@ -216,25 +218,24 @@ In Visual Studio, you use the menu command **File** > **Add** > **New Project** 
     }
    ```
 
-1. *Program.cs* also has a reference, but an error says the `Calculator.DoOperation` call doesn't resolve. The error is because `CalculatorLibrary` is in a different namespace. For a fully qualified reference, you could add the `CalculatorLibrary` namespace to the `Calculator.DoOperation` call:
+1. *Program.cs* also has a reference, but an error says the `Calculator.DoOperation` call doesn't resolve. The error is because `CalculatorLibrary` is in a different namespace. For a fully qualified reference, you could add the `CalculatorLibrary` namespace to the `Calculator.DoOperation` call in *Program.cs*:
 
    ```csharp
+   // Program.cs
    result = CalculatorLibrary.Calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-   Or, you could try adding a `using` directive to the beginning of the file:
+   Or, you could try adding a `using` directive to the beginning of the *Program.cs* file:
 
    ```csharp
+   // Program.cs
    using CalculatorLibrary;
    ```
 
-   Adding the `using` directive should let you remove the `CalculatorLibrary` namespace from the call site, but now there's an ambiguity. Is `Calculator` the class in `CalculatorLibrary`, or is `Calculator` the namespace?
-   
-   To resolve the ambiguity, rename the namespace from `Calculator` to `CalculatorProgram` in *Program.cs*.
+   Adding the `using` directive should let you remove the `CalculatorLibrary` namespace from the call site.
 
-   ```csharp
-   namespace CalculatorProgram
-   ```
+   If your `Program.cs` code is in the `Calculator` namespace, rename the namespace from `Calculator` to `CalculatorProgram` to remove ambiguity between class name and namespace name.
+    
 ::: moniker-end
 
 ## Reference .NET libraries: Write to a log
@@ -245,6 +246,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 1. Start by adding the `using` directives at the top of *CalculatorLibrary.cs*:
 
    ```csharp
+   // CalculatorLibrary.cs
    using System.IO;
    using System.Diagnostics;
    ```
@@ -254,6 +256,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
    Also remove the `static` keyword to change the static `DoOperation` method into a member method.
 
    ```csharp
+   // CalculatorLibrary.cs
    public Calculator()
       {
           StreamWriter logFile = File.CreateText("calculator.log");
@@ -270,6 +273,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 1. Add log output to each calculation. `DoOperation` should now look like the following code:
 
    ```csharp
+   // CalculatorLibrary.cs
    public double DoOperation(double num1, double num2, string op)
    {
         double result = double.NaN; // Default value is "not-a-number" if an operation, such as division, could result in an error.
@@ -308,18 +312,20 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 1. Back in *Program.cs*, a red squiggly underline now flags the static call. To fix the error, create a `calculator` variable by adding the following code line just before the `while (!endApp)` loop:
 
    ```csharp
+   // Program.cs
    Calculator calculator = new Calculator();
    ```
 
    Also modify the `DoOperation` call site to reference the object named `calculator` in lowercase. The code is now a member invocation, rather than a call to a static method.
 
    ```csharp
+   // Program.cs
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
 1. Run the app again. When you're done, right-click the **Calculator** project node and choose **Open Folder in File Explorer**.
 
-1. In File Explorer, navigate to the output folder under *bin/Debug/*, and open the *calculator.log* file. The output should look something like this:
+1. In File Explorer, navigate to the output folder under *bin/Debug/net8.0* (or whatever .NET version you're using), and open the *calculator.log* file. The output should look something like this:
 
     ```output
     Starting Calculator Log
@@ -331,6 +337,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 At this point, *CalculatorLibrary.cs* should resemble this code:
 
 ```csharp
+// CalculatorLibrary.cs
 using System;
 using System.IO;
 using System.Diagnostics;
@@ -389,6 +396,7 @@ namespace CalculatorLibrary
 *Program.cs* should look like the following code:
 
 ```csharp
+// Program.cs
 using System;
 using CalculatorLibrary;
 
@@ -479,6 +487,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 1. Start by adding the `using` directives at the top of *CalculatorLibrary.cs*:
 
    ```csharp
+   // CalculatorLibrary.cs
    using System.Diagnostics;
    ```
 
@@ -487,6 +496,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
    Also remove the `static` keyword to change the static `DoOperation` method into a member method.
 
    ```csharp
+   // CalculatorLibrary.cs
    public Calculator()
       {
           StreamWriter logFile = File.CreateText("calculator.log");
@@ -503,6 +513,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 1. Add log output to each calculation. `DoOperation` should now look like the following code:
 
    ```csharp
+   // CalculatorLibrary.cs
    public double DoOperation(double num1, double num2, string op)
    {
         double result = double.NaN; // Default value is "not-a-number" if an operation, such as division, could result in an error.
@@ -541,12 +552,14 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 1. Back in *Program.cs*, a red squiggly underline now flags the static call. To fix the error, create a `calculator` variable by adding the following code line just before the `while (!endApp)` loop:
 
    ```csharp
+   // Program.cs
    Calculator calculator = new Calculator();
    ```
 
    Also modify the `DoOperation` call site to reference the object named `calculator` in lowercase. The code is now a member invocation, rather than a call to a static method.
 
    ```csharp
+   // Program.cs
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
@@ -564,6 +577,7 @@ You can use the .NET [Trace](xref:System.Diagnostics.Trace) class to add a log o
 At this point, *CalculatorLibrary.cs* should resemble this code:
 
 ```csharp
+// CalculatorLibrary.cs
 using System.Diagnostics;
 
 namespace CalculatorLibrary
@@ -620,6 +634,7 @@ namespace CalculatorLibrary
 *Program.cs* should look like the following code:
 
 ```csharp
+// Program.cs
 using CalculatorLibrary;
 
 namespace CalculatorProgram
@@ -638,8 +653,9 @@ namespace CalculatorProgram
             while (!endApp)
             {
                 // Declare variables and set to empty.
-                string numInput1 = "";
-                string numInput2 = "";
+                // Use Nullable types (with ?) to match type of System.Console.ReadLine
+                string? numInput1 = "";
+                string? numInput2 = "";
                 double result = 0;
 
                 // Ask the user to type the first number.
@@ -672,22 +688,29 @@ namespace CalculatorProgram
                 Console.WriteLine("\td - Divide");
                 Console.Write("Your option? ");
 
-                string op = Console.ReadLine();
+                string? op = Console.ReadLine();
 
-                try
+                // Validate input is not null, and matches the pattern
+                if (op == null || ! Regex.IsMatch(op, "[a|s|m|d]"))
                 {
-                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
-                    if (double.IsNaN(result))
-                    {
-                        Console.WriteLine("This operation will result in a mathematical error.\n");
-                    }
-                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                   Console.WriteLine("Error: Unrecognized input.");
                 }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                else
+                { 
+                   try
+                   {
+                       result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                       if (double.IsNaN(result))
+                       {
+                           Console.WriteLine("This operation will result in a mathematical error.\n");
+                       }
+                       else Console.WriteLine("Your result: {0:0.##}\n", result);
+                   }
+                   catch (Exception e)
+                   {
+                       Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                   }
                 }
-
                 Console.WriteLine("------------------------\n");
 
                 // Wait for the user to respond before closing.
@@ -733,6 +756,7 @@ To output operations in JSON, a popular and portable format for storing object d
 
    ::: moniker range=">=vs-2022"
    ![Screenshot of Newtonsoft J SON NuGet package information in the NuGet Package Manager.](media/vs-2022/calculator-nuget-newtonsoft-json.png)
+
    If you're prompted whether to accept changes, select **OK**.
    
    Visual Studio downloads the package and adds it to the project. A new entry appears in a **Packages** node in **Solution Explorer**.
@@ -741,12 +765,14 @@ To output operations in JSON, a popular and portable format for storing object d
    Add a `using` directive for `Newtonsoft.Json` at the beginning of *CalculatorLibrary.cs*.
 
    ```csharp
+   // CalculatorLibrary.cs
    using Newtonsoft.Json;
    ```
    
 1. Create the `JsonWriter` member object, and replace the `Calculator` constructor with the following code:
 
    ```csharp
+        // CalculatorLibrary.cs
         JsonWriter writer;
 
         public Calculator()
@@ -764,6 +790,7 @@ To output operations in JSON, a popular and portable format for storing object d
 1. Modify the `DoOperation` method to add the JSON `writer` code:
 
    ```csharp
+        // CalculatorLibrary.cs
         public double DoOperation(double num1, double num2, string op)
         {
             double result = double.NaN; // Default value is "not-a-number" if an operation, such as division, could result in an error.
@@ -811,6 +838,7 @@ To output operations in JSON, a popular and portable format for storing object d
 1. Add a method to finish the JSON syntax once the user is done entering operation data.
 
    ```csharp
+    // CalculatorLibrary.cs
     public void Finish()
     {
         writer.WriteEndArray();
@@ -822,6 +850,7 @@ To output operations in JSON, a popular and portable format for storing object d
 1. At the end of *Program.cs*, before the `return;`, add a call to `Finish`:
 
    ```csharp
+        // Program.cs
             // Add call to close the JSON writer before return
             calculator.Finish();
             return;
@@ -858,6 +887,7 @@ The Visual Studio debugger is a powerful tool. The debugger can step through you
 1. In *Program.cs*, click in the gutter to the left of the following code line. You can also click in the line and select **F9**, or right-click the line and select **Breakpoint** > **Insert Breakpoint**.
 
    ```csharp
+   // Program.cs
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
@@ -926,6 +956,7 @@ Next, execute code in the debugger one statement at a time, which is called *ste
 1. Press **F10**, or select **Debug** > **Step Over**, several times until the app pauses on the `switch` statement.
 
    ```csharp
+   // CalculatorLibrary.cs
    switch (op)
    {
    ```
@@ -935,6 +966,7 @@ Next, execute code in the debugger one statement at a time, which is called *ste
 1. Press **F10** one more time, so that the app pauses on the following line of code.
 
    ```csharp
+   // CalculatorLibrary.cs
    if (num2 != 0)
    {
    ```
@@ -946,6 +978,7 @@ Next, execute code in the debugger one statement at a time, which is called *ste
 1. Select the yellow pointer, currently paused on the `if (num2 != 0)` statement, and drag it to the following statement:
 
    ```csharp
+   // CalculatorLibrary.cs
    result = num1 / num2;
    ```
 
@@ -968,6 +1001,7 @@ Next, execute code in the debugger one statement at a time, which is called *ste
 Here's the complete code for the *CalculatorLibrary.cs* file, after you complete all the steps:
 
 ```csharp
+// CalculatorLibrary.cs
 using System;
 using System.IO;
 using Newtonsoft.Json;
@@ -1046,6 +1080,7 @@ namespace CalculatorLibrary
 And here's the code for *Program.cs*: 
 
 ```csharp
+// Program.cs
 using System;
 using CalculatorLibrary;
 
@@ -1130,13 +1165,14 @@ namespace CalculatorProgram
 }
 ```
 
-::: moniker-end
+:::moniker-end
 
-::: moniker range=">=vs-2022"
+:::moniker range=">=vs-2022"
 
 Here's the complete code for the *CalculatorLibrary.cs* file, after you complete all the steps:
 
 ```csharp
+// CalculatorLibrary.cs
 using Newtonsoft.Json;
 
 namespace CalculatorLibrary
@@ -1213,6 +1249,7 @@ namespace CalculatorLibrary
 And here's the code for *Program.cs*: 
 
 ```csharp
+// Program.cs
 using CalculatorLibrary;
 
 namespace CalculatorProgram
@@ -1231,8 +1268,9 @@ namespace CalculatorProgram
             while (!endApp)
             {
                 // Declare variables and set to empty.
-                string numInput1 = "";
-                string numInput2 = "";
+                // Use Nullable types (with ?) to match type of System.Console.ReadLine
+                string? numInput1 = "";
+                string? numInput2 = "";
                 double result = 0;
 
                 // Ask the user to type the first number.
@@ -1265,22 +1303,29 @@ namespace CalculatorProgram
                 Console.WriteLine("\td - Divide");
                 Console.Write("Your option? ");
 
-                string op = Console.ReadLine();
+                string? op = Console.ReadLine();
 
-                try
+                // Validate input is not null, and matches the pattern
+                if (op == null || ! Regex.IsMatch(op, "[a|s|m|d]"))
                 {
-                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
-                    if (double.IsNaN(result))
-                    {
-                        Console.WriteLine("This operation will result in a mathematical error.\n");
-                    }
-                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                   Console.WriteLine("Error: Unrecognized input.");
                 }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                else
+                { 
+                   try
+                   {
+                       result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                       if (double.IsNaN(result))
+                       {
+                           Console.WriteLine("This operation will result in a mathematical error.\n");
+                       }
+                       else Console.WriteLine("Your result: {0:0.##}\n", result);
+                   }
+                   catch (Exception e)
+                   {
+                       Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                   }
                 }
-
                 Console.WriteLine("------------------------\n");
 
                 // Wait for the user to respond before closing.
@@ -1296,7 +1341,7 @@ namespace CalculatorProgram
 }
 ```
 
-::: moniker-end
+:::moniker-end
 
 ## Next steps
 

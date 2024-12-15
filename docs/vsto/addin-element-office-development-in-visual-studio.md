@@ -7,18 +7,19 @@ ms.topic: reference
 dev_langs:
   - "VB"
   - "CSharp"
+f1_keywords:
+  - "urn:schemas-microsoft-com:vsta.v3#addIn"
 helpviewer_keywords:
   - "application manifests [Office development in Visual Studio], <addIn> element"
   - "addin element"
   - "<addin> element"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # &lt;addin&gt; element (Office development in Visual Studio)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   The **addin** element of the `vstav3` namespace contains information that is specific to Microsoft Office VSTO Add-ins and document-level customizations developed with Visual Studio.
 
 ## Syntax

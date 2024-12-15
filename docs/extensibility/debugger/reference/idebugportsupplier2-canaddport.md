@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugPortSupplier2::CanAddPort
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugPortSupplier2::CanAddPort
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Verifies that a port supplier can add new ports.
 
 ## Syntax

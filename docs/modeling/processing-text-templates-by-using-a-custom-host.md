@@ -8,12 +8,10 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Process Text Templates by using a Custom Host
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The *text template transformation* process takes a *text template* file as the input and produces a text file as the output. You can call the text transformation engine from a Visual Studio extension, or from a standalone application running on a machine on which Visual Studio is installed. However, you must provide a *text templating host*. This class connects the template to the environment, finding resources such as assemblies and include files, and dealing with the output and error messages.
 
@@ -46,12 +44,13 @@ string output = engine.ProcessTemplate(templateString, host);
 
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> is defined in **Microsoft.VisualStudio.TextTemplating.\*.0.dll**, and [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) is defined in **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.dll**.
 
-## In This Section
- [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md)
- Shows you how to create a custom text template host that makes the text template functionality available outside Visual Studio.
+## In this section
+
+[Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md) shows you how to create a custom text template host that makes the text template functionality available outside Visual Studio.
 
 ## Reference
- [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
+
+[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## Related content
 

@@ -1,7 +1,7 @@
 ---
 title: "View  data with the Tabular visualizer "
 description: View large collection objects with built-in tabular visualizers in the Visual Studio debugger and examine data by row and column for fields and properties.
-ms.date: "01/19/2023"
+ms.date: "07/30/2024"
 ms.topic: "conceptual"
 dev_langs:
   - "CSharp"
@@ -12,14 +12,13 @@ helpviewer_keywords:
   - "visualizers, tabular"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
+ms.collection: ce-skilling-ai-copilot
 monikerRange: '>= vs-2022'
 ---
 
 # Tabular visualizers in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 While you are debugging in Visual Studio, you can view large collection objects with the built-in tabular visualizers. The visualizer shows data in a tabular view with one row per object and sortable columns for each field and property. 
 
@@ -29,23 +28,23 @@ There are two types of tabular visualizers. The DataSet visualizer allows you to
 
 To open the visualizer, you must be paused during debugging.
 
-You can access the visualizer by clicking on the magnifying glass icon that appears next to the Value for one of those objects ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Visualizer icon")
-in a debugger variables window or in a DataTip.
+You can access the visualizer by clicking on the magnifying glass icon that appears next to the Value for one of those objects ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Visualizer icon") in a debugger variables window or in a DataTip.
 
-:::image type="content" source="../debugger/media/vs-2022/dbg-ienumerable-debugger-visualizer.png" alt-text="Diagram of Open a IEnumerable visualizer.":::
+:::image type="content" source="../debugger/media/vs-2022/dbg-ienumerable-debugger-visualizer.png" alt-text="Screenshot of Open an IEnumerable visualizer.":::
 
 ## DataSet visualizer 
 
 The DataSet Visualizer allows you to view the contents of a DataSet, DataTable, DataView, or DataViewManager object. 
 
-:::image type="content" source="../debugger/media/dbg-tips-dataset-visualizer.png " alt-text="Diagram of View the DataSet visualizer data.":::
+:::image type="content" source="../debugger/media/dbg-tips-dataset-visualizer.png " alt-text="Screenshot of View the DataSet visualizer data.":::
+
 ## IEnumerable visualizer 
 
 Starting in Visual Studio 2022, you can view IEnumerable collections in a tabular view.
 
 The IEnumerable visualizer helps explore large collection objects in a more streamlined way. The visualizer supports IEnumerable collections where the object type (T) can be simple types or complex types like dictionaries.
 
-:::image type="content" source="../debugger/media/vs-2022/dbg-ienumerable-visualizer-data.png" alt-text="Diagram of View the IEnumerable visualizer data.":::
+:::image type="content" source="../debugger/media/vs-2022/dbg-ienumerable-visualizer-data.png" alt-text="Screenshot of View the IEnumerable visualizer data.":::
 
 You can use the right-click context menu to customize the view:
 
@@ -53,15 +52,32 @@ You can use the right-click context menu to customize the view:
 - Select **Expand Column** to see more details items in the complex data.
 - Select **Hide Children** to get a more concise view of your data.
 
-## Filter, sort, and export  visualizer data
+### Modify the expression in the IEnumerable visualizer
+
+Starting in Visual Studio 2022 version 17.11, you can directly change the **Expression** textbox for the IEnumerable visualizer with a modified LINQ expression. The visualizer data gets updated, reflecting the data change resulting from your new query.
+
+:::image type="content" source="../debugger/media/vs-2022/dbg-ienumerable-visualizer-edit-expression.png" alt-text="Screenshot of view the visualizer data and edit the expression.":::
+
+Starting in Visual Studio 2022 version 17.12 Preview 3, you get IntelliSense support to help you edit the expression.
+
+Starting in Visual Studio 2022 version 17.12 Preview 2, you can get AI assistance to edit the LINQ expression. If you have Copilot activated, click the GitHub [Copilot](../ide/visual-studio-github-copilot-extension.md) icon to open Copilot Chat.
+
+:::image type="content" source="../debugger/media/vs-2022/debug-ienumerable-visualizer-edit-expression-copilot.png" alt-text="Screenshot of Copilot button to get help to edit the expression.":::
+
+In the Copilot Chat, you see LINQ syntax examples. Additionally, you can describe your query in natural language, and GitHub Copilot will generate the corresponding LINQ query. To apply LINQ query filtering to the visualizer, use the **Show in Visualizer** button in the chat.
+
+:::image type="content" source="../debugger/media/vs-2022/debug-ienumerable-visualizer-edit-expression-copilot-show-in-visualizer.png" alt-text="Screenshot of Show in Visualizer button in Copilot Chat.":::
+
+## Filter, sort, and export visualizer data
+
 - Both DataSet and IEnumerable support filtering, sorting, and exporting of visualizer data.
 - You can sort the visualizer columns in ascending/descending order by clicking on the column name.
 - You also can filter visualizer data based on a filter string. Enter the string in the filter box in the upper right corner and press Enter. The Visualizer returns all the rows that contain a value that matches the filter string.
 - You can export the data from IEnumerable visualizers in CSV/Excel format using the dropdown on the top right corner.
 - You can also export the filtered and sorted results in CSV/Excel format.
 
-:::image type="content" source="../debugger/media/vs-2022/dbg-ienumerable-visualizer-filtering.gif" alt-text="Diagram of View the visualizer data filter.":::
+:::image type="content" source="../debugger/media/vs-2022/dbg-ienumerable-visualizer-filtering.png" alt-text="Screenshot of View the visualizer data filter.":::
 
-## See also
+## Related content
 - [View strings in a string visualizer](../debugger/view-strings-visualizer.md)
 - [Create custom visualizers (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)

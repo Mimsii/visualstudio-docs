@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag indicating whether a section contains comments or similar information."
+description: Retrieves a flag indicating whether a section contains comments or similar information.
 title: "IDiaSectionContrib::get_informational"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_informational method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_informational
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag indicating whether a section contains comments or similar information.
 
 ## Syntax

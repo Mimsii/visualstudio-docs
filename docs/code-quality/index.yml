@@ -4,18 +4,18 @@ title: Code analysis documentation - Visual Studio (Windows)
 summary: Visual Studio provides several different tools to analyze and improve code quality.
 
 metadata:
-  title: Visual Studio code analysis documentation (Windows)
-  description: Explore analysis options in Visual Studio to assess code quality, including options for .NET and C++, quality and style rules, and handling warnings. 
-  ms.prod: visual-studio-windows
-  ms.technology: vs-ide-code-analysis
+  title: Visual Studio Code analysis documentation (Windows)
+  description: Explore analysis options in Visual Studio to assess code quality, including options for .NET and C++, quality and style rules, and handling warnings.
+  ms.subservice: code-analysis
   ms.topic: landing-page
   author: Mikejo5000
   ms.author: mikejo
-  ms.date: 10/15/2019
+  ms.date: 12/10/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 # Cards and links should be based on top customer tasks or top subjects
+
 # Start card title with a verb
 
 landingContent:
@@ -53,9 +53,9 @@ landingContent:
             url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
       - linkListType: reference
         links:
-          - text: .NET code quality rules
+          - text: .NET code quality rules >>
             url: /dotnet/fundamentals/code-analysis/quality-rules/
-          - text: .NET code style rules
+          - text: .NET code style rules >>
             url: /dotnet/fundamentals/code-analysis/style-rules/
 
   # Card

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugPort2::EnumProcesses
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugPort2::EnumProcesses
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Returns a list of all the processes running on a port.
 
 ## Syntax

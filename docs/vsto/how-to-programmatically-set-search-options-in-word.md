@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "searching, Word options"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Programmatically set search options in Word
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   There are two ways to set search options for selections in Microsoft Office Word documents:
 
 - Set individual properties of a <xref:Microsoft.Office.Interop.Word.Find> object.

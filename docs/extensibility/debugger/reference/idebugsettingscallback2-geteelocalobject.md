@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a expression evaluator local object given the metric name."
+description: "Retrieves an expression evaluator local object given the metric name."
 title: IDebugSettingsCallback2::GetEELocalObject
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,16 +7,15 @@ helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSettingsCallback2::GetEELocalObject
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-Retrieves a expression evaluator local object given the metric name.
+Retrieves an expression evaluator local object given the metric name.
 
 ## Syntax
 

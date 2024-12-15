@@ -10,12 +10,10 @@ helpviewer_keywords:
 - Import and Export Settings command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Import and Export Settings command (.vssettings file)
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Imports, exports, or resets Visual Studio settings file, `.vssettings`.
 
@@ -43,7 +41,7 @@ Optional. Resets the current settings.
 
 ## Remarks
 
-Running this command with no switches opens the **Import and Export Settings** wizard. For more information, see [Synchronize your settings](../synchronized-settings-in-visual-studio.md) and [Environment settings](../environment-settings.md).
+Running this command with no switches opens the **Import and Export Settings** wizard. For more information, see [Synchronize your settings](../synchronized-settings-in-visual-studio.md) and [Environment settings](../personalizing-the-visual-studio-ide.md).
 
 ## Example
 
@@ -53,10 +51,9 @@ The following command exports the current settings to the file `MyFile.vssetting
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-
 ## See also
 
-- [Environment settings](../../ide/environment-settings.md)
+- [Environment settings](../../ide/personalizing-the-visual-studio-ide.md)
 - [Synchronize your settings](../../ide/synchronized-settings-in-visual-studio.md)
 - [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
 - [Visual Studio commands](../../ide/reference/visual-studio-commands.md)

@@ -7,12 +7,11 @@ helpviewer_keywords:
 - debugging [Debugging SDK], events
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Call debugger events
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Events in debugging sessions occur in a specific order.
 
 ## Discussion

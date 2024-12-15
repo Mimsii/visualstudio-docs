@@ -1,18 +1,17 @@
 ---
 title: Overview of Entity Framework Tools
 description: Explore Entity Framework tools in Visual Studio, including the Entity Data Model Designer, Create Database Wizard, and Update Model Wizard.
-ms.date: 11/01/2023
+ms.date: 12/03/2024
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
+
 # Entity Framework Tools in Visual Studio
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-Entity Framework is an object-relational mapping technology that enables .NET developers to work with relational data by using domain-specific objects. It eliminates the need for most of the data-access code that developers usually need to write. Entity Framework is the recommended object-relational mapping (ORM) modeling technology for new .NET applications.
+Entity Framework is an object-relational mapping (ORM) technology that enables .NET developers to work with relational data by using domain-specific objects. It eliminates the need for most of the data-access code that developers usually need to write. Entity Framework is the recommended object-relational mapping (ORM) modeling technology for new .NET applications.
 
 Entity Framework Tools are designed to help you build Entity Framework (EF) applications. The complete documentation for Entity Framework is here: [Overview - EF 6](/ef/ef6/).
 
@@ -40,14 +39,11 @@ The tools generate or modify an `.edmx` file. This `.edmx` file contains informa
 
 [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) help you build applications that use the Entity Data Model. The power tools can generate a conceptual model, validate an existing model, produce source-code files that contain object classes based on the conceptual model, and produce source-code files that contain views that the model generates. For detailed information, see [Pre-Generated Mapping Views](/ef/ef6/fundamentals/performance/pre-generated-views).
 
-## Related topics
+## Related content
 
 | Title | Description |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Describes how to use Entity Data Model Tools, which Entity Framework provides, to create applications. |
 | [Entity Data Model](/dotnet/framework/data/adonet/entity-data-model) | Provides links and information for working with data that is used by applications built on Entity Framework. |
 | [Entity Framework (EF) Documentation)](/ef/ef6/get-started) | Provides an index of videos, tutorials, and advanced documentation to help you make the most of Entity Framework. |
-
-## See also
-
-- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+| [Visual Studio data tools for .NET Framework development](../data-tools/visual-studio-data-tools-for-dotnet.md) | Provides an overview of .NET Framework data tools in Visual Studio. |

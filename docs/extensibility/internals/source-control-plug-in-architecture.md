@@ -7,12 +7,11 @@ helpviewer_keywords:
 - source control plug-ins, architecture
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Source Control Plug-in Architecture
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can add source control support to the Visual Studio integrated development environment (IDE) by implementing and attaching a source control plug-in. The IDE connects to the source control plug-in via the well-defined Source Control Plug-In API. The IDE exposes the version control features of the source control system by providing a user interface (UI) that consists of toolbars and menu commands. The source control plug-in implements the source control functionality.
 
 ## Source Control Plug-in Resources
@@ -24,7 +23,8 @@ You can add source control support to the Visual Studio integrated development e
  The Source Control Adapter Package in the diagram is the component of the IDE that translates the user's request for a source control operation into a function call supported by the source control plug-in. For this to happen, the IDE and the source control plug-in must have an effective dialog that passes information back and forth between the IDE and the plug-in. For this dialog to take place, they both must speak the same language. The Source Control Plug-in API outlined in this documentation is the common vocabulary for this exchange.
 
  ![Source Code Control Architecture Diagram](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch")
-Architecture Diagram showing interaction between VS and source control plug-in
+ 
+ Architecture Diagram showing interaction between VS and source control plug-in
 
  As shown in the architecture diagram, the Visual Studio shell, labelled as VS shell in the diagram, hosts the user's working projects and associated components, such as the editors and Solution Explorer. The Source Control Adapter Package handles the interaction between the IDE and the source control plug-in. The Source Control Adapter Package provides its own source control UI. It is the top-level UI that the user interacts with in order to initiate and define the scope of a source control operation.
 
@@ -32,7 +32,7 @@ Architecture Diagram showing interaction between VS and source control plug-in
 
  A source control plug-in cannot make changes to the Visual Studio shell and, consequently, to either the Source Control Adapter Package or the source control UI provided by the IDE. It must make maximum use of the flexibility offered through the implementation of the various Source Control Plug-in API functions that contribute to an integrated experience for the end user. The reference section of the Source Control Plug-in API documentation includes information for some advanced source control plug-in capabilities. To exploit these features, the source control plug-in must declare its advanced capabilities to the IDE during initialization, and it must implement specific advanced functions for each capability.
 
-## See also
+## Related content
 - [Source Control Plug-ins](../../extensibility/source-control-plug-ins.md)
 - [Glossary](../../extensibility/source-control-plug-in-glossary.md)
 - [Creating a Source Control Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)

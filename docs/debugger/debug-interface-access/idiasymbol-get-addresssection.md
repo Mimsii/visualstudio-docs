@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the section part of an address location."
+description: Retrieves the section part of an address location.
 title: "IDiaSymbol::get_addressSection"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_addressSection method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_addressSection
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the section part of an address location. Use when the [LocationType Enumeration](../../debugger/debug-interface-access/locationtype.md) is set to `LocIsStatic`.
 
 ## Syntax
 
 ```C++
-HRESULT get_addressSection ( 
+HRESULT get_addressSection ( 
    DWORD* pRetVal
 );
 ```

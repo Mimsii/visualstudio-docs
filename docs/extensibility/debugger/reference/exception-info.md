@@ -9,15 +9,14 @@ helpviewer_keywords:
 - EXCEPTION_INFO structure
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # EXCEPTION_INFO
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Describes an exception or run-time error thrown by the program being debugged.
 
 ## Syntax

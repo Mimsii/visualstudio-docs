@@ -12,12 +12,11 @@ helpviewer_keywords:
   - "SharePoint development in Visual Studio, advanced packaging tools"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Add a project output reference
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   To deploy non-SharePoint project assemblies (or .xap files in Silverlight projects) to SharePoint, add them as a project output reference.
 
  This process creates a solution build dependency between the two projects. Projects associated with project output references are built before the SharePoint project is built and deployed.

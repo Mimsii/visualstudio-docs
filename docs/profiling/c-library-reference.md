@@ -1,5 +1,5 @@
 ---
-title: C Library Reference
+title: C Library Reference for Concurrency Visualizer
 description: Read an introduction to the C library reference information for the Concurrency Visualizer SDK in Visual Studio.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +7,11 @@ helpviewer_keywords:
   - Concurrency Visualizer SDK, C Library Reference
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
-# C library reference
+# C library reference for Concurrency Visualizer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This section contains reference information for the Concurrency Visualizer SDK.
 
 > [!NOTE]

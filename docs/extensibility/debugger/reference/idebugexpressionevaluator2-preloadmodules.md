@@ -8,15 +8,14 @@ helpviewer_keywords:
 - PreloadModules
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExpressionEvaluator2::PreloadModules
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Preloads the modules designated by the specified symbol provider.
 
 ## Syntax
@@ -46,7 +45,7 @@ If successful, returns `S_OK`; otherwise, returns an error code.
 This optional method is used when you do a hosting-process attach. It gives the EE a chance to 'warm up' as part of the attach.
 
 ## Example
-The following example shows how to implement this method for a **ExpressionEvaluatorPackage** object that exposes the [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.
+The following example shows how to implement this method for an **ExpressionEvaluatorPackage** object that exposes the [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

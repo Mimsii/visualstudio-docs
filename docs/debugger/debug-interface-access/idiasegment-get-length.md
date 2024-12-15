@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the number of bytes in the segment."
+description: Retrieves the number of bytes in the segment.
 title: "IDiaSegment::get_length"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSegment::get_length method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSegment::get_length
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the number of bytes in the segment.
 
 ## Syntax
 
 ```C++
-HRESULT get_ length ( 
+HRESULT get_ length ( 
    DWORD* pRetVal
 );
 ```

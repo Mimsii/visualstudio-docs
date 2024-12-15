@@ -2,7 +2,7 @@
 title: "String Visualizer (Text, XML, HTML, JSON)"
 description: View strings with the built-in String Visualizer dialog box while you are debugging in Visual Studio.
 ms.date: "10/10/2021"
-ms.topic: "reference"
+ms.topic: "ui-reference"
 f1_keywords:
   - "vs.debug.stringviewer"
 dev_langs:
@@ -16,12 +16,10 @@ helpviewer_keywords:
   - "visualizers, string"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # View Text, XML, HTML, JSON strings in the string visualizer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 While you are debugging in Visual Studio, you can view strings with the built-in string visualizer. The string visualizer shows strings that are too long for a data tip or debugger window. It can also help you identify malformed strings.
 
@@ -80,4 +78,3 @@ A well-formed HTML string appears as if rendered in a browser, as shown in the f
 ## See also
 
 - [Create custom visualizers (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
-- [Data visualizations in Visual Studio for Mac](/visualstudio/mac/data-visualizations)

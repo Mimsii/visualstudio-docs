@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IEEDataStorage::GetSize
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IEEDataStorage::GetSize
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Returns the number of bytes contained in this object.
 
 ## Syntax

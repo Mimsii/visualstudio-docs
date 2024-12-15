@@ -5,14 +5,12 @@ ms.date: 06/08/2021
 ms.topic: conceptual
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 monikerRange: "vs-2022"
-feedback_system: GitHub
+
 ---
 # Target a previous version when creating an extension in Visual Studio 2022
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 When you create a new VSIX project using Visual Studio 2022, the project is created from a template that targets Visual Studio 2022. If you want to target Visual Studio 2019 or an earlier version, you must modify the created project.
 
@@ -38,7 +36,7 @@ Follow these steps on the VSIX project that should target Visual Studio 2019:
 
     Review the file for any other updates that may be necessary.
 
-1. Change the versions of the VS SDK packages that you reference in your project file:
+1. Change the versions of the VSSDK packages that you reference in your project file:
 
     ```diff
     -<PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.0-preview.1" />

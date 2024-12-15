@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the class parent identifier of the symbol."
+description: Retrieves the class parent identifier of the symbol.
 title: "IDiaSymbol::get_classParentId"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_classParentId method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_classParentId
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the class parent identifier of the symbol.
 
 ## Syntax
 
 ```C++
-HRESULT get_classParentId ( 
+HRESULT get_classParentId ( 
    DWORD* pRetVal
 );
 ```

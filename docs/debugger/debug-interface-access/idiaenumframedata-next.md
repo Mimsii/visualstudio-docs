@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a specified number of frame data elements in the enumeration sequence."
+description: Retrieves a specified number of frame data elements in the enumeration sequence.
 title: "IDiaEnumFrameData::Next"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaEnumFrameData::Next method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaEnumFrameData::Next
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a specified number of frame data elements in the enumeration sequence.
 
 ## Syntax
 
-```C++
-HRESULT Next ( 
+```c++
+HRESULT Next ( 
    ULONG           celt,
    IDiaFrameData** rgelt,
    ULONG*          pceltFetched
@@ -28,21 +28,24 @@ HRESULT Next ( 
 ```
 
 #### Parameters
- celt
+
+celt
 
 [in] The number of frame data elements in the enumerator to be retrieved.
 
- rgelt
+rgelt
 
 [out] An array of [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objects to be filled in with the requested frame data elements.
 
- pceltFetched
+pceltFetched
 
 [out] Returns the number of frame data elements in the fetched enumerator.
 
 ## Return Value
- If successful, returns `S_OK`. Returns `S_FALSE` if there are no more records. Otherwise, returns an error code.
+
+If successful, returns `S_OK`. Returns `S_FALSE` if there are no more records. Otherwise, returns an error code.
 
 ## See also
+
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

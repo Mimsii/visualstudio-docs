@@ -5,20 +5,18 @@ description: Use Visual Studio workload and component IDs to build classic Windo
 keywords:
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.date: 11/14/2023
+manager: mijacobs
+ms.date: 11/12/2024
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.prod: visual-studio-windows
-ms.technology: vs-installation
+
+ms.subservice: installation
 open_to_public_contributors: false
 ---
 # Visual Studio Build Tools component directory
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 

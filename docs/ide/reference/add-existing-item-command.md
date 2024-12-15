@@ -10,12 +10,11 @@ helpviewer_keywords:
 - Add Existing Item command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Add Existing Item Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Adds an existing file to the current solution and opens it.
 
 ## Syntax

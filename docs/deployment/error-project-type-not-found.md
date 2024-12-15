@@ -14,14 +14,12 @@ helpviewer_keywords:
   - "application not found"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 ---
 # Error: The application which this project type is based on was not found (Windows Installer or ClickOnce)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
-When you try to load a ClickOnce or Windows Installer project, you may get this error: ```<path to project file>: The application which this project type is based on was not found. Please try this link for further information: <link>```.
+When you try to load a ClickOnce or Windows Installer project, you may get this error: `<path to project file>: The application which this project type is based on was not found. Please try this link for further information: <link>`.
 
 This message indicates that the project requires components that are not installed for your version of Visual Studio.
 

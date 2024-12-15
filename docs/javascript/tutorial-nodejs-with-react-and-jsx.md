@@ -7,14 +7,13 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-javascript
+manager: mijacobs
+ms.subservice: javascript-typescript
+monikerRange: 'vs-2019'
 dev_langs:
   - JavaScript
 ---
 # Tutorial: Create a Node.js and React app in Visual Studio
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 With Visual Studio, you can easily create a Node.js project and use IntelliSense and other built-in features that support Node.js. In this tutorial, you create a Node.js web app project from a Visual Studio template. Then, you create a simple app using React.
 
@@ -26,10 +25,8 @@ In this tutorial, you learn how to:
 > * Transpile JSX
 > * Attach the debugger
 
-::: moniker range=">=vs-2022"
 > [!IMPORTANT]
 > Starting in Visual Studio 2022, you can alternatively [create a React project](../javascript/tutorial-create-react-app.md) using the recommended [CLI-based project type](https://devblogs.microsoft.com/visualstudio/the-new-javascript-typescript-experience-in-vs-2022-preview-3/). Some of the information in this article applies only to the Node.js project type (.njsproj). The template used in this article is no longer available starting in Visual Studio 2022 version 17.8 Preview 2.
-::: moniker-end
 
 Before you begin, here's a quick FAQ to introduce you to some key concepts:
 
@@ -85,51 +82,12 @@ This tutorial requires the following prerequisites:
      
   1. In the **Properties** pane, set the **Node.exe path** to reference a global or local installation of Node.js. You can specify the path to a local interpreter in each of your Node.js projects.
 
-::: moniker range=">=vs-2022"
-This tutorial was tested with Node.js 18.5.0.
-::: moniker-end
-::: moniker range="<=vs-2019"
 This tutorial was tested with Node.js 12.6.2.
-::: moniker-end
 
 ## Create a project
 
 First, create a Node.js web app project.
 
-::: moniker range=">=vs-2022"
-1. Open Visual Studio, and press **Esc** to close the start window.
-   
-1. Press **Ctrl**+**Q**, type *node.js* in the search box, and then choose **Blank Node.js Web Application - JavaScript** from the dropdown list.
-   
-   Although this tutorial uses the TypeScript compiler, the steps require that you start with the **JavaScript** template.
-   
-   If you don't see the **Blank Node.js Web Application** choice, you need to install the Node.js development workload. For instructions, see the [Prerequisites](#prerequisites).
-   
-1. In the **Configure your new project** dialog box, select **Create**.
-   
-   Visual Studio creates the new solution and project, and opens the project in the right pane. The *server.js* project file opens in the editor in the left pane.
-   
-1. Look at the project structure in **Solution Explorer** in the right pane.
-   
-   ![Screenshot showing the Node.js project structure in Solution Explorer.](media/vs-2022/tutorial-nodejs-react-project-structure.png)
-   
-   - At the top level is the *solution* (**1**), which by default has the same name as your project. A solution, represented by a *.sln* file on disk, is a container for one or more related projects.
-   
-   - Your project (**2**), using the name you gave in the **Configure your new project** dialog box, is highlighted in bold. In the file system, the project is a *.njsproj* file in your project folder.
-     
-     To see and set project properties and environment variables, press **Alt**+**Enter**, or right-click the project and select **Properties** from the context menu. You can work with other development tools, because the project file doesn't make custom changes to the Node.js project source.
-   
-   - The **npm** node (**3**) shows any installed npm packages.
-   
-     Right-click the **npm** node to search for and install npm packages. You can install and update packages by using the settings in *package.json* and the right-click options in the **npm** node.
-   
-   - Npm uses the *package.json* file (**4**) to manage dependencies and versions for locally installed packages. For more information, see [Manage npm packages](npm-package-management.md).
-   
-   - Project files (**5**) appear under the project node. The project startup file, *server.js*, shows in bold.
-     
-     You can set the startup file by right-clicking a file in the project and selecting **Set as Node.js startup file**.
-::: moniker-end
-::: moniker range="vs-2019"
 1. Open Visual Studio.
 
 1. Create a new project.
@@ -144,16 +102,15 @@ First, create a Node.js web app project.
 
     ![Screenshot showing the Node.js project in Solution Explorer](media/tutorial-nodejs-react-project-structure.png)
 
-    (1) Highlighted in **bold** is your project, using the name you gave in the **New Project** dialog box. In the file system, this project is represented by a *.njsproj* file in your project folder. You can set properties and environment variables associated with the project by right-clicking the project and choosing **Properties** (or press **Alt** + **Enter**). You can do round-tripping with other development tools, because the project file does not make custom changes to the Node.js project source.
+    (1) Highlighted in **bold** is your project, using the name you gave in the **New Project** dialog box. In the file system, this project is represented by a `.njsproj` file in your project folder. You can set properties and environment variables associated with the project by right-clicking the project and choosing **Properties** (or press **Alt** + **Enter**). You can do round-tripping with other development tools, because the project file does not make custom changes to the Node.js project source.
 
-    (2) At the top level is a solution, which by default has the same name as your project. A solution, represented by a *.sln* file on disk, is a container for one or more related projects.
+    (2) At the top level is a solution, which by default has the same name as your project. A solution, represented by a `.sln` file on disk, is a container for one or more related projects.
 
-    (3) The npm node shows any installed npm packages. You can right-click the npm node to search for and install npm packages using a dialog box or install and update packages using the settings in *package.json* and right-click options in the npm node.
+    (3) The npm node shows any installed npm packages. You can right-click the npm node to search for and install npm packages using a dialog box or install and update packages using the settings in `package.json` and right-click options in the npm node.
 
-    (4) *package.json* is a file used by npm to manage package dependencies and package versions for locally installed packages. For more information, see [Manage npm packages](../javascript/npm-package-management.md).
+    (4) `package.json` is a file used by npm to manage package dependencies and package versions for locally installed packages. For more information, see [Manage npm packages](../javascript/npm-package-management.md).
 
-    (5) Project files such as *server.js* show up under the project node. *server.js* is the project startup file and that is why it shows up in **bold**. You can set the startup file by right-clicking a file in the project and selecting **Set as Node.js startup file**.
-::: moniker-end
+    (5) Project files such as `server.js` show up under the project node. `server.js` is the project startup file and that is why it shows up in **bold**. You can set the startup file by right-clicking a file in the project and selecting **Set as Node.js startup file**.
 
 ## Add npm packages
 
@@ -174,12 +131,7 @@ To install a package:
    
 1. In the **Install New npm Packages** dialog box, search for the **react** package, and select **Install Package** to install it.
 
-    ::: moniker range=">=vs-2022"
-    ![Screenshot that shows installing an npm package.](media/vs-2022/tutorial-nodejs-react-install-package.png)
-    ::: moniker-end
-    ::: moniker range="<=vs-2019"
     ![Screenshot that shows installing an npm package.](media/tutorial-nodejs-react-install-package.png)
-    ::: moniker-end
 
     In the **Install New npm Packages** dialog box, you can choose to install the most current package version or to specify a version. If you choose to install the current versions, but run into unexpected errors later, try installing the exact package versions listed in the next step.
 
@@ -187,7 +139,7 @@ To install a package:
 
     When installed, the **react** package appears under the **npm** node in **Solution Explorer**.
 
-    The project's *package.json* file updates with the new package information, including the package version.
+    The project's `package.json` file updates with the new package information, including the package version.
 
 Instead of using the UI to search for and add the rest of the packages one at a time, you can paste the required package code into *package.json*.
 
@@ -206,7 +158,7 @@ Instead of using the UI to search for and add the rest of the packages one at a 
     },
     ```
 
-    If the file already has a `dependencies` section, replace it with the preceding JSON code. For more information on using the *package.json* file, see [package.json configuration](configure-packages-with-package-json.md).
+    If the file already has a `dependencies` section, replace it with the preceding JSON code. For more information on using the `package.json` file, see [package.json configuration](configure-packages-with-package-json.md).
 
 1. Press **Ctrl**+**S** or select **File** > **Save package.json** to save the changes.
 
@@ -218,12 +170,7 @@ Instead of using the UI to search for and add the rest of the packages one at a 
 
     After installation, the npm modules appear in the **npm** node in **Solution Explorer**.
 
-    ::: moniker range=">=vs-2022"
-    ![Screenshot that shows installed npm packages.](media/vs-2022/tutorial-nodejs-react-npm-modules-installed.png)
-    ::: moniker-end
-    ::: moniker range="<=vs-2019"
     ![Screenshot that shows installed npm packages.](media/tutorial-nodejs-react-npm-modules-installed.png)
-    ::: moniker-end
 
     > [!NOTE]
     > You can also install npm packages by using the command line. In **Solution Explorer**, right-click the project name and select **Open Command Prompt Here**. Use standard Node.js commands to install packages.
@@ -363,7 +310,7 @@ Next, you add Webpack configuration code to *webpack-config.js*. You add a simpl
     }
     ```
 
-    The code specifies *app.tsx* as the source file.
+    The code specifies `app.tsx` as the source file.
 
 1. Press **Ctrl**+**Shift**+**S** or select **File** > **Save All** to save all changes.
 
@@ -387,7 +334,7 @@ Next, you add Webpack configuration code to *webpack-config.js*. You add a simpl
 
     - Install the most recent versions of the npm packages by right-clicking the npm node in Solution Explorer and choosing **Install npm packages**.
 
-    If one or more package versions are deprecated and result in an error, you might need to install a more recent version to fix errors. For information on using *package.json* to control npm package versions, see [package.json configuration](../javascript/configure-packages-with-package-json.md).
+    If one or more package versions are deprecated and result in an error, you might need to install a more recent version to fix errors. For information on using `package.json` to control npm package versions, see [package.json configuration](../javascript/configure-packages-with-package-json.md).
 
 1. In **Solution Explorer**, right-click the project node and select **Add** > **Existing Folder**.
 
@@ -407,7 +354,7 @@ Anytime you make changes to *app.tsx*, you must rerun the Webpack command. To au
 
 Visual Studio versions starting with Visual Studio 2019 require a build script. Instead of transpiling JSX at the command line, as shown in the preceding section, you can transpile JSX when building from Visual Studio.
 
-1. Open *package.json* and add the following section after the `dependencies` section:
+1. Open `package.json` and add the following section after the `dependencies` section:
 
    ```json
    "scripts": {
@@ -421,12 +368,7 @@ Visual Studio versions starting with Visual Studio 2019 require a build script. 
 
 1. In the **Debug** toolbar, select either **Web Server (Microsoft Edge)** or **Web Server (Google Chrome)** as the debug target.
 
-    ::: moniker range=">=vs-2022"
-    ![Screenshot that shows selecting Microsoft Edge as the debug target.](media/vs-2022/tutorial-nodejs-react-debug-target.png)
-    ::: moniker-end
-    ::: moniker range="=vs-2019"
     ![Screenshot that shows selecting Chrome as the debug target.](media/vs-2019/tutorial-nodejs-react-debug-target.png)
-    ::: moniker-end
 
     If you know your preferred debug target is available on your machine, but it doesn't appear as an option, select **Browse With** from the debug target dropdown list. Select your default browser target in the list, and select **Set as Default**.
 
@@ -446,12 +388,7 @@ Breakpoints are the most basic and essential feature of reliable debugging. A br
 
 1. In *server.js*, click in the gutter to the left of the `staticPath` declaration to set a breakpoint:
 
-    ::: moniker range=">=vs-2022"
-    ![Screenshot showing a breakpoint set for the staticPath declaration in server dot j s.](media/vs-2022/tutorial-nodejs-react-set-breakpoint.png)
-    ::: moniker-end
-    ::: moniker range="<=vs-2019"
     ![Screenshot showing a breakpoint set for the staticPath declaration in server dot j s.](media/tutorial-nodejs-react-set-breakpoint.png)
-    ::: moniker-end
 
 1. To run the app, press **F5** or select **Debug** > **Start Debugging**.
 
@@ -499,25 +436,15 @@ The browser starts with debugging enabled. The app isn't running yet, so the bro
 
 ### Attach the debugger to client-side script
 
-1. In the Visual Studio editor, set a breakpoint in either the *app-bundle.js* or *app.tsx* source code.
+1. In the Visual Studio editor, set a breakpoint in either the *app-bundle.js* or `app.tsx` source code.
 
     - For *app-bundle.js*, set the breakpoint in the `render()` function. To find the `render()` function in the *app-bundle.js* file, press **Ctrl**+**F** or select **Edit** > **Find and Replace** > **Quick Find**, and enter *render* in the search field.
 
-      ::: moniker range=">=vs-2022"
-      ![Screenshot showing a breakpoint set in the render function in app-bundle dot j s.](media/vs-2022/tutorial-nodejs-react-set-breakpoint-client-code.png)
-      ::: moniker-end
-      ::: moniker range="<=vs-2019"
       ![Screenshot showing a breakpoint set in the render function in app-bundle dot j s.](media/tutorial-nodejs-react-set-breakpoint-client-code.png)
-      ::: moniker-end
 
     - For *app.tsx*, set the breakpoint inside the `render()` function, on the `return` statement.
 
-      ::: moniker range=">=vs-2022"
-      ![Screenshot showing a breakpoint set on the return statement of the render function in app dot t s x.](media/vs-2022/tutorial-nodejs-react-set-breakpoint-tsx-file.png)
-      ::: moniker-end
-      ::: moniker range="<=vs-2019"
       ![Screenshot showing a breakpoint set on the return statement of the render function in app dot t s x.](media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
-      ::: moniker-end
 
       If you set the breakpoint in *app.tsx*, also update *webpack-config.js* to replace the following code, and save your changes.
 
@@ -555,7 +482,7 @@ The browser starts with debugging enabled. The app isn't running yet, so the bro
 
     Make sure the correct debugger for your target browser, **JavaScript (Chrome)** or **JavaScript (Microsoft Edge - Chromium)**, appears in the **Attach to** field. Type *chrome* or *edge* in the filter box to filter the results.
 
-1. Select the browser process with the correct host port, **localhost** in this example. The port number **1337** or **localhost** might also appear in the **Title** field to help you select the correct process.
+1. Select the browser process with the correct host port, `localhost` in this example. The port number **1337** or `localhost` might also appear in the **Title** field to help you select the correct process.
 
 1. Select **Attach**.
 

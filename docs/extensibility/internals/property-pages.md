@@ -9,12 +9,11 @@ helpviewer_keywords:
 - property pages, changing configuration options
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Property Pages
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Users can view and change project configuration-dependent and -independent properties using property pages. A **Property Pages** button is enabled in the **Properties** window or on Solution Explorer toolbar for objects that provide a property page view of the selected object. Property pages are created by the environment and are available for solutions and projects. They can, however, also be made available for project items that make use of configuration-dependent properties. This capability might be used when files within a project require different compiler switch settings to build properly.
 
 ## Using Property Pages
@@ -27,7 +26,8 @@ Users can view and change project configuration-dependent and -independent prope
  There are two general types of **ProjectProperty Pages** dialog boxes available in Visual Studio. In the first, for Visual Basic projects, for example, the property pages are displayed using a field format, as shown in the following screenshot. In the second, shown later in this section, the property page hosts a properties grid similar to that found in the Properties Window.
 
  ![Visual Basic Property Pages](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")
-Project Property Pages dialog box with field format and tree structure
+ 
+ Project Property Pages dialog box with field format and tree structure
 
  The tree structure in the Property Pages dialog box is not built using <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. The environment, based on the level name passed to it by the <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> and the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> interfaces, builds it.
 
@@ -47,11 +47,12 @@ Project Property Pages dialog box with field format and tree structure
 
   Implementing `Help::DisplayTopicFromF1Keyword` in your VSPackage provides the functionality for the Help button.
 
-  For further information, see `IDispatch` and `ISpecifyPropertyPages`in the MSDN library.
+  For further information, see `IDispatch` and `ISpecifyPropertyPages` in the MSDN library.
 
   The second type of property pages displayed in the samples hosts a form of the properties grid, as shown in the following screenshot.
 
   ![VC Property Pages](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")
+  
   Property Pages dialog box with properties grid
 
   The interfaces `IVSMDPropertyBrowser` and `IVSMDPropertyGrid` (declared in vsmanaged.h) are used to create and populate the properties grid within a dialog box or window.

@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Creates an enumerator of breakpoints that were bound on this event.
 
 ## Syntax

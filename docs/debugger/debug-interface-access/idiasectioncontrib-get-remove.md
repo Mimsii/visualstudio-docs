@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates whether the section is removed before it is made part of the in-memory image."
+description: Retrieves a flag that indicates whether the section is removed before it is made part of the in-memory image.
 title: "IDiaSectionContrib::get_remove"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_remove method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSectionContrib::get_remove
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether the section is removed before it is made part of the in-memory image.
 
 ## Syntax
 
 ```C++
-HRESULT get_remove ( 
+HRESULT get_remove ( 
    BOOL* pRetVal
 );
 ```

@@ -8,12 +8,10 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Create custom editors and designers
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Visual Studio integrated development environment (IDE) can host different types of editor:
 

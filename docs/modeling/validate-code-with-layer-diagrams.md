@@ -17,12 +17,10 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Validate code with dependency diagrams
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ## Why use dependency diagrams?
 
@@ -118,7 +116,7 @@ If you have an open dependency diagram  that is linked to solution items, you ca
        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
        ```
 
-     - or -
+       -or-
 
        Browse to the folder that contains the modeling project (.modelproj) file and the dependency diagram and then run MSBuild with the following custom property:
 
@@ -132,7 +130,7 @@ If you have an open dependency diagram  that is linked to solution items, you ca
        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
        ```
 
-     - or -
+       -or-
 
        Browse to the solution folder, which must contain a modeling project that contains a dependency diagram, and then run MSBuild with the following custom property:
 

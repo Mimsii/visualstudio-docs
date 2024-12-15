@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that indicates whether another symbol references this symbol's address."
+description: Retrieves a flag that indicates whether another symbol references this symbol's address.
 title: "IDiaSymbol::get_addressTaken"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_addressTaken method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_addressTaken
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that indicates whether another symbol references this symbol's address.
 
 ## Syntax
 
 ```C++
-HRESULT get_addressTaken ( 
+HRESULT get_addressTaken ( 
    BOOL* pRetVal
 );
 ```

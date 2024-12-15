@@ -7,12 +7,11 @@ helpviewer_keywords:
 - Architecture, Visual Studio Integration
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # VSSDK Utilities
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The topics in this section describe the tools that ship with the VSSDK.
 
 ## In This Section

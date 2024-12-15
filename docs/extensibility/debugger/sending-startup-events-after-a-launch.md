@@ -7,12 +7,11 @@ helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Send startup events after a launch
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Once the debug engine (DE) is attached to the program, it sends a series of startup events back to the debug session.
 
  Startup events sent back to the debug session include:

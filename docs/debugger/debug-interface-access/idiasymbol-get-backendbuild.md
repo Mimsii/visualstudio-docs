@@ -1,5 +1,5 @@
 ---
-description: "Retrieves the back end build number of the compiler."
+description: Retrieves the back end build number of the compiler.
 title: "IDiaSymbol::get_backEndBuild"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_backEndBuild method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_backEndBuild
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the back end build number of the compiler.
 
 ## Syntax
 
 ```C++
-HRESULT get_backEndBuild ( 
+HRESULT get_backEndBuild ( 
    DWORD* pRetVal
 );
 ```

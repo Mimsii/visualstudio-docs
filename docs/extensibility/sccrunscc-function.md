@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccRunScc function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccRunScc Function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function invokes the source control administration tool.
 
 ## Syntax

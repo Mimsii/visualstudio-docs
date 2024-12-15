@@ -17,12 +17,10 @@ helpviewer_keywords:
   - "Office applications [Office development in Visual Studio], MSI"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Deploying a VSTO Solution Using Windows Installer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ## Summary
 
@@ -35,7 +33,6 @@ Ted Pattison, Ted Pattison Group
 This article was updated by Microsoft with permission from the original authors.
 
 **Applies to:** Visual Studio Tools for Office, Microsoft Office, Microsoft Visual Studio.
-
 
 
 You can develop a VSTO solution and deploy the solution by using a Windows Installer package. This discussion includes steps for deploying a simple Office Add-in.
@@ -206,8 +203,7 @@ Microsoft Office locates Add-ins by using registry keys. The keys in the HKEY\_C
 
     The Company Name is often used as a prefix for the name of the add-in to provide uniqueness.
 
-10. Right-click the **SampleCompany.ExcelAddIn** key, select **New**, and click **String value**. Use the text
-**Description** for the Name.
+10. Right-click the **SampleCompany.ExcelAddIn** key, select **New**, and click **String value**. Use the text **Description** for the Name.
 11. Use this step to add three more values:
     - **FriendlyName** of type **String**
     - **LoadBehavior** of type **DWORD**
@@ -304,8 +300,7 @@ For more information, see [Type Equivalence and Embedded Interop Types](/dotnet/
 
 ### To configure launch conditions to detect that for Office PIAs
 
-1. In the **Launch Conditions(OfficeAddInSetup)** editor, right-click **Requirements on Target Machine**,
-    and then **click Add Windows Installer Launch Condition**. This launch condition searches for an Office PIA by searching for the specific component ID.
+1. In the **Launch Conditions(OfficeAddInSetup)** editor, right-click **Requirements on Target Machine**, and then **click Add Windows Installer Launch Condition**. This launch condition searches for an Office PIA by searching for the specific component ID.
 2. Right-click **Search for Component1** and click **Properties Window** to show the properties of the launch condition.
 3. In the **Properties Window**, set these properties:
 
@@ -553,7 +548,7 @@ The last step is to configure the custom action for the **Install** and **Uninst
 11. In the **CustomActionData** **Properties** window, enter the location of the customization DLL, the deployment manifest, and the location of the Microsoft Office document. The SolutionID is also needed.
 12. If you wish to log any setup errors to a file, include a LogFile parameter.
 s
-    ``` text
+    ```text
     /assemblyLocation="[INSTALLDIR]ExcelWorkbookProject.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbookProject.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbookProject.xlsx" /solutionID="Your Solution ID" /LogFile="[TARGETDIR]Setup.log"
     ```
 
@@ -563,7 +558,7 @@ s
 
 13. The Custom Action for Uninstall needs the name of the document, you can provide that by using the same documentLocation parameter in the **CustomActionData**
 
-    ``` text
+    ```text
     /documentLocation="[INSTALLDIR]ExcelWorkbookProject.xlsx"
     ```
 

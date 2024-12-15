@@ -8,12 +8,10 @@ helpviewer_keywords:
 - Workflow Designer [WFD], debugging workflows
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # Debug workflows with the Workflow Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The **Workflow Designer** provides the ability to debug workflows and custom activities. The process and behavior are similar to that of the default Visual Studio debugger.
 

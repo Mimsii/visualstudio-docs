@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: overview
 author: dzsquared
 ms.author: drskwier
-manager: jmartens
-ms.technology: vs-xml-tools
+manager: mijacobs
+ms.subservice: xml-tools
 ---
 # XML editor
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The XML editor in Visual Studio is based on the text editor and includes additional support for the XML languages. When you open an XML file in Visual Studio, it opens in the XML editor.
 

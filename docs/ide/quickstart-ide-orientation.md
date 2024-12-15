@@ -7,12 +7,11 @@ ms.date: 12/18/2023
 ms.topic: conceptual
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
+ms.collection: ce-skilling-ai-copilot
 ---
 # Tour the Visual Studio IDE
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this introduction to the Visual Studio integrated development environment (IDE), you take a tour of some of the windows, menus, and other UI features.
 
@@ -159,7 +158,7 @@ To explore Visual Studio's features, let's create a new project.
     
     :::image type="content" source="media/vs-2022/editor.png" alt-text="Screenshot of the Editor in Visual Studio 2022.":::
 
-* The menu bar along the top of Visual Studio groups commands into categories. For example, the **Project** menu contains commands related to the project you're working in. On the **Tools** menu, you can customize how Visual Studio behaves by selecting **Options**, or add features to your installation by selecting **Get Tools and Features**.
+* The menu bar along the top of Visual Studio groups commands into categories. For example, the **Project** menu contains commands related to the project you're working in. On the **Tools** menu, you can customize how Visual Studio behaves by selecting **Options**, or add features to your installation by selecting **Get Tools and Features**. You can [customize Visual Studio IDE settings](personalizing-the-visual-studio-ide.md) in various ways to best support your own development style and requirements.
     
     :::image type="content" source="media/vs-2022/menu-bar.png" alt-text="Screenshot of the Menu bar in Visual Studio 2022.":::
 
@@ -287,5 +286,5 @@ You looked at just a few of the features of Visual Studio to get acquainted with
 - [Learn about projects and solutions](../get-started/tutorial-projects-solutions.md)
 - [Overview of the Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [More features of Visual Studio](../ide/advanced-feature-overview.md)
-- [Change theme and font colors](../ide/quickstart-personalize-the-ide.md)
+- [Change theme and font colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [Optimize the Visual Studio experience on Microsoft Dev Box](/azure/dev-box/how-to-generate-visual-studio-caches)

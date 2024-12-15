@@ -1,9 +1,9 @@
 ---
 title: Community support offerings in Visual Studio subscriptions
-author: evanwindom
+author: joseb-rdc
 ms.author: amast
 manager: shve
-ms.date: 06/21/2023
+ms.date: 09/11/2024
 ms.topic: conceptual
 description:  Learn about the various community-based support offerings in Visual Studio subscriptions
 ---
@@ -77,7 +77,6 @@ Accessing the community forum is simple.
 1. Sign in to <https://my.visualstudio.com/benefits>.
 0. Locate the **Microsoft Tech Community** tile and select **Get help**.
 
-
 0. If you haven't previously registered for the community, select **Get Started**.
 0. In the **Step 1: Setup your profile** section:
    + Select your preferred language
@@ -103,7 +102,6 @@ Getting started with Azure Community is easy.
    + [Azure on Microsoft Q&A](https://go.microsoft.com/fwlink/p/?linkid=2201730&clcid=0x409)
    + [Azure on Stack Overflow](https://go.microsoft.com/fwlink/?linkid=2223575&clcid=0x409)
    + [Azure support on Twitter](https://go.microsoft.com/fwlink/p/?linkid=2202691&clcid=0x409)
-
 
 ## See also
 

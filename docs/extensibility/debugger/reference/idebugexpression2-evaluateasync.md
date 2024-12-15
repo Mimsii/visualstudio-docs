@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugExpression2::EvaluateAsync
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExpression2::EvaluateAsync
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method evaluates the expression asynchronously.
 
 ## Syntax

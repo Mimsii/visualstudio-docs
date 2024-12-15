@@ -7,12 +7,10 @@ helpviewer_keywords:
   - "debugger"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # What is debugging?
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The Visual Studio debugger is a powerful tool. Before we show how to use it, we want to talk about some terms such as *debugger*, *debugging*, and *debug mode*. This way, when we talk later about finding and fixing bugs, we'll be talking about the same thing.
 

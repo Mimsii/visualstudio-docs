@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IEEDataStorage::GetData
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IEEDataStorage::GetData
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves the specified number of bytes from the object.
 
 ## Syntax

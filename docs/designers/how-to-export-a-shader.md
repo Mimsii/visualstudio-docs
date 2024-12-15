@@ -5,14 +5,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-designers
+manager: mijacobs
+ms.subservice: ui-designers
 ---
 # Export a shader
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
-
 This article demonstrates how to use the **Shader Designer** to export a Directed Graph Shader Language (DGSL) shader so that you can use it in your app.
+
+> [!NOTE]
+> Vertex shaders can't be exported.
 
 ## Export a shader
 

@@ -8,12 +8,11 @@ f1_keywords:
   - "VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense"
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
+monikerRange: vs-2019
 ---
 # Options, Text Editor, U-SQL, IntelliSense
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Use the **IntelliSense** options page to modify some text editor settings for U-SQL. To access this options page, choose **Tools** > **Options**, and then choose **Text Editor** > **U-SQL** > **IntelliSense**.
 

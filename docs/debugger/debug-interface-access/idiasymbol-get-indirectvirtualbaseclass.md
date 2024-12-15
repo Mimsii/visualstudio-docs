@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the user-defined data type is an indirect virtual base class."
+description: Retrieves a flag that specifies whether the user-defined data type is an indirect virtual base class.
 title: "IDiaSymbol::get_indirectVirtualBaseClass"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSymbol::get_indirectVirtualBaseClass method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_indirectVirtualBaseClass
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the user-defined data type is an indirect virtual base class.
 
 ## Syntax
 
 ```C++
-HRESULT get_indirectVirtualBaseClass ( 
+HRESULT get_indirectVirtualBaseClass ( 
    BOOL* pRetVal
 );
 ```

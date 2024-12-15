@@ -7,13 +7,11 @@ helpviewer_keywords:
   - "deployment, ClickOnce for .NET 5+"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 monikerRange: '>= vs-2019'
 ---
 # ClickOnce for .NET on Windows
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 This article describes the differences between ClickOnce for .NET Core 3.1, .NET 5, and later, versus ClickOnce for .NET Framework.
 

@@ -15,12 +15,11 @@ helpviewer_keywords:
   - "BDC [SharePoint development in Visual Studio], add reference"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: sharepoint-development
+manager: mijacobs
+ms.subservice: sharepoint-development
 ---
 # Include a custom assembly in a BDC feature
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   Your project can reference assemblies from other projects in the same solution. However, you must add these assemblies to the feature file of the project by using the **Assign referenced assemblies to LobSystems** dialog box.
 
 ### To include a custom assembly in a business data connectivity (BDC) feature
@@ -48,4 +47,4 @@ ms.technology: sharepoint-development
 - [How to: Add an existing BDC model file to a SharePoint project](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Create a business data connectivity model](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [How to: Create a BDC model](../sharepoint/how-to-create-a-bdc-model.md)
-- [Integragte business data into SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Integrate business data into SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

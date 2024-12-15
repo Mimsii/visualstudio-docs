@@ -5,16 +5,14 @@ ms.custom: vs-acquisition
 dev_langs:
   - "CSharp"
   - "VB"
-ms.date: 03/15/2023
+ms.date: 03/15/2024
 ms.topic: tutorial
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Tutorial: Add a timer to a math quiz WinForms app
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this series of four tutorials, you'll build a math quiz. The quiz contains four random math problems that a quiz taker tries to answer within a specified time.
 
@@ -43,8 +41,6 @@ To keep track of time during the quiz, you use a timer component. You also need 
    ### [VB](#tab/vb)
    :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb" id="Snippet15":::
    ---
-
-   [!INCLUDE [devlang-control-csharp-vb](../includes/devlang-control-csharp-vb.md)]
 
 2. In **Windows Forms Designer**, move a <xref:System.Windows.Forms.Timer> control from the **Components** category of the **Toolbox** to your form. The control appears in the gray area at the bottom of the design window.
 
@@ -77,7 +73,15 @@ This method determines the answers to the math problems and compares the results
 
 Now that you have a way to check the answers, you can write the code for the Tick event handler. This code runs every second, after the timer raises a Tick event. This event handler checks the quiz taker's answers by calling `CheckTheAnswer()`. It also checks how much time has elapsed in the quiz.
 
-1. On the form, double-click the **Timer** control, or select it and then select **Enter**. These actions add a Tick event handler to the timer. The code editor appears and displays the Tick handler's method.
+1. On the form, double-click the **Timer** control, or select it and then select **Enter**. These actions add a Tick event handler. The code editor appears and displays the Tick handler's method.
+
+   For C#, it adds a line of code in the *Form1.Designer.cs* code file that hooks up the event handler:
+
+   ```csharp
+   timer1.Tick += new EventHandler(timer1_Tick);
+   ```
+
+   (For Visual Basic, there's no need for that line, but the event handler contains a `handles Timer1.Tick` which does the same thing.)
 
 1. Add the following statements to the new event handler method.
 

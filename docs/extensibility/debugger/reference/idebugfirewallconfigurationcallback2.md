@@ -7,12 +7,11 @@ helpviewer_keywords:
 - IDebugFirewallConfigurationCallback2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugFirewallConfigurationCallback2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Enables a debug engine that uses DCOM to ask the Visual Studio UI to make sure that the firewall will not block remote debugging.
 
 ## Syntax

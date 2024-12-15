@@ -12,12 +12,10 @@ helpviewer_keywords:
   - "Edit and Continue [Visual Basic], supported code changes"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Supported code changes (C# and Visual Basic)
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 ::: moniker range=">=vs-2022"
 The Hot Reload mechanism, previously called Edit and Continue, handles most types of code changes within method bodies. Most changes outside method bodies, and a few changes within method bodies, can't be applied during debugging, however. To apply those unsupported changes, you must stop debugging and restart with a fresh version of the code.
@@ -188,7 +186,7 @@ Edit and Continue isn't available in the following debugging scenarios:
 
 - Debugging an old version of your code after a new version failed to build because of build errors.
 
-## See also
+## Related content
 
 - [Edit and Continue (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 - [How to: Use Edit and Continue (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

@@ -7,12 +7,10 @@ helpviewer_keywords:
 - Windows Forms Designer
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-ide-designers
+manager: mijacobs
+ms.subservice: ui-designers
 ---
 # Windows Forms Designer overview
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Windows Forms Designer in Visual Studio provides a rapid development solution for creating Windows Forms-based applications. Windows Forms Designer lets you easily add controls to a form, arrange them, and write code for their events. For more information about Windows Forms, see [Windows Forms overview](/dotnet/framework/winforms/windows-forms-overview).
 
@@ -33,6 +31,12 @@ Using the designer you can:
 > [!NOTE]
 > Use Windows Forms Designer, and not the Resource Editor, to make changes to a form's resource (*.resx*) file. If you edit a form-based .resx file, you'll see a warning that changes you make in the Resource Editor may be lost. This is because the Windows Forms Designer generates the .resx file.
 
+> [!CAUTION]
+> Windows Forms Designer executes application code when displaying controls or forms on the design surface. Only open projects from [trusted locations](..\ide\reference\trust-settings.md).
+
+> [!CAUTION]
+> Resources in `.resx` files may be serialized using `BinaryFormatter`, which is [not secure](/dotnet/standard/serialization/binaryformatter-security-guide). Only use Windows Forms Designer to work with forms and controls that you trust.
+
 ## See also
 
 - [Windows Forms overview](/dotnet/framework/winforms/windows-forms-overview)
@@ -40,4 +44,4 @@ Using the designer you can:
 - [User input in Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Data binding in Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Enhance Windows Forms apps](/dotnet/framework/winforms/advanced/)
-- <xref:System.Windows.Forms?displayProperty=fullName> API reference
+- [System.Windows.Forms API reference](/dotnet/api/system.windows.forms)

@@ -7,18 +7,18 @@ dev_langs:
   - "C++"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::findInlineFramesByRVA
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves an enumeration that allows a client to iterate through all of the inline frames on a specified relative virtual address (RVA).
 
 ## Syntax
 
 ```C++
-HRESULT findInlineFramesByRVA (    DWORD             rva,
+HRESULT findInlineFramesByRVA (    DWORD             rva,
    IDiaEnumSymbols** ppResult
 );
 ```

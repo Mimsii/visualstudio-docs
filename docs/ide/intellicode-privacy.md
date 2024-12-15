@@ -1,13 +1,13 @@
 ---
 title: IntelliCode privacy
 ms.date: 09/26/2023
-ms.prod: visual-studio-family
-ms.technology: intellicode
+ms.service: visual-studio-family
+ms.subservice: intellicode
 ms.topic: conceptual
 description: IntelliCode privacy
 author: ghogen
 ms.author: ghogen
-manager: jmartens
+manager: mijacobs
 ---
 # IntelliCode privacy
 

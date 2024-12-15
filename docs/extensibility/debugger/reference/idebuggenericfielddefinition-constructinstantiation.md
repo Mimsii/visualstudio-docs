@@ -8,15 +8,14 @@ helpviewer_keywords:
 - IDebugGenericFieldDefinition::ConstructInstantiation
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugGenericFieldDefinition::ConstructInstantiation
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Constructs a field instance given an array of type arguments.
 
 ## Syntax

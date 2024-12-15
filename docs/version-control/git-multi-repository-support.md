@@ -2,20 +2,20 @@
 title: Work with multiple repositories
 titleSuffix: ""
 description: View, manage, and debug your code across 10 active repos at the same time by using the Git tooling within Visual Studio.
-ms.date: 11/22/2022
+ms.date: 04/04/2024
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-ms.manager: jmartens
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
+ms.manager: mijacobs
+
+ms.subservice: general-ide
 monikerRange: vs-2022
 ---
 # Work with multiple repos
 
 As one of our most [highly requested features in the Developer Community](https://developercommunity.visualstudio.com/t/allow-multiple-git-repositories-to-be-active-at-on/351156), we've added multi-repository support to Visual Studio 2022, starting with [version 17.4](/visualstudio/releases/2022/release-notes-v17.4).
 
-Now, you can have up to 10 active Git repositories at one time in Visual Studio. Multi-repo support means that you can work with a solution that spans more than one repository, and apply Git operations across several repositories at the same time. For example, in a large web project, you might need different repositories to manage work done on the frontend, the API, the database, the documentation, along with various libraries and dependencies. Before multi-repo support, you might have had to open multiple instances of Visual Studio to work between repos. Starting with [version 17.4](/visualstudio/releases/2022/release-notes-v17.4), you can manage, view, and debug them all with one instance of Visual Studio.
+Now, you can have up to 25 active Git repositories at one time in Visual Studio. Multi-repo support means that you can work with a solution that spans more than one repository, and apply Git operations across several repositories at the same time. For example, in a large web project, you might need different repositories to manage work done on the frontend, the API, the database, the documentation, along with various libraries and dependencies. Before multi-repo support, you might have had to open multiple instances of Visual Studio to work between repos. Starting with [version 17.4](/visualstudio/releases/2022/release-notes-v17.4), you can manage, view, and debug them all with one instance of Visual Studio.
 
 > [!NOTE]
 > To see multi-repository support in action, view the [Use multiple Git repositories in Visual Studio](https://www.youtube.com/watch?v=ctnlQzX2YwI&t=34s) video on YouTube.
@@ -64,11 +64,13 @@ Here's how to create a solution with multiple repositories:
 
 1. Open one of your existing solutions that already has a repository initialized.
 
-1. Right-click the solution in **Solution Explorer**, and then select **Add** > **[Existing Project](../ide/use-solution-explorer.md#the-add-context-menu-fly-out)**.
+1. Right-click the solution in **Solution Explorer**, and then select **Add** > **[Existing Project](../ide/use-solution-explorer.md#the-add-menu)**.
 
 1. Select the .csproj file for another project that has a repository initialized.
 
    After the project's added, Visual Studio detects and activates the second repo. Then, you can adjust the Project References as necessary.
+
+If you create a new project in an existing solution with other projects that already have local or remote repos, you must initialize the new project with Git [`git init`](https://git-scm.com/docs/git-init) before it shows as an additional repo in the solution.
 
 ### Use a folder
 
@@ -78,7 +80,7 @@ To do so, you can place the local repo directories in the same parent folder and
 
 :::image type="content" source="media/vs-2022/multi-repo-open-folder-solution.png" alt-text="Screenshot showing how you can activate multiple repositories from a folder in Visual Studio.":::
 
-## Next steps
+## Related content
 
 Want to know more about how we'll develop further Git functionality within Visual Studio 2022, or to share your feedback with us on the multi-repo feature? See the "Building with your feedback", "What's next", and "Let us know what you think" sections of the [Multi-repository support released](https://devblogs.microsoft.com/visualstudio/multi-repository-support-released/) blog post.
 

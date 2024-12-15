@@ -7,15 +7,14 @@ helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperty
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugProcessQueryProperties::QueryProperty
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method queries for a specified property value of the debugging process.
 
 ## Syntax

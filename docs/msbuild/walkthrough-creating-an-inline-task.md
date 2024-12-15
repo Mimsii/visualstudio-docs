@@ -8,8 +8,8 @@ helpviewer_keywords:
 - MSBuild, tasks
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Create an inline task
 

@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the function contains any unmanaged C++-style exception handling (for example, a try/catch block)."
+description: Retrieves a flag that specifies whether the function contains any unmanaged C++-style exception handling (for example, a try/catch block).
 title: "IDiaSymbol::get_hasEH"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasEH method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_hasEH
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the function contains any unmanaged C++-style exception handling (for example, a try/catch block).
 
 ## Syntax

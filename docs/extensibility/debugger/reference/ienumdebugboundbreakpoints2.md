@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IEnumDebugBoundBreakpoints2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This interface enumerates the bound breakpoints associated with a pending breakpoint or breakpoint bound event.
 
 ## Syntax

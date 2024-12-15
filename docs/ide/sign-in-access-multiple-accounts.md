@@ -5,12 +5,10 @@ ms.date: 11/01/2023
 ms.topic: how-to
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Access multiple accounts associated with the Visual Studio sign-in account
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 In this article, you learn how to access multiple user accounts in Visual Studio.  After you sign in to Visual Studio with a Microsoft or an organizational account, you can see the resources accessible from your accounts in places such as the **Add Connected Service** dialog, **Server Explorer**, and **Team Explorer**.
 
@@ -22,7 +20,7 @@ Azure, Application Insights, Azure DevOps, and Microsoft 365 services all suppor
 
 Access your Azure account as follows:
 
-1. To open Server Explorer, choose **View** > **Server Explorer** (or, if you're using the "General" [environment settings](../ide/environment-settings.md), press **Ctrl**+**Alt**+**S**).
+1. To open Server Explorer, choose **View** > **Server Explorer** (or, if you're using the "General" [environment settings](../ide/personalizing-the-visual-studio-ide.md), press **Ctrl**+**Alt**+**S**).
 
 1. Expand the **Azure** node and notice that it contains the resources available in the Azure account associated with the account you used to sign in to Visual Studio. It looks similar to the following image:
 

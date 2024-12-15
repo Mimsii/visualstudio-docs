@@ -7,18 +7,16 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Inside the editor
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 The editor is composed of several different subsystems, which are designed to keep the editor text model separate from the text view and the user interface.
 
 These sections describe different aspects of the editor:
 
-- [Overview of the subsystems](../extensibility/inside-the-editor.md#overview-of-the-subsystems)
+- [Overview of the subsystems](../extensibility/inside-the-editor.md#the-subsystems)
 
 - [The text model](../extensibility/inside-the-editor.md#the-text-model)
 

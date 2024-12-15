@@ -3,17 +3,18 @@ title: "EnsureVSTOComponent function"
 description: Learn how the EnsureVSTOComponent API supports the Office infrastructure and isn't intended to be used directly from your code.
 ms.date: "02/02/2017"
 ms.topic: "reference"
+f1_keywords:
+  - EnsureVSTOComponent
 dev_langs:
   - "VB"
   - "CSharp"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # EnsureVSTOComponent function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This API supports the Office infrastructure and isn't intended to be used directly from your code.
 
 ## Syntax

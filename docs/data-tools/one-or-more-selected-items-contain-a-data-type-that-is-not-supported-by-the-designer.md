@@ -1,16 +1,15 @@
 ---
 title: Unsupported data type
-description: 'One or more selected items contain a data type that is not supported by the designer. View information about this Visual Studio O/R Designer message.'
+description: One or more selected items contain a data type that is not supported by the designer. View information about this Visual Studio O/R Designer message.
 ms.date: 11/04/2016
 ms.topic: error-reference
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: vs-data-tools
+manager: mijacobs
+ms.subservice: data-tools
 ---
-# One or more selected items contain a data type that is not supported by the designer
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
+# One or more selected items contain a data type that is not supported by the designer
 
 One or more of the items dragged from **Server Explorer** or **Database Explorer** onto the **O/R Designer** contains a data type that is not supported by the **O/R Designer**, for example, [CLR user-defined types](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 

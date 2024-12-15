@@ -7,12 +7,10 @@ helpviewer_keywords:
   - "asynchronous, async, profiling"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Analyze performance of .NET asynchronous code
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Use the .NET Async tool to analyze the performance of asynchronous code in your app.
 
@@ -47,4 +45,4 @@ To further investigate a specific task or activity, right-click the row. Then se
 
 - [Optimizing Profiler settings](../profiling/optimize-profiler-settings.md)
 - [Identify hot paths with Flame Graph](../profiling/flame-graph.md)
-- [Analyze CPU usage](../profiling/cpu-usage.md)
+- [Analyze performance by using CPU profiling](../profiling/cpu-usage.md)

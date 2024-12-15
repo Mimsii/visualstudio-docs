@@ -7,12 +7,11 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # Walkthrough: Customize the text view
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 You can customize a text view by modifying any of the following properties in its editor-format map:
 
 - Indicator margin

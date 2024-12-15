@@ -1,5 +1,5 @@
 ---
-description: "Retrieves an enumerator for all tables contained in the symbol store."
+description: Retrieves an enumerator for all tables contained in the symbol store.
 title: "IDiaSession::getEnumTables"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSession::getEnumTables method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSession::getEnumTables
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves an enumerator for all tables contained in the symbol store.
 
 ## Syntax

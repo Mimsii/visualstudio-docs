@@ -9,12 +9,10 @@ helpviewer_keywords:
   - "Concurrency::diagnostic::span constructor"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # span::span Constructor
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Initializes a new instance of the `span` class.
 

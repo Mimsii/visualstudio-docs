@@ -10,12 +10,10 @@ helpviewer_keywords:
 - constraints, architectural
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Create dependency diagrams from your code
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 To visualize your software system's high-level, logical architecture, create a *dependency diagram* in Visual Studio. To make sure that your code stays consistent with this design, validate your code with a dependency diagram. You can create dependency diagrams for Visual C# and Visual Basic projects. To see which editions of Visual Studio support this feature, see [Edition support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
@@ -68,7 +66,7 @@ Before you create a dependency diagram, ensure that your solution has a modeling
 
 4. Create a new Dependency Diagram for the solution using the **Architecture** menu.
 
-5. Select all the nodes on the Code Map (use _Ctrl_ + _A_, or use the rubber band selection by pressing the _Shift_ key before you click, drag, and release.
+5. Select all the nodes on the Code Map (use *Ctrl* + *A*, or use the rubber band selection by pressing the *Shift* key before you click, drag, and release).
 
 6. Drag and drop, or copy and paste, the selected elements to the new Dependency Validation diagram.
 

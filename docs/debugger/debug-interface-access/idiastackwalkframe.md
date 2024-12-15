@@ -1,6 +1,6 @@
 ---
 description: "Maintains stack context between invocations of the IDiaFrameData::execute) method."
-title: "IDiaStackWalkFrame"
+title: IDiaStackWalkFrame
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -9,19 +9,17 @@ helpviewer_keywords:
   - "IDiaStackWalkFrame interface"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaStackWalkFrame
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Maintains stack context between invocations of the [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md) method.
 
 ## Syntax
 
-```
-IDiaStackWalkFrame : IUnknown
-```
+`IDiaStackWalkFrame : IUnknown`
 
 ## Methods in Vtable Order
  The following table shows the methods of `IDiaStackWalkFrame`.

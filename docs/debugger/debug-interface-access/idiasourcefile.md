@@ -1,6 +1,6 @@
 ---
-description: "Represents a source file."
-title: "IDiaSourceFile"
+description: Represents a source file.
+title: IDiaSourceFile
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -9,19 +9,17 @@ helpviewer_keywords:
   - "IDiaSourceFile interface"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSourceFile
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Represents a source file.
 
 ## Syntax
 
-```
-IDiaSourceFile : IUnknown
-```
+`IDiaSourceFile : IUnknown`
 
 ## Methods in Vtable Order
 The following table shows the methods of `IDiaSourceFile`.

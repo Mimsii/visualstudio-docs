@@ -2,17 +2,16 @@
 title: Breakpoints (Visual Studio SDK)
 description: "Learn about the three types of breakpoints: pending, bound, and error. This article lists the interfaces used to implement the types."
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # Breakpoints (Visual Studio SDK)
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 There are three types of breakpoints: pending, bound, and error.
 
  **A pending breakpoint:**

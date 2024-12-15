@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a simple integer key value that is unique for this image."
+description: Retrieves a simple integer key value that is unique for this image.
 title: "IDiaSourceFile::get_uniqueId"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,18 +9,18 @@ helpviewer_keywords:
   - "IDiaSourceFile::get_uniqueId method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSourceFile::get_uniqueId
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a simple integer key value that is unique for this image.
 
 ## Syntax
 
 ```C++
-HRESULT get_uniqueId ( 
+HRESULT get_uniqueId ( 
    DWORD* pRetVal
 );
 ```

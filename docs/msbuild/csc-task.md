@@ -14,8 +14,8 @@ helpviewer_keywords:
 - MSBuild, Csc task
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Csc task
 

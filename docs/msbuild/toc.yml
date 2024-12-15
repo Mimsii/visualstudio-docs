@@ -110,6 +110,8 @@ items:
         href: how-to-use-reserved-xml-characters-in-project-files.md
   - name: Advanced concepts
     items:
+    - name: Troubleshoot assembly references
+      href: troubleshoot-assembly-references.md
     - name: Batching
       items:
       - name: MSBuild batching
@@ -178,7 +180,7 @@ items:
         href: customize-solution-build.md
       - name: Customize all .NET builds
         href: customize-net-builds.md
-      - name: Customize all C++ builds
+      - name: Customize C++ builds
         href: customize-cpp-builds.md
       - name: Handle code generation
         href: customize-builds-for-generated-files.md
@@ -190,8 +192,6 @@ items:
       href: obtaining-build-logs-with-msbuild.md
     - name: Build loggers
       href: build-loggers.md
-    - name: Logging in a multi-processor environment
-      href: logging-in-a-multi-processor-environment.md
     - name: Writing multi-processor-aware loggers
       href: writing-multi-processor-aware-loggers.md
     - name: Creating forwarding loggers

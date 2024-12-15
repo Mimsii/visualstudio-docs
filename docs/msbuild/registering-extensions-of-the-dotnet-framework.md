@@ -9,8 +9,8 @@ helpviewer_keywords:
 - .NET Framework extensions, registering
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Register extensions of the .NET Framework
 

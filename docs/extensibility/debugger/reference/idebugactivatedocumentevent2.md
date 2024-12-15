@@ -9,12 +9,11 @@ helpviewer_keywords:
 - IDebugActivateDocumentEvent2 interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugActivateDocumentEvent2
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 The debug engine (DE) uses this interface to request a document to be loaded.
 
 ## Syntax

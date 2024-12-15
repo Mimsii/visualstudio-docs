@@ -9,12 +9,11 @@ helpviewer_keywords:
 - SccBackgroundGet function
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-sdk
+manager: mijacobs
+ms.subservice: extensibility-integration
 ---
 # SccBackgroundGet function
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This function retrieves from source control each of the specified files with no user interaction.
 
 ## Syntax

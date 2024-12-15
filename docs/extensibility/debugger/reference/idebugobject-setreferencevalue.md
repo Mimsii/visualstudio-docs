@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugObject::SetReferenceValue method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugObject::SetReferenceValue
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Sets the reference value of this object.
 
 ## Syntax

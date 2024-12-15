@@ -7,6 +7,117 @@ dev_langs:
 - VB
 - CSharp
 - C++
+f1_keywords:
+- "http://schemas.microsoft.com/developer/msbuild/2003#AdditionalLibPaths"
+- "http://schemas.microsoft.com/developer/msbuild/2003#AddModules"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ALToolPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ApplicationIcon"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ApplicationManifest"
+- "http://schemas.microsoft.com/developer/msbuild/2003#AssemblyOriginatorKeyFile"
+- "http://schemas.microsoft.com/developer/msbuild/2003#AssemblySearchPaths"
+- "http://schemas.microsoft.com/developer/msbuild/2003#AssemblyName"
+- "http://schemas.microsoft.com/developer/msbuild/2003#BaseAddress"
+- "http://schemas.microsoft.com/developer/msbuild/2003#BaseIntermediateOutputPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#BaseOutputPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#BuildInParallel"
+- "http://schemas.microsoft.com/developer/msbuild/2003#BuildProjectReferences"
+- "http://schemas.microsoft.com/developer/msbuild/2003#CleanFile"
+- "http://schemas.microsoft.com/developer/msbuild/2003#CodePage"
+- "http://schemas.microsoft.com/developer/msbuild/2003#CompilerResponseFile"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Configuration"
+- "http://schemas.microsoft.com/developer/msbuild/2003#CscToolPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#CustomAfterMicrosoftCommonTargets"
+- "http://schemas.microsoft.com/developer/msbuild/2003#CustomBeforeMicrosoftCommonTargets"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DebugSymbols"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DebugType"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DefineConstants"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DefineDebug"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DefineTrace"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DelaySign"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Deterministic"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DirectoryBuildPropsPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DirectoryBuildTargetsPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DisableFastUpToDateCheck"
+- "http://schemas.microsoft.com/developer/msbuild/2003#DocumentationFile"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ErrorReport"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ExcludeDeploymentUrl"
+- "http://schemas.microsoft.com/developer/msbuild/2003#FileAlignment"
+- "http://schemas.microsoft.com/developer/msbuild/2003#FrameworkPathOverride"
+- "http://schemas.microsoft.com/developer/msbuild/2003#GenerateDocumentation"
+- "http://schemas.microsoft.com/developer/msbuild/2003#GenerateFullPaths"
+- "http://schemas.microsoft.com/developer/msbuild/2003#GenerateSerializationAssemblies"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ImportDirectoryBuildProps"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ImportDirectoryBuildTargets"
+- "http://schemas.microsoft.com/developer/msbuild/2003#IntermediateOutputPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#KeyContainerName"
+- "http://schemas.microsoft.com/developer/msbuild/2003#KeyOriginatorFile"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ModuleAssemblyName"
+- "http://schemas.microsoft.com/developer/msbuild/2003#MSBuildProjectExtensionsPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#MSBuildTreatWarningsAsErrors"
+- "http://schemas.microsoft.com/developer/msbuild/2003#MSBuildWarningsAsErrors"
+- "http://schemas.microsoft.com/developer/msbuild/2003#MSBuildWarningsAsMessages"
+- "http://schemas.microsoft.com/developer/msbuild/2003#NoLogo"
+- "http://schemas.microsoft.com/developer/msbuild/2003#NoStdLib"
+- "http://schemas.microsoft.com/developer/msbuild/2003#NoVBRuntimeReference"
+- "http://schemas.microsoft.com/developer/msbuild/2003#NoWarn"
+- "http://schemas.microsoft.com/developer/msbuild/2003#NoWin32Manifest"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Optimize"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OptionCompare"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OptionExplicit"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OptionInfer"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OptionStrict"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OutDir"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OutputPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OutputType"
+- "http://schemas.microsoft.com/developer/msbuild/2003#OverwriteReadOnlyFiles"
+- "http://schemas.microsoft.com/developer/msbuild/2003#PathMap"
+- "http://schemas.microsoft.com/developer/msbuild/2003#PdbFile"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Platform"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ProcessorArchitecture"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ProduceOnlyReferenceAssembly"
+- "http://schemas.microsoft.com/developer/msbuild/2003#ProduceReferenceAssembly"
+- "http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssemblyMSBuildArchitecture"
+- "http://schemas.microsoft.com/developer/msbuild/2003#RegisterForCOMInterop"
+- "http://schemas.microsoft.com/developer/msbuild/2003#RemoveIntegerChecks"
+- "http://schemas.microsoft.com/developer/msbuild/2003#RootNamespace"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_AlgorithmId"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_BaseAddress"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_CompanyName"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Configuration"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Description"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_EvidenceFile"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_FileVersion"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Flags"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_GenerateFullPaths"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_LinkResource"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_MainEntryPoint"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_ProductName"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_ProductVersion"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_TargetType"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Title"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Trademark"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Version"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Win32Icon"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Satellite_Win32Resource"
+- "http://schemas.microsoft.com/developer/msbuild/2003#SGenToolPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#SGenUseProxyTypes"
+- "http://schemas.microsoft.com/developer/msbuild/2003#SkipInvalidConfigurations"
+- "http://schemas.microsoft.com/developer/msbuild/2003#StartupObject"
+- "http://schemas.microsoft.com/developer/msbuild/2003#SubsystemVersion"
+- "http://schemas.microsoft.com/developer/msbuild/2003#TargetCompactFramework"
+- "http://schemas.microsoft.com/developer/msbuild/2003#TargetFrameworkVersion"
+- "http://schemas.microsoft.com/developer/msbuild/2003#TreatWarningsAsErrors"
+- "http://schemas.microsoft.com/developer/msbuild/2003#UseCommonOutputDirectory"
+- "http://schemas.microsoft.com/developer/msbuild/2003#UseHostCompilerIfAvailable"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Utf8Output"
+- "http://schemas.microsoft.com/developer/msbuild/2003#VbcToolPath"
+- "http://schemas.microsoft.com/developer/msbuild/2003#VbcVerbosity"
+- "http://schemas.microsoft.com/developer/msbuild/2003#VisualStudioVersion"
+- "http://schemas.microsoft.com/developer/msbuild/2003#WarningsAsErrors"
+- "http://schemas.microsoft.com/developer/msbuild/2003#WarningLevel"
+- "http://schemas.microsoft.com/developer/msbuild/2003#WarningsNotAsErrors"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Win32Manifest"
+- "http://schemas.microsoft.com/developer/msbuild/2003#Win32Resource"
 helpviewer_keywords:
 - msbuild, common properties
 - msbuild, project file properties
@@ -14,8 +125,8 @@ helpviewer_keywords:
 - project file properties (MSBuild)
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Common MSBuild project properties
 
@@ -23,7 +134,7 @@ The following table lists frequently used properties that are defined in the Vis
 
 Project files in Visual Studio (*.csproj*, *.vbproj*, *.vcxproj*, and others) contain MSBuild XML code that runs when you build a project by using the IDE. Projects typically import one or more *.targets* files to define their build process. For more information, see [MSBuild .targets files](../msbuild/msbuild-dot-targets-files.md).
 
-When setting property values, keep in mind that common properties may be set, reset, or used in a number of imported files. Therefore, it matters where you set a property--in your project file, in *Directory.Build.props*, or in another imported file. If you're setting a property somewhere and not getting the expected result, consider where and how the property is changed or used in all the files imported by your project, including imports that are added implicitly when you're using the `Sdk` attribute. See [Directory.Build.props and Directory.Build.targets](customize-your-build.md#directorybuildprops-and-directorybuildtargets). Preprocessing can help with this (see the `/preprocess` or `/pp` command-line option at [MSBuild command-line reference](./msbuild-command-line-reference.md)).
+When setting property values, keep in mind that common properties may be set, reset, or used in a number of imported files. Therefore, it matters where you set a property--in your project file, in *Directory.Build.props*, or in another imported file. If you're setting a property somewhere and not getting the expected result, consider where and how the property is changed or used in all the files imported by your project, including imports that are added implicitly when you're using the `Sdk` attribute. See [Choose between adding properties to a .props or .targets file](customize-your-build.md#choose-between-adding-properties-to-a-props-or-targets-file). Preprocessing can help with this (see the `/preprocess` or `/pp` command-line option at [MSBuild command-line reference](./msbuild-command-line-reference.md)).
 
 ## List of common properties and parameters
 
@@ -65,8 +176,8 @@ When setting property values, keep in mind that common properties may be set, re
 | DefineTrace | All | A boolean value that indicates whether you want the TRACE constant defined. |
 | DelaySign | .NET | A boolean value that indicates whether you want to delay-sign the assembly rather than full-sign it. |
 | Deterministic | .NET | A boolean value that indicates whether the compiler should produce identical assemblies for identical inputs. This parameter corresponds to the `/deterministic` switch of the compilers. |
-| DirectoryBuildPropsPath | All | Specifies the path to the *Directory.Build.props* file; if defined, this property overrides the default search algorithm. See [Customize your build](customize-your-build.md#directorybuildprops-and-directorybuildtargets). |
-| DirectoryBuildTargetsPath| All | Specifies the path to the *Directory.Build.targets* file; if defined, this property overrides the default search algorithm. See [Customize your build](customize-your-build.md#directorybuildprops-and-directorybuildtargets). |
+| DirectoryBuildPropsPath | All | Specifies the path to the *Directory.Build.props* file; if defined, this property overrides the default search algorithm. See [Customize your build](customize-your-build.md#choose-between-adding-properties-to-a-props-or-targets-file). |
+| DirectoryBuildTargetsPath| All | Specifies the path to the *Directory.Build.targets* file; if defined, this property overrides the default search algorithm. See [Customize your build](customize-your-build.md#choose-between-adding-properties-to-a-props-or-targets-file). |
 | DisableFastUpToDateCheck | All | A boolean value that applies to Visual Studio only. The Visual Studio build manager uses a process called FastUpToDateCheck to determine whether a project must be rebuilt to be up to date. This process is faster than using MSBuild to determine this. Setting the DisableFastUpToDateCheck property to `true` lets you bypass the Visual Studio build manager and force it to use MSBuild to determine whether the project is up to date. |
 | DocumentationFile | .NET | The name of the file that is generated as the XML documentation file. This name includes only the file name and has no path information. |
 
@@ -76,14 +187,14 @@ When setting property values, keep in mind that common properties may be set, re
 | ExcludeDeploymentUrl | .NET | The [GenerateDeploymentManifest task](../msbuild/generatedeploymentmanifest-task.md) adds a  deploymentProvider tag to the deployment manifest if the project file includes any of the following elements:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Using ExcludeDeploymentUrl, however, you can prevent the deploymentProvider tag from being added to the deployment manifest even if any of the above URLs are specified. To do this, add the following property to your project file:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Note:**  ExcludeDeploymentUrl isn't exposed in the Visual Studio IDE and can be set only by manually editing the project file. Setting this property doesn't affect publishing within Visual Studio; that is, the deploymentProvider tag will still be added to the URL specified by PublishUrl. |
 | FileAlignment | .NET | Specifies, in bytes, where to align the sections of the output file. Valid values are 512, 1024, 2048, 4096, 8192. This property is equivalent to the `/filealignment` compiler switch. |
 | FrameworkPathOverride | Visual Basic | Specifies the location of *mscorlib.dll* and *microsoft.visualbasic.dll*. This parameter is equivalent to the `/sdkpath` switch of the *vbc.exe* compiler. |
-| GenerateDocumentation | .NET | A boolean parameter that indicates whether documentation is generated by the build. If `true`, the build generates documentation information and puts it in an *.xml* file together with the name of the executable file or library that the build task created. |
+| GenerateDocumentationFile | .NET | A boolean parameter that indicates whether documentation is generated by the build. If `true`, the build generates documentation information and puts it in an *.xml* file together with the name of the executable file or library that the build task created. |
 | GenerateFullPaths | C# | Generate full paths for filenames in output by using the [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) compiler option. |
 | GenerateSerializationAssemblies | .NET | Indicates whether XML serialization assemblies should be generated by *SGen.exe*, which can be set to on, auto, or off. This property is used for assemblies that target .NET Framework only. To generate XML serialization assemblies for .NET Standard or .NET Core assemblies, reference the *Microsoft.XmlSerializer.Generator* NuGet package. |
 
 | Property or parameter name | Project types | Description |
 |------------------------------------| - | - |
-| ImportDirectoryBuildProps | All | A boolean value that indicates whether to import a *Directory.Build.props* file. See [Customize your build](customize-your-build.md#directorybuildprops-and-directorybuildtargets).|
-| ImportDirectoryBuildTargets | All | A boolean value that indicates whether to import a *Directory.Build.targets* file. See [Customize your build](customize-your-build.md#directorybuildprops-and-directorybuildtargets). |
+| ImportDirectoryBuildProps | All | A boolean value that indicates whether to import a *Directory.Build.props* file. See [Customize your build](customize-your-build.md#choose-between-adding-properties-to-a-props-or-targets-file).|
+| ImportDirectoryBuildTargets | All | A boolean value that indicates whether to import a *Directory.Build.targets* file. See [Customize your build](customize-your-build.md#choose-between-adding-properties-to-a-props-or-targets-file). |
 | IntermediateOutputPath | All | The full intermediate output path as derived from `BaseIntermediateOutputPath`, if no path is specified. For example, *obj\debug\\*. |
 | KeyContainerName | All | The name of the strong-name key container. |
 | KeyOriginatorFile | All | The name of the strong-name key file. |

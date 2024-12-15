@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugSymbolProvider::GetMethodFieldsByName method
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugSymbolProvider::GetMethodFieldsByName
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 This method gets the field representing a fully qualified method name.
 
 ## Syntax

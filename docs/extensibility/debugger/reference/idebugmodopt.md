@@ -7,12 +7,11 @@ helpviewer_keywords:
 - IDebugModOpt interface
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
 # IDebugModOpt
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Represents a debug optional modifier.
 
 ## Syntax

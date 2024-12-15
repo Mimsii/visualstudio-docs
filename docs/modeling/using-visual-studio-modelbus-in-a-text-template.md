@@ -5,12 +5,10 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
-manager: jmartens
-ms.technology: vs-ide-modeling
+manager: mijacobs
+ms.subservice: modeling
 ---
 # Using Visual Studio ModelBus in a Text Template
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 If you write text templates that read a model that contains Visual Studio ModelBus references, you might want to resolve the references to access the target models. In that case, you have to adapt the text templates and the referenced domain-specific languages (DSLs):
 
@@ -127,7 +125,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
     // (Let's assume they're all in the same model file):
     foreach (SourceElement sourceElement in source.Elements)
     {
-      // In the source DSL Definition, each SourceElement has a MBR property:
+      // In the source DSL Definition, each SourceElement has an MBR property:
       ModelBusReference elementReference = sourceElement.ReferenceToTarget;
       // Resolve the target model element:
       TargetElement element = adapter.ResolveElementReference<TargetElement>(elementReference);

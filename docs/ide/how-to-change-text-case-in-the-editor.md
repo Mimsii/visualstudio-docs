@@ -8,12 +8,10 @@ helpviewer_keywords:
 - text, case
 author: anandmeg
 ms.author: meghaanand
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # Change text case in the editor
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 You can use menu commands or keyboard shortcuts to convert the case of selected text to all upper case or to all lower case.
 

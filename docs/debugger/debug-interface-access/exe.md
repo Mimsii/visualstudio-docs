@@ -1,6 +1,6 @@
 ---
-description: "Exe is the only symbol without either a lexical or class parent, as it represents the global scope of the .exe or .dll file."
-title: "Exe"
+description: Exe is the only symbol without either a lexical or class parent, as it represents the global scope of the .exe or .dll file.
+title: Exe
 ms.date: "11/04/2016"
 ms.topic: "reference"
 dev_langs:
@@ -12,16 +12,17 @@ helpviewer_keywords:
   - "executable files, Exe symbol"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # Exe
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Exe is the only symbol without either a lexical or class parent, as it represents the global scope of the .exe or .dll file. There is only one symbol with the `SymTagExe` tag per file. The [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) method returns the symbol.
 
 ## Properties
- The following table shows the properties that are valid for this symbol type.
+
+The following table shows the properties that are valid for this symbol type.
 
 |Property|Data type|Description|
 |--------------|---------------|-----------------|
@@ -37,5 +38,6 @@ Exe is the only symbol without either a lexical or class parent, as it represent
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Returns `SymTagExe` (one of the [SymTagEnum Enumeration](../../debugger/debug-interface-access/symtagenum.md) values).|
 
 ## See also
+
 - [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)
 - [Lexical Hierarchy of Symbol Types](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

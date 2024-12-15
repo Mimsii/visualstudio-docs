@@ -1,5 +1,5 @@
 ---
-description: "Retrieves a flag that specifies whether the function contains a use of the setjmp) command (paired with the longjmp(/cpp/c-runtime-library/reference/longjmp) command, these form the C-style method of exception handling)."
+description: Retrieves a flag that specifies whether the function contains a use of the setjmp) command (paired with the longjmp(/cpp/c-runtime-library/reference/longjmp) command, these form the C-style method of exception handling).
 title: "IDiaSymbol::get_hasSetJump"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -9,12 +9,12 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasSetJump method"
 author: "mikejo5000"
 ms.author: "mikejo"
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 ---
+
 # IDiaSymbol::get_hasSetJump
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Retrieves a flag that specifies whether the function contains a use of the [setjmp](/cpp/c-runtime-library/reference/setjmp) command (paired with the [longjmp](/cpp/c-runtime-library/reference/longjmp) command, these form the C-style method of exception handling).
 
 ## Syntax

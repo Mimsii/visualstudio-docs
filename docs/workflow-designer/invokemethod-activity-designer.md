@@ -7,12 +7,10 @@ f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 author: jodavis
 ms.author: jodavis
-manager: jmartens
-ms.technology: vs-workflow-designer
+manager: mijacobs
+ms.subservice: workflow-designer
 ---
 # InvokeMethod Activity Designer
-
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 **InvokeMethod** designer is used to create and configure an <xref:System.Activities.Statements.InvokeMethod> activity.
 

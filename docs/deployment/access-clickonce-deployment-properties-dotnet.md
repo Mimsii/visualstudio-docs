@@ -7,13 +7,11 @@ helpviewer_keywords:
   - "deployment properties, ClickOnce for .NET 5+"
 author: mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-deployment
+manager: mijacobs
+ms.subservice: deployment
 monikerRange: '>= vs-2022'
 ---
 # Access ClickOnce deployment properties for .NET on Windows
-
-[!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 
 Starting in .NET 7 and Visual Studio 2022 version 17.4, you can access ClickOnce deployment properties by using an environment variable.
 
@@ -37,6 +35,9 @@ In addition to these changes, a new property is available that returns the appli
 
 A .NET application can use these properties directly or indirectly.
 
+>[!NOTE]
+> Using this method, you can access application deployment properties, but .NET 7 does not support the equivalent of ApplicationDeployment methods.
+
 ## Access properties
 
 The following code example shows how to access two properties directly, `ClickOnce_IsNetworkDeployed` and `ClickOnce_ActivationUri`.
@@ -58,7 +59,7 @@ if (Environment.GetEnvironmentVariable("ClickOnce_IsNetworkDeployed")?.ToLower()
 
 Indirect usage of these properties requires the implementation of a new `ApplicationDeployment` class at the application level. This class abstracts the reading of environment variables and provides a similar experience to the old .NET Framework class.
 
-For a sample implementation of this class, see [ApplicationDeployment.cs](https://github.com/dotnet/deployment-tools/blob/main/Documentation/dotnet-mage/ApplicationDeployment.cs).
+For a sample implementation of this class, see [ApplicationDeployment.cs](https://github.com/dotnet/deployment-tools/blob/main/docs/dotnet-mage/ApplicationDeployment.cs).
 
 The following code snippet shows how to use this class:
 

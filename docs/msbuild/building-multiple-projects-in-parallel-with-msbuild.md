@@ -9,8 +9,8 @@ helpviewer_keywords:
 - msbuild, building projects in parallel
 author: ghogen
 ms.author: ghogen
-manager: jmartens
-ms.technology: msbuild
+manager: mijacobs
+ms.subservice: msbuild
 ---
 # Build multiple projects in parallel with MSBuild
 

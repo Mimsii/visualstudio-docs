@@ -13,12 +13,11 @@ helpviewer_keywords:
   - "add-ins [Office development in Visual Studio], creating your first project"
 author: John-Hart
 ms.author: johnhart
-manager: jmartens
-ms.technology: office-development
+manager: mijacobs
+ms.subservice: office-development
 ---
 # Walkthrough: Create your first VSTO Add-in for Project
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
   This walkthrough shows you how to create a VSTO Add-in for Microsoft Office Project. The features that you create in this kind of solution are available to the application itself, regardless of which projects are open. For more information, see [Office solutions development overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
@@ -84,7 +83,7 @@ ms.technology: office-development
 
    To modify the project, this code example uses the following objects:
 
-- The `Application` field of the `ThisAddIn` class. The `Application` field returns an `Microsoft.Office.Interop.MSProject.Application` object, which represents the current instance of Project.
+- The `Application` field of the `ThisAddIn` class. The `Application` field returns a `Microsoft.Office.Interop.MSProject.Application` object, which represents the current instance of Project.
 
 - The `pj` parameter of the event handler for the NewProject event. The `pj` parameter is a `Microsoft.Office.Interop.MSProject.Project` object, which represents the project. For more information, see [Project solutions](../vsto/project-solutions.md).
 

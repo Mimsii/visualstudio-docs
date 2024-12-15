@@ -9,15 +9,14 @@ helpviewer_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
 author: maiak
 ms.author: maiak
-manager: jmartens
-ms.technology: vs-ide-debug
+manager: mijacobs
+ms.subservice: debug-diagnostics
 dev_langs:
 - CPP
 - CSharp
 ---
 # IDebugExceptionEvent2::GetExceptionDescription
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Gets a displayable description of the exception.
 
 ## Syntax

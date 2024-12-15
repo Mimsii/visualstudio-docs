@@ -11,12 +11,11 @@ helpviewer_keywords:
 - ListRegisters command
 author: Mikejo5000
 ms.author: mikejo
-manager: jmartens
-ms.technology: vs-ide-general
+manager: mijacobs
+ms.subservice: general-ide
 ---
 # List Registers Command
 
- [!INCLUDE [Visual Studio](~/includes/applies-to-version/vs-windows-only.md)]
 Displays the value of the selected registers and lets you modify the list of registers to show.
 
 ## Syntax
